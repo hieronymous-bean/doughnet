@@ -234,21 +234,19 @@ export default {
     <div class="logo-box">
         <nuxt-link to="/" class="logo logo-dark text-center">
             <span class="logo-sm">
-                <img src="~/assets/images/logo-sm-dark.png" alt height="24" />
-                <!-- <span class="logo-lg-text-light">Minton</span> -->
+                <img src="~/assets/images/logo.png" alt height="34" />
             </span>
             <span class="logo-lg">
-                <img src="~/assets/images/logo-dark.png" alt height="20" />
-                <!-- <span class="logo-lg-text-light">M</span> -->
+                <img src="~/assets/images/logo.png" alt height="40" />
             </span>
         </nuxt-link>
 
         <nuxt-link to="/" class="logo logo-light text-center">
             <span class="logo-sm">
-                <img src="~/assets/images/logo-sm.png" alt height="24" />
+                <img src="~/assets/images/logo.png" alt height="34" />
             </span>
             <span class="logo-lg">
-                <img src="~/assets/images/logo-light.png" alt height="20" />
+                <img src="~/assets/images/logo.png" alt height="40" />
             </span>
         </nuxt-link>
     </div>
@@ -258,7 +256,7 @@ export default {
         <div class="user-box text-center">
             <img src="~/assets/images/users/avatar-1.jpg" alt="user-img" title="Mat Helme" class="rounded-circle avatar-md" />
             <div class="dropdown">
-                <a href="javascript: void(0);" class="text-reset dropdown-toggle h5 mt-2 mb-1 d-block" data-toggle="dropdown">Nik Patel</a>
+                <a href="javascript: void(0);" class="text-reset dropdown-toggle h5 mt-2 mb-1 d-block" data-toggle="dropdown">Jeffrey Brown</a>
                 <div class="dropdown-menu user-pro-dropdown">
                     <!-- item-->
                     <a href="javascript:void(0);" class="dropdown-item notify-item">
@@ -266,19 +264,6 @@ export default {
                         <span>My Account</span>
                     </a>
 
-                    <!-- item-->
-                    <a href="javascript:void(0);" class="dropdown-item notify-item">
-                        <i class="fe-settings mr-1"></i>
-                        <span>Settings</span>
-                    </a>
-
-                    <!-- item-->
-                    <a href="javascript:void(0);" class="dropdown-item notify-item">
-                        <i class="fe-lock mr-1"></i>
-                        <span>Lock Screen</span>
-                    </a>
-
-                    <!-- item-->
                     <a href="javascript:void(0);" class="dropdown-item notify-item">
                         <i class="fe-log-out mr-1"></i>
                         <span>Logout</span>
@@ -293,7 +278,10 @@ export default {
             <!-- Left Menu Start -->
             <ul class="list-unstyled" id="side-menu">
                 <template v-for="item in menuItems">
-                    <li class="menu-title" v-if="item.isTitle" :key="item.id">{{ $t(item.label) }}</li>
+                    <li class="menu-title" v-if="item.isTitle" :key="item.id">
+                        {{ $t(item.label) }}
+                    </li>
+                    
                     <li v-if="!item.isTitle && !item.isLayout" :key="item.id">
                         <a v-if="hasItems(item)" href="javascript:void(0);" @click="item.isMenuCollapsed = !item.isMenuCollapsed" :class="{
                                     'has-arrow': !item.badge,

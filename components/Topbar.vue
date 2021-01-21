@@ -247,6 +247,10 @@ export default {
                     <i class="remixicon-account-circle-line"></i>
                     <span>{{ $t('navbar.dropdown.name.list.account') }}</span>
                 </b-dropdown-item>
+                <b-dropdown-item href="#">
+                    <i class="remixicon-account-circle-line"></i>
+                    <span>{{ $t('navbar.dropdown.name.list.settings') }}</span>
+                </b-dropdown-item>
 
                 <b-dropdown-divider></b-dropdown-divider>
                 <a class="dropdown-item" @click="logoutUser" href="jvascript: void(0);">
@@ -266,21 +270,21 @@ export default {
         <div class="logo-box">
             <nuxt-link to="/" class="logo logo-dark text-center">
                 <span class="logo-sm">
-                    <img src="~/assets/images/logo-sm-dark.png" alt height="24" />
+                    <img src="~/assets/images/logo.png" alt height="24" />
                     <!-- <span class="logo-lg-text-light">Minton</span> -->
                 </span>
                 <span class="logo-lg">
-                    <img src="~/assets/images/logo-dark.png" alt height="20" />
+                    <img src="~/assets/images/logo.png" alt height="20" />
                     <!-- <span class="logo-lg-text-light">M</span> -->
                 </span>
             </nuxt-link>
 
             <nuxt-link to="/" class="logo logo-light text-center">
                 <span class="logo-sm">
-                    <img src="~/assets/images/logo-sm.png" alt height="24" />
+                    <img src="~/assets/images/logo.png" alt height="24" />
                 </span>
                 <span class="logo-lg">
-                    <img src="~/assets/images/logo-light.png" alt height="20" />
+                    <img src="~/assets/images/logo.png" alt height="20" />
                 </span>
             </nuxt-link>
         </div>
@@ -310,23 +314,11 @@ export default {
                 </template>
                 <b-dropdown-item href="#">
                     <i class="fe-briefcase mr-1"></i>
-                    <span>{{ $t('navbar.dropdown.createnew.list.projects') }}</span>
+                    <span>{{ $t('navbar.dropdown.createnew.list.budget') }}</span>
                 </b-dropdown-item>
                 <b-dropdown-item href="#">
                     <i class="fe-user mr-1"></i>
-                    <span>{{ $t('navbar.dropdown.createnew.list.users') }}</span>
-                </b-dropdown-item>
-                <b-dropdown-item href="#">
-                    <i class="fe-bar-chart-line- mr-1"></i>
-                    <span>{{ $t('navbar.dropdown.createnew.list.revenue') }}</span>
-                </b-dropdown-item>
-                <b-dropdown-item href="#">
-                    <i class="fe-settings mr-1"></i>
-                    <span>{{ $t('navbar.dropdown.createnew.list.settings') }}</span>
-                </b-dropdown-item>
-                <b-dropdown-item href="#">
-                    <i class="fe-headphones mr-1"></i>
-                    <span>{{ $t('navbar.dropdown.createnew.list.help') }}</span>
+                    <span>{{ $t('navbar.dropdown.createnew.list.plan') }}</span>
                 </b-dropdown-item>
             </b-nav-item-dropdown>
         </ul>
