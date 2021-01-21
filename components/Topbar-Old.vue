@@ -204,9 +204,20 @@ export default {
                 </div>
             </b-nav-item-dropdown>
 
+            <b-nav-item-dropdown variant="white" class="d-none d-lg-inline-block" right toggle-class="header-item">
+                <template v-slot:button-content>
+                    <img class :src="flag" alt="Header Language" height="16" />
+                    {{text}}
+                </template>
+                <b-dropdown-item class="notify-item" v-for="(entry, i) in languages" :key="`Lang${i}`" :value="entry" @click="setLanguage(entry.language, entry.title, entry.flag)" :link-class="{'active': entry.language === current_language}">
+                    <img :src="`${entry.flag}`" alt="user-image" class="mr-1" height="12" />
+                    <span class="align-middle">{{ entry.title }}</span>
+                </b-dropdown-item>
+            </b-nav-item-dropdown>
             <b-nav-item-dropdown right class="notification-list" menu-class="dropdown-lg">
                 <template slot="button-content" class="nav-link dropdown-toggle">
                     <i class="fe-bell noti-icon"></i>
+                    <span class="badge badge-danger rounded-circle noti-icon-badge">{{ $t('navbar.dropdown.notification.badge')}}</span>
                 </template>
 
                 <a href="#" class="dropdown-item noti-title">
@@ -220,7 +231,72 @@ export default {
                     </h5>
                 </a>
 
+                <simplebar style="max-height: 230px;">
+                    <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                        <div class="notify-icon bg-soft-primary text-primary">
+                            <i class="mdi mdi-comment-account-outline"></i>
+                        </div>
+                        <p class="notify-details">
+                            {{ $t('navbar.dropdown.notification.1.title')}}
+                            <small class="text-muted">{{ $t('navbar.dropdown.notification.1.text')}}</small>
+                        </p>
+                    </a>
 
+                    <!-- item-->
+                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                        <div class="notify-icon">
+                            <img src="~/assets/images/users/avatar-2.jpg" class="img-fluid rounded-circle" alt />
+                        </div>
+                        <p class="notify-details">{{ $t('navbar.dropdown.notification.2.title')}}</p>
+                        <p class="text-muted mb-0 user-msg">
+                            <small>{{ $t('navbar.dropdown.notification.2.text')}}</small>
+                        </p>
+                    </a>
+
+                    <!-- item-->
+                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                        <div class="notify-icon">
+                            <img src="~/assets/images/users/avatar-4.jpg" class="img-fluid rounded-circle" alt />
+                        </div>
+                        <p class="notify-details">{{ $t('navbar.dropdown.notification.3.title')}}</p>
+                        <p class="text-muted mb-0 user-msg">
+                            <small>{{ $t('navbar.dropdown.notification.3.text')}}</small>
+                        </p>
+                    </a>
+
+                    <!-- item-->
+                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                        <div class="notify-icon bg-soft-warning text-warning">
+                            <i class="mdi mdi-account-plus"></i>
+                        </div>
+                        <p class="notify-details">
+                            {{ $t('navbar.dropdown.notification.4.title')}}
+                            <small class="text-muted">{{ $t('navbar.dropdown.notification.4.text')}}</small>
+                        </p>
+                    </a>
+
+                    <!-- item-->
+                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                        <div class="notify-icon bg-info">
+                            <i class="mdi mdi-comment-account-outline"></i>
+                        </div>
+                        <p class="notify-details">
+                            {{ $t('navbar.dropdown.notification.5.title')}}
+                            <small class="text-muted">{{ $t('navbar.dropdown.notification.5.text')}}</small>
+                        </p>
+                    </a>
+
+                    <!-- item-->
+                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                        <div class="notify-icon bg-secondary">
+                            <i class="mdi mdi-heart"></i>
+                        </div>
+                        <p class="notify-details">
+                            {{ $t('navbar.dropdown.notification.6.title')}}
+                            <small class="text-muted">{{ $t('navbar.dropdown.notification.6.text')}}</small>
+                        </p>
+                    </a>
+                </simplebar>
 
                 <a href="javascript:void(0);" class="dropdown-item text-center text-primary notify-item notify-all">
                     {{ $t('navbar.dropdown.notification.button')}}
@@ -240,12 +316,30 @@ export default {
                 </template>
 
                 <b-dropdown-header>
-                    <h6 class="text-overflow m-0 py-2">{{ $t('navbar.dropdown.name.text') }}</h6>
+                    <h6 class="text-overflow m-0 py-2">{{ $t('navbar.dropdown.name.list.greet') }}</h6>
                 </b-dropdown-header>
 
                 <b-dropdown-item href="#">
                     <i class="remixicon-account-circle-line"></i>
                     <span>{{ $t('navbar.dropdown.name.list.account') }}</span>
+                </b-dropdown-item>
+
+                <b-dropdown-item href="#">
+                    <i class="remixicon-settings-3-line"></i>
+                    <span>{{ $t('navbar.dropdown.name.list.settings') }}</span>
+                </b-dropdown-item>
+
+                <b-dropdown-item href="#">
+                    <i class="remixicon-wallet-line"></i>
+                    <span>
+                        {{ $t('navbar.dropdown.name.list.mywallet') }}
+                        <span class="badge badge-success float-right">3</span>
+                    </span>
+                </b-dropdown-item>
+
+                <b-dropdown-item href="#">
+                    <i class="remixicon-lock-line"></i>
+                    <span>{{ $t('navbar.dropdown.name.list.lockscreen') }}</span>
                 </b-dropdown-item>
 
                 <b-dropdown-divider></b-dropdown-divider>
@@ -328,6 +422,107 @@ export default {
                     <i class="fe-headphones mr-1"></i>
                     <span>{{ $t('navbar.dropdown.createnew.list.help') }}</span>
                 </b-dropdown-item>
+            </b-nav-item-dropdown>
+
+            <b-nav-item-dropdown class="dropdown-mega d-none d-xl-block" variant="black" menu-class="dropdown-megamenu">
+                <template v-slot:button-content>
+                    {{ $t('navbar.dropdown.megamenu.text') }}
+                    <i class="mdi mdi-chevron-down"></i>
+                </template>
+
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5 class="text-dark mt-0">{{ $t('navbar.dropdown.megamenu.uicontent.title') }}</h5>
+                                <ul class="list-unstyled megamenu-list">
+                                    <li>
+                                        <a href="javascript:void(0);">{{ $t('navbar.dropdown.megamenu.uicontent.list.widgets') }}</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">{{ $t('navbar.dropdown.megamenu.uicontent.list.nestable') }}</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">{{ $t('navbar.dropdown.megamenu.uicontent.list.rangeslider') }}</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">{{ $t('navbar.dropdown.megamenu.uicontent.list.masonry') }}</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">{{ $t('navbar.dropdown.megamenu.uicontent.list.sweetalert') }}</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">{{ $t('navbar.dropdown.megamenu.uicontent.list.treeview') }}</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">{{ $t('navbar.dropdown.megamenu.uicontent.list.tour') }}</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-4">
+                                <h5 class="text-dark mt-0">{{ $t('navbar.dropdown.megamenu.application.title') }}</h5>
+                                <ul class="list-unstyled megamenu-list">
+                                    <li>
+                                        <a href="javascript:void(0);">{{ $t('navbar.dropdown.megamenu.application.list.ecommerce') }}</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">{{ $t('navbar.dropdown.megamenu.application.list.crm') }}</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">{{ $t('navbar.dropdown.megamenu.application.list.email') }}</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">{{ $t('navbar.dropdown.megamenu.application.list.calendar') }}</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">{{ $t('navbar.dropdown.megamenu.application.list.contacts') }}</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">{{ $t('navbar.dropdown.megamenu.application.list.tasks') }}</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">{{ $t('navbar.dropdown.megamenu.application.list.template') }}</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-4">
+                                <h5 class="text-dark mt-0">{{ $t('navbar.dropdown.megamenu.extrapages.title') }}</h5>
+                                <ul class="list-unstyled megamenu-list">
+                                    <li>
+                                        <a href="javascript:void(0);">{{ $t('navbar.dropdown.megamenu.extrapages.list.leftsidebaruser') }}</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">{{ $t('navbar.dropdown.megamenu.extrapages.list.collapsed') }}</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">{{ $t('navbar.dropdown.megamenu.extrapages.list.leftsidebar') }}</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">{{ $t('navbar.dropdown.megamenu.extrapages.list.header') }}</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">{{ $t('navbar.dropdown.megamenu.extrapages.list.search') }}</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">{{ $t('navbar.dropdown.megamenu.extrapages.list.gallery') }}</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">{{ $t('navbar.dropdown.megamenu.extrapages.list.maintenance') }}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="text-center mt-3">
+                            <h3 class="text-dark">{{ $t('navbar.dropdown.megamenu.discount') }}</h3>
+                            <h4>{{ $t('navbar.dropdown.megamenu.subtext') }}</h4>
+                            <button class="btn btn-primary btn-rounded mt-3">{{ $t('navbar.dropdown.megamenu.buttontext') }}</button>
+                        </div>
+                    </div>
+                </div>
             </b-nav-item-dropdown>
         </ul>
         <div class="clearfix"></div>

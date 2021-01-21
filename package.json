@@ -1,6 +1,6 @@
 {
-  "name": "minton",
-  "version": "1.0.0",
+  "name": "doughnet",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -24,7 +24,7 @@
     "chart.js": "^2.9.3",
     "chartist": "^0.11.4",
     "firebase": "^7.19.1",
-    "nuxt": "^2.14.0",
+    "nuxt": "^2.14.12",
     "nuxt-i18n": "^6.15.0",
     "simplebar-vue": "^2.0.0-beta.4",
     "sweetalert2": "^9.17.1",

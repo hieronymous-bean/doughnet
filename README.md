@@ -1,5 +1,5 @@
 
-<img src="./doughnet.png" alt="Doughnet Financial" width="100%" />
+<img src="./.github/doughnet.png" alt="Doughnet Financial" width="100%" />
 
 [![Development Status](https://img.shields.io/static/v1?label=Status&message=Active&nbsp;Development&color=blue&style=for-the-badge&?logo=open-source-initiative&logoColor=ffffff)](#) 
 

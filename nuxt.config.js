@@ -4,7 +4,7 @@ export default {
     extendRoutes(routes) {
       routes.push({
         path: "/",
-        component: "~/pages/dashboard/sales/index.vue"
+        component: "~/pages/dashboard/default/index.vue"
       });
     }
   },

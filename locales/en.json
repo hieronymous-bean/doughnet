@@ -5,7 +5,7 @@
     },
     "dropdown": {
       "createnew": {
-        "text": "Create New",
+        "text": "Create",
         "list": {
           "projects": "New Projects",
           "users": "Create Users",
@@ -117,7 +117,7 @@
       "text": "Dashboards",
       "badge": "3",
       "list": {
-        "sales": "Sales",
+        "default": "Default",
         "crm": "CRM",
         "analytics": "Analytics"
       }

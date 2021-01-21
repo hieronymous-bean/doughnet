@@ -1,10 +1,10 @@
 export const state = () => ({
   layoutType: "vertical",
   layoutWidth: "fluid",
-  leftSidebarType: "light",
+  leftSidebarType: "gradient",
   leftSidebarSize: "default",
   menuPosition: "fixed",
-  topbar: "dark",
+  topbar: "light",
   loader: false
 });
 
