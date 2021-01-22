@@ -1,5 +1,5 @@
 <script>
-import Error404 from "~/pages/extras/404.vue";
+import Error404 from "~/pages/errors/404.vue";
 
 /**
  * Error layout

@@ -70,7 +70,7 @@ export default {
         reset() {
             this.width = "fluid";
             this.menu = "fixed";
-            this.sidebarType = "light";
+            this.sidebarType = "purple";
             this.sidebarSize = "default";
             this.topbar = "dark";
             this.checked = false;

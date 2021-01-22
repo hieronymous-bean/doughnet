@@ -169,7 +169,7 @@ export async function setContext (app, context) {
       payload: context.payload,
       error: context.error,
       base: '/',
-      env: {"auth":"fakebackend","apikey":"","authdomain":"","databaseurl":"","projectid":"","storgebucket":"","message":"","appid":"","measurement":""}
+      env: {}
     }
     // Only set once
     if (!process.static && context.req) {

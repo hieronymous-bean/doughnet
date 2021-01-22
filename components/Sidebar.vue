@@ -53,11 +53,14 @@ export default {
                         case "brand":
                             document.body.setAttribute("data-sidebar-color", "brand");
                             break;
+                        case "blue":
+                            document.body.setAttribute("data-sidebar-color", "blue");
+                            break;
                         case "gradient":
                             document.body.setAttribute("data-sidebar-color", "gradient");
                             break;
                         default:
-                            document.body.setAttribute("data-sidebar-color", "light");
+                            document.body.setAttribute("data-sidebar-color", "blue");
                             break;
                     }
                 }

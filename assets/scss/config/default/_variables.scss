@@ -8,7 +8,8 @@
 $bg-leftbar:                                      #ffffff;
 $bg-leftbar-dark:                                 #38414a;
 $bg-leftbar-brand:                                #3bafda;
-$bg-leftbar-gradient:                             #242540;
+$bg-leftbar-gradient:                             #2D1238;
+$bg-leftbar-blue:                                 #333C81;
 
 // Leftbar width
 $leftbar-width:                                     240px;
@@ -35,10 +36,10 @@ $menu-item-hover-color-dark:                      #c8cddc;
 $menu-item-active-color-dark:                     #ffffff;
 
 //Menu item
-$menu-item:                                       #6e768e;
-$menu-item-hover:                                 #3bafda;
-$menu-item-active:                                #3bafda;
-$menu-sub-item-active:                            #3bafda;
+$menu-item:                                       #FFF3ED;
+$menu-item-hover:                                 #FFDE91;
+$menu-item-active:                                #FFDE91;
+$menu-sub-item-active:                            #FFDE91;
 $menu-item-size:                                    0.95rem;
 $menu-sub-item-size:                                0.9rem;
 
@@ -161,6 +162,7 @@ $grays: map-merge(
 );
 
 $blue:       #3bafda;
+$lightblue:  #5063EE;
 $indigo:     #675aa9;
 $purple:     #6559cc;
 $pink:       #f672a7;
@@ -170,6 +172,8 @@ $yellow:     #f7b84b;
 $green:      #1abc9c;
 $teal:       #02a8b5;
 $cyan:       #37cde6;
+$violet:     #FFF3ED;
+$lightYellow:#FFDE91;
 
 $colors: ();
 // stylelint-disable-next-line scss/dollar-variable-default

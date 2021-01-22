@@ -1,0 +1,19 @@
+{
+	"transactions": {
+		"id": 1,
+		"category": "Category 1",
+		"date": "1/1/2021",
+		"description": "Transaction Description",
+		"name": "Demo Transaction 1",
+		"tags": [
+			"tag 1","tag 2"
+		],
+		"type": "Transaction"
+	},
+	"accounts": {
+
+	},
+	"users": {
+
+	}
+}

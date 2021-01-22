@@ -8,7 +8,8 @@ const firebaseConfig = {
     storageBucket: process.env.storgebucket,
     messagingSenderId: process.env.message,
     appId: process.env.appid,
-    measurementId: process.env.measurementId
+    measurementId: process.env.measurementId,
+    authEmulatorHost: process.env.authEmulatorHost,
 };
 if (process.env.auth === "firebase") {
     initFirebaseBackend(firebaseConfig);

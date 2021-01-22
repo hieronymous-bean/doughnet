@@ -112,7 +112,7 @@ export default {
                             </span>
                         </nuxt-link>
                     </div>
-                    <p class="text-muted mb-4 mt-3">Enter your email address and password to access admin panel.</p>
+                    <p class="text-muted mb-4 mt-3">Enter your email address and password to access your Doughnet dashboard.</p>
                 </div>
 
                 <form action="#" @submit.prevent="tryToLogIn">
