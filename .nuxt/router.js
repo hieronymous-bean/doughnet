@@ -6,6 +6,8 @@ import scrollBehavior from './router.scrollBehavior.js'
 
 const _6a1085f0 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 const _2563ddd0 = () => interopDefault(import('~/pages/index.vue' /* webpackChunkName: "" */))
+const _94f74b42 = () => interopDefault(import('..\\pages\\auth\\login.vue' /* webpackChunkName: "pages/auth/login" */))
+const _1361ae1d = () => interopDefault(import('..\\pages\\auth\\register.vue' /* webpackChunkName: "pages/auth/register" */))
 const _b3c3f76a = () => interopDefault(import('..\\pages\\errors\\404.vue' /* webpackChunkName: "pages/errors/404" */))
 const _9a2bdc60 = () => interopDefault(import('..\\pages\\z-archive\\widgets\\index.vue' /* webpackChunkName: "pages/z-archive/widgets/index" */))
 const _5d3de145 = () => interopDefault(import('..\\pages\\z-archive\\account\\forgot-password.vue' /* webpackChunkName: "pages/z-archive/account/forgot-password" */))
@@ -178,6 +180,14 @@ export const routerOptions = {
     path: "/fr",
     component: _2563ddd0
   }, {
+    path: "/auth/login",
+    component: _94f74b42,
+    name: "auth-login___en"
+  }, {
+    path: "/auth/register",
+    component: _1361ae1d,
+    name: "auth-register___en"
+  }, {
     path: "/errors/404",
     component: _b3c3f76a,
     name: "errors-404___en"
@@ -185,6 +195,14 @@ export const routerOptions = {
     path: "/z-archive/widgets",
     component: _9a2bdc60,
     name: "z-archive-widgets___en"
+  }, {
+    path: "/ar/auth/login",
+    component: _94f74b42,
+    name: "auth-login___ar"
+  }, {
+    path: "/ar/auth/register",
+    component: _1361ae1d,
+    name: "auth-register___ar"
   }, {
     path: "/ar/errors/404",
     component: _b3c3f76a,
@@ -194,6 +212,14 @@ export const routerOptions = {
     component: _9a2bdc60,
     name: "z-archive-widgets___ar"
   }, {
+    path: "/es/auth/login",
+    component: _94f74b42,
+    name: "auth-login___es"
+  }, {
+    path: "/es/auth/register",
+    component: _1361ae1d,
+    name: "auth-register___es"
+  }, {
     path: "/es/errors/404",
     component: _b3c3f76a,
     name: "errors-404___es"
@@ -201,6 +227,14 @@ export const routerOptions = {
     path: "/es/z-archive/widgets",
     component: _9a2bdc60,
     name: "z-archive-widgets___es"
+  }, {
+    path: "/fr/auth/login",
+    component: _94f74b42,
+    name: "auth-login___fr"
+  }, {
+    path: "/fr/auth/register",
+    component: _1361ae1d,
+    name: "auth-register___fr"
   }, {
     path: "/fr/errors/404",
     component: _b3c3f76a,

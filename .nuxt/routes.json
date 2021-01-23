@@ -36,6 +36,20 @@
     "_name": "_2563ddd0"
   },
   {
+    "name": "auth-login___en",
+    "path": "/auth/login",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\auth\\\\login.vue",
+    "chunkName": "pages/auth/login",
+    "_name": "_94f74b42"
+  },
+  {
+    "name": "auth-register___en",
+    "path": "/auth/register",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\auth\\\\register.vue",
+    "chunkName": "pages/auth/register",
+    "_name": "_1361ae1d"
+  },
+  {
     "name": "errors-404___en",
     "path": "/errors/404",
     "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\errors\\\\404.vue",
@@ -48,6 +62,20 @@
     "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\z-archive\\\\widgets\\\\index.vue",
     "chunkName": "pages/z-archive/widgets/index",
     "_name": "_9a2bdc60"
+  },
+  {
+    "name": "auth-login___ar",
+    "path": "/ar/auth/login",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\auth\\\\login.vue",
+    "chunkName": "pages/auth/login",
+    "_name": "_94f74b42"
+  },
+  {
+    "name": "auth-register___ar",
+    "path": "/ar/auth/register",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\auth\\\\register.vue",
+    "chunkName": "pages/auth/register",
+    "_name": "_1361ae1d"
   },
   {
     "name": "errors-404___ar",
@@ -64,6 +92,20 @@
     "_name": "_9a2bdc60"
   },
   {
+    "name": "auth-login___es",
+    "path": "/es/auth/login",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\auth\\\\login.vue",
+    "chunkName": "pages/auth/login",
+    "_name": "_94f74b42"
+  },
+  {
+    "name": "auth-register___es",
+    "path": "/es/auth/register",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\auth\\\\register.vue",
+    "chunkName": "pages/auth/register",
+    "_name": "_1361ae1d"
+  },
+  {
     "name": "errors-404___es",
     "path": "/es/errors/404",
     "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\errors\\\\404.vue",
@@ -76,6 +118,20 @@
     "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\z-archive\\\\widgets\\\\index.vue",
     "chunkName": "pages/z-archive/widgets/index",
     "_name": "_9a2bdc60"
+  },
+  {
+    "name": "auth-login___fr",
+    "path": "/fr/auth/login",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\auth\\\\login.vue",
+    "chunkName": "pages/auth/login",
+    "_name": "_94f74b42"
+  },
+  {
+    "name": "auth-register___fr",
+    "path": "/fr/auth/register",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\auth\\\\register.vue",
+    "chunkName": "pages/auth/register",
+    "_name": "_1361ae1d"
   },
   {
     "name": "errors-404___fr",

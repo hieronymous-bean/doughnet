@@ -1,7 +1,8 @@
 export const state = () => ({
   layoutType: "vertical",
   layoutWidth: "fluid",
-  leftSidebarType: "blue",
+  leftSidebarType: "grey",
+  leftSidebarColor: "grey",
   leftSidebarSize: "default",
   menuPosition: "fixed",
   topbar: "light",

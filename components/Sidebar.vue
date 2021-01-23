@@ -60,7 +60,7 @@ export default {
                             document.body.setAttribute("data-sidebar-color", "gradient");
                             break;
                         default:
-                            document.body.setAttribute("data-sidebar-color", "blue");
+                            document.body.setAttribute("data-sidebar-color", "grey");
                             break;
                     }
                 }

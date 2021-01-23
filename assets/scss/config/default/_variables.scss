@@ -10,6 +10,7 @@ $bg-leftbar-dark:                                 #38414a;
 $bg-leftbar-brand:                                #3bafda;
 $bg-leftbar-gradient:                             #2D1238;
 $bg-leftbar-blue:                                 #333C81;
+$bg-leftbar-grey:                                 #212323;
 
 // Leftbar width
 $leftbar-width:                                     240px;
@@ -36,12 +37,12 @@ $menu-item-hover-color-dark:                      #c8cddc;
 $menu-item-active-color-dark:                     #ffffff;
 
 //Menu item
-$menu-item:                                       #FFF3ED;
-$menu-item-hover:                                 #FFDE91;
-$menu-item-active:                                #FFDE91;
-$menu-sub-item-active:                            #FFDE91;
-$menu-item-size:                                    0.95rem;
-$menu-sub-item-size:                                0.9rem;
+$menu-item:                                       #ffffff;
+$menu-item-hover:                                 #ffffff;
+$menu-item-active:                                #ffffff;
+$menu-sub-item-active:                            #ffffff;
+$menu-item-size:                                    0.97rem;
+$menu-sub-item-size:                                0.92rem;
 
 // Horizontal Menu Item
 $hori-menu-item-color:                              #6e7488;
@@ -122,7 +123,7 @@ $components-shadow:                                 none;
 $components-shadow-lg:                              none;
 
 // label 
-$label-font-weight:                                 600;
+$label-font-weight:                                 800;
 
 // Table Head
 $table-head-font-weight:                            $font-weight-semibold;
@@ -174,6 +175,7 @@ $teal:       #02a8b5;
 $cyan:       #37cde6;
 $violet:     #FFF3ED;
 $lightYellow:#FFDE91;
+$mint:       #C9FFC6;
 
 $colors: ();
 // stylelint-disable-next-line scss/dollar-variable-default

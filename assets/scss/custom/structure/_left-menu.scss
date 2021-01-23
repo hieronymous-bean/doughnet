@@ -159,7 +159,7 @@
         cursor: default;
         font-size: 0.6875rem;
         text-transform: uppercase;
-        color: $menu-item;
+        color: $mint;
         font-weight: $label-font-weight;
     }
 
@@ -906,6 +906,47 @@ body[data-sidebar-color="blue"] {
                         >li {
                             &:hover>a {
                                 background: $bg-leftbar-blue;
+                            }
+                        }
+                    }
+
+                    .mm-active {
+                        .active {
+                            color: $menu-item-active;
+                        }
+                    }
+                }
+
+                .nav-second-level,
+                .nav-thrid-level {
+                    li {
+                        a {
+                            color: $menu-item;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// sidebar grey
+body[data-sidebar-color="grey"] {
+
+    .logo-box,
+    .left-side-menu {
+        background: $bg-leftbar-grey !important;
+        color: $white;
+    }
+
+    &[data-sidebar-size="condensed"] {
+        #wrapper {
+            .left-side-menu {
+                #sidebar-menu {
+                    >ul {
+                        >li {
+                            &:hover>a {
+                                background: $bg-leftbar-grey;
                             }
                         }
                     }

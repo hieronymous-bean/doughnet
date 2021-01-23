@@ -161,45 +161,11 @@ export default {
                 </template>
                 <div class="px-lg-2">
                     <div class="row no-gutters">
-                        <div class="col">
-                            <a class="dropdown-icon-item" href="#">
-                                <img src="~/assets/images/brands/github.png" alt="Github" />
-                                <span>{{ $t('navbar.dropdown.site.list.github') }}</span>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="dropdown-icon-item" href="#">
-                                <img src="~/assets/images/brands/dribbble.png" alt="dribbble" />
-                                <span>{{ $t('navbar.dropdown.site.list.dribbble') }}</span>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="dropdown-icon-item" href="#">
-                                <img src="~/assets/images/brands/slack.png" alt="slack" />
-                                <span>{{ $t('navbar.dropdown.site.list.slack') }}</span>
-                            </a>
-                        </div>
+                        
                     </div>
 
                     <div class="row no-gutters">
-                        <div class="col">
-                            <a class="dropdown-icon-item" href="#">
-                                <img src="~/assets/images/brands/g-suite.png" alt="G Suite" />
-                                <span>{{ $t('navbar.dropdown.site.list.g-suite') }}</span>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="dropdown-icon-item" href="#">
-                                <img src="~/assets/images/brands/bitbucket.png" alt="bitbucket" />
-                                <span>{{ $t('navbar.dropdown.site.list.bitbucket') }}</span>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="dropdown-icon-item" href="#">
-                                <img src="~/assets/images/brands/dropbox.png" alt="dropbox" />
-                                <span>{{ $t('navbar.dropdown.site.list.dropbox') }}</span>
-                            </a>
-                        </div>
+                        
                     </div>
                 </div>
             </b-nav-item-dropdown>

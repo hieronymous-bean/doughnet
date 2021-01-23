@@ -9,7 +9,7 @@ export default {}
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6">
-                {{ new Date().getFullYear()}} &copy; <a href="">Bluejay Digital</a>
+                {{ new Date().getFullYear()}} &copy; <a href="">Doughnet</a>
             </div>
             <div class="col-md-6">
                 <div class="text-md-right footer-links d-none d-sm-block">
