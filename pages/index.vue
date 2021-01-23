@@ -10,14 +10,9 @@ export default {
     data() {
         return {
             title: "Default Dashboard",
-            items: [{
-                    text: "Doughnet"
-                },
+            items: [
                 {
-                    text: "Dashboards"
-                },
-                {
-                    text: "Default",
+                    text: "Dashboard",
                     active: true
                 }
             ],

@@ -9,44 +9,26 @@ export const menuItems = [
         id: 2,
         label: "menuitems.overview.list.dashboard.text",
         icon: "ri-dashboard-line",
-        isMenuCollapsed: false,
-        subItems: [
-            {
-                id: 2.1,
-                label: 'menuitems.overview.list.dashboard.default',
-                link: '/'
-            }
-        ]
+        link: '/'
     },
     {
         id: 3,
         label: "menuitems.overview.list.accounts.text",
         icon: "ri-hand-coin-line",
-        isMenuCollapsed: false,
-        subItems: [
-            {
-                id: 3.1,
-                label: 'menuitems.overview.list.accounts.checkingsavings',
-                link: '/'
-            },
-            {
-                id: 3.2,
-                label: 'menuitems.overview.list.accounts.retirement',
-                link: '/'
-            }
-        ]
+        link: '/accounts'
+
     },
     {
         id: 4,
         label: "menuitems.overview.list.networth",
         icon: "ri-wallet-line",
-        link: ''
+        link: '/accounts/net-worth'
     },
     {
         id: 5,
         label: "menuitems.overview.list.transactions",
         icon: "ri-typhoon-line",
-        link: ''
+        link: '/accounts/transactions'
     },
 
     {
@@ -59,19 +41,19 @@ export const menuItems = [
         id: 7,
         label: "menuitems.banking.list.cashflow",
         icon: "ri-funds-line",
-        link: ''
+        link: '/banking/cash-flow'
     },
     {
         id: 8,
         label: "menuitems.banking.list.budgeting",
         icon: "ri-price-tag-2-line",
-        link: ''
+        link: '/banking/budgeting'
     },
     {
         id: 9,
         label: "menuitems.banking.list.bills",
         icon: "ri-exchange-funds-line",
-        link: ''
+        link: '/banking/bills'
     },
 
     {

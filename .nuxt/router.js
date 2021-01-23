@@ -4,10 +4,17 @@ import { normalizeURL, decode } from '@nuxt/ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
+const _0f35996c = () => interopDefault(import('..\\pages\\accounts\\index.vue' /* webpackChunkName: "pages/accounts/index" */))
 const _6a1085f0 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 const _2563ddd0 = () => interopDefault(import('~/pages/index.vue' /* webpackChunkName: "" */))
+const _a5a90a26 = () => interopDefault(import('..\\pages\\accounts\\data.js' /* webpackChunkName: "pages/accounts/data" */))
+const _490c64d6 = () => interopDefault(import('..\\pages\\accounts\\net-worth.vue' /* webpackChunkName: "pages/accounts/net-worth" */))
+const _d8e286e6 = () => interopDefault(import('..\\pages\\accounts\\transactions.vue' /* webpackChunkName: "pages/accounts/transactions" */))
 const _94f74b42 = () => interopDefault(import('..\\pages\\auth\\login.vue' /* webpackChunkName: "pages/auth/login" */))
 const _1361ae1d = () => interopDefault(import('..\\pages\\auth\\register.vue' /* webpackChunkName: "pages/auth/register" */))
+const _76c3d490 = () => interopDefault(import('..\\pages\\banking\\bills.vue' /* webpackChunkName: "pages/banking/bills" */))
+const _1060d72e = () => interopDefault(import('..\\pages\\banking\\budgeting.vue' /* webpackChunkName: "pages/banking/budgeting" */))
+const _7e21dff4 = () => interopDefault(import('..\\pages\\banking\\cash-flow.vue' /* webpackChunkName: "pages/banking/cash-flow" */))
 const _b3c3f76a = () => interopDefault(import('..\\pages\\errors\\404.vue' /* webpackChunkName: "pages/errors/404" */))
 const _9a2bdc60 = () => interopDefault(import('..\\pages\\z-archive\\widgets\\index.vue' /* webpackChunkName: "pages/z-archive/widgets/index" */))
 const _5d3de145 = () => interopDefault(import('..\\pages\\z-archive\\account\\forgot-password.vue' /* webpackChunkName: "pages/z-archive/account/forgot-password" */))
@@ -159,6 +166,10 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
+    path: "/accounts",
+    component: _0f35996c,
+    name: "accounts___en"
+  }, {
     path: "/ar",
     component: _6a1085f0,
     name: "index___ar"
@@ -180,6 +191,22 @@ export const routerOptions = {
     path: "/fr",
     component: _2563ddd0
   }, {
+    path: "/accounts/data",
+    component: _a5a90a26,
+    name: "accounts-data___en"
+  }, {
+    path: "/accounts/net-worth",
+    component: _490c64d6,
+    name: "accounts-net-worth___en"
+  }, {
+    path: "/accounts/transactions",
+    component: _d8e286e6,
+    name: "accounts-transactions___en"
+  }, {
+    path: "/ar/accounts",
+    component: _0f35996c,
+    name: "accounts___ar"
+  }, {
     path: "/auth/login",
     component: _94f74b42,
     name: "auth-login___en"
@@ -188,13 +215,45 @@ export const routerOptions = {
     component: _1361ae1d,
     name: "auth-register___en"
   }, {
+    path: "/banking/bills",
+    component: _76c3d490,
+    name: "banking-bills___en"
+  }, {
+    path: "/banking/budgeting",
+    component: _1060d72e,
+    name: "banking-budgeting___en"
+  }, {
+    path: "/banking/cash-flow",
+    component: _7e21dff4,
+    name: "banking-cash-flow___en"
+  }, {
     path: "/errors/404",
     component: _b3c3f76a,
     name: "errors-404___en"
   }, {
+    path: "/es/accounts",
+    component: _0f35996c,
+    name: "accounts___es"
+  }, {
+    path: "/fr/accounts",
+    component: _0f35996c,
+    name: "accounts___fr"
+  }, {
     path: "/z-archive/widgets",
     component: _9a2bdc60,
     name: "z-archive-widgets___en"
+  }, {
+    path: "/ar/accounts/data",
+    component: _a5a90a26,
+    name: "accounts-data___ar"
+  }, {
+    path: "/ar/accounts/net-worth",
+    component: _490c64d6,
+    name: "accounts-net-worth___ar"
+  }, {
+    path: "/ar/accounts/transactions",
+    component: _d8e286e6,
+    name: "accounts-transactions___ar"
   }, {
     path: "/ar/auth/login",
     component: _94f74b42,
@@ -204,6 +263,18 @@ export const routerOptions = {
     component: _1361ae1d,
     name: "auth-register___ar"
   }, {
+    path: "/ar/banking/bills",
+    component: _76c3d490,
+    name: "banking-bills___ar"
+  }, {
+    path: "/ar/banking/budgeting",
+    component: _1060d72e,
+    name: "banking-budgeting___ar"
+  }, {
+    path: "/ar/banking/cash-flow",
+    component: _7e21dff4,
+    name: "banking-cash-flow___ar"
+  }, {
     path: "/ar/errors/404",
     component: _b3c3f76a,
     name: "errors-404___ar"
@@ -211,6 +282,18 @@ export const routerOptions = {
     path: "/ar/z-archive/widgets",
     component: _9a2bdc60,
     name: "z-archive-widgets___ar"
+  }, {
+    path: "/es/accounts/data",
+    component: _a5a90a26,
+    name: "accounts-data___es"
+  }, {
+    path: "/es/accounts/net-worth",
+    component: _490c64d6,
+    name: "accounts-net-worth___es"
+  }, {
+    path: "/es/accounts/transactions",
+    component: _d8e286e6,
+    name: "accounts-transactions___es"
   }, {
     path: "/es/auth/login",
     component: _94f74b42,
@@ -220,6 +303,18 @@ export const routerOptions = {
     component: _1361ae1d,
     name: "auth-register___es"
   }, {
+    path: "/es/banking/bills",
+    component: _76c3d490,
+    name: "banking-bills___es"
+  }, {
+    path: "/es/banking/budgeting",
+    component: _1060d72e,
+    name: "banking-budgeting___es"
+  }, {
+    path: "/es/banking/cash-flow",
+    component: _7e21dff4,
+    name: "banking-cash-flow___es"
+  }, {
     path: "/es/errors/404",
     component: _b3c3f76a,
     name: "errors-404___es"
@@ -228,6 +323,18 @@ export const routerOptions = {
     component: _9a2bdc60,
     name: "z-archive-widgets___es"
   }, {
+    path: "/fr/accounts/data",
+    component: _a5a90a26,
+    name: "accounts-data___fr"
+  }, {
+    path: "/fr/accounts/net-worth",
+    component: _490c64d6,
+    name: "accounts-net-worth___fr"
+  }, {
+    path: "/fr/accounts/transactions",
+    component: _d8e286e6,
+    name: "accounts-transactions___fr"
+  }, {
     path: "/fr/auth/login",
     component: _94f74b42,
     name: "auth-login___fr"
@@ -235,6 +342,18 @@ export const routerOptions = {
     path: "/fr/auth/register",
     component: _1361ae1d,
     name: "auth-register___fr"
+  }, {
+    path: "/fr/banking/bills",
+    component: _76c3d490,
+    name: "banking-bills___fr"
+  }, {
+    path: "/fr/banking/budgeting",
+    component: _1060d72e,
+    name: "banking-budgeting___fr"
+  }, {
+    path: "/fr/banking/cash-flow",
+    component: _7e21dff4,
+    name: "banking-cash-flow___fr"
   }, {
     path: "/fr/errors/404",
     component: _b3c3f76a,

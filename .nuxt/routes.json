@@ -1,5 +1,12 @@
 [
   {
+    "name": "accounts___en",
+    "path": "/accounts",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\accounts\\\\index.vue",
+    "chunkName": "pages/accounts/index",
+    "_name": "_0f35996c"
+  },
+  {
     "name": "index___ar",
     "path": "/ar",
     "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\index.vue",
@@ -36,6 +43,34 @@
     "_name": "_2563ddd0"
   },
   {
+    "name": "accounts-data___en",
+    "path": "/accounts/data",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\accounts\\\\data.js",
+    "chunkName": "pages/accounts/data",
+    "_name": "_a5a90a26"
+  },
+  {
+    "name": "accounts-net-worth___en",
+    "path": "/accounts/net-worth",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\accounts\\\\net-worth.vue",
+    "chunkName": "pages/accounts/net-worth",
+    "_name": "_490c64d6"
+  },
+  {
+    "name": "accounts-transactions___en",
+    "path": "/accounts/transactions",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\accounts\\\\transactions.vue",
+    "chunkName": "pages/accounts/transactions",
+    "_name": "_d8e286e6"
+  },
+  {
+    "name": "accounts___ar",
+    "path": "/ar/accounts",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\accounts\\\\index.vue",
+    "chunkName": "pages/accounts/index",
+    "_name": "_0f35996c"
+  },
+  {
     "name": "auth-login___en",
     "path": "/auth/login",
     "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\auth\\\\login.vue",
@@ -50,6 +85,27 @@
     "_name": "_1361ae1d"
   },
   {
+    "name": "banking-bills___en",
+    "path": "/banking/bills",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\banking\\\\bills.vue",
+    "chunkName": "pages/banking/bills",
+    "_name": "_76c3d490"
+  },
+  {
+    "name": "banking-budgeting___en",
+    "path": "/banking/budgeting",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\banking\\\\budgeting.vue",
+    "chunkName": "pages/banking/budgeting",
+    "_name": "_1060d72e"
+  },
+  {
+    "name": "banking-cash-flow___en",
+    "path": "/banking/cash-flow",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\banking\\\\cash-flow.vue",
+    "chunkName": "pages/banking/cash-flow",
+    "_name": "_7e21dff4"
+  },
+  {
     "name": "errors-404___en",
     "path": "/errors/404",
     "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\errors\\\\404.vue",
@@ -57,11 +113,46 @@
     "_name": "_b3c3f76a"
   },
   {
+    "name": "accounts___es",
+    "path": "/es/accounts",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\accounts\\\\index.vue",
+    "chunkName": "pages/accounts/index",
+    "_name": "_0f35996c"
+  },
+  {
+    "name": "accounts___fr",
+    "path": "/fr/accounts",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\accounts\\\\index.vue",
+    "chunkName": "pages/accounts/index",
+    "_name": "_0f35996c"
+  },
+  {
     "name": "z-archive-widgets___en",
     "path": "/z-archive/widgets",
     "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\z-archive\\\\widgets\\\\index.vue",
     "chunkName": "pages/z-archive/widgets/index",
     "_name": "_9a2bdc60"
+  },
+  {
+    "name": "accounts-data___ar",
+    "path": "/ar/accounts/data",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\accounts\\\\data.js",
+    "chunkName": "pages/accounts/data",
+    "_name": "_a5a90a26"
+  },
+  {
+    "name": "accounts-net-worth___ar",
+    "path": "/ar/accounts/net-worth",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\accounts\\\\net-worth.vue",
+    "chunkName": "pages/accounts/net-worth",
+    "_name": "_490c64d6"
+  },
+  {
+    "name": "accounts-transactions___ar",
+    "path": "/ar/accounts/transactions",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\accounts\\\\transactions.vue",
+    "chunkName": "pages/accounts/transactions",
+    "_name": "_d8e286e6"
   },
   {
     "name": "auth-login___ar",
@@ -78,6 +169,27 @@
     "_name": "_1361ae1d"
   },
   {
+    "name": "banking-bills___ar",
+    "path": "/ar/banking/bills",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\banking\\\\bills.vue",
+    "chunkName": "pages/banking/bills",
+    "_name": "_76c3d490"
+  },
+  {
+    "name": "banking-budgeting___ar",
+    "path": "/ar/banking/budgeting",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\banking\\\\budgeting.vue",
+    "chunkName": "pages/banking/budgeting",
+    "_name": "_1060d72e"
+  },
+  {
+    "name": "banking-cash-flow___ar",
+    "path": "/ar/banking/cash-flow",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\banking\\\\cash-flow.vue",
+    "chunkName": "pages/banking/cash-flow",
+    "_name": "_7e21dff4"
+  },
+  {
     "name": "errors-404___ar",
     "path": "/ar/errors/404",
     "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\errors\\\\404.vue",
@@ -90,6 +202,27 @@
     "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\z-archive\\\\widgets\\\\index.vue",
     "chunkName": "pages/z-archive/widgets/index",
     "_name": "_9a2bdc60"
+  },
+  {
+    "name": "accounts-data___es",
+    "path": "/es/accounts/data",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\accounts\\\\data.js",
+    "chunkName": "pages/accounts/data",
+    "_name": "_a5a90a26"
+  },
+  {
+    "name": "accounts-net-worth___es",
+    "path": "/es/accounts/net-worth",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\accounts\\\\net-worth.vue",
+    "chunkName": "pages/accounts/net-worth",
+    "_name": "_490c64d6"
+  },
+  {
+    "name": "accounts-transactions___es",
+    "path": "/es/accounts/transactions",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\accounts\\\\transactions.vue",
+    "chunkName": "pages/accounts/transactions",
+    "_name": "_d8e286e6"
   },
   {
     "name": "auth-login___es",
@@ -106,6 +239,27 @@
     "_name": "_1361ae1d"
   },
   {
+    "name": "banking-bills___es",
+    "path": "/es/banking/bills",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\banking\\\\bills.vue",
+    "chunkName": "pages/banking/bills",
+    "_name": "_76c3d490"
+  },
+  {
+    "name": "banking-budgeting___es",
+    "path": "/es/banking/budgeting",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\banking\\\\budgeting.vue",
+    "chunkName": "pages/banking/budgeting",
+    "_name": "_1060d72e"
+  },
+  {
+    "name": "banking-cash-flow___es",
+    "path": "/es/banking/cash-flow",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\banking\\\\cash-flow.vue",
+    "chunkName": "pages/banking/cash-flow",
+    "_name": "_7e21dff4"
+  },
+  {
     "name": "errors-404___es",
     "path": "/es/errors/404",
     "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\errors\\\\404.vue",
@@ -120,6 +274,27 @@
     "_name": "_9a2bdc60"
   },
   {
+    "name": "accounts-data___fr",
+    "path": "/fr/accounts/data",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\accounts\\\\data.js",
+    "chunkName": "pages/accounts/data",
+    "_name": "_a5a90a26"
+  },
+  {
+    "name": "accounts-net-worth___fr",
+    "path": "/fr/accounts/net-worth",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\accounts\\\\net-worth.vue",
+    "chunkName": "pages/accounts/net-worth",
+    "_name": "_490c64d6"
+  },
+  {
+    "name": "accounts-transactions___fr",
+    "path": "/fr/accounts/transactions",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\accounts\\\\transactions.vue",
+    "chunkName": "pages/accounts/transactions",
+    "_name": "_d8e286e6"
+  },
+  {
     "name": "auth-login___fr",
     "path": "/fr/auth/login",
     "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\auth\\\\login.vue",
@@ -132,6 +307,27 @@
     "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\auth\\\\register.vue",
     "chunkName": "pages/auth/register",
     "_name": "_1361ae1d"
+  },
+  {
+    "name": "banking-bills___fr",
+    "path": "/fr/banking/bills",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\banking\\\\bills.vue",
+    "chunkName": "pages/banking/bills",
+    "_name": "_76c3d490"
+  },
+  {
+    "name": "banking-budgeting___fr",
+    "path": "/fr/banking/budgeting",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\banking\\\\budgeting.vue",
+    "chunkName": "pages/banking/budgeting",
+    "_name": "_1060d72e"
+  },
+  {
+    "name": "banking-cash-flow___fr",
+    "path": "/fr/banking/cash-flow",
+    "component": "C:\\\\Users\\\\jeffrey.brown\\\\Documents\\\\Misc. Projects\\\\doughnet\\\\pages\\\\banking\\\\cash-flow.vue",
+    "chunkName": "pages/banking/cash-flow",
+    "_name": "_7e21dff4"
   },
   {
     "name": "errors-404___fr",

@@ -77,6 +77,18 @@
   "LazyZTopbarOld": {
     "description": "Auto imported from C:/Users/jeffrey.brown/Documents/Misc. Projects/doughnet/components/zTopbar-Old.vue"
   },
+  "Accounts": {
+    "description": "Auto imported from C:/Users/jeffrey.brown/Documents/Misc. Projects/doughnet/components/custom/Accounts.vue"
+  },
+  "LazyAccounts": {
+    "description": "Auto imported from C:/Users/jeffrey.brown/Documents/Misc. Projects/doughnet/components/custom/Accounts.vue"
+  },
+  "Transactions": {
+    "description": "Auto imported from C:/Users/jeffrey.brown/Documents/Misc. Projects/doughnet/components/custom/Transactions.vue"
+  },
+  "LazyTransactions": {
+    "description": "Auto imported from C:/Users/jeffrey.brown/Documents/Misc. Projects/doughnet/components/custom/Transactions.vue"
+  },
   "Campaigns": {
     "description": "Auto imported from C:/Users/jeffrey.brown/Documents/Misc. Projects/doughnet/components/widgets/Campaigns.vue"
   },

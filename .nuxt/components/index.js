@@ -11,6 +11,8 @@ export { default as Sidebar } from '../..\\components\\Sidebar.vue'
 export { default as Topbar } from '../..\\components\\Topbar.vue'
 export { default as TwoColumnSidebar } from '../..\\components\\Two-column-sidebar.vue'
 export { default as ZTopbarOld } from '../..\\components\\zTopbar-Old.vue'
+export { default as Accounts } from '../..\\components\\custom\\Accounts.vue'
+export { default as Transactions } from '../..\\components\\custom\\Transactions.vue'
 export { default as Campaigns } from '../..\\components\\widgets\\Campaigns.vue'
 export { default as Chat } from '../..\\components\\widgets\\Chat.vue'
 export { default as CrmWidget } from '../..\\components\\widgets\\Crm-widget.vue'
@@ -39,6 +41,8 @@ export const LazySidebar = import('../..\\components\\Sidebar.vue' /* webpackChu
 export const LazyTopbar = import('../..\\components\\Topbar.vue' /* webpackChunkName: "components/topbar" */).then(c => c.default || c)
 export const LazyTwoColumnSidebar = import('../..\\components\\Two-column-sidebar.vue' /* webpackChunkName: "components/two-column-sidebar" */).then(c => c.default || c)
 export const LazyZTopbarOld = import('../..\\components\\zTopbar-Old.vue' /* webpackChunkName: "components/z-topbar-old" */).then(c => c.default || c)
+export const LazyAccounts = import('../..\\components\\custom\\Accounts.vue' /* webpackChunkName: "components/accounts" */).then(c => c.default || c)
+export const LazyTransactions = import('../..\\components\\custom\\Transactions.vue' /* webpackChunkName: "components/transactions" */).then(c => c.default || c)
 export const LazyCampaigns = import('../..\\components\\widgets\\Campaigns.vue' /* webpackChunkName: "components/campaigns" */).then(c => c.default || c)
 export const LazyChat = import('../..\\components\\widgets\\Chat.vue' /* webpackChunkName: "components/chat" */).then(c => c.default || c)
 export const LazyCrmWidget = import('../..\\components\\widgets\\Crm-widget.vue' /* webpackChunkName: "components/crm-widget" */).then(c => c.default || c)
