@@ -1,5 +1,5 @@
 export const state = () => ({
-  layoutType: "vertical",
+  layoutType: "primary",
   layoutWidth: "fluid",
   leftSidebarType: "grey",
   leftSidebarColor: "grey",

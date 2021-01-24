@@ -1,5 +1,5 @@
 <script>
-import CrmWidget from "~/components/widgets/Crm-widget";
+import CrmWidget from "~/components/zArchive/widgets/Crm-widget";
 
 /**
  * CRM component

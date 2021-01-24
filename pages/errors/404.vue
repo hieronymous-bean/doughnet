@@ -1,14 +1,3 @@
-<script>
-export default {
-    data() {
-        return {
-
-        }
-    },
-    layout: 'auth'
-}
-</script>
-
 <template>
 <div class="row justify-content-center">
     <div class="col-md-8 col-lg-6 col-xl-5">
@@ -37,3 +26,14 @@ export default {
 </div>
 <!-- end row -->
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+
+        }
+    },
+    layout: 'auth'
+}
+</script>

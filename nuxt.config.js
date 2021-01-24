@@ -43,7 +43,6 @@ export default {
   */
   plugins: [
     "~/plugins/fireauth.js",
-    "~/plugins/fakeauth.js",
     "~/plugins/simplebar.js",
     "~/plugins/vue-click-outside.js",
     "~/plugins/vuelidate.js",
@@ -81,11 +80,7 @@ export default {
     vueI18n: {
       fallbackLocale: 'en',
       messages: {
-        en: require('./locales/en.json'),
-        fr: require('./locales/fr.json'),
-        es: require('./locales/es.json'),
-        ar: require('./locales/ar.json'),
-        zh: require('./locales/zh.json')
+        en: require('./locales/en.json')
       }
     }
   },

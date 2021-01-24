@@ -18,7 +18,6 @@ let store = {};
   store.modules = store.modules || {}
 
   resolveStoreModules(require('..\\store\\auth.js'), 'auth.js')
-  resolveStoreModules(require('..\\store\\authfack.js'), 'authfack.js')
   resolveStoreModules(require('..\\store\\layout.js'), 'layout.js')
   resolveStoreModules(require('..\\store\\notification.js'), 'notification.js')
 
@@ -28,7 +27,6 @@ let store = {};
     // Whenever any Vuex module is updated...
     module.hot.accept([
       '..\\store\\auth.js',
-      '..\\store\\authfack.js',
       '..\\store\\layout.js',
       '..\\store\\notification.js',
     ], () => {

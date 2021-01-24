@@ -1,7 +1,4 @@
 <script>
-/**
- * Topbar component
- */
 export default {
     data() {
         return {
@@ -108,8 +105,6 @@ export default {
         logoutUser() {
             if (process.env.auth === "firebase") {
                 this.$store.dispatch("auth/logOut");
-            } else if (process.env.auth === "fakebackend") {
-                this.$store.dispatch("authfack/logout");
             }
             this.$router.push({
                 path: "/account/login",

@@ -3,6 +3,7 @@ import {
     mapState
 } from "vuex";
 
+import Primary from "./primary";
 import Vertical from "./vertical";
 import Horizontal from "./horizontal";
 import Detached from "./detached";
@@ -13,6 +14,7 @@ import TwoColumn from "./two-column";
  */
 export default {
     components: {
+        Primary,
         Vertical,
         Horizontal,
         Detached,
@@ -34,11 +36,13 @@ export default {
 
 <template>
 <div>
-    <!-- Begin page -->
-    <Vertical v-if="layout.layoutType === 'vertical'" :layout="layout.layoutType">
+    <Primary v-if="layout.layoutType === 'primary'" :layout="layout.layoutType">
         <Nuxt />
+    </Primary>
+    
+    <Vertical v-if="layout.layoutType === 'vertical'" :layout="layout.layoutType">
+        <slot />
     </Vertical>
-    <!-- END layout-wrapper -->
 
     <Horizontal v-if="layout.layoutType === 'horizontal'" :layout="layout.layoutType">
         <slot />

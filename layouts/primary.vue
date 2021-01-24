@@ -21,7 +21,7 @@ import {
 } from 'vuex'
 
 export default {
-    name: 'vertical',
+    name: 'primary',
     data() {
         return {
             isMenuCondensed: false,

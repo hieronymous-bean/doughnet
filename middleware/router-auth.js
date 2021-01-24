@@ -27,16 +27,6 @@ export default function ({ store, route, redirect }) {
           // Pass the original route to the login component
           redirect('/account/login')
         }
-      } else if (process.env.auth === "fakebackend") {
-        const publicPages = ['/account/login', '/account/register', '/account/forgot-password'];
-        const authpage = !publicPages.includes(route.path);
-        const loggeduser = localStorage.getItem('user');
-    
-        if (authpage && !loggeduser) {
-          return redirect('/account/login');
-        }
-    
-        redirect();
       }
 }
   

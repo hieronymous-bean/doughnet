@@ -1,5 +1,4 @@
 <script>
-
 export default {
     head() {
         return {
@@ -17,14 +16,9 @@ export default {
                 }
             ],
             transactionTableTitle: "Recent Transactions",
-            transactionData: [{
-                transactionDate: "1/1/2021",
-                transactionAccount: "Primary Account",
-                transactionDescription: "Description of this transaction",
-                transactionCategory: "Mortgage Payment",
-                transactionTags:["Tag 1","Tag 2"],
-                transactionAmount: "$415.55"
-            }]
+            transactionData: [
+
+            ]
         };
     }
 };
@@ -43,22 +37,22 @@ export default {
                         <table class="table table-hover table-centered mb-0">
                             <thead>
                                 <tr>
-                                    <th>Date</th>
-                                    <th>Account</th>
-                                    <th>Description</th>
-                                    <th>Category</th>
-                                    <th>Tags</th>
-                                    <th>Ammount</th>
+                                    <th>id</th>
+                                    <th>category</th>
+                                    <th>name</th>
+                                    <th>date</th>
+                                    <th>type</th>
+                                    <th>tags</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr v-for="transactions in transactionData" :key="transactionData.id">
-                                    <td>{{ transactions.transactionDate }}</td>
-                                    <td>{{ transactions.transactionAccount }}</td>
-                                    <td>{{ transactions.transactionDescription }}</td>
-                                    <td>{{ transactions.transactionCategory }}</td>
-                                    <td>{{ transactions.transactionTags[0] }}</td>
-                                    <td>{{ transactions.transactionAmount }}</td>
+                                    <td>{{ transactions.id }}</td>
+                                    <td>{{ transactions.category }}</td>
+                                    <td>{{ transactions.name }}</td>
+                                    <td>{{ transactions.date }}</td>
+                                    <td>{{ transactions.type }}</td>
+                                    <td>{{ transactions.tags }}</td>
                                 </tr>
                             </tbody>
                         </table>

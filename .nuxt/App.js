@@ -22,10 +22,11 @@ import _2d217e9e from '..\\layouts\\auth.vue'
 import _6f6c098b from '..\\layouts\\default.vue'
 import _d41e7d30 from '..\\layouts\\detached.vue'
 import _77ae1c9a from '..\\layouts\\horizontal.vue'
+import _0095414c from '..\\layouts\\primary.vue'
 import _6f2dc326 from '..\\layouts\\two-column.vue'
 import _3d2ac528 from '..\\layouts\\vertical.vue'
 
-const layouts = { "_auth-2": sanitizeComponent(_6abc54c3),"_auth": sanitizeComponent(_2d217e9e),"_default": sanitizeComponent(_6f6c098b),"_detached": sanitizeComponent(_d41e7d30),"_horizontal": sanitizeComponent(_77ae1c9a),"_two-column": sanitizeComponent(_6f2dc326),"_vertical": sanitizeComponent(_3d2ac528) }
+const layouts = { "_auth-2": sanitizeComponent(_6abc54c3),"_auth": sanitizeComponent(_2d217e9e),"_default": sanitizeComponent(_6f6c098b),"_detached": sanitizeComponent(_d41e7d30),"_horizontal": sanitizeComponent(_77ae1c9a),"_primary": sanitizeComponent(_0095414c),"_two-column": sanitizeComponent(_6f2dc326),"_vertical": sanitizeComponent(_3d2ac528) }
 
 export default {
   render (h, props) {

@@ -13,12 +13,11 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_59b37502 from 'nuxt_plugin_plugin_59b37502' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_bootstrapvue_02625c51 from 'nuxt_plugin_bootstrapvue_02625c51' // Source: .\\bootstrap-vue.js (mode: 'all')
-import nuxt_plugin_pluginrouting_5bc65e52 from 'nuxt_plugin_pluginrouting_5bc65e52' // Source: .\\nuxt-i18n\\plugin.routing.js (mode: 'all')
-import nuxt_plugin_pluginmain_0872bc10 from 'nuxt_plugin_pluginmain_0872bc10' // Source: .\\nuxt-i18n\\plugin.main.js (mode: 'all')
+import nuxt_plugin_plugin_79b4c9c5 from 'nuxt_plugin_plugin_79b4c9c5' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_bootstrapvue_58b9f397 from 'nuxt_plugin_bootstrapvue_58b9f397' // Source: .\\bootstrap-vue.js (mode: 'all')
+import nuxt_plugin_pluginrouting_5af7dc5e from 'nuxt_plugin_pluginrouting_5af7dc5e' // Source: .\\nuxt-i18n\\plugin.routing.js (mode: 'all')
+import nuxt_plugin_pluginmain_1964d984 from 'nuxt_plugin_pluginmain_1964d984' // Source: .\\nuxt-i18n\\plugin.main.js (mode: 'all')
 import nuxt_plugin_fireauth_22211b23 from 'nuxt_plugin_fireauth_22211b23' // Source: ..\\plugins\\fireauth.js (mode: 'all')
-import nuxt_plugin_fakeauth_71f68924 from 'nuxt_plugin_fakeauth_71f68924' // Source: ..\\plugins\\fakeauth.js (mode: 'all')
 import nuxt_plugin_simplebar_28d69fac from 'nuxt_plugin_simplebar_28d69fac' // Source: ..\\plugins\\simplebar.js (mode: 'all')
 import nuxt_plugin_vueclickoutside_6e1f4574 from 'nuxt_plugin_vueclickoutside_6e1f4574' // Source: ..\\plugins\\vue-click-outside.js (mode: 'all')
 import nuxt_plugin_vuelidate_4be431c8 from 'nuxt_plugin_vuelidate_4be431c8' // Source: ..\\plugins\\vuelidate.js (mode: 'all')
@@ -216,28 +215,24 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_59b37502 === 'function') {
-    await nuxt_plugin_plugin_59b37502(app.context, inject)
+  if (typeof nuxt_plugin_plugin_79b4c9c5 === 'function') {
+    await nuxt_plugin_plugin_79b4c9c5(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_bootstrapvue_02625c51 === 'function') {
-    await nuxt_plugin_bootstrapvue_02625c51(app.context, inject)
+  if (typeof nuxt_plugin_bootstrapvue_58b9f397 === 'function') {
+    await nuxt_plugin_bootstrapvue_58b9f397(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_pluginrouting_5bc65e52 === 'function') {
-    await nuxt_plugin_pluginrouting_5bc65e52(app.context, inject)
+  if (typeof nuxt_plugin_pluginrouting_5af7dc5e === 'function') {
+    await nuxt_plugin_pluginrouting_5af7dc5e(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_pluginmain_0872bc10 === 'function') {
-    await nuxt_plugin_pluginmain_0872bc10(app.context, inject)
+  if (typeof nuxt_plugin_pluginmain_1964d984 === 'function') {
+    await nuxt_plugin_pluginmain_1964d984(app.context, inject)
   }
 
   if (typeof nuxt_plugin_fireauth_22211b23 === 'function') {
     await nuxt_plugin_fireauth_22211b23(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_fakeauth_71f68924 === 'function') {
-    await nuxt_plugin_fakeauth_71f68924(app.context, inject)
   }
 
   if (typeof nuxt_plugin_simplebar_28d69fac === 'function') {
