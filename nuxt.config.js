@@ -70,9 +70,25 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
-    'nuxt-i18n'
+    'nuxt-i18n',
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: "AIzaSyB5Cx1psBkAiehC_q0zJ6c1u3dpSL4ScGU",
+          authDomain: "doughnet-01.firebaseapp.com",
+          projectId: "doughnet-01",
+          storageBucket: "doughnet-01.appspot.com",
+          messagingSenderId: "465162683465",
+          appId: "1:465162683465:web:080f99f6c77141f80b2b98",
+          measurementId: "G-1DC4QQPF6X"
+        },
+        services: {
+          auth: true // Just as example. Can be any other service.
+        }
+      }
+    ]
   ],
   i18n: {
     locales: ['en', 'fr', 'es', 'ar'],
@@ -89,16 +105,5 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
-  },
-  env: {
-    auth: process.env.VUE_APP_DEFAULT_AUTH,
-    apikey: process.env.VUE_APP_APIKEY,
-    authdomain: process.env.VUE_APP_AUTHDOMAIN,
-    databaseurl: process.env.VUE_APP_DATABASEURL,
-    projectid: process.env.VUE_APP_PROJECTId,
-    storgebucket: process.env.VUE_APP_STORAGEBUCKET,
-    message: process.env.VUE_APP_MESSAGINGSENDERID,
-    appid: process.env.VUE_APP_APPId,
-    measurement: process.env.VUE_APP_MEASUREMENTID,
   }
 }

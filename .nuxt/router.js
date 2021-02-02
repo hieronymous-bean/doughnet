@@ -4,150 +4,150 @@ import { normalizeURL, decode } from '@nuxt/ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _26cb8858 = () => interopDefault(import('..\\pages\\accounts\\index.vue' /* webpackChunkName: "pages/accounts/index" */))
-const _6f1d347e = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _0f35996c = () => interopDefault(import('..\\pages\\accounts\\index.vue' /* webpackChunkName: "pages/accounts/index" */))
+const _6a1085f0 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 const _2563ddd0 = () => interopDefault(import('~/pages/index.vue' /* webpackChunkName: "" */))
-const _b0c0890a = () => interopDefault(import('..\\pages\\accounts\\data.js' /* webpackChunkName: "pages/accounts/data" */))
-const _f9f4fa38 = () => interopDefault(import('..\\pages\\accounts\\net-worth.vue' /* webpackChunkName: "pages/accounts/net-worth" */))
-const _0ec18882 = () => interopDefault(import('..\\pages\\accounts\\transactions.vue' /* webpackChunkName: "pages/accounts/transactions" */))
-const _d4e93326 = () => interopDefault(import('..\\pages\\auth\\login.vue' /* webpackChunkName: "pages/auth/login" */))
-const _67757f4f = () => interopDefault(import('..\\pages\\auth\\register.vue' /* webpackChunkName: "pages/auth/register" */))
-const _18b1e6ea = () => interopDefault(import('..\\pages\\banking\\bills.vue' /* webpackChunkName: "pages/banking/bills" */))
-const _e35906ca = () => interopDefault(import('..\\pages\\banking\\budgeting.vue' /* webpackChunkName: "pages/banking/budgeting" */))
-const _14a5c826 = () => interopDefault(import('..\\pages\\banking\\cash-flow.vue' /* webpackChunkName: "pages/banking/cash-flow" */))
-const _f3b5df4e = () => interopDefault(import('..\\pages\\errors\\404.vue' /* webpackChunkName: "pages/errors/404" */))
-const _263754af = () => interopDefault(import('..\\pages\\zArchive\\widgets\\index.vue' /* webpackChunkName: "pages/zArchive/widgets/index" */))
-const _7d985964 = () => interopDefault(import('..\\pages\\zArchive\\account\\forgot-password.vue' /* webpackChunkName: "pages/zArchive/account/forgot-password" */))
-const _b9c03cf0 = () => interopDefault(import('..\\pages\\zArchive\\account\\login.vue' /* webpackChunkName: "pages/zArchive/account/login" */))
-const _8d512b58 = () => interopDefault(import('..\\pages\\zArchive\\account\\register.vue' /* webpackChunkName: "pages/zArchive/account/register" */))
-const _662567e6 = () => interopDefault(import('..\\pages\\zArchive\\apps\\calendar\\index.vue' /* webpackChunkName: "pages/zArchive/apps/calendar/index" */))
-const _ec77aee8 = () => interopDefault(import('..\\pages\\zArchive\\apps\\chat\\index.vue' /* webpackChunkName: "pages/zArchive/apps/chat/index" */))
-const _090ea316 = () => interopDefault(import('..\\pages\\zArchive\\apps\\companies\\index.vue' /* webpackChunkName: "pages/zArchive/apps/companies/index" */))
-const _54cd943a = () => interopDefault(import('..\\pages\\zArchive\\apps\\file-manager.vue' /* webpackChunkName: "pages/zArchive/apps/file-manager" */))
-const _6f04d92e = () => interopDefault(import('..\\pages\\zArchive\\apps\\tickets\\index.vue' /* webpackChunkName: "pages/zArchive/apps/tickets/index" */))
-const _9f002390 = () => interopDefault(import('..\\pages\\zArchive\\auth\\confirm-mail.vue' /* webpackChunkName: "pages/zArchive/auth/confirm-mail" */))
-const _eaab9d46 = () => interopDefault(import('..\\pages\\zArchive\\auth\\confirm-mail-2.vue' /* webpackChunkName: "pages/zArchive/auth/confirm-mail-2" */))
-const _8e7f332c = () => interopDefault(import('..\\pages\\zArchive\\auth\\lock-screen.vue' /* webpackChunkName: "pages/zArchive/auth/lock-screen" */))
-const _f6a535e2 = () => interopDefault(import('..\\pages\\zArchive\\auth\\lock-screen-2.vue' /* webpackChunkName: "pages/zArchive/auth/lock-screen-2" */))
-const _30907405 = () => interopDefault(import('..\\pages\\zArchive\\auth\\login.vue' /* webpackChunkName: "pages/zArchive/auth/login" */))
-const _48b077ea = () => interopDefault(import('..\\pages\\zArchive\\auth\\login-2.vue' /* webpackChunkName: "pages/zArchive/auth/login-2" */))
-const _2e8f151e = () => interopDefault(import('..\\pages\\zArchive\\auth\\logout.vue' /* webpackChunkName: "pages/zArchive/auth/logout" */))
-const _7ce9927a = () => interopDefault(import('..\\pages\\zArchive\\auth\\logout-2.vue' /* webpackChunkName: "pages/zArchive/auth/logout-2" */))
-const _13d60526 = () => interopDefault(import('..\\pages\\zArchive\\auth\\recoverpwd.vue' /* webpackChunkName: "pages/zArchive/auth/recoverpwd" */))
-const _818f715c = () => interopDefault(import('..\\pages\\zArchive\\auth\\recoverpwd-2.vue' /* webpackChunkName: "pages/zArchive/auth/recoverpwd-2" */))
-const _387e6ab7 = () => interopDefault(import('..\\pages\\zArchive\\auth\\register.vue' /* webpackChunkName: "pages/zArchive/auth/register" */))
-const _0cfb8a1c = () => interopDefault(import('..\\pages\\zArchive\\auth\\register-2.vue' /* webpackChunkName: "pages/zArchive/auth/register-2" */))
-const _6852053f = () => interopDefault(import('..\\pages\\zArchive\\auth\\signin-signup.vue' /* webpackChunkName: "pages/zArchive/auth/signin-signup" */))
-const _d35abab8 = () => interopDefault(import('..\\pages\\zArchive\\auth\\signin-signup-2.vue' /* webpackChunkName: "pages/zArchive/auth/signin-signup-2" */))
-const _670f4402 = () => interopDefault(import('..\\pages\\zArchive\\charts\\apex\\index.vue' /* webpackChunkName: "pages/zArchive/charts/apex/index" */))
-const _45e737f1 = () => interopDefault(import('..\\pages\\zArchive\\charts\\c3\\index.vue' /* webpackChunkName: "pages/zArchive/charts/c3/index" */))
-const _f7e2f516 = () => interopDefault(import('..\\pages\\zArchive\\charts\\chartist\\index.vue' /* webpackChunkName: "pages/zArchive/charts/chartist/index" */))
-const _f3cfdbe8 = () => interopDefault(import('..\\pages\\zArchive\\charts\\chartjs\\index.vue' /* webpackChunkName: "pages/zArchive/charts/chartjs/index" */))
-const _2222b477 = () => interopDefault(import('..\\pages\\zArchive\\charts\\knob.vue' /* webpackChunkName: "pages/zArchive/charts/knob" */))
-const _3cb497c6 = () => interopDefault(import('..\\pages\\zArchive\\contacts\\list.vue' /* webpackChunkName: "pages/zArchive/contacts/list" */))
-const _4831db0c = () => interopDefault(import('..\\pages\\zArchive\\contacts\\profile.vue' /* webpackChunkName: "pages/zArchive/contacts/profile" */))
-const _2799d364 = () => interopDefault(import('..\\pages\\zArchive\\dashboard\\analytics\\index.vue' /* webpackChunkName: "pages/zArchive/dashboard/analytics/index" */))
-const _3de8d60c = () => interopDefault(import('..\\pages\\zArchive\\dashboard\\crm\\index.vue' /* webpackChunkName: "pages/zArchive/dashboard/crm/index" */))
-const _550315c9 = () => interopDefault(import('..\\pages\\zArchive\\dashboard\\default\\index.vue' /* webpackChunkName: "pages/zArchive/dashboard/default/index" */))
-const _4fbc1a24 = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\cart.vue' /* webpackChunkName: "pages/zArchive/ecommerce/cart" */))
-const _b949596c = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\checkout.vue' /* webpackChunkName: "pages/zArchive/ecommerce/checkout" */))
-const _1bffa43e = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\customers\\index.vue' /* webpackChunkName: "pages/zArchive/ecommerce/customers/index" */))
-const _6bade0dc = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\data-products.js' /* webpackChunkName: "pages/zArchive/ecommerce/data-products" */))
-const _0ace72b4 = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\order-detail.vue' /* webpackChunkName: "pages/zArchive/ecommerce/order-detail" */))
-const _02d80ff9 = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\orders\\index.vue' /* webpackChunkName: "pages/zArchive/ecommerce/orders/index" */))
-const _882642c4 = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\product-create.vue' /* webpackChunkName: "pages/zArchive/ecommerce/product-create" */))
-const _18c0f71a = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\products\\index.vue' /* webpackChunkName: "pages/zArchive/ecommerce/products/index" */))
-const _4cae2b8a = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\products-grid.vue' /* webpackChunkName: "pages/zArchive/ecommerce/products-grid" */))
-const _e03a3500 = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\sellers.vue' /* webpackChunkName: "pages/zArchive/ecommerce/sellers" */))
-const _622166a8 = () => interopDefault(import('..\\pages\\zArchive\\email\\data-inbox.js' /* webpackChunkName: "pages/zArchive/email/data-inbox" */))
-const _29391354 = () => interopDefault(import('..\\pages\\zArchive\\email\\inbox.vue' /* webpackChunkName: "pages/zArchive/email/inbox" */))
-const _1cb7c75d = () => interopDefault(import('..\\pages\\zArchive\\email\\sidepanel.vue' /* webpackChunkName: "pages/zArchive/email/sidepanel" */))
-const _d746acee = () => interopDefault(import('..\\pages\\zArchive\\email\\templates.vue' /* webpackChunkName: "pages/zArchive/email/templates" */))
-const _15382ecb = () => interopDefault(import('..\\pages\\zArchive\\email\\toolbar.vue' /* webpackChunkName: "pages/zArchive/email/toolbar" */))
-const _bbd663ee = () => interopDefault(import('..\\pages\\zArchive\\extended\\rangeslider.vue' /* webpackChunkName: "pages/zArchive/extended/rangeslider" */))
-const _ea6f648c = () => interopDefault(import('..\\pages\\zArchive\\extended\\scrollspy.vue' /* webpackChunkName: "pages/zArchive/extended/scrollspy" */))
-const _0436bd6a = () => interopDefault(import('..\\pages\\zArchive\\extended\\sweet-alert.vue' /* webpackChunkName: "pages/zArchive/extended/sweet-alert" */))
-const _0005a63d = () => interopDefault(import('..\\pages\\zArchive\\extended\\tour.vue' /* webpackChunkName: "pages/zArchive/extended/tour" */))
-const _7d47f5f9 = () => interopDefault(import('..\\pages\\zArchive\\extras\\404.vue' /* webpackChunkName: "pages/zArchive/extras/404" */))
-const _3ec4bdd5 = () => interopDefault(import('..\\pages\\zArchive\\extras\\404-alt.vue' /* webpackChunkName: "pages/zArchive/extras/404-alt" */))
-const _9c145994 = () => interopDefault(import('..\\pages\\zArchive\\extras\\500.vue' /* webpackChunkName: "pages/zArchive/extras/500" */))
-const _4715bdf0 = () => interopDefault(import('..\\pages\\zArchive\\extras\\coming-soon.vue' /* webpackChunkName: "pages/zArchive/extras/coming-soon" */))
-const _0186232c = () => interopDefault(import('..\\pages\\zArchive\\extras\\faqs.vue' /* webpackChunkName: "pages/zArchive/extras/faqs" */))
-const _56c79e24 = () => interopDefault(import('..\\pages\\zArchive\\extras\\invoice.vue' /* webpackChunkName: "pages/zArchive/extras/invoice" */))
-const _33b816f8 = () => interopDefault(import('..\\pages\\zArchive\\extras\\lightbox.vue' /* webpackChunkName: "pages/zArchive/extras/lightbox" */))
-const _13c78154 = () => interopDefault(import('..\\pages\\zArchive\\extras\\maintenance.vue' /* webpackChunkName: "pages/zArchive/extras/maintenance" */))
-const _64dc9907 = () => interopDefault(import('..\\pages\\zArchive\\extras\\pricing.vue' /* webpackChunkName: "pages/zArchive/extras/pricing" */))
-const _ad3bb5c0 = () => interopDefault(import('..\\pages\\zArchive\\extras\\search-results.vue' /* webpackChunkName: "pages/zArchive/extras/search-results" */))
-const _79919676 = () => interopDefault(import('..\\pages\\zArchive\\extras\\sitemap.vue' /* webpackChunkName: "pages/zArchive/extras/sitemap" */))
-const _9160a560 = () => interopDefault(import('..\\pages\\zArchive\\extras\\starter.vue' /* webpackChunkName: "pages/zArchive/extras/starter" */))
-const _511e19d0 = () => interopDefault(import('..\\pages\\zArchive\\extras\\timeline.vue' /* webpackChunkName: "pages/zArchive/extras/timeline" */))
-const _6985c456 = () => interopDefault(import('..\\pages\\zArchive\\forms\\advanced.vue' /* webpackChunkName: "pages/zArchive/forms/advanced" */))
-const _04e4042a = () => interopDefault(import('..\\pages\\zArchive\\forms\\elements.vue' /* webpackChunkName: "pages/zArchive/forms/elements" */))
-const _2c0cd7f4 = () => interopDefault(import('..\\pages\\zArchive\\forms\\file-uploads.vue' /* webpackChunkName: "pages/zArchive/forms/file-uploads" */))
-const _101c8d1f = () => interopDefault(import('..\\pages\\zArchive\\forms\\mask.vue' /* webpackChunkName: "pages/zArchive/forms/mask" */))
-const _561dd8e2 = () => interopDefault(import('..\\pages\\zArchive\\forms\\quill.vue' /* webpackChunkName: "pages/zArchive/forms/quill" */))
-const _40234028 = () => interopDefault(import('..\\pages\\zArchive\\forms\\validation.vue' /* webpackChunkName: "pages/zArchive/forms/validation" */))
-const _3d750d44 = () => interopDefault(import('..\\pages\\zArchive\\forms\\wizard.vue' /* webpackChunkName: "pages/zArchive/forms/wizard" */))
-const _0cfb19e6 = () => interopDefault(import('..\\pages\\zArchive\\icons\\boxicons.vue' /* webpackChunkName: "pages/zArchive/icons/boxicons" */))
-const _2dff3380 = () => interopDefault(import('..\\pages\\zArchive\\icons\\data-fontawesome.js' /* webpackChunkName: "pages/zArchive/icons/data-fontawesome" */))
-const _67eb2293 = () => interopDefault(import('..\\pages\\zArchive\\icons\\data-material.js' /* webpackChunkName: "pages/zArchive/icons/data-material" */))
-const _7f4a4c6a = () => interopDefault(import('..\\pages\\zArchive\\icons\\data-remix.js' /* webpackChunkName: "pages/zArchive/icons/data-remix" */))
-const _0556a596 = () => interopDefault(import('..\\pages\\zArchive\\icons\\feather.vue' /* webpackChunkName: "pages/zArchive/icons/feather" */))
-const _308eac7a = () => interopDefault(import('..\\pages\\zArchive\\icons\\font-awesome.vue' /* webpackChunkName: "pages/zArchive/icons/font-awesome" */))
-const _6dddb7c4 = () => interopDefault(import('..\\pages\\zArchive\\icons\\mdi.vue' /* webpackChunkName: "pages/zArchive/icons/mdi" */))
-const _1a6d814a = () => interopDefault(import('..\\pages\\zArchive\\icons\\remix.vue' /* webpackChunkName: "pages/zArchive/icons/remix" */))
-const _3ef6e7f4 = () => interopDefault(import('..\\pages\\zArchive\\icons\\weather.vue' /* webpackChunkName: "pages/zArchive/icons/weather" */))
-const _36a4a8bc = () => interopDefault(import('..\\pages\\zArchive\\maps\\google.vue' /* webpackChunkName: "pages/zArchive/maps/google" */))
-const _dc74c922 = () => interopDefault(import('..\\pages\\zArchive\\tables\\advanced\\index.vue' /* webpackChunkName: "pages/zArchive/tables/advanced/index" */))
-const _6610ab26 = () => interopDefault(import('..\\pages\\zArchive\\tables\\basic.vue' /* webpackChunkName: "pages/zArchive/tables/basic" */))
-const _9e425e7c = () => interopDefault(import('..\\pages\\zArchive\\task\\detail.vue' /* webpackChunkName: "pages/zArchive/task/detail" */))
-const _0da0fa4c = () => interopDefault(import('..\\pages\\zArchive\\task\\kanban\\index.vue' /* webpackChunkName: "pages/zArchive/task/kanban/index" */))
-const _778c3ccf = () => interopDefault(import('..\\pages\\zArchive\\task\\list.vue' /* webpackChunkName: "pages/zArchive/task/list" */))
-const _1951b6ea = () => interopDefault(import('..\\pages\\zArchive\\ui\\avatars.vue' /* webpackChunkName: "pages/zArchive/ui/avatars" */))
-const _ce75de9e = () => interopDefault(import('..\\pages\\zArchive\\ui\\buttons.vue' /* webpackChunkName: "pages/zArchive/ui/buttons" */))
-const _1b4144da = () => interopDefault(import('..\\pages\\zArchive\\ui\\cards.vue' /* webpackChunkName: "pages/zArchive/ui/cards" */))
-const _7af2ffe0 = () => interopDefault(import('..\\pages\\zArchive\\ui\\carousel.vue' /* webpackChunkName: "pages/zArchive/ui/carousel" */))
-const _5ce67d9c = () => interopDefault(import('..\\pages\\zArchive\\ui\\dropdowns.vue' /* webpackChunkName: "pages/zArchive/ui/dropdowns" */))
-const _34fa4e98 = () => interopDefault(import('..\\pages\\zArchive\\ui\\general.vue' /* webpackChunkName: "pages/zArchive/ui/general" */))
-const _0bc40a74 = () => interopDefault(import('..\\pages\\zArchive\\ui\\grid.vue' /* webpackChunkName: "pages/zArchive/ui/grid" */))
-const _a9fea210 = () => interopDefault(import('..\\pages\\zArchive\\ui\\images.vue' /* webpackChunkName: "pages/zArchive/ui/images" */))
-const _d58f0de0 = () => interopDefault(import('..\\pages\\zArchive\\ui\\list-group.vue' /* webpackChunkName: "pages/zArchive/ui/list-group" */))
-const _aa413e34 = () => interopDefault(import('..\\pages\\zArchive\\ui\\modals.vue' /* webpackChunkName: "pages/zArchive/ui/modals" */))
-const _dd93aed0 = () => interopDefault(import('..\\pages\\zArchive\\ui\\notifications.vue' /* webpackChunkName: "pages/zArchive/ui/notifications" */))
-const _7749dbb9 = () => interopDefault(import('..\\pages\\zArchive\\ui\\portlets.vue' /* webpackChunkName: "pages/zArchive/ui/portlets" */))
-const _3f34322d = () => interopDefault(import('..\\pages\\zArchive\\ui\\progress.vue' /* webpackChunkName: "pages/zArchive/ui/progress" */))
-const _8e0c0ce6 = () => interopDefault(import('..\\pages\\zArchive\\ui\\ribbons.vue' /* webpackChunkName: "pages/zArchive/ui/ribbons" */))
-const _4126da0c = () => interopDefault(import('..\\pages\\zArchive\\ui\\spinners.vue' /* webpackChunkName: "pages/zArchive/ui/spinners" */))
-const _31c7868a = () => interopDefault(import('..\\pages\\zArchive\\ui\\tabs-accordions.vue' /* webpackChunkName: "pages/zArchive/ui/tabs-accordions" */))
-const _090c50fb = () => interopDefault(import('..\\pages\\zArchive\\ui\\tooltips-popovers.vue' /* webpackChunkName: "pages/zArchive/ui/tooltips-popovers" */))
-const _7da13a2f = () => interopDefault(import('..\\pages\\zArchive\\ui\\typography.vue' /* webpackChunkName: "pages/zArchive/ui/typography" */))
-const _4f623eab = () => interopDefault(import('..\\pages\\zArchive\\ui\\video.vue' /* webpackChunkName: "pages/zArchive/ui/video" */))
-const _5770b192 = () => interopDefault(import('..\\pages\\zArchive\\widgets\\data.js' /* webpackChunkName: "pages/zArchive/widgets/data" */))
-const _6c66b75a = () => interopDefault(import('..\\pages\\zArchive\\apps\\calendar\\data-calendar.js' /* webpackChunkName: "pages/zArchive/apps/calendar/data-calendar" */))
-const _30ead8af = () => interopDefault(import('..\\pages\\zArchive\\apps\\chat\\data.js' /* webpackChunkName: "pages/zArchive/apps/chat/data" */))
-const _16a9c4d8 = () => interopDefault(import('..\\pages\\zArchive\\apps\\companies\\data.js' /* webpackChunkName: "pages/zArchive/apps/companies/data" */))
-const _25cb56cc = () => interopDefault(import('..\\pages\\zArchive\\apps\\tickets\\data.js' /* webpackChunkName: "pages/zArchive/apps/tickets/data" */))
-const _5603cee2 = () => interopDefault(import('..\\pages\\zArchive\\charts\\apex\\data.js' /* webpackChunkName: "pages/zArchive/charts/apex/data" */))
-const _04e47d54 = () => interopDefault(import('..\\pages\\zArchive\\charts\\c3\\data.js' /* webpackChunkName: "pages/zArchive/charts/c3/data" */))
-const _ae6d4850 = () => interopDefault(import('..\\pages\\zArchive\\charts\\chartist\\data.js' /* webpackChunkName: "pages/zArchive/charts/chartist/data" */))
-const _c1a2c43e = () => interopDefault(import('..\\pages\\zArchive\\charts\\chartjs\\BarChart.vue' /* webpackChunkName: "pages/zArchive/charts/chartjs/BarChart" */))
-const _43bf179c = () => interopDefault(import('..\\pages\\zArchive\\charts\\chartjs\\DonutChart.vue' /* webpackChunkName: "pages/zArchive/charts/chartjs/DonutChart" */))
-const _4c6de738 = () => interopDefault(import('..\\pages\\zArchive\\charts\\chartjs\\LineChart.vue' /* webpackChunkName: "pages/zArchive/charts/chartjs/LineChart" */))
-const _4a508088 = () => interopDefault(import('..\\pages\\zArchive\\charts\\chartjs\\PieChart.vue' /* webpackChunkName: "pages/zArchive/charts/chartjs/PieChart" */))
-const _4a9c78d4 = () => interopDefault(import('..\\pages\\zArchive\\charts\\chartjs\\PolarChart.vue' /* webpackChunkName: "pages/zArchive/charts/chartjs/PolarChart" */))
-const _55b5d0ce = () => interopDefault(import('..\\pages\\zArchive\\charts\\chartjs\\RadarChart.vue' /* webpackChunkName: "pages/zArchive/charts/chartjs/RadarChart" */))
-const _514b632e = () => interopDefault(import('..\\pages\\zArchive\\dashboard\\analytics\\channels.vue' /* webpackChunkName: "pages/zArchive/dashboard/analytics/channels" */))
-const _097d9f52 = () => interopDefault(import('..\\pages\\zArchive\\dashboard\\analytics\\overview.vue' /* webpackChunkName: "pages/zArchive/dashboard/analytics/overview" */))
-const _6dd707e2 = () => interopDefault(import('..\\pages\\zArchive\\dashboard\\analytics\\social-media.vue' /* webpackChunkName: "pages/zArchive/dashboard/analytics/social-media" */))
-const _d959e66c = () => interopDefault(import('..\\pages\\zArchive\\dashboard\\analytics\\sources.vue' /* webpackChunkName: "pages/zArchive/dashboard/analytics/sources" */))
-const _6d03ad9a = () => interopDefault(import('..\\pages\\zArchive\\dashboard\\analytics\\users.vue' /* webpackChunkName: "pages/zArchive/dashboard/analytics/users" */))
-const _2cbba178 = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\customers\\data.js' /* webpackChunkName: "pages/zArchive/ecommerce/customers/data" */))
-const _4a889148 = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\orders\\data.js' /* webpackChunkName: "pages/zArchive/ecommerce/orders/data" */))
-const _ab741a86 = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\products\\data.js' /* webpackChunkName: "pages/zArchive/ecommerce/products/data" */))
-const _093caf5c = () => interopDefault(import('..\\pages\\zArchive\\tables\\advanced\\data.js' /* webpackChunkName: "pages/zArchive/tables/advanced/data" */))
-const _cf372306 = () => interopDefault(import('..\\pages\\zArchive\\task\\kanban\\data.js' /* webpackChunkName: "pages/zArchive/task/kanban/data" */))
-const _748f1bd7 = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\product-detail\\_id.vue' /* webpackChunkName: "pages/zArchive/ecommerce/product-detail/_id" */))
-const _6c2e8594 = () => interopDefault(import('..\\pages\\zArchive\\email\\reademail\\_id.vue' /* webpackChunkName: "pages/zArchive/email/reademail/_id" */))
+const _a5a90a26 = () => interopDefault(import('..\\pages\\accounts\\data.js' /* webpackChunkName: "pages/accounts/data" */))
+const _490c64d6 = () => interopDefault(import('..\\pages\\accounts\\net-worth.vue' /* webpackChunkName: "pages/accounts/net-worth" */))
+const _d8e286e6 = () => interopDefault(import('..\\pages\\accounts\\transactions.vue' /* webpackChunkName: "pages/accounts/transactions" */))
+const _94f74b42 = () => interopDefault(import('..\\pages\\auth\\login.vue' /* webpackChunkName: "pages/auth/login" */))
+const _1361ae1d = () => interopDefault(import('..\\pages\\auth\\register.vue' /* webpackChunkName: "pages/auth/register" */))
+const _76c3d490 = () => interopDefault(import('..\\pages\\banking\\bills.vue' /* webpackChunkName: "pages/banking/bills" */))
+const _1060d72e = () => interopDefault(import('..\\pages\\banking\\budgeting.vue' /* webpackChunkName: "pages/banking/budgeting" */))
+const _7e21dff4 = () => interopDefault(import('..\\pages\\banking\\cash-flow.vue' /* webpackChunkName: "pages/banking/cash-flow" */))
+const _b3c3f76a = () => interopDefault(import('..\\pages\\errors\\404.vue' /* webpackChunkName: "pages/errors/404" */))
+const _796c4c06 = () => interopDefault(import('..\\pages\\zArchive\\widgets\\index.vue' /* webpackChunkName: "pages/zArchive/widgets/index" */))
+const _ca91d59c = () => interopDefault(import('..\\pages\\zArchive\\account\\forgot-password.vue' /* webpackChunkName: "pages/zArchive/account/forgot-password" */))
+const _403266d6 = () => interopDefault(import('..\\pages\\zArchive\\account\\login.vue' /* webpackChunkName: "pages/zArchive/account/login" */))
+const _679e3a46 = () => interopDefault(import('..\\pages\\zArchive\\account\\register.vue' /* webpackChunkName: "pages/zArchive/account/register" */))
+const _18822250 = () => interopDefault(import('..\\pages\\zArchive\\apps\\calendar\\index.vue' /* webpackChunkName: "pages/zArchive/apps/calendar/index" */))
+const _380af87e = () => interopDefault(import('..\\pages\\zArchive\\apps\\chat\\index.vue' /* webpackChunkName: "pages/zArchive/apps/chat/index" */))
+const _211005c3 = () => interopDefault(import('..\\pages\\zArchive\\apps\\companies\\index.vue' /* webpackChunkName: "pages/zArchive/apps/companies/index" */))
+const _6f60c288 = () => interopDefault(import('..\\pages\\zArchive\\apps\\file-manager.vue' /* webpackChunkName: "pages/zArchive/apps/file-manager" */))
+const _ea033392 = () => interopDefault(import('..\\pages\\zArchive\\apps\\tickets\\index.vue' /* webpackChunkName: "pages/zArchive/apps/tickets/index" */))
+const _69d9c6f4 = () => interopDefault(import('..\\pages\\zArchive\\auth\\confirm-mail.vue' /* webpackChunkName: "pages/zArchive/auth/confirm-mail" */))
+const _4d2b042b = () => interopDefault(import('..\\pages\\zArchive\\auth\\confirm-mail-2.vue' /* webpackChunkName: "pages/zArchive/auth/confirm-mail-2" */))
+const _6707365c = () => interopDefault(import('..\\pages\\zArchive\\auth\\lock-screen.vue' /* webpackChunkName: "pages/zArchive/auth/lock-screen" */))
+const _86fffefe = () => interopDefault(import('..\\pages\\zArchive\\auth\\lock-screen-2.vue' /* webpackChunkName: "pages/zArchive/auth/lock-screen-2" */))
+const _df32bd12 = () => interopDefault(import('..\\pages\\zArchive\\auth\\login.vue' /* webpackChunkName: "pages/zArchive/auth/login" */))
+const _0bb110dc = () => interopDefault(import('..\\pages\\zArchive\\auth\\login-2.vue' /* webpackChunkName: "pages/zArchive/auth/login-2" */))
+const _6d02d428 = () => interopDefault(import('..\\pages\\zArchive\\auth\\logout.vue' /* webpackChunkName: "pages/zArchive/auth/logout" */))
+const _5e9dbc11 = () => interopDefault(import('..\\pages\\zArchive\\auth\\logout-2.vue' /* webpackChunkName: "pages/zArchive/auth/logout-2" */))
+const _cec9318a = () => interopDefault(import('..\\pages\\zArchive\\auth\\recoverpwd.vue' /* webpackChunkName: "pages/zArchive/auth/recoverpwd" */))
+const _4c6914c0 = () => interopDefault(import('..\\pages\\zArchive\\auth\\recoverpwd-2.vue' /* webpackChunkName: "pages/zArchive/auth/recoverpwd-2" */))
+const _54de1ff6 = () => interopDefault(import('..\\pages\\zArchive\\auth\\register.vue' /* webpackChunkName: "pages/zArchive/auth/register" */))
+const _a0fc182c = () => interopDefault(import('..\\pages\\zArchive\\auth\\register-2.vue' /* webpackChunkName: "pages/zArchive/auth/register-2" */))
+const _bfb6be9e = () => interopDefault(import('..\\pages\\zArchive\\auth\\signin-signup.vue' /* webpackChunkName: "pages/zArchive/auth/signin-signup" */))
+const _23ec2996 = () => interopDefault(import('..\\pages\\zArchive\\auth\\signin-signup-2.vue' /* webpackChunkName: "pages/zArchive/auth/signin-signup-2" */))
+const _044af971 = () => interopDefault(import('..\\pages\\zArchive\\charts\\apex\\index.vue' /* webpackChunkName: "pages/zArchive/charts/apex/index" */))
+const _17a3f03a = () => interopDefault(import('..\\pages\\zArchive\\charts\\c3\\index.vue' /* webpackChunkName: "pages/zArchive/charts/c3/index" */))
+const _116217e7 = () => interopDefault(import('..\\pages\\zArchive\\charts\\chartist\\index.vue' /* webpackChunkName: "pages/zArchive/charts/chartist/index" */))
+const _a8a12d4c = () => interopDefault(import('..\\pages\\zArchive\\charts\\chartjs\\index.vue' /* webpackChunkName: "pages/zArchive/charts/chartjs/index" */))
+const _85db9576 = () => interopDefault(import('..\\pages\\zArchive\\charts\\knob.vue' /* webpackChunkName: "pages/zArchive/charts/knob" */))
+const _7eb8396b = () => interopDefault(import('..\\pages\\zArchive\\contacts\\list.vue' /* webpackChunkName: "pages/zArchive/contacts/list" */))
+const _eba43b28 = () => interopDefault(import('..\\pages\\zArchive\\contacts\\profile.vue' /* webpackChunkName: "pages/zArchive/contacts/profile" */))
+const _39ca4654 = () => interopDefault(import('..\\pages\\zArchive\\dashboard\\analytics\\index.vue' /* webpackChunkName: "pages/zArchive/dashboard/analytics/index" */))
+const _68fb4604 = () => interopDefault(import('..\\pages\\zArchive\\dashboard\\crm\\index.vue' /* webpackChunkName: "pages/zArchive/dashboard/crm/index" */))
+const _4888588a = () => interopDefault(import('..\\pages\\zArchive\\dashboard\\default\\index.vue' /* webpackChunkName: "pages/zArchive/dashboard/default/index" */))
+const _54fa3e96 = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\cart.vue' /* webpackChunkName: "pages/zArchive/ecommerce/cart" */))
+const _49a42288 = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\checkout.vue' /* webpackChunkName: "pages/zArchive/ecommerce/checkout" */))
+const _a4fd915a = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\customers\\index.vue' /* webpackChunkName: "pages/zArchive/ecommerce/customers/index" */))
+const _0dfd1964 = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\data-products.js' /* webpackChunkName: "pages/zArchive/ecommerce/data-products" */))
+const _cfbbf5b4 = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\order-detail.vue' /* webpackChunkName: "pages/zArchive/ecommerce/order-detail" */))
+const _1ff6cbc7 = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\orders\\index.vue' /* webpackChunkName: "pages/zArchive/ecommerce/orders/index" */))
+const _42a59c90 = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\product-create.vue' /* webpackChunkName: "pages/zArchive/ecommerce/product-create" */))
+const _691ff768 = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\products\\index.vue' /* webpackChunkName: "pages/zArchive/ecommerce/products/index" */))
+const _1270b3ee = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\products-grid.vue' /* webpackChunkName: "pages/zArchive/ecommerce/products-grid" */))
+const _ab13d864 = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\sellers.vue' /* webpackChunkName: "pages/zArchive/ecommerce/sellers" */))
+const _7175b67a = () => interopDefault(import('..\\pages\\zArchive\\email\\data-inbox.js' /* webpackChunkName: "pages/zArchive/email/data-inbox" */))
+const _f35a11b8 = () => interopDefault(import('..\\pages\\zArchive\\email\\inbox.vue' /* webpackChunkName: "pages/zArchive/email/inbox" */))
+const _81839daa = () => interopDefault(import('..\\pages\\zArchive\\email\\sidepanel.vue' /* webpackChunkName: "pages/zArchive/email/sidepanel" */))
+const _36e31357 = () => interopDefault(import('..\\pages\\zArchive\\email\\templates.vue' /* webpackChunkName: "pages/zArchive/email/templates" */))
+const _9b6a97ce = () => interopDefault(import('..\\pages\\zArchive\\email\\toolbar.vue' /* webpackChunkName: "pages/zArchive/email/toolbar" */))
+const _2fae54fb = () => interopDefault(import('..\\pages\\zArchive\\extended\\rangeslider.vue' /* webpackChunkName: "pages/zArchive/extended/rangeslider" */))
+const _7aca2da8 = () => interopDefault(import('..\\pages\\zArchive\\extended\\scrollspy.vue' /* webpackChunkName: "pages/zArchive/extended/scrollspy" */))
+const _dc5f7748 = () => interopDefault(import('..\\pages\\zArchive\\extended\\sweet-alert.vue' /* webpackChunkName: "pages/zArchive/extended/sweet-alert" */))
+const _c5cfa8ea = () => interopDefault(import('..\\pages\\zArchive\\extended\\tour.vue' /* webpackChunkName: "pages/zArchive/extended/tour" */))
+const _45c3b92a = () => interopDefault(import('..\\pages\\zArchive\\extras\\404.vue' /* webpackChunkName: "pages/zArchive/extras/404" */))
+const _4402e247 = () => interopDefault(import('..\\pages\\zArchive\\extras\\404-alt.vue' /* webpackChunkName: "pages/zArchive/extras/404-alt" */))
+const _11cc00a8 = () => interopDefault(import('..\\pages\\zArchive\\extras\\500.vue' /* webpackChunkName: "pages/zArchive/extras/500" */))
+const _1447bc7a = () => interopDefault(import('..\\pages\\zArchive\\extras\\coming-soon.vue' /* webpackChunkName: "pages/zArchive/extras/coming-soon" */))
+const _c714b80c = () => interopDefault(import('..\\pages\\zArchive\\extras\\faqs.vue' /* webpackChunkName: "pages/zArchive/extras/faqs" */))
+const _4c4b5540 = () => interopDefault(import('..\\pages\\zArchive\\extras\\invoice.vue' /* webpackChunkName: "pages/zArchive/extras/invoice" */))
+const _eeab435c = () => interopDefault(import('..\\pages\\zArchive\\extras\\lightbox.vue' /* webpackChunkName: "pages/zArchive/extras/lightbox" */))
+const _4b9a1cc6 = () => interopDefault(import('..\\pages\\zArchive\\extras\\maintenance.vue' /* webpackChunkName: "pages/zArchive/extras/maintenance" */))
+const _6a1abd79 = () => interopDefault(import('..\\pages\\zArchive\\extras\\pricing.vue' /* webpackChunkName: "pages/zArchive/extras/pricing" */))
+const _620d0724 = () => interopDefault(import('..\\pages\\zArchive\\extras\\search-results.vue' /* webpackChunkName: "pages/zArchive/extras/search-results" */))
+const _7ecfbae8 = () => interopDefault(import('..\\pages\\zArchive\\extras\\sitemap.vue' /* webpackChunkName: "pages/zArchive/extras/sitemap" */))
+const _86e45c7c = () => interopDefault(import('..\\pages\\zArchive\\extras\\starter.vue' /* webpackChunkName: "pages/zArchive/extras/starter" */))
+const _18b6f8c4 = () => interopDefault(import('..\\pages\\zArchive\\extras\\timeline.vue' /* webpackChunkName: "pages/zArchive/extras/timeline" */))
+const _5f097b72 = () => interopDefault(import('..\\pages\\zArchive\\forms\\advanced.vue' /* webpackChunkName: "pages/zArchive/forms/advanced" */))
+const _0a22289c = () => interopDefault(import('..\\pages\\zArchive\\forms\\elements.vue' /* webpackChunkName: "pages/zArchive/forms/elements" */))
+const _63df7366 = () => interopDefault(import('..\\pages\\zArchive\\forms\\file-uploads.vue' /* webpackChunkName: "pages/zArchive/forms/file-uploads" */))
+const _6ff2ba91 = () => interopDefault(import('..\\pages\\zArchive\\forms\\mask.vue' /* webpackChunkName: "pages/zArchive/forms/mask" */))
+const _1de54ca0 = () => interopDefault(import('..\\pages\\zArchive\\forms\\quill.vue' /* webpackChunkName: "pages/zArchive/forms/quill" */))
+const _e395a044 = () => interopDefault(import('..\\pages\\zArchive\\forms\\validation.vue' /* webpackChunkName: "pages/zArchive/forms/validation" */))
+const _b773db60 = () => interopDefault(import('..\\pages\\zArchive\\forms\\wizard.vue' /* webpackChunkName: "pages/zArchive/forms/wizard" */))
+const _027ed102 = () => interopDefault(import('..\\pages\\zArchive\\icons\\boxicons.vue' /* webpackChunkName: "pages/zArchive/icons/boxicons" */))
+const _0e97bd8e = () => interopDefault(import('..\\pages\\zArchive\\icons\\data-fontawesome.js' /* webpackChunkName: "pages/zArchive/icons/data-fontawesome" */))
+const _c08483f6 = () => interopDefault(import('..\\pages\\zArchive\\icons\\data-material.js' /* webpackChunkName: "pages/zArchive/icons/data-material" */))
+const _62e14399 = () => interopDefault(import('..\\pages\\zArchive\\icons\\data-remix.js' /* webpackChunkName: "pages/zArchive/icons/data-remix" */))
+const _cb319afa = () => interopDefault(import('..\\pages\\zArchive\\icons\\feather.vue' /* webpackChunkName: "pages/zArchive/icons/feather" */))
+const _1f8b4535 = () => interopDefault(import('..\\pages\\zArchive\\icons\\font-awesome.vue' /* webpackChunkName: "pages/zArchive/icons/font-awesome" */))
+const _68b31412 = () => interopDefault(import('..\\pages\\zArchive\\icons\\mdi.vue' /* webpackChunkName: "pages/zArchive/icons/mdi" */))
+const _e48e7fae = () => interopDefault(import('..\\pages\\zArchive\\icons\\remix.vue' /* webpackChunkName: "pages/zArchive/icons/remix" */))
+const _7d971154 = () => interopDefault(import('..\\pages\\zArchive\\icons\\weather.vue' /* webpackChunkName: "pages/zArchive/icons/weather" */))
+const _5cd7acec = () => interopDefault(import('..\\pages\\zArchive\\maps\\google.vue' /* webpackChunkName: "pages/zArchive/maps/google" */))
+const _1f192de1 = () => interopDefault(import('..\\pages\\zArchive\\tables\\advanced\\index.vue' /* webpackChunkName: "pages/zArchive/tables/advanced/index" */))
+const _e00f7942 = () => interopDefault(import('..\\pages\\zArchive\\tables\\basic.vue' /* webpackChunkName: "pages/zArchive/tables/basic" */))
+const _4bce5190 = () => interopDefault(import('..\\pages\\zArchive\\task\\detail.vue' /* webpackChunkName: "pages/zArchive/task/detail" */))
+const _31021e4c = () => interopDefault(import('..\\pages\\zArchive\\task\\kanban\\index.vue' /* webpackChunkName: "pages/zArchive/task/kanban/index" */))
+const _7261991d = () => interopDefault(import('..\\pages\\zArchive\\task\\list.vue' /* webpackChunkName: "pages/zArchive/task/list" */))
+const _7927e45c = () => interopDefault(import('..\\pages\\zArchive\\ui\\avatars.vue' /* webpackChunkName: "pages/zArchive/ui/avatars" */))
+const _0ec983ba = () => interopDefault(import('..\\pages\\zArchive\\ui\\buttons.vue' /* webpackChunkName: "pages/zArchive/ui/buttons" */))
+const _8f3380f6 = () => interopDefault(import('..\\pages\\zArchive\\ui\\cards.vue' /* webpackChunkName: "pages/zArchive/ui/cards" */))
+const _15e280ae = () => interopDefault(import('..\\pages\\zArchive\\ui\\carousel.vue' /* webpackChunkName: "pages/zArchive/ui/carousel" */))
+const _d6e54bb8 = () => interopDefault(import('..\\pages\\zArchive\\ui\\dropdowns.vue' /* webpackChunkName: "pages/zArchive/ui/dropdowns" */))
+const _d65f07ec = () => interopDefault(import('..\\pages\\zArchive\\ui\\general.vue' /* webpackChunkName: "pages/zArchive/ui/general" */))
+const _639a1294 = () => interopDefault(import('..\\pages\\zArchive\\ui\\grid.vue' /* webpackChunkName: "pages/zArchive/ui/grid" */))
+const _b453e974 = () => interopDefault(import('..\\pages\\zArchive\\ui\\images.vue' /* webpackChunkName: "pages/zArchive/ui/images" */))
+const _324afe5e = () => interopDefault(import('..\\pages\\zArchive\\ui\\list-group.vue' /* webpackChunkName: "pages/zArchive/ui/list-group" */))
+const _b4968598 = () => interopDefault(import('..\\pages\\zArchive\\ui\\modals.vue' /* webpackChunkName: "pages/zArchive/ui/modals" */))
+const _3f7cf88a = () => interopDefault(import('..\\pages\\zArchive\\ui\\notifications.vue' /* webpackChunkName: "pages/zArchive/ui/notifications" */))
+const _12395c87 = () => interopDefault(import('..\\pages\\zArchive\\ui\\portlets.vue' /* webpackChunkName: "pages/zArchive/ui/portlets" */))
+const _4bb89a0a = () => interopDefault(import('..\\pages\\zArchive\\ui\\progress.vue' /* webpackChunkName: "pages/zArchive/ui/progress" */))
+const _18d026ff = () => interopDefault(import('..\\pages\\zArchive\\ui\\ribbons.vue' /* webpackChunkName: "pages/zArchive/ui/ribbons" */))
+const _7a5c13c8 = () => interopDefault(import('..\\pages\\zArchive\\ui\\spinners.vue' /* webpackChunkName: "pages/zArchive/ui/spinners" */))
+const _699a21fc = () => interopDefault(import('..\\pages\\zArchive\\ui\\tabs-accordions.vue' /* webpackChunkName: "pages/zArchive/ui/tabs-accordions" */))
+const _d2b45026 = () => interopDefault(import('..\\pages\\zArchive\\ui\\tooltips-popovers.vue' /* webpackChunkName: "pages/zArchive/ui/tooltips-popovers" */))
+const _1ab3bf7d = () => interopDefault(import('..\\pages\\zArchive\\ui\\typography.vue' /* webpackChunkName: "pages/zArchive/ui/typography" */))
+const _1569209d = () => interopDefault(import('..\\pages\\zArchive\\ui\\video.vue' /* webpackChunkName: "pages/zArchive/ui/video" */))
+const _1b3f9b40 = () => interopDefault(import('..\\pages\\zArchive\\widgets\\data.js' /* webpackChunkName: "pages/zArchive/widgets/data" */))
+const _2106dc28 = () => interopDefault(import('..\\pages\\zArchive\\apps\\calendar\\data-calendar.js' /* webpackChunkName: "pages/zArchive/apps/calendar/data-calendar" */))
+const _3628fd21 = () => interopDefault(import('..\\pages\\zArchive\\apps\\chat\\data.js' /* webpackChunkName: "pages/zArchive/apps/chat/data" */))
+const _4daad0b4 = () => interopDefault(import('..\\pages\\zArchive\\apps\\companies\\data.js' /* webpackChunkName: "pages/zArchive/apps/companies/data" */))
+const _405e851a = () => interopDefault(import('..\\pages\\zArchive\\apps\\tickets\\data.js' /* webpackChunkName: "pages/zArchive/apps/tickets/data" */))
+const _044a9ed4 = () => interopDefault(import('..\\pages\\zArchive\\charts\\apex\\data.js' /* webpackChunkName: "pages/zArchive/charts/apex/data" */))
+const _0a22a1c6 = () => interopDefault(import('..\\pages\\zArchive\\charts\\c3\\data.js' /* webpackChunkName: "pages/zArchive/charts/c3/data" */))
+const _3662e2ca = () => interopDefault(import('..\\pages\\zArchive\\charts\\chartist\\data.js' /* webpackChunkName: "pages/zArchive/charts/chartist/data" */))
+const _25e75bd3 = () => interopDefault(import('..\\pages\\zArchive\\charts\\chartjs\\BarChart.vue' /* webpackChunkName: "pages/zArchive/charts/chartjs/BarChart" */))
+const _ccbd04b8 = () => interopDefault(import('..\\pages\\zArchive\\charts\\chartjs\\DonutChart.vue' /* webpackChunkName: "pages/zArchive/charts/chartjs/DonutChart" */))
+const _2a280cb2 = () => interopDefault(import('..\\pages\\zArchive\\charts\\chartjs\\LineChart.vue' /* webpackChunkName: "pages/zArchive/charts/chartjs/LineChart" */))
+const _5ded830c = () => interopDefault(import('..\\pages\\zArchive\\charts\\chartjs\\PieChart.vue' /* webpackChunkName: "pages/zArchive/charts/chartjs/PieChart" */))
+const _d39a65f0 = () => interopDefault(import('..\\pages\\zArchive\\charts\\chartjs\\PolarChart.vue' /* webpackChunkName: "pages/zArchive/charts/chartjs/PolarChart" */))
+const _1136da40 = () => interopDefault(import('..\\pages\\zArchive\\charts\\chartjs\\RadarChart.vue' /* webpackChunkName: "pages/zArchive/charts/chartjs/RadarChart" */))
+const _5e758c7c = () => interopDefault(import('..\\pages\\zArchive\\dashboard\\analytics\\channels.vue' /* webpackChunkName: "pages/zArchive/dashboard/analytics/channels" */))
+const _086b59a5 = () => interopDefault(import('..\\pages\\zArchive\\dashboard\\analytics\\overview.vue' /* webpackChunkName: "pages/zArchive/dashboard/analytics/overview" */))
+const _1c0fda30 = () => interopDefault(import('..\\pages\\zArchive\\dashboard\\analytics\\social-media.vue' /* webpackChunkName: "pages/zArchive/dashboard/analytics/social-media" */))
+const _72b781bc = () => interopDefault(import('..\\pages\\zArchive\\dashboard\\analytics\\sources.vue' /* webpackChunkName: "pages/zArchive/dashboard/analytics/sources" */))
+const _2884b70c = () => interopDefault(import('..\\pages\\zArchive\\dashboard\\analytics\\users.vue' /* webpackChunkName: "pages/zArchive/dashboard/analytics/users" */))
+const _705aed36 = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\customers\\data.js' /* webpackChunkName: "pages/zArchive/ecommerce/customers/data" */))
+const _00530eaa = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\orders\\data.js' /* webpackChunkName: "pages/zArchive/ecommerce/orders/data" */))
+const _7136a2ea = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\products\\data.js' /* webpackChunkName: "pages/zArchive/ecommerce/products/data" */))
+const _ee09a178 = () => interopDefault(import('..\\pages\\zArchive\\tables\\advanced\\data.js' /* webpackChunkName: "pages/zArchive/tables/advanced/data" */))
+const _46ab3e6f = () => interopDefault(import('..\\pages\\zArchive\\task\\kanban\\data.js' /* webpackChunkName: "pages/zArchive/task/kanban/data" */))
+const _fc8d75b6 = () => interopDefault(import('..\\pages\\zArchive\\ecommerce\\product-detail\\_id.vue' /* webpackChunkName: "pages/zArchive/ecommerce/product-detail/_id" */))
+const _0c6fe6f4 = () => interopDefault(import('..\\pages\\zArchive\\email\\reademail\\_id.vue' /* webpackChunkName: "pages/zArchive/email/reademail/_id" */))
 
 // TODO: remove in Nuxt 3
 const emptyFn = () => {}
@@ -167,2300 +167,2300 @@ export const routerOptions = {
 
   routes: [{
     path: "/accounts",
-    component: _26cb8858,
+    component: _0f35996c,
     name: "accounts___en"
   }, {
     path: "/ar",
-    component: _6f1d347e,
+    component: _6a1085f0,
     name: "index___ar"
   }, {
     path: "/ar",
     component: _2563ddd0
   }, {
     path: "/es",
-    component: _6f1d347e,
+    component: _6a1085f0,
     name: "index___es"
   }, {
     path: "/es",
     component: _2563ddd0
   }, {
     path: "/fr",
-    component: _6f1d347e,
+    component: _6a1085f0,
     name: "index___fr"
   }, {
     path: "/fr",
     component: _2563ddd0
   }, {
     path: "/accounts/data",
-    component: _b0c0890a,
+    component: _a5a90a26,
     name: "accounts-data___en"
   }, {
     path: "/accounts/net-worth",
-    component: _f9f4fa38,
+    component: _490c64d6,
     name: "accounts-net-worth___en"
   }, {
     path: "/accounts/transactions",
-    component: _0ec18882,
+    component: _d8e286e6,
     name: "accounts-transactions___en"
   }, {
     path: "/ar/accounts",
-    component: _26cb8858,
+    component: _0f35996c,
     name: "accounts___ar"
   }, {
     path: "/auth/login",
-    component: _d4e93326,
+    component: _94f74b42,
     name: "auth-login___en"
   }, {
     path: "/auth/register",
-    component: _67757f4f,
+    component: _1361ae1d,
     name: "auth-register___en"
   }, {
     path: "/banking/bills",
-    component: _18b1e6ea,
+    component: _76c3d490,
     name: "banking-bills___en"
   }, {
     path: "/banking/budgeting",
-    component: _e35906ca,
+    component: _1060d72e,
     name: "banking-budgeting___en"
   }, {
     path: "/banking/cash-flow",
-    component: _14a5c826,
+    component: _7e21dff4,
     name: "banking-cash-flow___en"
   }, {
     path: "/errors/404",
-    component: _f3b5df4e,
+    component: _b3c3f76a,
     name: "errors-404___en"
   }, {
     path: "/es/accounts",
-    component: _26cb8858,
+    component: _0f35996c,
     name: "accounts___es"
   }, {
     path: "/fr/accounts",
-    component: _26cb8858,
+    component: _0f35996c,
     name: "accounts___fr"
   }, {
     path: "/zArchive/widgets",
-    component: _263754af,
+    component: _796c4c06,
     name: "zArchive-widgets___en"
   }, {
     path: "/ar/accounts/data",
-    component: _b0c0890a,
+    component: _a5a90a26,
     name: "accounts-data___ar"
   }, {
     path: "/ar/accounts/net-worth",
-    component: _f9f4fa38,
+    component: _490c64d6,
     name: "accounts-net-worth___ar"
   }, {
     path: "/ar/accounts/transactions",
-    component: _0ec18882,
+    component: _d8e286e6,
     name: "accounts-transactions___ar"
   }, {
     path: "/ar/auth/login",
-    component: _d4e93326,
+    component: _94f74b42,
     name: "auth-login___ar"
   }, {
     path: "/ar/auth/register",
-    component: _67757f4f,
+    component: _1361ae1d,
     name: "auth-register___ar"
   }, {
     path: "/ar/banking/bills",
-    component: _18b1e6ea,
+    component: _76c3d490,
     name: "banking-bills___ar"
   }, {
     path: "/ar/banking/budgeting",
-    component: _e35906ca,
+    component: _1060d72e,
     name: "banking-budgeting___ar"
   }, {
     path: "/ar/banking/cash-flow",
-    component: _14a5c826,
+    component: _7e21dff4,
     name: "banking-cash-flow___ar"
   }, {
     path: "/ar/errors/404",
-    component: _f3b5df4e,
+    component: _b3c3f76a,
     name: "errors-404___ar"
   }, {
     path: "/ar/zArchive/widgets",
-    component: _263754af,
+    component: _796c4c06,
     name: "zArchive-widgets___ar"
   }, {
     path: "/es/accounts/data",
-    component: _b0c0890a,
+    component: _a5a90a26,
     name: "accounts-data___es"
   }, {
     path: "/es/accounts/net-worth",
-    component: _f9f4fa38,
+    component: _490c64d6,
     name: "accounts-net-worth___es"
   }, {
     path: "/es/accounts/transactions",
-    component: _0ec18882,
+    component: _d8e286e6,
     name: "accounts-transactions___es"
   }, {
     path: "/es/auth/login",
-    component: _d4e93326,
+    component: _94f74b42,
     name: "auth-login___es"
   }, {
     path: "/es/auth/register",
-    component: _67757f4f,
+    component: _1361ae1d,
     name: "auth-register___es"
   }, {
     path: "/es/banking/bills",
-    component: _18b1e6ea,
+    component: _76c3d490,
     name: "banking-bills___es"
   }, {
     path: "/es/banking/budgeting",
-    component: _e35906ca,
+    component: _1060d72e,
     name: "banking-budgeting___es"
   }, {
     path: "/es/banking/cash-flow",
-    component: _14a5c826,
+    component: _7e21dff4,
     name: "banking-cash-flow___es"
   }, {
     path: "/es/errors/404",
-    component: _f3b5df4e,
+    component: _b3c3f76a,
     name: "errors-404___es"
   }, {
     path: "/es/zArchive/widgets",
-    component: _263754af,
+    component: _796c4c06,
     name: "zArchive-widgets___es"
   }, {
     path: "/fr/accounts/data",
-    component: _b0c0890a,
+    component: _a5a90a26,
     name: "accounts-data___fr"
   }, {
     path: "/fr/accounts/net-worth",
-    component: _f9f4fa38,
+    component: _490c64d6,
     name: "accounts-net-worth___fr"
   }, {
     path: "/fr/accounts/transactions",
-    component: _0ec18882,
+    component: _d8e286e6,
     name: "accounts-transactions___fr"
   }, {
     path: "/fr/auth/login",
-    component: _d4e93326,
+    component: _94f74b42,
     name: "auth-login___fr"
   }, {
     path: "/fr/auth/register",
-    component: _67757f4f,
+    component: _1361ae1d,
     name: "auth-register___fr"
   }, {
     path: "/fr/banking/bills",
-    component: _18b1e6ea,
+    component: _76c3d490,
     name: "banking-bills___fr"
   }, {
     path: "/fr/banking/budgeting",
-    component: _e35906ca,
+    component: _1060d72e,
     name: "banking-budgeting___fr"
   }, {
     path: "/fr/banking/cash-flow",
-    component: _14a5c826,
+    component: _7e21dff4,
     name: "banking-cash-flow___fr"
   }, {
     path: "/fr/errors/404",
-    component: _f3b5df4e,
+    component: _b3c3f76a,
     name: "errors-404___fr"
   }, {
     path: "/fr/zArchive/widgets",
-    component: _263754af,
+    component: _796c4c06,
     name: "zArchive-widgets___fr"
   }, {
     path: "/zArchive/account/forgot-password",
-    component: _7d985964,
+    component: _ca91d59c,
     name: "zArchive-account-forgot-password___en"
   }, {
     path: "/zArchive/account/login",
-    component: _b9c03cf0,
+    component: _403266d6,
     name: "zArchive-account-login___en"
   }, {
     path: "/zArchive/account/register",
-    component: _8d512b58,
+    component: _679e3a46,
     name: "zArchive-account-register___en"
   }, {
     path: "/zArchive/apps/calendar",
-    component: _662567e6,
+    component: _18822250,
     name: "zArchive-apps-calendar___en"
   }, {
     path: "/zArchive/apps/chat",
-    component: _ec77aee8,
+    component: _380af87e,
     name: "zArchive-apps-chat___en"
   }, {
     path: "/zArchive/apps/companies",
-    component: _090ea316,
+    component: _211005c3,
     name: "zArchive-apps-companies___en"
   }, {
     path: "/zArchive/apps/file-manager",
-    component: _54cd943a,
+    component: _6f60c288,
     name: "zArchive-apps-file-manager___en"
   }, {
     path: "/zArchive/apps/tickets",
-    component: _6f04d92e,
+    component: _ea033392,
     name: "zArchive-apps-tickets___en"
   }, {
     path: "/zArchive/auth/confirm-mail",
-    component: _9f002390,
+    component: _69d9c6f4,
     name: "zArchive-auth-confirm-mail___en"
   }, {
     path: "/zArchive/auth/confirm-mail-2",
-    component: _eaab9d46,
+    component: _4d2b042b,
     name: "zArchive-auth-confirm-mail-2___en"
   }, {
     path: "/zArchive/auth/lock-screen",
-    component: _8e7f332c,
+    component: _6707365c,
     name: "zArchive-auth-lock-screen___en"
   }, {
     path: "/zArchive/auth/lock-screen-2",
-    component: _f6a535e2,
+    component: _86fffefe,
     name: "zArchive-auth-lock-screen-2___en"
   }, {
     path: "/zArchive/auth/login",
-    component: _30907405,
+    component: _df32bd12,
     name: "zArchive-auth-login___en"
   }, {
     path: "/zArchive/auth/login-2",
-    component: _48b077ea,
+    component: _0bb110dc,
     name: "zArchive-auth-login-2___en"
   }, {
     path: "/zArchive/auth/logout",
-    component: _2e8f151e,
+    component: _6d02d428,
     name: "zArchive-auth-logout___en"
   }, {
     path: "/zArchive/auth/logout-2",
-    component: _7ce9927a,
+    component: _5e9dbc11,
     name: "zArchive-auth-logout-2___en"
   }, {
     path: "/zArchive/auth/recoverpwd",
-    component: _13d60526,
+    component: _cec9318a,
     name: "zArchive-auth-recoverpwd___en"
   }, {
     path: "/zArchive/auth/recoverpwd-2",
-    component: _818f715c,
+    component: _4c6914c0,
     name: "zArchive-auth-recoverpwd-2___en"
   }, {
     path: "/zArchive/auth/register",
-    component: _387e6ab7,
+    component: _54de1ff6,
     name: "zArchive-auth-register___en"
   }, {
     path: "/zArchive/auth/register-2",
-    component: _0cfb8a1c,
+    component: _a0fc182c,
     name: "zArchive-auth-register-2___en"
   }, {
     path: "/zArchive/auth/signin-signup",
-    component: _6852053f,
+    component: _bfb6be9e,
     name: "zArchive-auth-signin-signup___en"
   }, {
     path: "/zArchive/auth/signin-signup-2",
-    component: _d35abab8,
+    component: _23ec2996,
     name: "zArchive-auth-signin-signup-2___en"
   }, {
     path: "/zArchive/charts/apex",
-    component: _670f4402,
+    component: _044af971,
     name: "zArchive-charts-apex___en"
   }, {
     path: "/zArchive/charts/c3",
-    component: _45e737f1,
+    component: _17a3f03a,
     name: "zArchive-charts-c3___en"
   }, {
     path: "/zArchive/charts/chartist",
-    component: _f7e2f516,
+    component: _116217e7,
     name: "zArchive-charts-chartist___en"
   }, {
     path: "/zArchive/charts/chartjs",
-    component: _f3cfdbe8,
+    component: _a8a12d4c,
     name: "zArchive-charts-chartjs___en"
   }, {
     path: "/zArchive/charts/knob",
-    component: _2222b477,
+    component: _85db9576,
     name: "zArchive-charts-knob___en"
   }, {
     path: "/zArchive/contacts/list",
-    component: _3cb497c6,
+    component: _7eb8396b,
     name: "zArchive-contacts-list___en"
   }, {
     path: "/zArchive/contacts/profile",
-    component: _4831db0c,
+    component: _eba43b28,
     name: "zArchive-contacts-profile___en"
   }, {
     path: "/zArchive/dashboard/analytics",
-    component: _2799d364,
+    component: _39ca4654,
     name: "zArchive-dashboard-analytics___en"
   }, {
     path: "/zArchive/dashboard/crm",
-    component: _3de8d60c,
+    component: _68fb4604,
     name: "zArchive-dashboard-crm___en"
   }, {
     path: "/zArchive/dashboard/default",
-    component: _550315c9,
+    component: _4888588a,
     name: "zArchive-dashboard-default___en"
   }, {
     path: "/zArchive/ecommerce/cart",
-    component: _4fbc1a24,
+    component: _54fa3e96,
     name: "zArchive-ecommerce-cart___en"
   }, {
     path: "/zArchive/ecommerce/checkout",
-    component: _b949596c,
+    component: _49a42288,
     name: "zArchive-ecommerce-checkout___en"
   }, {
     path: "/zArchive/ecommerce/customers",
-    component: _1bffa43e,
+    component: _a4fd915a,
     name: "zArchive-ecommerce-customers___en"
   }, {
     path: "/zArchive/ecommerce/data-products",
-    component: _6bade0dc,
+    component: _0dfd1964,
     name: "zArchive-ecommerce-data-products___en"
   }, {
     path: "/zArchive/ecommerce/order-detail",
-    component: _0ace72b4,
+    component: _cfbbf5b4,
     name: "zArchive-ecommerce-order-detail___en"
   }, {
     path: "/zArchive/ecommerce/orders",
-    component: _02d80ff9,
+    component: _1ff6cbc7,
     name: "zArchive-ecommerce-orders___en"
   }, {
     path: "/zArchive/ecommerce/product-create",
-    component: _882642c4,
+    component: _42a59c90,
     name: "zArchive-ecommerce-product-create___en"
   }, {
     path: "/zArchive/ecommerce/products",
-    component: _18c0f71a,
+    component: _691ff768,
     name: "zArchive-ecommerce-products___en"
   }, {
     path: "/zArchive/ecommerce/products-grid",
-    component: _4cae2b8a,
+    component: _1270b3ee,
     name: "zArchive-ecommerce-products-grid___en"
   }, {
     path: "/zArchive/ecommerce/sellers",
-    component: _e03a3500,
+    component: _ab13d864,
     name: "zArchive-ecommerce-sellers___en"
   }, {
     path: "/zArchive/email/data-inbox",
-    component: _622166a8,
+    component: _7175b67a,
     name: "zArchive-email-data-inbox___en"
   }, {
     path: "/zArchive/email/inbox",
-    component: _29391354,
+    component: _f35a11b8,
     name: "zArchive-email-inbox___en"
   }, {
     path: "/zArchive/email/sidepanel",
-    component: _1cb7c75d,
+    component: _81839daa,
     name: "zArchive-email-sidepanel___en"
   }, {
     path: "/zArchive/email/templates",
-    component: _d746acee,
+    component: _36e31357,
     name: "zArchive-email-templates___en"
   }, {
     path: "/zArchive/email/toolbar",
-    component: _15382ecb,
+    component: _9b6a97ce,
     name: "zArchive-email-toolbar___en"
   }, {
     path: "/zArchive/extended/rangeslider",
-    component: _bbd663ee,
+    component: _2fae54fb,
     name: "zArchive-extended-rangeslider___en"
   }, {
     path: "/zArchive/extended/scrollspy",
-    component: _ea6f648c,
+    component: _7aca2da8,
     name: "zArchive-extended-scrollspy___en"
   }, {
     path: "/zArchive/extended/sweet-alert",
-    component: _0436bd6a,
+    component: _dc5f7748,
     name: "zArchive-extended-sweet-alert___en"
   }, {
     path: "/zArchive/extended/tour",
-    component: _0005a63d,
+    component: _c5cfa8ea,
     name: "zArchive-extended-tour___en"
   }, {
     path: "/zArchive/extras/404",
-    component: _7d47f5f9,
+    component: _45c3b92a,
     name: "zArchive-extras-404___en"
   }, {
     path: "/zArchive/extras/404-alt",
-    component: _3ec4bdd5,
+    component: _4402e247,
     name: "zArchive-extras-404-alt___en"
   }, {
     path: "/zArchive/extras/500",
-    component: _9c145994,
+    component: _11cc00a8,
     name: "zArchive-extras-500___en"
   }, {
     path: "/zArchive/extras/coming-soon",
-    component: _4715bdf0,
+    component: _1447bc7a,
     name: "zArchive-extras-coming-soon___en"
   }, {
     path: "/zArchive/extras/faqs",
-    component: _0186232c,
+    component: _c714b80c,
     name: "zArchive-extras-faqs___en"
   }, {
     path: "/zArchive/extras/invoice",
-    component: _56c79e24,
+    component: _4c4b5540,
     name: "zArchive-extras-invoice___en"
   }, {
     path: "/zArchive/extras/lightbox",
-    component: _33b816f8,
+    component: _eeab435c,
     name: "zArchive-extras-lightbox___en"
   }, {
     path: "/zArchive/extras/maintenance",
-    component: _13c78154,
+    component: _4b9a1cc6,
     name: "zArchive-extras-maintenance___en"
   }, {
     path: "/zArchive/extras/pricing",
-    component: _64dc9907,
+    component: _6a1abd79,
     name: "zArchive-extras-pricing___en"
   }, {
     path: "/zArchive/extras/search-results",
-    component: _ad3bb5c0,
+    component: _620d0724,
     name: "zArchive-extras-search-results___en"
   }, {
     path: "/zArchive/extras/sitemap",
-    component: _79919676,
+    component: _7ecfbae8,
     name: "zArchive-extras-sitemap___en"
   }, {
     path: "/zArchive/extras/starter",
-    component: _9160a560,
+    component: _86e45c7c,
     name: "zArchive-extras-starter___en"
   }, {
     path: "/zArchive/extras/timeline",
-    component: _511e19d0,
+    component: _18b6f8c4,
     name: "zArchive-extras-timeline___en"
   }, {
     path: "/zArchive/forms/advanced",
-    component: _6985c456,
+    component: _5f097b72,
     name: "zArchive-forms-advanced___en"
   }, {
     path: "/zArchive/forms/elements",
-    component: _04e4042a,
+    component: _0a22289c,
     name: "zArchive-forms-elements___en"
   }, {
     path: "/zArchive/forms/file-uploads",
-    component: _2c0cd7f4,
+    component: _63df7366,
     name: "zArchive-forms-file-uploads___en"
   }, {
     path: "/zArchive/forms/mask",
-    component: _101c8d1f,
+    component: _6ff2ba91,
     name: "zArchive-forms-mask___en"
   }, {
     path: "/zArchive/forms/quill",
-    component: _561dd8e2,
+    component: _1de54ca0,
     name: "zArchive-forms-quill___en"
   }, {
     path: "/zArchive/forms/validation",
-    component: _40234028,
+    component: _e395a044,
     name: "zArchive-forms-validation___en"
   }, {
     path: "/zArchive/forms/wizard",
-    component: _3d750d44,
+    component: _b773db60,
     name: "zArchive-forms-wizard___en"
   }, {
     path: "/zArchive/icons/boxicons",
-    component: _0cfb19e6,
+    component: _027ed102,
     name: "zArchive-icons-boxicons___en"
   }, {
     path: "/zArchive/icons/data-fontawesome",
-    component: _2dff3380,
+    component: _0e97bd8e,
     name: "zArchive-icons-data-fontawesome___en"
   }, {
     path: "/zArchive/icons/data-material",
-    component: _67eb2293,
+    component: _c08483f6,
     name: "zArchive-icons-data-material___en"
   }, {
     path: "/zArchive/icons/data-remix",
-    component: _7f4a4c6a,
+    component: _62e14399,
     name: "zArchive-icons-data-remix___en"
   }, {
     path: "/zArchive/icons/feather",
-    component: _0556a596,
+    component: _cb319afa,
     name: "zArchive-icons-feather___en"
   }, {
     path: "/zArchive/icons/font-awesome",
-    component: _308eac7a,
+    component: _1f8b4535,
     name: "zArchive-icons-font-awesome___en"
   }, {
     path: "/zArchive/icons/mdi",
-    component: _6dddb7c4,
+    component: _68b31412,
     name: "zArchive-icons-mdi___en"
   }, {
     path: "/zArchive/icons/remix",
-    component: _1a6d814a,
+    component: _e48e7fae,
     name: "zArchive-icons-remix___en"
   }, {
     path: "/zArchive/icons/weather",
-    component: _3ef6e7f4,
+    component: _7d971154,
     name: "zArchive-icons-weather___en"
   }, {
     path: "/zArchive/maps/google",
-    component: _36a4a8bc,
+    component: _5cd7acec,
     name: "zArchive-maps-google___en"
   }, {
     path: "/zArchive/tables/advanced",
-    component: _dc74c922,
+    component: _1f192de1,
     name: "zArchive-tables-advanced___en"
   }, {
     path: "/zArchive/tables/basic",
-    component: _6610ab26,
+    component: _e00f7942,
     name: "zArchive-tables-basic___en"
   }, {
     path: "/zArchive/task/detail",
-    component: _9e425e7c,
+    component: _4bce5190,
     name: "zArchive-task-detail___en"
   }, {
     path: "/zArchive/task/kanban",
-    component: _0da0fa4c,
+    component: _31021e4c,
     name: "zArchive-task-kanban___en"
   }, {
     path: "/zArchive/task/list",
-    component: _778c3ccf,
+    component: _7261991d,
     name: "zArchive-task-list___en"
   }, {
     path: "/zArchive/ui/avatars",
-    component: _1951b6ea,
+    component: _7927e45c,
     name: "zArchive-ui-avatars___en"
   }, {
     path: "/zArchive/ui/buttons",
-    component: _ce75de9e,
+    component: _0ec983ba,
     name: "zArchive-ui-buttons___en"
   }, {
     path: "/zArchive/ui/cards",
-    component: _1b4144da,
+    component: _8f3380f6,
     name: "zArchive-ui-cards___en"
   }, {
     path: "/zArchive/ui/carousel",
-    component: _7af2ffe0,
+    component: _15e280ae,
     name: "zArchive-ui-carousel___en"
   }, {
     path: "/zArchive/ui/dropdowns",
-    component: _5ce67d9c,
+    component: _d6e54bb8,
     name: "zArchive-ui-dropdowns___en"
   }, {
     path: "/zArchive/ui/general",
-    component: _34fa4e98,
+    component: _d65f07ec,
     name: "zArchive-ui-general___en"
   }, {
     path: "/zArchive/ui/grid",
-    component: _0bc40a74,
+    component: _639a1294,
     name: "zArchive-ui-grid___en"
   }, {
     path: "/zArchive/ui/images",
-    component: _a9fea210,
+    component: _b453e974,
     name: "zArchive-ui-images___en"
   }, {
     path: "/zArchive/ui/list-group",
-    component: _d58f0de0,
+    component: _324afe5e,
     name: "zArchive-ui-list-group___en"
   }, {
     path: "/zArchive/ui/modals",
-    component: _aa413e34,
+    component: _b4968598,
     name: "zArchive-ui-modals___en"
   }, {
     path: "/zArchive/ui/notifications",
-    component: _dd93aed0,
+    component: _3f7cf88a,
     name: "zArchive-ui-notifications___en"
   }, {
     path: "/zArchive/ui/portlets",
-    component: _7749dbb9,
+    component: _12395c87,
     name: "zArchive-ui-portlets___en"
   }, {
     path: "/zArchive/ui/progress",
-    component: _3f34322d,
+    component: _4bb89a0a,
     name: "zArchive-ui-progress___en"
   }, {
     path: "/zArchive/ui/ribbons",
-    component: _8e0c0ce6,
+    component: _18d026ff,
     name: "zArchive-ui-ribbons___en"
   }, {
     path: "/zArchive/ui/spinners",
-    component: _4126da0c,
+    component: _7a5c13c8,
     name: "zArchive-ui-spinners___en"
   }, {
     path: "/zArchive/ui/tabs-accordions",
-    component: _31c7868a,
+    component: _699a21fc,
     name: "zArchive-ui-tabs-accordions___en"
   }, {
     path: "/zArchive/ui/tooltips-popovers",
-    component: _090c50fb,
+    component: _d2b45026,
     name: "zArchive-ui-tooltips-popovers___en"
   }, {
     path: "/zArchive/ui/typography",
-    component: _7da13a2f,
+    component: _1ab3bf7d,
     name: "zArchive-ui-typography___en"
   }, {
     path: "/zArchive/ui/video",
-    component: _4f623eab,
+    component: _1569209d,
     name: "zArchive-ui-video___en"
   }, {
     path: "/zArchive/widgets/data",
-    component: _5770b192,
+    component: _1b3f9b40,
     name: "zArchive-widgets-data___en"
   }, {
     path: "/ar/zArchive/account/forgot-password",
-    component: _7d985964,
+    component: _ca91d59c,
     name: "zArchive-account-forgot-password___ar"
   }, {
     path: "/ar/zArchive/account/login",
-    component: _b9c03cf0,
+    component: _403266d6,
     name: "zArchive-account-login___ar"
   }, {
     path: "/ar/zArchive/account/register",
-    component: _8d512b58,
+    component: _679e3a46,
     name: "zArchive-account-register___ar"
   }, {
     path: "/ar/zArchive/apps/calendar",
-    component: _662567e6,
+    component: _18822250,
     name: "zArchive-apps-calendar___ar"
   }, {
     path: "/ar/zArchive/apps/chat",
-    component: _ec77aee8,
+    component: _380af87e,
     name: "zArchive-apps-chat___ar"
   }, {
     path: "/ar/zArchive/apps/companies",
-    component: _090ea316,
+    component: _211005c3,
     name: "zArchive-apps-companies___ar"
   }, {
     path: "/ar/zArchive/apps/file-manager",
-    component: _54cd943a,
+    component: _6f60c288,
     name: "zArchive-apps-file-manager___ar"
   }, {
     path: "/ar/zArchive/apps/tickets",
-    component: _6f04d92e,
+    component: _ea033392,
     name: "zArchive-apps-tickets___ar"
   }, {
     path: "/ar/zArchive/auth/confirm-mail",
-    component: _9f002390,
+    component: _69d9c6f4,
     name: "zArchive-auth-confirm-mail___ar"
   }, {
     path: "/ar/zArchive/auth/confirm-mail-2",
-    component: _eaab9d46,
+    component: _4d2b042b,
     name: "zArchive-auth-confirm-mail-2___ar"
   }, {
     path: "/ar/zArchive/auth/lock-screen",
-    component: _8e7f332c,
+    component: _6707365c,
     name: "zArchive-auth-lock-screen___ar"
   }, {
     path: "/ar/zArchive/auth/lock-screen-2",
-    component: _f6a535e2,
+    component: _86fffefe,
     name: "zArchive-auth-lock-screen-2___ar"
   }, {
     path: "/ar/zArchive/auth/login",
-    component: _30907405,
+    component: _df32bd12,
     name: "zArchive-auth-login___ar"
   }, {
     path: "/ar/zArchive/auth/login-2",
-    component: _48b077ea,
+    component: _0bb110dc,
     name: "zArchive-auth-login-2___ar"
   }, {
     path: "/ar/zArchive/auth/logout",
-    component: _2e8f151e,
+    component: _6d02d428,
     name: "zArchive-auth-logout___ar"
   }, {
     path: "/ar/zArchive/auth/logout-2",
-    component: _7ce9927a,
+    component: _5e9dbc11,
     name: "zArchive-auth-logout-2___ar"
   }, {
     path: "/ar/zArchive/auth/recoverpwd",
-    component: _13d60526,
+    component: _cec9318a,
     name: "zArchive-auth-recoverpwd___ar"
   }, {
     path: "/ar/zArchive/auth/recoverpwd-2",
-    component: _818f715c,
+    component: _4c6914c0,
     name: "zArchive-auth-recoverpwd-2___ar"
   }, {
     path: "/ar/zArchive/auth/register",
-    component: _387e6ab7,
+    component: _54de1ff6,
     name: "zArchive-auth-register___ar"
   }, {
     path: "/ar/zArchive/auth/register-2",
-    component: _0cfb8a1c,
+    component: _a0fc182c,
     name: "zArchive-auth-register-2___ar"
   }, {
     path: "/ar/zArchive/auth/signin-signup",
-    component: _6852053f,
+    component: _bfb6be9e,
     name: "zArchive-auth-signin-signup___ar"
   }, {
     path: "/ar/zArchive/auth/signin-signup-2",
-    component: _d35abab8,
+    component: _23ec2996,
     name: "zArchive-auth-signin-signup-2___ar"
   }, {
     path: "/ar/zArchive/charts/apex",
-    component: _670f4402,
+    component: _044af971,
     name: "zArchive-charts-apex___ar"
   }, {
     path: "/ar/zArchive/charts/c3",
-    component: _45e737f1,
+    component: _17a3f03a,
     name: "zArchive-charts-c3___ar"
   }, {
     path: "/ar/zArchive/charts/chartist",
-    component: _f7e2f516,
+    component: _116217e7,
     name: "zArchive-charts-chartist___ar"
   }, {
     path: "/ar/zArchive/charts/chartjs",
-    component: _f3cfdbe8,
+    component: _a8a12d4c,
     name: "zArchive-charts-chartjs___ar"
   }, {
     path: "/ar/zArchive/charts/knob",
-    component: _2222b477,
+    component: _85db9576,
     name: "zArchive-charts-knob___ar"
   }, {
     path: "/ar/zArchive/contacts/list",
-    component: _3cb497c6,
+    component: _7eb8396b,
     name: "zArchive-contacts-list___ar"
   }, {
     path: "/ar/zArchive/contacts/profile",
-    component: _4831db0c,
+    component: _eba43b28,
     name: "zArchive-contacts-profile___ar"
   }, {
     path: "/ar/zArchive/dashboard/analytics",
-    component: _2799d364,
+    component: _39ca4654,
     name: "zArchive-dashboard-analytics___ar"
   }, {
     path: "/ar/zArchive/dashboard/crm",
-    component: _3de8d60c,
+    component: _68fb4604,
     name: "zArchive-dashboard-crm___ar"
   }, {
     path: "/ar/zArchive/dashboard/default",
-    component: _550315c9,
+    component: _4888588a,
     name: "zArchive-dashboard-default___ar"
   }, {
     path: "/ar/zArchive/ecommerce/cart",
-    component: _4fbc1a24,
+    component: _54fa3e96,
     name: "zArchive-ecommerce-cart___ar"
   }, {
     path: "/ar/zArchive/ecommerce/checkout",
-    component: _b949596c,
+    component: _49a42288,
     name: "zArchive-ecommerce-checkout___ar"
   }, {
     path: "/ar/zArchive/ecommerce/customers",
-    component: _1bffa43e,
+    component: _a4fd915a,
     name: "zArchive-ecommerce-customers___ar"
   }, {
     path: "/ar/zArchive/ecommerce/data-products",
-    component: _6bade0dc,
+    component: _0dfd1964,
     name: "zArchive-ecommerce-data-products___ar"
   }, {
     path: "/ar/zArchive/ecommerce/order-detail",
-    component: _0ace72b4,
+    component: _cfbbf5b4,
     name: "zArchive-ecommerce-order-detail___ar"
   }, {
     path: "/ar/zArchive/ecommerce/orders",
-    component: _02d80ff9,
+    component: _1ff6cbc7,
     name: "zArchive-ecommerce-orders___ar"
   }, {
     path: "/ar/zArchive/ecommerce/product-create",
-    component: _882642c4,
+    component: _42a59c90,
     name: "zArchive-ecommerce-product-create___ar"
   }, {
     path: "/ar/zArchive/ecommerce/products",
-    component: _18c0f71a,
+    component: _691ff768,
     name: "zArchive-ecommerce-products___ar"
   }, {
     path: "/ar/zArchive/ecommerce/products-grid",
-    component: _4cae2b8a,
+    component: _1270b3ee,
     name: "zArchive-ecommerce-products-grid___ar"
   }, {
     path: "/ar/zArchive/ecommerce/sellers",
-    component: _e03a3500,
+    component: _ab13d864,
     name: "zArchive-ecommerce-sellers___ar"
   }, {
     path: "/ar/zArchive/email/data-inbox",
-    component: _622166a8,
+    component: _7175b67a,
     name: "zArchive-email-data-inbox___ar"
   }, {
     path: "/ar/zArchive/email/inbox",
-    component: _29391354,
+    component: _f35a11b8,
     name: "zArchive-email-inbox___ar"
   }, {
     path: "/ar/zArchive/email/sidepanel",
-    component: _1cb7c75d,
+    component: _81839daa,
     name: "zArchive-email-sidepanel___ar"
   }, {
     path: "/ar/zArchive/email/templates",
-    component: _d746acee,
+    component: _36e31357,
     name: "zArchive-email-templates___ar"
   }, {
     path: "/ar/zArchive/email/toolbar",
-    component: _15382ecb,
+    component: _9b6a97ce,
     name: "zArchive-email-toolbar___ar"
   }, {
     path: "/ar/zArchive/extended/rangeslider",
-    component: _bbd663ee,
+    component: _2fae54fb,
     name: "zArchive-extended-rangeslider___ar"
   }, {
     path: "/ar/zArchive/extended/scrollspy",
-    component: _ea6f648c,
+    component: _7aca2da8,
     name: "zArchive-extended-scrollspy___ar"
   }, {
     path: "/ar/zArchive/extended/sweet-alert",
-    component: _0436bd6a,
+    component: _dc5f7748,
     name: "zArchive-extended-sweet-alert___ar"
   }, {
     path: "/ar/zArchive/extended/tour",
-    component: _0005a63d,
+    component: _c5cfa8ea,
     name: "zArchive-extended-tour___ar"
   }, {
     path: "/ar/zArchive/extras/404",
-    component: _7d47f5f9,
+    component: _45c3b92a,
     name: "zArchive-extras-404___ar"
   }, {
     path: "/ar/zArchive/extras/404-alt",
-    component: _3ec4bdd5,
+    component: _4402e247,
     name: "zArchive-extras-404-alt___ar"
   }, {
     path: "/ar/zArchive/extras/500",
-    component: _9c145994,
+    component: _11cc00a8,
     name: "zArchive-extras-500___ar"
   }, {
     path: "/ar/zArchive/extras/coming-soon",
-    component: _4715bdf0,
+    component: _1447bc7a,
     name: "zArchive-extras-coming-soon___ar"
   }, {
     path: "/ar/zArchive/extras/faqs",
-    component: _0186232c,
+    component: _c714b80c,
     name: "zArchive-extras-faqs___ar"
   }, {
     path: "/ar/zArchive/extras/invoice",
-    component: _56c79e24,
+    component: _4c4b5540,
     name: "zArchive-extras-invoice___ar"
   }, {
     path: "/ar/zArchive/extras/lightbox",
-    component: _33b816f8,
+    component: _eeab435c,
     name: "zArchive-extras-lightbox___ar"
   }, {
     path: "/ar/zArchive/extras/maintenance",
-    component: _13c78154,
+    component: _4b9a1cc6,
     name: "zArchive-extras-maintenance___ar"
   }, {
     path: "/ar/zArchive/extras/pricing",
-    component: _64dc9907,
+    component: _6a1abd79,
     name: "zArchive-extras-pricing___ar"
   }, {
     path: "/ar/zArchive/extras/search-results",
-    component: _ad3bb5c0,
+    component: _620d0724,
     name: "zArchive-extras-search-results___ar"
   }, {
     path: "/ar/zArchive/extras/sitemap",
-    component: _79919676,
+    component: _7ecfbae8,
     name: "zArchive-extras-sitemap___ar"
   }, {
     path: "/ar/zArchive/extras/starter",
-    component: _9160a560,
+    component: _86e45c7c,
     name: "zArchive-extras-starter___ar"
   }, {
     path: "/ar/zArchive/extras/timeline",
-    component: _511e19d0,
+    component: _18b6f8c4,
     name: "zArchive-extras-timeline___ar"
   }, {
     path: "/ar/zArchive/forms/advanced",
-    component: _6985c456,
+    component: _5f097b72,
     name: "zArchive-forms-advanced___ar"
   }, {
     path: "/ar/zArchive/forms/elements",
-    component: _04e4042a,
+    component: _0a22289c,
     name: "zArchive-forms-elements___ar"
   }, {
     path: "/ar/zArchive/forms/file-uploads",
-    component: _2c0cd7f4,
+    component: _63df7366,
     name: "zArchive-forms-file-uploads___ar"
   }, {
     path: "/ar/zArchive/forms/mask",
-    component: _101c8d1f,
+    component: _6ff2ba91,
     name: "zArchive-forms-mask___ar"
   }, {
     path: "/ar/zArchive/forms/quill",
-    component: _561dd8e2,
+    component: _1de54ca0,
     name: "zArchive-forms-quill___ar"
   }, {
     path: "/ar/zArchive/forms/validation",
-    component: _40234028,
+    component: _e395a044,
     name: "zArchive-forms-validation___ar"
   }, {
     path: "/ar/zArchive/forms/wizard",
-    component: _3d750d44,
+    component: _b773db60,
     name: "zArchive-forms-wizard___ar"
   }, {
     path: "/ar/zArchive/icons/boxicons",
-    component: _0cfb19e6,
+    component: _027ed102,
     name: "zArchive-icons-boxicons___ar"
   }, {
     path: "/ar/zArchive/icons/data-fontawesome",
-    component: _2dff3380,
+    component: _0e97bd8e,
     name: "zArchive-icons-data-fontawesome___ar"
   }, {
     path: "/ar/zArchive/icons/data-material",
-    component: _67eb2293,
+    component: _c08483f6,
     name: "zArchive-icons-data-material___ar"
   }, {
     path: "/ar/zArchive/icons/data-remix",
-    component: _7f4a4c6a,
+    component: _62e14399,
     name: "zArchive-icons-data-remix___ar"
   }, {
     path: "/ar/zArchive/icons/feather",
-    component: _0556a596,
+    component: _cb319afa,
     name: "zArchive-icons-feather___ar"
   }, {
     path: "/ar/zArchive/icons/font-awesome",
-    component: _308eac7a,
+    component: _1f8b4535,
     name: "zArchive-icons-font-awesome___ar"
   }, {
     path: "/ar/zArchive/icons/mdi",
-    component: _6dddb7c4,
+    component: _68b31412,
     name: "zArchive-icons-mdi___ar"
   }, {
     path: "/ar/zArchive/icons/remix",
-    component: _1a6d814a,
+    component: _e48e7fae,
     name: "zArchive-icons-remix___ar"
   }, {
     path: "/ar/zArchive/icons/weather",
-    component: _3ef6e7f4,
+    component: _7d971154,
     name: "zArchive-icons-weather___ar"
   }, {
     path: "/ar/zArchive/maps/google",
-    component: _36a4a8bc,
+    component: _5cd7acec,
     name: "zArchive-maps-google___ar"
   }, {
     path: "/ar/zArchive/tables/advanced",
-    component: _dc74c922,
+    component: _1f192de1,
     name: "zArchive-tables-advanced___ar"
   }, {
     path: "/ar/zArchive/tables/basic",
-    component: _6610ab26,
+    component: _e00f7942,
     name: "zArchive-tables-basic___ar"
   }, {
     path: "/ar/zArchive/task/detail",
-    component: _9e425e7c,
+    component: _4bce5190,
     name: "zArchive-task-detail___ar"
   }, {
     path: "/ar/zArchive/task/kanban",
-    component: _0da0fa4c,
+    component: _31021e4c,
     name: "zArchive-task-kanban___ar"
   }, {
     path: "/ar/zArchive/task/list",
-    component: _778c3ccf,
+    component: _7261991d,
     name: "zArchive-task-list___ar"
   }, {
     path: "/ar/zArchive/ui/avatars",
-    component: _1951b6ea,
+    component: _7927e45c,
     name: "zArchive-ui-avatars___ar"
   }, {
     path: "/ar/zArchive/ui/buttons",
-    component: _ce75de9e,
+    component: _0ec983ba,
     name: "zArchive-ui-buttons___ar"
   }, {
     path: "/ar/zArchive/ui/cards",
-    component: _1b4144da,
+    component: _8f3380f6,
     name: "zArchive-ui-cards___ar"
   }, {
     path: "/ar/zArchive/ui/carousel",
-    component: _7af2ffe0,
+    component: _15e280ae,
     name: "zArchive-ui-carousel___ar"
   }, {
     path: "/ar/zArchive/ui/dropdowns",
-    component: _5ce67d9c,
+    component: _d6e54bb8,
     name: "zArchive-ui-dropdowns___ar"
   }, {
     path: "/ar/zArchive/ui/general",
-    component: _34fa4e98,
+    component: _d65f07ec,
     name: "zArchive-ui-general___ar"
   }, {
     path: "/ar/zArchive/ui/grid",
-    component: _0bc40a74,
+    component: _639a1294,
     name: "zArchive-ui-grid___ar"
   }, {
     path: "/ar/zArchive/ui/images",
-    component: _a9fea210,
+    component: _b453e974,
     name: "zArchive-ui-images___ar"
   }, {
     path: "/ar/zArchive/ui/list-group",
-    component: _d58f0de0,
+    component: _324afe5e,
     name: "zArchive-ui-list-group___ar"
   }, {
     path: "/ar/zArchive/ui/modals",
-    component: _aa413e34,
+    component: _b4968598,
     name: "zArchive-ui-modals___ar"
   }, {
     path: "/ar/zArchive/ui/notifications",
-    component: _dd93aed0,
+    component: _3f7cf88a,
     name: "zArchive-ui-notifications___ar"
   }, {
     path: "/ar/zArchive/ui/portlets",
-    component: _7749dbb9,
+    component: _12395c87,
     name: "zArchive-ui-portlets___ar"
   }, {
     path: "/ar/zArchive/ui/progress",
-    component: _3f34322d,
+    component: _4bb89a0a,
     name: "zArchive-ui-progress___ar"
   }, {
     path: "/ar/zArchive/ui/ribbons",
-    component: _8e0c0ce6,
+    component: _18d026ff,
     name: "zArchive-ui-ribbons___ar"
   }, {
     path: "/ar/zArchive/ui/spinners",
-    component: _4126da0c,
+    component: _7a5c13c8,
     name: "zArchive-ui-spinners___ar"
   }, {
     path: "/ar/zArchive/ui/tabs-accordions",
-    component: _31c7868a,
+    component: _699a21fc,
     name: "zArchive-ui-tabs-accordions___ar"
   }, {
     path: "/ar/zArchive/ui/tooltips-popovers",
-    component: _090c50fb,
+    component: _d2b45026,
     name: "zArchive-ui-tooltips-popovers___ar"
   }, {
     path: "/ar/zArchive/ui/typography",
-    component: _7da13a2f,
+    component: _1ab3bf7d,
     name: "zArchive-ui-typography___ar"
   }, {
     path: "/ar/zArchive/ui/video",
-    component: _4f623eab,
+    component: _1569209d,
     name: "zArchive-ui-video___ar"
   }, {
     path: "/ar/zArchive/widgets/data",
-    component: _5770b192,
+    component: _1b3f9b40,
     name: "zArchive-widgets-data___ar"
   }, {
     path: "/es/zArchive/account/forgot-password",
-    component: _7d985964,
+    component: _ca91d59c,
     name: "zArchive-account-forgot-password___es"
   }, {
     path: "/es/zArchive/account/login",
-    component: _b9c03cf0,
+    component: _403266d6,
     name: "zArchive-account-login___es"
   }, {
     path: "/es/zArchive/account/register",
-    component: _8d512b58,
+    component: _679e3a46,
     name: "zArchive-account-register___es"
   }, {
     path: "/es/zArchive/apps/calendar",
-    component: _662567e6,
+    component: _18822250,
     name: "zArchive-apps-calendar___es"
   }, {
     path: "/es/zArchive/apps/chat",
-    component: _ec77aee8,
+    component: _380af87e,
     name: "zArchive-apps-chat___es"
   }, {
     path: "/es/zArchive/apps/companies",
-    component: _090ea316,
+    component: _211005c3,
     name: "zArchive-apps-companies___es"
   }, {
     path: "/es/zArchive/apps/file-manager",
-    component: _54cd943a,
+    component: _6f60c288,
     name: "zArchive-apps-file-manager___es"
   }, {
     path: "/es/zArchive/apps/tickets",
-    component: _6f04d92e,
+    component: _ea033392,
     name: "zArchive-apps-tickets___es"
   }, {
     path: "/es/zArchive/auth/confirm-mail",
-    component: _9f002390,
+    component: _69d9c6f4,
     name: "zArchive-auth-confirm-mail___es"
   }, {
     path: "/es/zArchive/auth/confirm-mail-2",
-    component: _eaab9d46,
+    component: _4d2b042b,
     name: "zArchive-auth-confirm-mail-2___es"
   }, {
     path: "/es/zArchive/auth/lock-screen",
-    component: _8e7f332c,
+    component: _6707365c,
     name: "zArchive-auth-lock-screen___es"
   }, {
     path: "/es/zArchive/auth/lock-screen-2",
-    component: _f6a535e2,
+    component: _86fffefe,
     name: "zArchive-auth-lock-screen-2___es"
   }, {
     path: "/es/zArchive/auth/login",
-    component: _30907405,
+    component: _df32bd12,
     name: "zArchive-auth-login___es"
   }, {
     path: "/es/zArchive/auth/login-2",
-    component: _48b077ea,
+    component: _0bb110dc,
     name: "zArchive-auth-login-2___es"
   }, {
     path: "/es/zArchive/auth/logout",
-    component: _2e8f151e,
+    component: _6d02d428,
     name: "zArchive-auth-logout___es"
   }, {
     path: "/es/zArchive/auth/logout-2",
-    component: _7ce9927a,
+    component: _5e9dbc11,
     name: "zArchive-auth-logout-2___es"
   }, {
     path: "/es/zArchive/auth/recoverpwd",
-    component: _13d60526,
+    component: _cec9318a,
     name: "zArchive-auth-recoverpwd___es"
   }, {
     path: "/es/zArchive/auth/recoverpwd-2",
-    component: _818f715c,
+    component: _4c6914c0,
     name: "zArchive-auth-recoverpwd-2___es"
   }, {
     path: "/es/zArchive/auth/register",
-    component: _387e6ab7,
+    component: _54de1ff6,
     name: "zArchive-auth-register___es"
   }, {
     path: "/es/zArchive/auth/register-2",
-    component: _0cfb8a1c,
+    component: _a0fc182c,
     name: "zArchive-auth-register-2___es"
   }, {
     path: "/es/zArchive/auth/signin-signup",
-    component: _6852053f,
+    component: _bfb6be9e,
     name: "zArchive-auth-signin-signup___es"
   }, {
     path: "/es/zArchive/auth/signin-signup-2",
-    component: _d35abab8,
+    component: _23ec2996,
     name: "zArchive-auth-signin-signup-2___es"
   }, {
     path: "/es/zArchive/charts/apex",
-    component: _670f4402,
+    component: _044af971,
     name: "zArchive-charts-apex___es"
   }, {
     path: "/es/zArchive/charts/c3",
-    component: _45e737f1,
+    component: _17a3f03a,
     name: "zArchive-charts-c3___es"
   }, {
     path: "/es/zArchive/charts/chartist",
-    component: _f7e2f516,
+    component: _116217e7,
     name: "zArchive-charts-chartist___es"
   }, {
     path: "/es/zArchive/charts/chartjs",
-    component: _f3cfdbe8,
+    component: _a8a12d4c,
     name: "zArchive-charts-chartjs___es"
   }, {
     path: "/es/zArchive/charts/knob",
-    component: _2222b477,
+    component: _85db9576,
     name: "zArchive-charts-knob___es"
   }, {
     path: "/es/zArchive/contacts/list",
-    component: _3cb497c6,
+    component: _7eb8396b,
     name: "zArchive-contacts-list___es"
   }, {
     path: "/es/zArchive/contacts/profile",
-    component: _4831db0c,
+    component: _eba43b28,
     name: "zArchive-contacts-profile___es"
   }, {
     path: "/es/zArchive/dashboard/analytics",
-    component: _2799d364,
+    component: _39ca4654,
     name: "zArchive-dashboard-analytics___es"
   }, {
     path: "/es/zArchive/dashboard/crm",
-    component: _3de8d60c,
+    component: _68fb4604,
     name: "zArchive-dashboard-crm___es"
   }, {
     path: "/es/zArchive/dashboard/default",
-    component: _550315c9,
+    component: _4888588a,
     name: "zArchive-dashboard-default___es"
   }, {
     path: "/es/zArchive/ecommerce/cart",
-    component: _4fbc1a24,
+    component: _54fa3e96,
     name: "zArchive-ecommerce-cart___es"
   }, {
     path: "/es/zArchive/ecommerce/checkout",
-    component: _b949596c,
+    component: _49a42288,
     name: "zArchive-ecommerce-checkout___es"
   }, {
     path: "/es/zArchive/ecommerce/customers",
-    component: _1bffa43e,
+    component: _a4fd915a,
     name: "zArchive-ecommerce-customers___es"
   }, {
     path: "/es/zArchive/ecommerce/data-products",
-    component: _6bade0dc,
+    component: _0dfd1964,
     name: "zArchive-ecommerce-data-products___es"
   }, {
     path: "/es/zArchive/ecommerce/order-detail",
-    component: _0ace72b4,
+    component: _cfbbf5b4,
     name: "zArchive-ecommerce-order-detail___es"
   }, {
     path: "/es/zArchive/ecommerce/orders",
-    component: _02d80ff9,
+    component: _1ff6cbc7,
     name: "zArchive-ecommerce-orders___es"
   }, {
     path: "/es/zArchive/ecommerce/product-create",
-    component: _882642c4,
+    component: _42a59c90,
     name: "zArchive-ecommerce-product-create___es"
   }, {
     path: "/es/zArchive/ecommerce/products",
-    component: _18c0f71a,
+    component: _691ff768,
     name: "zArchive-ecommerce-products___es"
   }, {
     path: "/es/zArchive/ecommerce/products-grid",
-    component: _4cae2b8a,
+    component: _1270b3ee,
     name: "zArchive-ecommerce-products-grid___es"
   }, {
     path: "/es/zArchive/ecommerce/sellers",
-    component: _e03a3500,
+    component: _ab13d864,
     name: "zArchive-ecommerce-sellers___es"
   }, {
     path: "/es/zArchive/email/data-inbox",
-    component: _622166a8,
+    component: _7175b67a,
     name: "zArchive-email-data-inbox___es"
   }, {
     path: "/es/zArchive/email/inbox",
-    component: _29391354,
+    component: _f35a11b8,
     name: "zArchive-email-inbox___es"
   }, {
     path: "/es/zArchive/email/sidepanel",
-    component: _1cb7c75d,
+    component: _81839daa,
     name: "zArchive-email-sidepanel___es"
   }, {
     path: "/es/zArchive/email/templates",
-    component: _d746acee,
+    component: _36e31357,
     name: "zArchive-email-templates___es"
   }, {
     path: "/es/zArchive/email/toolbar",
-    component: _15382ecb,
+    component: _9b6a97ce,
     name: "zArchive-email-toolbar___es"
   }, {
     path: "/es/zArchive/extended/rangeslider",
-    component: _bbd663ee,
+    component: _2fae54fb,
     name: "zArchive-extended-rangeslider___es"
   }, {
     path: "/es/zArchive/extended/scrollspy",
-    component: _ea6f648c,
+    component: _7aca2da8,
     name: "zArchive-extended-scrollspy___es"
   }, {
     path: "/es/zArchive/extended/sweet-alert",
-    component: _0436bd6a,
+    component: _dc5f7748,
     name: "zArchive-extended-sweet-alert___es"
   }, {
     path: "/es/zArchive/extended/tour",
-    component: _0005a63d,
+    component: _c5cfa8ea,
     name: "zArchive-extended-tour___es"
   }, {
     path: "/es/zArchive/extras/404",
-    component: _7d47f5f9,
+    component: _45c3b92a,
     name: "zArchive-extras-404___es"
   }, {
     path: "/es/zArchive/extras/404-alt",
-    component: _3ec4bdd5,
+    component: _4402e247,
     name: "zArchive-extras-404-alt___es"
   }, {
     path: "/es/zArchive/extras/500",
-    component: _9c145994,
+    component: _11cc00a8,
     name: "zArchive-extras-500___es"
   }, {
     path: "/es/zArchive/extras/coming-soon",
-    component: _4715bdf0,
+    component: _1447bc7a,
     name: "zArchive-extras-coming-soon___es"
   }, {
     path: "/es/zArchive/extras/faqs",
-    component: _0186232c,
+    component: _c714b80c,
     name: "zArchive-extras-faqs___es"
   }, {
     path: "/es/zArchive/extras/invoice",
-    component: _56c79e24,
+    component: _4c4b5540,
     name: "zArchive-extras-invoice___es"
   }, {
     path: "/es/zArchive/extras/lightbox",
-    component: _33b816f8,
+    component: _eeab435c,
     name: "zArchive-extras-lightbox___es"
   }, {
     path: "/es/zArchive/extras/maintenance",
-    component: _13c78154,
+    component: _4b9a1cc6,
     name: "zArchive-extras-maintenance___es"
   }, {
     path: "/es/zArchive/extras/pricing",
-    component: _64dc9907,
+    component: _6a1abd79,
     name: "zArchive-extras-pricing___es"
   }, {
     path: "/es/zArchive/extras/search-results",
-    component: _ad3bb5c0,
+    component: _620d0724,
     name: "zArchive-extras-search-results___es"
   }, {
     path: "/es/zArchive/extras/sitemap",
-    component: _79919676,
+    component: _7ecfbae8,
     name: "zArchive-extras-sitemap___es"
   }, {
     path: "/es/zArchive/extras/starter",
-    component: _9160a560,
+    component: _86e45c7c,
     name: "zArchive-extras-starter___es"
   }, {
     path: "/es/zArchive/extras/timeline",
-    component: _511e19d0,
+    component: _18b6f8c4,
     name: "zArchive-extras-timeline___es"
   }, {
     path: "/es/zArchive/forms/advanced",
-    component: _6985c456,
+    component: _5f097b72,
     name: "zArchive-forms-advanced___es"
   }, {
     path: "/es/zArchive/forms/elements",
-    component: _04e4042a,
+    component: _0a22289c,
     name: "zArchive-forms-elements___es"
   }, {
     path: "/es/zArchive/forms/file-uploads",
-    component: _2c0cd7f4,
+    component: _63df7366,
     name: "zArchive-forms-file-uploads___es"
   }, {
     path: "/es/zArchive/forms/mask",
-    component: _101c8d1f,
+    component: _6ff2ba91,
     name: "zArchive-forms-mask___es"
   }, {
     path: "/es/zArchive/forms/quill",
-    component: _561dd8e2,
+    component: _1de54ca0,
     name: "zArchive-forms-quill___es"
   }, {
     path: "/es/zArchive/forms/validation",
-    component: _40234028,
+    component: _e395a044,
     name: "zArchive-forms-validation___es"
   }, {
     path: "/es/zArchive/forms/wizard",
-    component: _3d750d44,
+    component: _b773db60,
     name: "zArchive-forms-wizard___es"
   }, {
     path: "/es/zArchive/icons/boxicons",
-    component: _0cfb19e6,
+    component: _027ed102,
     name: "zArchive-icons-boxicons___es"
   }, {
     path: "/es/zArchive/icons/data-fontawesome",
-    component: _2dff3380,
+    component: _0e97bd8e,
     name: "zArchive-icons-data-fontawesome___es"
   }, {
     path: "/es/zArchive/icons/data-material",
-    component: _67eb2293,
+    component: _c08483f6,
     name: "zArchive-icons-data-material___es"
   }, {
     path: "/es/zArchive/icons/data-remix",
-    component: _7f4a4c6a,
+    component: _62e14399,
     name: "zArchive-icons-data-remix___es"
   }, {
     path: "/es/zArchive/icons/feather",
-    component: _0556a596,
+    component: _cb319afa,
     name: "zArchive-icons-feather___es"
   }, {
     path: "/es/zArchive/icons/font-awesome",
-    component: _308eac7a,
+    component: _1f8b4535,
     name: "zArchive-icons-font-awesome___es"
   }, {
     path: "/es/zArchive/icons/mdi",
-    component: _6dddb7c4,
+    component: _68b31412,
     name: "zArchive-icons-mdi___es"
   }, {
     path: "/es/zArchive/icons/remix",
-    component: _1a6d814a,
+    component: _e48e7fae,
     name: "zArchive-icons-remix___es"
   }, {
     path: "/es/zArchive/icons/weather",
-    component: _3ef6e7f4,
+    component: _7d971154,
     name: "zArchive-icons-weather___es"
   }, {
     path: "/es/zArchive/maps/google",
-    component: _36a4a8bc,
+    component: _5cd7acec,
     name: "zArchive-maps-google___es"
   }, {
     path: "/es/zArchive/tables/advanced",
-    component: _dc74c922,
+    component: _1f192de1,
     name: "zArchive-tables-advanced___es"
   }, {
     path: "/es/zArchive/tables/basic",
-    component: _6610ab26,
+    component: _e00f7942,
     name: "zArchive-tables-basic___es"
   }, {
     path: "/es/zArchive/task/detail",
-    component: _9e425e7c,
+    component: _4bce5190,
     name: "zArchive-task-detail___es"
   }, {
     path: "/es/zArchive/task/kanban",
-    component: _0da0fa4c,
+    component: _31021e4c,
     name: "zArchive-task-kanban___es"
   }, {
     path: "/es/zArchive/task/list",
-    component: _778c3ccf,
+    component: _7261991d,
     name: "zArchive-task-list___es"
   }, {
     path: "/es/zArchive/ui/avatars",
-    component: _1951b6ea,
+    component: _7927e45c,
     name: "zArchive-ui-avatars___es"
   }, {
     path: "/es/zArchive/ui/buttons",
-    component: _ce75de9e,
+    component: _0ec983ba,
     name: "zArchive-ui-buttons___es"
   }, {
     path: "/es/zArchive/ui/cards",
-    component: _1b4144da,
+    component: _8f3380f6,
     name: "zArchive-ui-cards___es"
   }, {
     path: "/es/zArchive/ui/carousel",
-    component: _7af2ffe0,
+    component: _15e280ae,
     name: "zArchive-ui-carousel___es"
   }, {
     path: "/es/zArchive/ui/dropdowns",
-    component: _5ce67d9c,
+    component: _d6e54bb8,
     name: "zArchive-ui-dropdowns___es"
   }, {
     path: "/es/zArchive/ui/general",
-    component: _34fa4e98,
+    component: _d65f07ec,
     name: "zArchive-ui-general___es"
   }, {
     path: "/es/zArchive/ui/grid",
-    component: _0bc40a74,
+    component: _639a1294,
     name: "zArchive-ui-grid___es"
   }, {
     path: "/es/zArchive/ui/images",
-    component: _a9fea210,
+    component: _b453e974,
     name: "zArchive-ui-images___es"
   }, {
     path: "/es/zArchive/ui/list-group",
-    component: _d58f0de0,
+    component: _324afe5e,
     name: "zArchive-ui-list-group___es"
   }, {
     path: "/es/zArchive/ui/modals",
-    component: _aa413e34,
+    component: _b4968598,
     name: "zArchive-ui-modals___es"
   }, {
     path: "/es/zArchive/ui/notifications",
-    component: _dd93aed0,
+    component: _3f7cf88a,
     name: "zArchive-ui-notifications___es"
   }, {
     path: "/es/zArchive/ui/portlets",
-    component: _7749dbb9,
+    component: _12395c87,
     name: "zArchive-ui-portlets___es"
   }, {
     path: "/es/zArchive/ui/progress",
-    component: _3f34322d,
+    component: _4bb89a0a,
     name: "zArchive-ui-progress___es"
   }, {
     path: "/es/zArchive/ui/ribbons",
-    component: _8e0c0ce6,
+    component: _18d026ff,
     name: "zArchive-ui-ribbons___es"
   }, {
     path: "/es/zArchive/ui/spinners",
-    component: _4126da0c,
+    component: _7a5c13c8,
     name: "zArchive-ui-spinners___es"
   }, {
     path: "/es/zArchive/ui/tabs-accordions",
-    component: _31c7868a,
+    component: _699a21fc,
     name: "zArchive-ui-tabs-accordions___es"
   }, {
     path: "/es/zArchive/ui/tooltips-popovers",
-    component: _090c50fb,
+    component: _d2b45026,
     name: "zArchive-ui-tooltips-popovers___es"
   }, {
     path: "/es/zArchive/ui/typography",
-    component: _7da13a2f,
+    component: _1ab3bf7d,
     name: "zArchive-ui-typography___es"
   }, {
     path: "/es/zArchive/ui/video",
-    component: _4f623eab,
+    component: _1569209d,
     name: "zArchive-ui-video___es"
   }, {
     path: "/es/zArchive/widgets/data",
-    component: _5770b192,
+    component: _1b3f9b40,
     name: "zArchive-widgets-data___es"
   }, {
     path: "/fr/zArchive/account/forgot-password",
-    component: _7d985964,
+    component: _ca91d59c,
     name: "zArchive-account-forgot-password___fr"
   }, {
     path: "/fr/zArchive/account/login",
-    component: _b9c03cf0,
+    component: _403266d6,
     name: "zArchive-account-login___fr"
   }, {
     path: "/fr/zArchive/account/register",
-    component: _8d512b58,
+    component: _679e3a46,
     name: "zArchive-account-register___fr"
   }, {
     path: "/fr/zArchive/apps/calendar",
-    component: _662567e6,
+    component: _18822250,
     name: "zArchive-apps-calendar___fr"
   }, {
     path: "/fr/zArchive/apps/chat",
-    component: _ec77aee8,
+    component: _380af87e,
     name: "zArchive-apps-chat___fr"
   }, {
     path: "/fr/zArchive/apps/companies",
-    component: _090ea316,
+    component: _211005c3,
     name: "zArchive-apps-companies___fr"
   }, {
     path: "/fr/zArchive/apps/file-manager",
-    component: _54cd943a,
+    component: _6f60c288,
     name: "zArchive-apps-file-manager___fr"
   }, {
     path: "/fr/zArchive/apps/tickets",
-    component: _6f04d92e,
+    component: _ea033392,
     name: "zArchive-apps-tickets___fr"
   }, {
     path: "/fr/zArchive/auth/confirm-mail",
-    component: _9f002390,
+    component: _69d9c6f4,
     name: "zArchive-auth-confirm-mail___fr"
   }, {
     path: "/fr/zArchive/auth/confirm-mail-2",
-    component: _eaab9d46,
+    component: _4d2b042b,
     name: "zArchive-auth-confirm-mail-2___fr"
   }, {
     path: "/fr/zArchive/auth/lock-screen",
-    component: _8e7f332c,
+    component: _6707365c,
     name: "zArchive-auth-lock-screen___fr"
   }, {
     path: "/fr/zArchive/auth/lock-screen-2",
-    component: _f6a535e2,
+    component: _86fffefe,
     name: "zArchive-auth-lock-screen-2___fr"
   }, {
     path: "/fr/zArchive/auth/login",
-    component: _30907405,
+    component: _df32bd12,
     name: "zArchive-auth-login___fr"
   }, {
     path: "/fr/zArchive/auth/login-2",
-    component: _48b077ea,
+    component: _0bb110dc,
     name: "zArchive-auth-login-2___fr"
   }, {
     path: "/fr/zArchive/auth/logout",
-    component: _2e8f151e,
+    component: _6d02d428,
     name: "zArchive-auth-logout___fr"
   }, {
     path: "/fr/zArchive/auth/logout-2",
-    component: _7ce9927a,
+    component: _5e9dbc11,
     name: "zArchive-auth-logout-2___fr"
   }, {
     path: "/fr/zArchive/auth/recoverpwd",
-    component: _13d60526,
+    component: _cec9318a,
     name: "zArchive-auth-recoverpwd___fr"
   }, {
     path: "/fr/zArchive/auth/recoverpwd-2",
-    component: _818f715c,
+    component: _4c6914c0,
     name: "zArchive-auth-recoverpwd-2___fr"
   }, {
     path: "/fr/zArchive/auth/register",
-    component: _387e6ab7,
+    component: _54de1ff6,
     name: "zArchive-auth-register___fr"
   }, {
     path: "/fr/zArchive/auth/register-2",
-    component: _0cfb8a1c,
+    component: _a0fc182c,
     name: "zArchive-auth-register-2___fr"
   }, {
     path: "/fr/zArchive/auth/signin-signup",
-    component: _6852053f,
+    component: _bfb6be9e,
     name: "zArchive-auth-signin-signup___fr"
   }, {
     path: "/fr/zArchive/auth/signin-signup-2",
-    component: _d35abab8,
+    component: _23ec2996,
     name: "zArchive-auth-signin-signup-2___fr"
   }, {
     path: "/fr/zArchive/charts/apex",
-    component: _670f4402,
+    component: _044af971,
     name: "zArchive-charts-apex___fr"
   }, {
     path: "/fr/zArchive/charts/c3",
-    component: _45e737f1,
+    component: _17a3f03a,
     name: "zArchive-charts-c3___fr"
   }, {
     path: "/fr/zArchive/charts/chartist",
-    component: _f7e2f516,
+    component: _116217e7,
     name: "zArchive-charts-chartist___fr"
   }, {
     path: "/fr/zArchive/charts/chartjs",
-    component: _f3cfdbe8,
+    component: _a8a12d4c,
     name: "zArchive-charts-chartjs___fr"
   }, {
     path: "/fr/zArchive/charts/knob",
-    component: _2222b477,
+    component: _85db9576,
     name: "zArchive-charts-knob___fr"
   }, {
     path: "/fr/zArchive/contacts/list",
-    component: _3cb497c6,
+    component: _7eb8396b,
     name: "zArchive-contacts-list___fr"
   }, {
     path: "/fr/zArchive/contacts/profile",
-    component: _4831db0c,
+    component: _eba43b28,
     name: "zArchive-contacts-profile___fr"
   }, {
     path: "/fr/zArchive/dashboard/analytics",
-    component: _2799d364,
+    component: _39ca4654,
     name: "zArchive-dashboard-analytics___fr"
   }, {
     path: "/fr/zArchive/dashboard/crm",
-    component: _3de8d60c,
+    component: _68fb4604,
     name: "zArchive-dashboard-crm___fr"
   }, {
     path: "/fr/zArchive/dashboard/default",
-    component: _550315c9,
+    component: _4888588a,
     name: "zArchive-dashboard-default___fr"
   }, {
     path: "/fr/zArchive/ecommerce/cart",
-    component: _4fbc1a24,
+    component: _54fa3e96,
     name: "zArchive-ecommerce-cart___fr"
   }, {
     path: "/fr/zArchive/ecommerce/checkout",
-    component: _b949596c,
+    component: _49a42288,
     name: "zArchive-ecommerce-checkout___fr"
   }, {
     path: "/fr/zArchive/ecommerce/customers",
-    component: _1bffa43e,
+    component: _a4fd915a,
     name: "zArchive-ecommerce-customers___fr"
   }, {
     path: "/fr/zArchive/ecommerce/data-products",
-    component: _6bade0dc,
+    component: _0dfd1964,
     name: "zArchive-ecommerce-data-products___fr"
   }, {
     path: "/fr/zArchive/ecommerce/order-detail",
-    component: _0ace72b4,
+    component: _cfbbf5b4,
     name: "zArchive-ecommerce-order-detail___fr"
   }, {
     path: "/fr/zArchive/ecommerce/orders",
-    component: _02d80ff9,
+    component: _1ff6cbc7,
     name: "zArchive-ecommerce-orders___fr"
   }, {
     path: "/fr/zArchive/ecommerce/product-create",
-    component: _882642c4,
+    component: _42a59c90,
     name: "zArchive-ecommerce-product-create___fr"
   }, {
     path: "/fr/zArchive/ecommerce/products",
-    component: _18c0f71a,
+    component: _691ff768,
     name: "zArchive-ecommerce-products___fr"
   }, {
     path: "/fr/zArchive/ecommerce/products-grid",
-    component: _4cae2b8a,
+    component: _1270b3ee,
     name: "zArchive-ecommerce-products-grid___fr"
   }, {
     path: "/fr/zArchive/ecommerce/sellers",
-    component: _e03a3500,
+    component: _ab13d864,
     name: "zArchive-ecommerce-sellers___fr"
   }, {
     path: "/fr/zArchive/email/data-inbox",
-    component: _622166a8,
+    component: _7175b67a,
     name: "zArchive-email-data-inbox___fr"
   }, {
     path: "/fr/zArchive/email/inbox",
-    component: _29391354,
+    component: _f35a11b8,
     name: "zArchive-email-inbox___fr"
   }, {
     path: "/fr/zArchive/email/sidepanel",
-    component: _1cb7c75d,
+    component: _81839daa,
     name: "zArchive-email-sidepanel___fr"
   }, {
     path: "/fr/zArchive/email/templates",
-    component: _d746acee,
+    component: _36e31357,
     name: "zArchive-email-templates___fr"
   }, {
     path: "/fr/zArchive/email/toolbar",
-    component: _15382ecb,
+    component: _9b6a97ce,
     name: "zArchive-email-toolbar___fr"
   }, {
     path: "/fr/zArchive/extended/rangeslider",
-    component: _bbd663ee,
+    component: _2fae54fb,
     name: "zArchive-extended-rangeslider___fr"
   }, {
     path: "/fr/zArchive/extended/scrollspy",
-    component: _ea6f648c,
+    component: _7aca2da8,
     name: "zArchive-extended-scrollspy___fr"
   }, {
     path: "/fr/zArchive/extended/sweet-alert",
-    component: _0436bd6a,
+    component: _dc5f7748,
     name: "zArchive-extended-sweet-alert___fr"
   }, {
     path: "/fr/zArchive/extended/tour",
-    component: _0005a63d,
+    component: _c5cfa8ea,
     name: "zArchive-extended-tour___fr"
   }, {
     path: "/fr/zArchive/extras/404",
-    component: _7d47f5f9,
+    component: _45c3b92a,
     name: "zArchive-extras-404___fr"
   }, {
     path: "/fr/zArchive/extras/404-alt",
-    component: _3ec4bdd5,
+    component: _4402e247,
     name: "zArchive-extras-404-alt___fr"
   }, {
     path: "/fr/zArchive/extras/500",
-    component: _9c145994,
+    component: _11cc00a8,
     name: "zArchive-extras-500___fr"
   }, {
     path: "/fr/zArchive/extras/coming-soon",
-    component: _4715bdf0,
+    component: _1447bc7a,
     name: "zArchive-extras-coming-soon___fr"
   }, {
     path: "/fr/zArchive/extras/faqs",
-    component: _0186232c,
+    component: _c714b80c,
     name: "zArchive-extras-faqs___fr"
   }, {
     path: "/fr/zArchive/extras/invoice",
-    component: _56c79e24,
+    component: _4c4b5540,
     name: "zArchive-extras-invoice___fr"
   }, {
     path: "/fr/zArchive/extras/lightbox",
-    component: _33b816f8,
+    component: _eeab435c,
     name: "zArchive-extras-lightbox___fr"
   }, {
     path: "/fr/zArchive/extras/maintenance",
-    component: _13c78154,
+    component: _4b9a1cc6,
     name: "zArchive-extras-maintenance___fr"
   }, {
     path: "/fr/zArchive/extras/pricing",
-    component: _64dc9907,
+    component: _6a1abd79,
     name: "zArchive-extras-pricing___fr"
   }, {
     path: "/fr/zArchive/extras/search-results",
-    component: _ad3bb5c0,
+    component: _620d0724,
     name: "zArchive-extras-search-results___fr"
   }, {
     path: "/fr/zArchive/extras/sitemap",
-    component: _79919676,
+    component: _7ecfbae8,
     name: "zArchive-extras-sitemap___fr"
   }, {
     path: "/fr/zArchive/extras/starter",
-    component: _9160a560,
+    component: _86e45c7c,
     name: "zArchive-extras-starter___fr"
   }, {
     path: "/fr/zArchive/extras/timeline",
-    component: _511e19d0,
+    component: _18b6f8c4,
     name: "zArchive-extras-timeline___fr"
   }, {
     path: "/fr/zArchive/forms/advanced",
-    component: _6985c456,
+    component: _5f097b72,
     name: "zArchive-forms-advanced___fr"
   }, {
     path: "/fr/zArchive/forms/elements",
-    component: _04e4042a,
+    component: _0a22289c,
     name: "zArchive-forms-elements___fr"
   }, {
     path: "/fr/zArchive/forms/file-uploads",
-    component: _2c0cd7f4,
+    component: _63df7366,
     name: "zArchive-forms-file-uploads___fr"
   }, {
     path: "/fr/zArchive/forms/mask",
-    component: _101c8d1f,
+    component: _6ff2ba91,
     name: "zArchive-forms-mask___fr"
   }, {
     path: "/fr/zArchive/forms/quill",
-    component: _561dd8e2,
+    component: _1de54ca0,
     name: "zArchive-forms-quill___fr"
   }, {
     path: "/fr/zArchive/forms/validation",
-    component: _40234028,
+    component: _e395a044,
     name: "zArchive-forms-validation___fr"
   }, {
     path: "/fr/zArchive/forms/wizard",
-    component: _3d750d44,
+    component: _b773db60,
     name: "zArchive-forms-wizard___fr"
   }, {
     path: "/fr/zArchive/icons/boxicons",
-    component: _0cfb19e6,
+    component: _027ed102,
     name: "zArchive-icons-boxicons___fr"
   }, {
     path: "/fr/zArchive/icons/data-fontawesome",
-    component: _2dff3380,
+    component: _0e97bd8e,
     name: "zArchive-icons-data-fontawesome___fr"
   }, {
     path: "/fr/zArchive/icons/data-material",
-    component: _67eb2293,
+    component: _c08483f6,
     name: "zArchive-icons-data-material___fr"
   }, {
     path: "/fr/zArchive/icons/data-remix",
-    component: _7f4a4c6a,
+    component: _62e14399,
     name: "zArchive-icons-data-remix___fr"
   }, {
     path: "/fr/zArchive/icons/feather",
-    component: _0556a596,
+    component: _cb319afa,
     name: "zArchive-icons-feather___fr"
   }, {
     path: "/fr/zArchive/icons/font-awesome",
-    component: _308eac7a,
+    component: _1f8b4535,
     name: "zArchive-icons-font-awesome___fr"
   }, {
     path: "/fr/zArchive/icons/mdi",
-    component: _6dddb7c4,
+    component: _68b31412,
     name: "zArchive-icons-mdi___fr"
   }, {
     path: "/fr/zArchive/icons/remix",
-    component: _1a6d814a,
+    component: _e48e7fae,
     name: "zArchive-icons-remix___fr"
   }, {
     path: "/fr/zArchive/icons/weather",
-    component: _3ef6e7f4,
+    component: _7d971154,
     name: "zArchive-icons-weather___fr"
   }, {
     path: "/fr/zArchive/maps/google",
-    component: _36a4a8bc,
+    component: _5cd7acec,
     name: "zArchive-maps-google___fr"
   }, {
     path: "/fr/zArchive/tables/advanced",
-    component: _dc74c922,
+    component: _1f192de1,
     name: "zArchive-tables-advanced___fr"
   }, {
     path: "/fr/zArchive/tables/basic",
-    component: _6610ab26,
+    component: _e00f7942,
     name: "zArchive-tables-basic___fr"
   }, {
     path: "/fr/zArchive/task/detail",
-    component: _9e425e7c,
+    component: _4bce5190,
     name: "zArchive-task-detail___fr"
   }, {
     path: "/fr/zArchive/task/kanban",
-    component: _0da0fa4c,
+    component: _31021e4c,
     name: "zArchive-task-kanban___fr"
   }, {
     path: "/fr/zArchive/task/list",
-    component: _778c3ccf,
+    component: _7261991d,
     name: "zArchive-task-list___fr"
   }, {
     path: "/fr/zArchive/ui/avatars",
-    component: _1951b6ea,
+    component: _7927e45c,
     name: "zArchive-ui-avatars___fr"
   }, {
     path: "/fr/zArchive/ui/buttons",
-    component: _ce75de9e,
+    component: _0ec983ba,
     name: "zArchive-ui-buttons___fr"
   }, {
     path: "/fr/zArchive/ui/cards",
-    component: _1b4144da,
+    component: _8f3380f6,
     name: "zArchive-ui-cards___fr"
   }, {
     path: "/fr/zArchive/ui/carousel",
-    component: _7af2ffe0,
+    component: _15e280ae,
     name: "zArchive-ui-carousel___fr"
   }, {
     path: "/fr/zArchive/ui/dropdowns",
-    component: _5ce67d9c,
+    component: _d6e54bb8,
     name: "zArchive-ui-dropdowns___fr"
   }, {
     path: "/fr/zArchive/ui/general",
-    component: _34fa4e98,
+    component: _d65f07ec,
     name: "zArchive-ui-general___fr"
   }, {
     path: "/fr/zArchive/ui/grid",
-    component: _0bc40a74,
+    component: _639a1294,
     name: "zArchive-ui-grid___fr"
   }, {
     path: "/fr/zArchive/ui/images",
-    component: _a9fea210,
+    component: _b453e974,
     name: "zArchive-ui-images___fr"
   }, {
     path: "/fr/zArchive/ui/list-group",
-    component: _d58f0de0,
+    component: _324afe5e,
     name: "zArchive-ui-list-group___fr"
   }, {
     path: "/fr/zArchive/ui/modals",
-    component: _aa413e34,
+    component: _b4968598,
     name: "zArchive-ui-modals___fr"
   }, {
     path: "/fr/zArchive/ui/notifications",
-    component: _dd93aed0,
+    component: _3f7cf88a,
     name: "zArchive-ui-notifications___fr"
   }, {
     path: "/fr/zArchive/ui/portlets",
-    component: _7749dbb9,
+    component: _12395c87,
     name: "zArchive-ui-portlets___fr"
   }, {
     path: "/fr/zArchive/ui/progress",
-    component: _3f34322d,
+    component: _4bb89a0a,
     name: "zArchive-ui-progress___fr"
   }, {
     path: "/fr/zArchive/ui/ribbons",
-    component: _8e0c0ce6,
+    component: _18d026ff,
     name: "zArchive-ui-ribbons___fr"
   }, {
     path: "/fr/zArchive/ui/spinners",
-    component: _4126da0c,
+    component: _7a5c13c8,
     name: "zArchive-ui-spinners___fr"
   }, {
     path: "/fr/zArchive/ui/tabs-accordions",
-    component: _31c7868a,
+    component: _699a21fc,
     name: "zArchive-ui-tabs-accordions___fr"
   }, {
     path: "/fr/zArchive/ui/tooltips-popovers",
-    component: _090c50fb,
+    component: _d2b45026,
     name: "zArchive-ui-tooltips-popovers___fr"
   }, {
     path: "/fr/zArchive/ui/typography",
-    component: _7da13a2f,
+    component: _1ab3bf7d,
     name: "zArchive-ui-typography___fr"
   }, {
     path: "/fr/zArchive/ui/video",
-    component: _4f623eab,
+    component: _1569209d,
     name: "zArchive-ui-video___fr"
   }, {
     path: "/fr/zArchive/widgets/data",
-    component: _5770b192,
+    component: _1b3f9b40,
     name: "zArchive-widgets-data___fr"
   }, {
     path: "/zArchive/apps/calendar/data-calendar",
-    component: _6c66b75a,
+    component: _2106dc28,
     name: "zArchive-apps-calendar-data-calendar___en"
   }, {
     path: "/zArchive/apps/chat/data",
-    component: _30ead8af,
+    component: _3628fd21,
     name: "zArchive-apps-chat-data___en"
   }, {
     path: "/zArchive/apps/companies/data",
-    component: _16a9c4d8,
+    component: _4daad0b4,
     name: "zArchive-apps-companies-data___en"
   }, {
     path: "/zArchive/apps/tickets/data",
-    component: _25cb56cc,
+    component: _405e851a,
     name: "zArchive-apps-tickets-data___en"
   }, {
     path: "/zArchive/charts/apex/data",
-    component: _5603cee2,
+    component: _044a9ed4,
     name: "zArchive-charts-apex-data___en"
   }, {
     path: "/zArchive/charts/c3/data",
-    component: _04e47d54,
+    component: _0a22a1c6,
     name: "zArchive-charts-c3-data___en"
   }, {
     path: "/zArchive/charts/chartist/data",
-    component: _ae6d4850,
+    component: _3662e2ca,
     name: "zArchive-charts-chartist-data___en"
   }, {
     path: "/zArchive/charts/chartjs/BarChart",
-    component: _c1a2c43e,
+    component: _25e75bd3,
     name: "zArchive-charts-chartjs-BarChart___en"
   }, {
     path: "/zArchive/charts/chartjs/DonutChart",
-    component: _43bf179c,
+    component: _ccbd04b8,
     name: "zArchive-charts-chartjs-DonutChart___en"
   }, {
     path: "/zArchive/charts/chartjs/LineChart",
-    component: _4c6de738,
+    component: _2a280cb2,
     name: "zArchive-charts-chartjs-LineChart___en"
   }, {
     path: "/zArchive/charts/chartjs/PieChart",
-    component: _4a508088,
+    component: _5ded830c,
     name: "zArchive-charts-chartjs-PieChart___en"
   }, {
     path: "/zArchive/charts/chartjs/PolarChart",
-    component: _4a9c78d4,
+    component: _d39a65f0,
     name: "zArchive-charts-chartjs-PolarChart___en"
   }, {
     path: "/zArchive/charts/chartjs/RadarChart",
-    component: _55b5d0ce,
+    component: _1136da40,
     name: "zArchive-charts-chartjs-RadarChart___en"
   }, {
     path: "/zArchive/dashboard/analytics/channels",
-    component: _514b632e,
+    component: _5e758c7c,
     name: "zArchive-dashboard-analytics-channels___en"
   }, {
     path: "/zArchive/dashboard/analytics/overview",
-    component: _097d9f52,
+    component: _086b59a5,
     name: "zArchive-dashboard-analytics-overview___en"
   }, {
     path: "/zArchive/dashboard/analytics/social-media",
-    component: _6dd707e2,
+    component: _1c0fda30,
     name: "zArchive-dashboard-analytics-social-media___en"
   }, {
     path: "/zArchive/dashboard/analytics/sources",
-    component: _d959e66c,
+    component: _72b781bc,
     name: "zArchive-dashboard-analytics-sources___en"
   }, {
     path: "/zArchive/dashboard/analytics/users",
-    component: _6d03ad9a,
+    component: _2884b70c,
     name: "zArchive-dashboard-analytics-users___en"
   }, {
     path: "/zArchive/ecommerce/customers/data",
-    component: _2cbba178,
+    component: _705aed36,
     name: "zArchive-ecommerce-customers-data___en"
   }, {
     path: "/zArchive/ecommerce/orders/data",
-    component: _4a889148,
+    component: _00530eaa,
     name: "zArchive-ecommerce-orders-data___en"
   }, {
     path: "/zArchive/ecommerce/products/data",
-    component: _ab741a86,
+    component: _7136a2ea,
     name: "zArchive-ecommerce-products-data___en"
   }, {
     path: "/zArchive/tables/advanced/data",
-    component: _093caf5c,
+    component: _ee09a178,
     name: "zArchive-tables-advanced-data___en"
   }, {
     path: "/zArchive/task/kanban/data",
-    component: _cf372306,
+    component: _46ab3e6f,
     name: "zArchive-task-kanban-data___en"
   }, {
     path: "/ar/zArchive/apps/calendar/data-calendar",
-    component: _6c66b75a,
+    component: _2106dc28,
     name: "zArchive-apps-calendar-data-calendar___ar"
   }, {
     path: "/ar/zArchive/apps/chat/data",
-    component: _30ead8af,
+    component: _3628fd21,
     name: "zArchive-apps-chat-data___ar"
   }, {
     path: "/ar/zArchive/apps/companies/data",
-    component: _16a9c4d8,
+    component: _4daad0b4,
     name: "zArchive-apps-companies-data___ar"
   }, {
     path: "/ar/zArchive/apps/tickets/data",
-    component: _25cb56cc,
+    component: _405e851a,
     name: "zArchive-apps-tickets-data___ar"
   }, {
     path: "/ar/zArchive/charts/apex/data",
-    component: _5603cee2,
+    component: _044a9ed4,
     name: "zArchive-charts-apex-data___ar"
   }, {
     path: "/ar/zArchive/charts/c3/data",
-    component: _04e47d54,
+    component: _0a22a1c6,
     name: "zArchive-charts-c3-data___ar"
   }, {
     path: "/ar/zArchive/charts/chartist/data",
-    component: _ae6d4850,
+    component: _3662e2ca,
     name: "zArchive-charts-chartist-data___ar"
   }, {
     path: "/ar/zArchive/charts/chartjs/BarChart",
-    component: _c1a2c43e,
+    component: _25e75bd3,
     name: "zArchive-charts-chartjs-BarChart___ar"
   }, {
     path: "/ar/zArchive/charts/chartjs/DonutChart",
-    component: _43bf179c,
+    component: _ccbd04b8,
     name: "zArchive-charts-chartjs-DonutChart___ar"
   }, {
     path: "/ar/zArchive/charts/chartjs/LineChart",
-    component: _4c6de738,
+    component: _2a280cb2,
     name: "zArchive-charts-chartjs-LineChart___ar"
   }, {
     path: "/ar/zArchive/charts/chartjs/PieChart",
-    component: _4a508088,
+    component: _5ded830c,
     name: "zArchive-charts-chartjs-PieChart___ar"
   }, {
     path: "/ar/zArchive/charts/chartjs/PolarChart",
-    component: _4a9c78d4,
+    component: _d39a65f0,
     name: "zArchive-charts-chartjs-PolarChart___ar"
   }, {
     path: "/ar/zArchive/charts/chartjs/RadarChart",
-    component: _55b5d0ce,
+    component: _1136da40,
     name: "zArchive-charts-chartjs-RadarChart___ar"
   }, {
     path: "/ar/zArchive/dashboard/analytics/channels",
-    component: _514b632e,
+    component: _5e758c7c,
     name: "zArchive-dashboard-analytics-channels___ar"
   }, {
     path: "/ar/zArchive/dashboard/analytics/overview",
-    component: _097d9f52,
+    component: _086b59a5,
     name: "zArchive-dashboard-analytics-overview___ar"
   }, {
     path: "/ar/zArchive/dashboard/analytics/social-media",
-    component: _6dd707e2,
+    component: _1c0fda30,
     name: "zArchive-dashboard-analytics-social-media___ar"
   }, {
     path: "/ar/zArchive/dashboard/analytics/sources",
-    component: _d959e66c,
+    component: _72b781bc,
     name: "zArchive-dashboard-analytics-sources___ar"
   }, {
     path: "/ar/zArchive/dashboard/analytics/users",
-    component: _6d03ad9a,
+    component: _2884b70c,
     name: "zArchive-dashboard-analytics-users___ar"
   }, {
     path: "/ar/zArchive/ecommerce/customers/data",
-    component: _2cbba178,
+    component: _705aed36,
     name: "zArchive-ecommerce-customers-data___ar"
   }, {
     path: "/ar/zArchive/ecommerce/orders/data",
-    component: _4a889148,
+    component: _00530eaa,
     name: "zArchive-ecommerce-orders-data___ar"
   }, {
     path: "/ar/zArchive/ecommerce/products/data",
-    component: _ab741a86,
+    component: _7136a2ea,
     name: "zArchive-ecommerce-products-data___ar"
   }, {
     path: "/ar/zArchive/tables/advanced/data",
-    component: _093caf5c,
+    component: _ee09a178,
     name: "zArchive-tables-advanced-data___ar"
   }, {
     path: "/ar/zArchive/task/kanban/data",
-    component: _cf372306,
+    component: _46ab3e6f,
     name: "zArchive-task-kanban-data___ar"
   }, {
     path: "/es/zArchive/apps/calendar/data-calendar",
-    component: _6c66b75a,
+    component: _2106dc28,
     name: "zArchive-apps-calendar-data-calendar___es"
   }, {
     path: "/es/zArchive/apps/chat/data",
-    component: _30ead8af,
+    component: _3628fd21,
     name: "zArchive-apps-chat-data___es"
   }, {
     path: "/es/zArchive/apps/companies/data",
-    component: _16a9c4d8,
+    component: _4daad0b4,
     name: "zArchive-apps-companies-data___es"
   }, {
     path: "/es/zArchive/apps/tickets/data",
-    component: _25cb56cc,
+    component: _405e851a,
     name: "zArchive-apps-tickets-data___es"
   }, {
     path: "/es/zArchive/charts/apex/data",
-    component: _5603cee2,
+    component: _044a9ed4,
     name: "zArchive-charts-apex-data___es"
   }, {
     path: "/es/zArchive/charts/c3/data",
-    component: _04e47d54,
+    component: _0a22a1c6,
     name: "zArchive-charts-c3-data___es"
   }, {
     path: "/es/zArchive/charts/chartist/data",
-    component: _ae6d4850,
+    component: _3662e2ca,
     name: "zArchive-charts-chartist-data___es"
   }, {
     path: "/es/zArchive/charts/chartjs/BarChart",
-    component: _c1a2c43e,
+    component: _25e75bd3,
     name: "zArchive-charts-chartjs-BarChart___es"
   }, {
     path: "/es/zArchive/charts/chartjs/DonutChart",
-    component: _43bf179c,
+    component: _ccbd04b8,
     name: "zArchive-charts-chartjs-DonutChart___es"
   }, {
     path: "/es/zArchive/charts/chartjs/LineChart",
-    component: _4c6de738,
+    component: _2a280cb2,
     name: "zArchive-charts-chartjs-LineChart___es"
   }, {
     path: "/es/zArchive/charts/chartjs/PieChart",
-    component: _4a508088,
+    component: _5ded830c,
     name: "zArchive-charts-chartjs-PieChart___es"
   }, {
     path: "/es/zArchive/charts/chartjs/PolarChart",
-    component: _4a9c78d4,
+    component: _d39a65f0,
     name: "zArchive-charts-chartjs-PolarChart___es"
   }, {
     path: "/es/zArchive/charts/chartjs/RadarChart",
-    component: _55b5d0ce,
+    component: _1136da40,
     name: "zArchive-charts-chartjs-RadarChart___es"
   }, {
     path: "/es/zArchive/dashboard/analytics/channels",
-    component: _514b632e,
+    component: _5e758c7c,
     name: "zArchive-dashboard-analytics-channels___es"
   }, {
     path: "/es/zArchive/dashboard/analytics/overview",
-    component: _097d9f52,
+    component: _086b59a5,
     name: "zArchive-dashboard-analytics-overview___es"
   }, {
     path: "/es/zArchive/dashboard/analytics/social-media",
-    component: _6dd707e2,
+    component: _1c0fda30,
     name: "zArchive-dashboard-analytics-social-media___es"
   }, {
     path: "/es/zArchive/dashboard/analytics/sources",
-    component: _d959e66c,
+    component: _72b781bc,
     name: "zArchive-dashboard-analytics-sources___es"
   }, {
     path: "/es/zArchive/dashboard/analytics/users",
-    component: _6d03ad9a,
+    component: _2884b70c,
     name: "zArchive-dashboard-analytics-users___es"
   }, {
     path: "/es/zArchive/ecommerce/customers/data",
-    component: _2cbba178,
+    component: _705aed36,
     name: "zArchive-ecommerce-customers-data___es"
   }, {
     path: "/es/zArchive/ecommerce/orders/data",
-    component: _4a889148,
+    component: _00530eaa,
     name: "zArchive-ecommerce-orders-data___es"
   }, {
     path: "/es/zArchive/ecommerce/products/data",
-    component: _ab741a86,
+    component: _7136a2ea,
     name: "zArchive-ecommerce-products-data___es"
   }, {
     path: "/es/zArchive/tables/advanced/data",
-    component: _093caf5c,
+    component: _ee09a178,
     name: "zArchive-tables-advanced-data___es"
   }, {
     path: "/es/zArchive/task/kanban/data",
-    component: _cf372306,
+    component: _46ab3e6f,
     name: "zArchive-task-kanban-data___es"
   }, {
     path: "/fr/zArchive/apps/calendar/data-calendar",
-    component: _6c66b75a,
+    component: _2106dc28,
     name: "zArchive-apps-calendar-data-calendar___fr"
   }, {
     path: "/fr/zArchive/apps/chat/data",
-    component: _30ead8af,
+    component: _3628fd21,
     name: "zArchive-apps-chat-data___fr"
   }, {
     path: "/fr/zArchive/apps/companies/data",
-    component: _16a9c4d8,
+    component: _4daad0b4,
     name: "zArchive-apps-companies-data___fr"
   }, {
     path: "/fr/zArchive/apps/tickets/data",
-    component: _25cb56cc,
+    component: _405e851a,
     name: "zArchive-apps-tickets-data___fr"
   }, {
     path: "/fr/zArchive/charts/apex/data",
-    component: _5603cee2,
+    component: _044a9ed4,
     name: "zArchive-charts-apex-data___fr"
   }, {
     path: "/fr/zArchive/charts/c3/data",
-    component: _04e47d54,
+    component: _0a22a1c6,
     name: "zArchive-charts-c3-data___fr"
   }, {
     path: "/fr/zArchive/charts/chartist/data",
-    component: _ae6d4850,
+    component: _3662e2ca,
     name: "zArchive-charts-chartist-data___fr"
   }, {
     path: "/fr/zArchive/charts/chartjs/BarChart",
-    component: _c1a2c43e,
+    component: _25e75bd3,
     name: "zArchive-charts-chartjs-BarChart___fr"
   }, {
     path: "/fr/zArchive/charts/chartjs/DonutChart",
-    component: _43bf179c,
+    component: _ccbd04b8,
     name: "zArchive-charts-chartjs-DonutChart___fr"
   }, {
     path: "/fr/zArchive/charts/chartjs/LineChart",
-    component: _4c6de738,
+    component: _2a280cb2,
     name: "zArchive-charts-chartjs-LineChart___fr"
   }, {
     path: "/fr/zArchive/charts/chartjs/PieChart",
-    component: _4a508088,
+    component: _5ded830c,
     name: "zArchive-charts-chartjs-PieChart___fr"
   }, {
     path: "/fr/zArchive/charts/chartjs/PolarChart",
-    component: _4a9c78d4,
+    component: _d39a65f0,
     name: "zArchive-charts-chartjs-PolarChart___fr"
   }, {
     path: "/fr/zArchive/charts/chartjs/RadarChart",
-    component: _55b5d0ce,
+    component: _1136da40,
     name: "zArchive-charts-chartjs-RadarChart___fr"
   }, {
     path: "/fr/zArchive/dashboard/analytics/channels",
-    component: _514b632e,
+    component: _5e758c7c,
     name: "zArchive-dashboard-analytics-channels___fr"
   }, {
     path: "/fr/zArchive/dashboard/analytics/overview",
-    component: _097d9f52,
+    component: _086b59a5,
     name: "zArchive-dashboard-analytics-overview___fr"
   }, {
     path: "/fr/zArchive/dashboard/analytics/social-media",
-    component: _6dd707e2,
+    component: _1c0fda30,
     name: "zArchive-dashboard-analytics-social-media___fr"
   }, {
     path: "/fr/zArchive/dashboard/analytics/sources",
-    component: _d959e66c,
+    component: _72b781bc,
     name: "zArchive-dashboard-analytics-sources___fr"
   }, {
     path: "/fr/zArchive/dashboard/analytics/users",
-    component: _6d03ad9a,
+    component: _2884b70c,
     name: "zArchive-dashboard-analytics-users___fr"
   }, {
     path: "/fr/zArchive/ecommerce/customers/data",
-    component: _2cbba178,
+    component: _705aed36,
     name: "zArchive-ecommerce-customers-data___fr"
   }, {
     path: "/fr/zArchive/ecommerce/orders/data",
-    component: _4a889148,
+    component: _00530eaa,
     name: "zArchive-ecommerce-orders-data___fr"
   }, {
     path: "/fr/zArchive/ecommerce/products/data",
-    component: _ab741a86,
+    component: _7136a2ea,
     name: "zArchive-ecommerce-products-data___fr"
   }, {
     path: "/fr/zArchive/tables/advanced/data",
-    component: _093caf5c,
+    component: _ee09a178,
     name: "zArchive-tables-advanced-data___fr"
   }, {
     path: "/fr/zArchive/task/kanban/data",
-    component: _cf372306,
+    component: _46ab3e6f,
     name: "zArchive-task-kanban-data___fr"
   }, {
     path: "/ar/zArchive/ecommerce/product-detail/:id?",
-    component: _748f1bd7,
+    component: _fc8d75b6,
     name: "zArchive-ecommerce-product-detail-id___ar"
   }, {
     path: "/ar/zArchive/email/reademail/:id?",
-    component: _6c2e8594,
+    component: _0c6fe6f4,
     name: "zArchive-email-reademail-id___ar"
   }, {
     path: "/es/zArchive/ecommerce/product-detail/:id?",
-    component: _748f1bd7,
+    component: _fc8d75b6,
     name: "zArchive-ecommerce-product-detail-id___es"
   }, {
     path: "/es/zArchive/email/reademail/:id?",
-    component: _6c2e8594,
+    component: _0c6fe6f4,
     name: "zArchive-email-reademail-id___es"
   }, {
     path: "/fr/zArchive/ecommerce/product-detail/:id?",
-    component: _748f1bd7,
+    component: _fc8d75b6,
     name: "zArchive-ecommerce-product-detail-id___fr"
   }, {
     path: "/fr/zArchive/email/reademail/:id?",
-    component: _6c2e8594,
+    component: _0c6fe6f4,
     name: "zArchive-email-reademail-id___fr"
   }, {
     path: "/zArchive/ecommerce/product-detail/:id?",
-    component: _748f1bd7,
+    component: _fc8d75b6,
     name: "zArchive-ecommerce-product-detail-id___en"
   }, {
     path: "/zArchive/email/reademail/:id?",
-    component: _6c2e8594,
+    component: _0c6fe6f4,
     name: "zArchive-email-reademail-id___en"
   }, {
     path: "/",
-    component: _6f1d347e,
+    component: _6a1085f0,
     name: "index___en"
   }, {
     path: "/",

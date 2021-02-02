@@ -1,7 +1,4 @@
 <script>
-/**
- * Login component
- */
 export default {
     head() {
         return {
@@ -93,9 +90,7 @@ export default {
                     </ul>
                 </div>
             </div>
-            <!-- end card-body -->
         </div>
-        <!-- end card -->
 
         <div class="row mt-3">
             <div class="col-12 text-center">
@@ -107,11 +102,7 @@ export default {
                     <nuxt-link to="/auth/register" class="text-primary font-weight-medium ml-1">Sign Up</nuxt-link>
                 </p>
             </div>
-            <!-- end col -->
         </div>
-        <!-- end row -->
     </div>
-    <!-- end col -->
 </div>
-<!-- end row -->
 </template>
