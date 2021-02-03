@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Container from '../layout/Container'
-import MainDashboard from '../components/MainDashboard'
+import Container from '../layouts/Container'
+import Dashboard from '../views/Dashboard'
 
 Vue.use(Router)
 
@@ -11,12 +11,12 @@ export default new Router({
       path: '/',
       name: 'Container',
       component: Container,
-      redirect: '/main-dashboard',
+      redirect: '/dashboard',
       children: [
         {
-            path: '/main-dashboard',
-            name: 'MainDashboard',
-            component: MainDashboard
+            path: '/dashboard',
+            name: 'Dashboard',
+            component: Dashboard
         }
       ]
     }

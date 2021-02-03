@@ -4,7 +4,6 @@
     <div class="content-page">
         <div class="content">
             <Topbar />
-            <!-- Start Content-->
             <div class="container-fluid">
                 <router-view/>
             </div>
@@ -14,6 +13,7 @@
     <Rightbar />
 </div>
 </template>
+
 <script>
 export default {
   name: 'Default',
