@@ -9,9 +9,10 @@
 
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
-              <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-md font-bold">Dashboard</a>
+              <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-md font-bold">Home</a>
               <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-md font-bold">Accounts</a>
               <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-md font-bold">Transactions</a>
+              <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-md font-bold">Tools</a>
             </div>
           </div>
         </div>
@@ -48,9 +49,9 @@
   <div class="bg-gray-100">
     <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
       <div class="flex items-center h-10 font-bold">
-        <a href="#" class="pr-5">Link 1</a>
-        <a href="#" class="pr-5">Link 2</a>
-        <a href="#" class="pr-5">Link 3</a>
+        <a href="#" class="pr-5">Home 1</a>
+        <a href="#" class="pr-5">Home 2</a>
+        <a href="#" class="pr-5">Home 3</a>
       </div>
     </div>
   </div>
