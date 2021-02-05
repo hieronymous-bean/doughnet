@@ -9,10 +9,10 @@
 
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
-              <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-md font-bold">Home</a>
-              <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-md font-bold">Accounts</a>
-              <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-md font-bold">Transactions</a>
-              <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-md font-bold">Tools</a>
+              <router-link to="/dashboard" class="bg-gray-900 text-white px-3 py-2 rounded-md text-md font-bold">Dashboard</router-link>
+              <router-link to="/accounts" class="bg-gray-900 text-white px-3 py-2 rounded-md text-md font-bold">Accounts</router-link>
+              <router-link to="/transactions" class="bg-gray-900 text-white px-3 py-2 rounded-md text-md font-bold">Transactions</router-link>
+              <router-link to="/tools" class="bg-gray-900 text-white px-3 py-2 rounded-md text-md font-bold">Tools</router-link>
             </div>
           </div>
         </div>
