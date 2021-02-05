@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+
 import Container from './layouts/Container.vue'
 import Dashboard from './views/Dashboard.vue'
 import Accounts from './views/Accounts.vue'

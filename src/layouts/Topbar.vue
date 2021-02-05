@@ -46,23 +46,25 @@
       </div>
     </div>
   </nav>
-  <div class="bg-gray-100">
-    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-      <div class="flex items-center h-10 font-bold">
-        <a href="#" class="pr-5">Home 1</a>
-        <a href="#" class="pr-5">Home 2</a>
-        <a href="#" class="pr-5">Home 3</a>
-      </div>
-    </div>
-  </div>
+  <SubNavigation :subNavMenu="subNavMenu" />
 </template>
 
 <script>
+
+import SubNavigation from '../components/global/SubNavigation.vue'
+
 export default {
     data: function() {
         return {
-
+          test: 'testing',
+          title: 'title'
         }
-    }
+    },
+    components: {
+      SubNavigation
+    },
+    props: [
+      'subNavMenu'
+    ]
 }
 </script>
