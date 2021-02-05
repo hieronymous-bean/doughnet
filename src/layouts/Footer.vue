@@ -1,6 +1,6 @@
 <template>
-    <footer class="bg-gray-900 footer">
-        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+    <footer class="w-screen bg-gray-900 fixed bottom-0">
+        <div class="">
             <div class="flex items-center justify-between h-20">
                 <div class="">
                     <div class="">
