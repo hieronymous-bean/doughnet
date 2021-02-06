@@ -1,18 +1,14 @@
 <template>
     <div>
-        <Topbar :subNavMenu="title" />
+        <Topbar/>
         <PageHeader :headertext="$route.name"/>
         <main>
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="px-4 sm:px-0">
-                    <div class="">
-                  
-                        <div class="container mx-auto py-10 h-32 md:w-5/5 w-12/12">
-                            <div class="w-full h-full rounded">
-                                <router-view></router-view>
-                            </div>
+                    <div class="container mx-auto py-10 h-32 md:w-5/5 w-12/12">
+                        <div class="h-full rounded">
+                            <router-view></router-view>
                         </div>
-
                     </div>
                 </div>
             </div>
