@@ -4,8 +4,8 @@
       <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           <div class="flex items-center">
-            <div class="flex-shrink-0">
-              <img class="h-9 w-7" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="">
+            <div class="flex-shrink-0 text-white font-semibold text-xl">
+              Doughnet
             </div>
 
             <div class="hidden md:block">
@@ -17,7 +17,7 @@
           <div class="hidden md:block">
             <div class="ml-4 flex items-center md:ml-6">
 
-              <button type="button" class="py-2 px-8 mx-4 flex justify-center items-center bg-gray-700 hover:bg-gray-800 focus:ring-indigo-900 focus:ring-offset-indigo-400 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg ">
+              <button type="button" class="py-2 px-8 mx-4 flex justify-center items-center bg-gray-700 hover:bg-gray-800 focus:ring-indigo-900 focus:ring-offset-indigo-400 text-white w-full transition ease-in duration-200 text-center text-base font-regular shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg ">
                  + Add Accounts
               </button>
 
