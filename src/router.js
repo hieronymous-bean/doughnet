@@ -1,10 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import Container from './layouts/Container.vue'
-import Dashboard from './views/Dashboard.vue'
-import Accounts from './views/Accounts.vue'
-import Transactions from './views/Transactions.vue'
-import Tools from './views/Tools.vue'
+import Container from './layouts/general/Container.vue'
+import Dashboard from './views/app/Dashboard.vue'
+import Accounts from './views/app/Accounts.vue'
+import Transactions from './views/app/Transactions.vue'
+import Tools from './views/app/Tools.vue'
+
+import Authorization from './layouts/auth/Authorization.vue'
+import Login from './views/auth/Login.vue'
+import Register from './views/auth/Register.vue'
 
 const routes = [
     {
@@ -34,6 +38,24 @@ const routes = [
             component: Tools
           },
         ]
+    },
+    {
+      path: '/auth',
+      name: 'Authorization',
+      component: Authorization,
+      redirect: '/auth/login',
+      children: [
+        {
+          path: '/auth/login',
+          name: 'Login',
+          component: Login
+        },
+        {
+          path: '/auth/register',
+          name: 'Register',
+          component: Register
+        },
+      ]
     }
 ]
 
