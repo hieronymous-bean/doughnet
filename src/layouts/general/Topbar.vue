@@ -17,7 +17,7 @@
           <div class="hidden md:block">
             <div class="ml-4 flex items-center md:ml-6">
 
-              <button type="button" class="py-2 px-8 mx-4 flex justify-center items-center bg-gray-700 hover:bg-gray-800 focus:ring-indigo-900 focus:ring-offset-indigo-400 text-white w-full transition ease-in duration-200 text-center text-base font-regular shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg ">
+              <button type="button" class="py-2 px-8 mx-4 flex justify-center items-center bg-gray-800 hover:bg-gray-800 focus:ring-indigo-900 focus:ring-offset-indigo-400 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg ">
                  + Add Accounts
               </button>
 

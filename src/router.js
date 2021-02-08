@@ -10,6 +10,8 @@ import Authorization from './layouts/auth/Authorization.vue'
 import Login from './views/auth/Login.vue'
 import Register from './views/auth/Register.vue'
 
+import Staging from './views/app/Staging.vue'
+
 const routes = [
     {
         path: '/',
@@ -38,6 +40,11 @@ const routes = [
             component: Tools
           },
         ]
+    },
+    {
+      path: '/staging',
+      name: 'Staging',
+      component: Staging
     },
     {
       path: '/auth',

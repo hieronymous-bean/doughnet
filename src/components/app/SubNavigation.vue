@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-gray-50 shadow shadow-lg">
+  <div class="bg-gray-100 shadow shadow-sm">
     <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-      <div class="flex items-center h-12 font-semibold">
+      <div class="flex items-center h-12 font-medium">
         <div class="hidden md:block">
             <div class="flex items-baseline space-x-4">
               <router-link to="/dashboard" class="px-3 py-2 rounded-md text-lg hover:bg-gray-200 focus:bg-gray-300">Dashboard</router-link>
