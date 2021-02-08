@@ -68,8 +68,6 @@
 
 <script>
 
-// import SubNavigation from '../../components/app/SubNavigation.vue'
-
 export default {
     data: function() {
         return {
@@ -82,7 +80,6 @@ export default {
       // SubNavigation
     },
     props: [
-      'subNavMenu'
     ],
     methods: {
       toggleUserMenu() {

@@ -3,11 +3,11 @@
     <Topbar/>
     <div class="flex h-screen bg-primary-lightest">
       <Sidebar/>
-      <main>
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="px-4 sm:px-0">
-                <div class="container mx-auto py-10 h-32 md:w-5/5 w-12/12">
-                    <div class="h-full rounded">
+      <main class="w-full">
+        <div class="mx-auto sm:px-2 lg:px-2">
+            <div class="">
+                <div class="mx-auto py-3 h-32">
+                    <div class="h-full w-full rounded">
                         <router-view></router-view>
                     </div>
                 </div>

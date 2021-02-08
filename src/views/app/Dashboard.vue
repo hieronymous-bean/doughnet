@@ -1,6 +1,11 @@
 <template>
-  <div class="">
-    
+  <div class="grid grid-cols-3 gap-2">
+    <div class="px-6 py-5 bg-white shadow-md">
+      <h2 class="">
+          <span class="block font-sans text-2xl font-semibold text-gray-900">Accounts</span>
+          <span class="block font-light text-gray-800">All of your currently active accounts.</span>
+      </h2>
+    </div>
     
   </div>
 </template>
