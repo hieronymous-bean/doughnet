@@ -34,7 +34,7 @@
               <div class="ml-4 flex items-center md:ml-6">
 
                 <button type="button" class="py-2 px-8 mx-4 flex justify-center items-center bg-gray-50 hover:bg-gray-100 focus:ring-primary-base text-gray-500 w-full transition ease-in duration-200 text-center text-base font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg ">
-                   + Add Accounts
+                   + Add New Account
                 </button>
 
                 <button class="bg-gray-50 p-1 mx-4 rounded-full text-gray-500 hover:bg-gray-100 focus:ring-primary-base focus:outline-none focus:ring-2 focus:ring-offset-2">
