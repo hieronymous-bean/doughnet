@@ -5,6 +5,9 @@ import Dashboard from './views/app/Dashboard.vue'
 import Accounts from './views/app/Accounts.vue'
 import Transactions from './views/app/Transactions.vue'
 import Tools from './views/app/Tools.vue'
+import Bills from './views/app/Bills.vue'
+import Budgets from './views/app/Budgets.vue'
+import Goals from './views/app/Goals.vue'
 
 import Authorization from './layouts/auth/Authorization.vue'
 import Login from './views/auth/Login.vue'
@@ -38,6 +41,21 @@ const routes = [
             path: '/tools',
             name: 'Tools',
             component: Tools
+          },
+          {
+            path: '/budgets',
+            name: 'Budgets',
+            component: Budgets
+          },
+          {
+            path: '/bills',
+            name: 'Bills',
+            component: Bills
+          },
+          {
+            path: '/goals',
+            name: 'Goals',
+            component: Goals
           },
         ]
     },
