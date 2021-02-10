@@ -2,77 +2,58 @@
   <div class="flex flex-col">
     <div class="my-1 overflow-hidden sm:-mx-6 lg:-mx-8">
       <div class="align-middle inline-block min-w-full sm:px-6 lg:px-8">
-        <div class="overflow-hidden sm:rounded-sm">
-          <ul class="flex flex-col">
-            <li v-for="(account, id) in accountData.accounts" :key="id"  class="mb-6">
-                <div @click="openAccountProfileCard(account)" class="transition border duration-500 ease-in-out transform select-none cursor-pointer bg-white dark:bg-gray-800 rounded-sm flex flex-row items-center p-6">
-                    <div class="px-4 py-5 sm:px-6">
+        <div class="overflow-hidden sm:rounded-sm grid grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-lg leading-6 font-bold text-gray-900">
+              Your Accounts
+            </h3>
+
+          </div>
+          <div>
+            <ul class="flex flex-col">
+              <li v-for="(account, id) in accountData.accounts" :key="id"  class="mb-2">
+                <div @click="openAccountProfileCard(account)" class="transition duration-500 ease-in-out transform select-none cursor-pointer bg-white dark:bg-gray-800 rounded-sm flex flex-row items-center">
+                  <div class="p-4 sm:px-6">
                     <h3 class="text-lg leading-6 font-bold text-gray-900">
-                      Account Information
+                      {{ account.name }}
                     </h3>
                     <p class="mt-1 max-w-2xl text-sm text-gray-500">
-                      Detailed information regarding specific account.
+                      {{ account.description }}
                     </p>
                   </div>
-                    <div class="flex-1 pl-1 md:mr-16">
-                        <div class="font-light dark:text-white">
-                            {{ account.currentBalance }}
-                        </div>
-
-                    </div>
-                    <div class="flex pl-1 md:mr-16">
-                        <div class="font-light dark:text-white">
-                            {{ account.interestRate }}
-                        </div>
-
-                    </div>
-                    <button :class="[text-right,flex,justify-end,{ transform: account.accountCardOpen },{ 'rotate-90': account.accountCardOpen}]">
-                        <svg width="12" fill="currentColor" height="12" class="hover:text-gray-800 dark:hover:text-white dark:text-gray-200 text-gray-500" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z">
-                            </path>
-                        </svg>
-                    </button>
-
+                  <button :class="[text-right,flex,justify-end]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" :class="[{ transform: account.accountCardOpen },{ 'rotate-90': account.accountCardOpen}]" class="absolute right-2.5" viewBox="0 0 24 24">
+                      <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/>
+                    </svg>
+                  </button>
                 </div>
-
-                <div :class="[{ hidden: !account.accountCardOpen }]" class="bg-white border-l border-r border-b overflow-hidden rounded-sm flex flex-col">
-                  <div class="px-4 py-5 sm:px-6">
-                    <h3 class="text-lg leading-6 font-bold text-gray-900">
-                      Account Information
-                    </h3>
-                    <p class="mt-1 max-w-2xl text-sm text-gray-500">
-                      Detailed information regarding specific account.
-                    </p>
-                  </div>
-                  <div class="border-t border-gray-200">
+                <div :class="[{ hidden: !account.accountCardOpen }]" class="bg-white overflow-hidden rounded-sm flex flex-col">
+                  <div class="">
                     <dl>
-                      <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                        <dt class="text-sm font-medium text-gray-500">
+                      <div class="bg-gray-50 px-4 py-5 grid grid-cols-4 sm:gap-4 sm:px-6">
+                        <dt class="py-2 block text-md font-medium text-gray-900">
                           Account Name
                         </dt>
-                        <input v-model="account.name">
+                        <input v-model="account.name" class="p-2 col-span-3 outline-none focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded text-md border border-gray-200">
                       </div>
-                      <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                        <dt class="text-sm font-medium text-gray-500">
+                      <div class="bg-gray-50 px-4 py-5 grid grid-cols-4 sm:gap-4 sm:px-6">
+                        <dt class="py-2 block text-md font-medium text-gray-900">
                           Account Type
                         </dt>
-                        <input v-model="account.type">
+                        <input v-model="account.type" class="p-2 col-span-3 outline-none focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded text-md border border-gray-200">
                       </div>
-                      
-                      
+                        
                     </dl>
                   </div>
                 </div>
-
-
-            </li>
-        </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </template>
-
 
 <script>
 import { accountDemoData } from "../../static/account-data";

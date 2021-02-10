@@ -5,13 +5,13 @@
       <Sidebar/>
       <main class="w-full">
         <div class="mx-auto sm:px-2 lg:px-2">
-            <div class="">
-                <div class="mx-auto py-3 h-32">
-                    <div class="h-full w-full rounded">
-                        <router-view></router-view>
-                    </div>
-                </div>
+          <div class="">
+            <div class="mx-auto py-3">
+              <div class="h-full w-full rounded">
+                <router-view></router-view>
+              </div>
             </div>
+          </div>
         </div>
       </main>
     </div>

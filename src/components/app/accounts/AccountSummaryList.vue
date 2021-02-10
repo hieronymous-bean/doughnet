@@ -16,32 +16,8 @@
     <div class="flex-1">
       <div class="flex-1">
         <ul class="account-item w-full accordion-arrow px-3">
-          <li v-for="(accountType, index) in accountTypes" :key="index" @click="expandTypeDropdown(index)" :tracker="accountType" class="items-center my-3 font-light px-3">
-            <div class="grid grid-cols-2 rounded border border-gray-100 bg-gray-50 p-2">
-              <div class="relative">
-                <button class="focus:outline-none">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" class="absolute top-2.5" viewBox="0 0 24 24">
-                    <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/>
-                  </svg>
-                </button>
-                <span class="mx-4">{{ accountType }}</span>
-              </div>
-              <div class="relative">
-                <span class="float-right">Type Total</span>
-              </div>
-            </div> 
-            <div v-show="typeDropdownIsOpen" class="grid grid-cols-1">
-              <div v-for="account in accounts" :key="account.id">
-                <div v-show="account.type == accountType" class="p-2 font-medium text-lg text-primary-dark font-semibold underline">
-                  <router-link
-                    class="flex items-center"
-                    to="/transactions"
-                  >
-                  {{ account.name }}
-                  </router-link>
-                </div>
-              </div>
-            </div>
+          <li v-for="(accountType, index) in accountTypes" :key="index" class="items-center my-3 font-light px-3">
+            <AccountTypeHeader :typeOfAccount="accountType"/>
           </li>
         </ul>
       </div>
@@ -49,25 +25,29 @@
   </div>
 </template>
 
+
+
 <script>
 
+import AccountTypeHeader from './AccountTypeHeader.vue'
+
 export default {
-    data: function() {
-        return {
-            title: 'AccountSummaryList',
-            typeDropdownIsOpen: false
-        }
-    },
-    components: {
-    },
+  data: function() {
+    return {
+      title: 'AccountSummaryList'
+    }
+  },
+  components: {
+    AccountTypeHeader
+  },
     props: [
       'accounts',
-      'accountTypes'
+      'accountTypes',
+      'typeExpanded'
     ],
     methods: {
-        expandTypeDropdown: function() {
-            this.typeDropdownIsOpen = !this.typeDropdownIsOpen
-        }
+    },
+    computed: {
     }
 }
 
