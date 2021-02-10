@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import { accountDemoData } from "../../../static/account-data";
+import { accountDemoData } from "../../global/data/account-data";
 export default {
     data: function() {
         return {

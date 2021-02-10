@@ -1,87 +1,95 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import Container from './layouts/general/Container.vue'
-import Dashboard from './views/app/Dashboard.vue'
-import Accounts from './views/app/Accounts.vue'
-import Transactions from './views/app/Transactions.vue'
-import Tools from './views/app/Tools.vue'
-import Bills from './views/app/Bills.vue'
-import Budgets from './views/app/Budgets.vue'
-import Goals from './views/app/Goals.vue'
+// app
+import Container from './app/layouts/Container.vue'
+import Dashboard from './app/views/Dashboard.vue'
 
-import Authorization from './layouts/auth/Authorization.vue'
-import Login from './views/auth/Login.vue'
-import Register from './views/auth/Register.vue'
+// auth
+import Authorization from './auth/layouts/Authorization.vue'
+import Login from './auth/views/Login.vue'
+import Register from './auth/views/Register.vue'
 
-import Staging from './views/app/Staging.vue'
+// accounts
+import Accounts from './accounts/views/Accounts.vue'
+
+// bills
+import Bills from './bills/views/Bills.vue'
+
+// budgets
+import Budgets from './budgets/views/Budgets.vue'
+
+// goals
+import Goals from './goals/views/Goals.vue'
+
+// tools
+import Tools from './tools/views/Tools.vue'
+
+// transactions
+import Transactions from './transactions/views/Transactions.vue'
+
 
 const routes = [
-    {
-        path: '/',
-        name: 'Container',
-        component: Container,
-        redirect: '/dashboard',
-        children: [
-          {
-            path: '/dashboard',
-            name: 'Dashboard',
-            component: Dashboard
-          },
-          {
-            path: '/accounts',
-            name: 'Accounts',
-            component: Accounts
-          },
-          {
-            path: '/transactions',
-            name: 'Transactions',
-            component: Transactions
-          },
-          {
-            path: '/tools',
-            name: 'Tools',
-            component: Tools
-          },
-          {
-            path: '/budgets',
-            name: 'Budgets',
-            component: Budgets
-          },
-          {
-            path: '/bills',
-            name: 'Bills',
-            component: Bills
-          },
-          {
-            path: '/goals',
-            name: 'Goals',
-            component: Goals
-          },
-        ]
-    },
-    {
-      path: '/staging',
-      name: 'Staging',
-      component: Staging
-    },
-    {
-      path: '/auth',
-      name: 'Authorization',
-      component: Authorization,
-      redirect: '/auth/login',
-      children: [
-        {
-          path: '/auth/login',
-          name: 'Login',
-          component: Login
-        },
-        {
-          path: '/auth/register',
-          name: 'Register',
-          component: Register
-        },
-      ]
-    }
+  { 
+    path: '/',
+    name: 'Container',
+    component: Container,
+    redirect: '/dashboard',
+    children: [
+      {
+        path: '/dashboard',
+        name: 'Dashboard',
+        component: Dashboard
+      },
+      {
+        path: '/accounts',
+        name: 'Accounts',
+        component: Accounts
+      },
+      {
+        path: '/transactions',
+        name: 'Transactions',
+        component: Transactions
+      },
+      {
+        path: '/tools',
+        name: 'Tools',
+        component: Tools
+      },
+      {
+        path: '/budgets',
+        name: 'Budgets',
+        component: Budgets
+      },
+      {
+        path: '/bills',
+        name: 'Bills',
+        component: Bills
+      },
+      {
+        path: '/goals',
+        name: 'Goals',
+        component: Goals
+      },
+    ]
+  },
+  {
+    path: '/auth',
+    name: 'Authorization',
+    component: Authorization,
+    redirect: '/auth/login',
+    children: [
+      {
+        path: '/auth/login',
+        name: 'Login',
+        component: Login
+      },
+      {
+        path: '/auth/register',
+        name: 'Register',
+        component: Register
+      },
+    ]
+  }
 ]
 
 const router = createRouter({ history: createWebHistory(), routes })

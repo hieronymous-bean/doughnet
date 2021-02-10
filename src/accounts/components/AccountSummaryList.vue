@@ -34,6 +34,7 @@ import AccountTypeHeader from './AccountTypeHeader.vue'
 export default {
   data: function() {
     return {
+      name: 'AccountSummaryList',
       title: 'AccountSummaryList'
     }
   },

@@ -4,7 +4,7 @@
       <div class="mx-auto px-3 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           <div class="flex items-center py-3">
-            <img src="../../assets/doughnet-logo.png" class="w-36 ">
+            <img src="../../global/img/doughnet-logo.png" class="w-36 ">
               <div class="hidden md:block">
 
                 <div class="ml-20 flex items-baseline space-x-4">

@@ -80,9 +80,8 @@
 
 <script>
 
-import { accountDemoData } from "../../static/account-data";
-
-import AccountSummaryList from "../../components/app/accounts/AccountSummaryList.vue"
+import { accountDemoData } from "../../global/data/account-data";
+import AccountSummaryList from "../../accounts/components/AccountSummaryList.vue"
 
 export default {
   name: 'Dashboard',
