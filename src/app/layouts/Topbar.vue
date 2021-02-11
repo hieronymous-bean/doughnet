@@ -51,10 +51,10 @@
                     </svg>
                   </button>
 
-                  <div v-show="isOpen" class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical">
-                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Your Profile</a>
+                  <div v-show="isOpen" class="fixed origin-top-right right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">{{ userEmail }} Profile</a>
                     <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Settings</a>
-                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Sign out</a>
+                    <a href="" @click="userSignOut" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Sign out</a>
                   </div>
                 </div>
               </div>
@@ -70,6 +70,7 @@
 export default {
     data: function() {
         return {
+          userEmail: this.$store.state.userEmail,
           test: 'testing',
           title: 'title',
           isOpen: false
@@ -80,9 +81,13 @@ export default {
     props: [
     ],
     methods: {
-      toggleUserMenu() {
+      toggleUserMenu: function() {
         this.isOpen = !this.isOpen
+      },
+      userSignOut: function(e) {
+        e.preventDefault;
+        this.$store.dispatch('logOut','')
       }
     }
-}
+} 
 </script>

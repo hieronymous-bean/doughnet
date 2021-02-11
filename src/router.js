@@ -8,6 +8,7 @@ import Dashboard from './app/views/Dashboard.vue'
 import Authorization from './auth/layouts/Authorization.vue'
 import Login from './auth/views/Login.vue'
 import Register from './auth/views/Register.vue'
+import store from './auth/store/auth.js'
 
 // accounts
 import Accounts from './accounts/views/Accounts.vue'
@@ -33,11 +34,12 @@ const routes = [
     path: '/',
     name: 'Container',
     component: Container,
+    meta: { requiresAuth: true },
     redirect: '/dashboard',
     children: [
       {
         path: '/dashboard',
-        name: 'Dashboard',
+        name: 'Dashboard',  
         component: Dashboard
       },
       {
@@ -93,4 +95,17 @@ const routes = [
 ]
 
 const router = createRouter({ history: createWebHistory(), routes })
+
+router.beforeEach((to, from, next) => {
+  if(to.matched.some(record => record.meta.requiresAuth)) {
+    if (store.state.user) {
+      next()
+      return
+    }
+    next('/auth/login')
+  } else {
+    next()
+  }
+})
+
 export default router

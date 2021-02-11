@@ -15,7 +15,9 @@
     "sass-loader": "^7.3.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "vue": "^3.0.5",
-    "vue-router": "^4.0.3"
+    "vue-router": "^4.0.3",
+    "vuelidate": "^0.7.6",
+    "vuex": "^4.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
