@@ -86,7 +86,7 @@ import AccountSummaryList from "../../accounts/components/AccountSummaryList.vue
 export default {
   name: 'Dashboard',
     data: () => ({
-      accountData: accountDemoData.accounts,
+      accountData: accountDemoData,
       title: "Dashboard"
     }),
     components: {

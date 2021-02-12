@@ -46,7 +46,9 @@ const getAuthenticatedUser = () => {
 const getCurrentUser = () => {
   const user = firebase.auth().currentUser;
   if (!user) return null;
-  return {};
+  return {
+    id: user.uid,
+  };
 }
 
 export {

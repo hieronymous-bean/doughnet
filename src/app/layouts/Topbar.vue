@@ -4,7 +4,7 @@
       <div class="mx-auto px-3 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           <div class="flex items-center py-3">
-            <img src="../../global/img/doughnet-logo.png" class="w-36 ">
+            <img src="../../global/assets/img/doughnet-logo.png" class="w-36 ">
               <div class="hidden md:block">
 
                 <div class="ml-20 flex items-baseline space-x-4">
@@ -21,7 +21,7 @@
                       </svg>
                     </span>
                     <input
-                      class="bg-gray-100 form-input w-32 sm:w-64 rounded-md pl-10 pr-4 py-3 focus:outline-none"
+                      class="text-sm font-light bg-gray-100 form-input w-32 sm:w-64 rounded-md pl-10 pr-4 py-3 focus:outline-none"
                       type="text"
                       placeholder="Search"
                     />
@@ -32,7 +32,7 @@
             <div class="hidden md:block">
               <div class="ml-4 flex items-center md:ml-6">
 
-                <button type="button" class="py-2 px-8 mx-4 flex justify-center items-center bg-gray-50 hover:bg-gray-100 focus:ring-primary-base text-gray-500 w-full transition ease-in duration-200 text-center text-base font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg ">
+                <button type="button" class="py-2 px-8 mx-4 flex justify-center items-center bg-gray-50 hover:bg-gray-100 focus:ring-primary-base text-gray-700 w-full transition ease-in duration-200 text-center text-md font-regular focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg ">
                    + Add New Account
                 </button>
 
@@ -52,8 +52,14 @@
                   </button>
 
                   <div v-show="isOpen" class="fixed origin-top-right right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical">
-                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">{{ userEmail }} Profile</a>
-                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Settings</a>
+                    <router-link
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      to="/profile"
+                    >Profile</router-link>
+                    <router-link
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      to="/settings"
+                    >Account Settings</router-link>
                     <a href="" @click="userSignOut" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Sign out</a>
                   </div>
                 </div>

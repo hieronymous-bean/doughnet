@@ -19,6 +19,9 @@ module.exports = {
           base: '#A5A9C6',
           dark: '#333333'
         }
+      },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
       }
     }
   },

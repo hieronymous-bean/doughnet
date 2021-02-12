@@ -1,7 +1,7 @@
 <template>
   <div>
     <Topbar/>
-    <div class="flex h-screen bg-primary-lightest">
+    <div class="flex h-screen bg-primary-lightest font-poppins">
       <Sidebar/>
       <main class="w-full">
         <div class="mx-auto sm:px-2 lg:px-2">

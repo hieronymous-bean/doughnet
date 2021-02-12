@@ -1,9 +1,9 @@
 <template>
   <div class="bg-white rounded-sm">
     <div class="px-6 py-5 flex">
-      <h2 class="flex-1">
-        <span class="block font-sans text-4xl font-bold text-primary-dark pb-2">Accounts</span>
-        <span class="block text-xl font-light text-gray-800">All of your currently active accounts that you're tracking.</span>
+      <h2 class="flex-1 font-poppins">
+        <span class="block text-4xl font-semibold text-primary-dark pb-1">Accounts</span>
+        <span class="block text-md font-light text-gray-800">All of your currently active accounts that you're tracking.</span>
       </h2>
       <div class="flex-2">
         <button class="focus:outline-none">

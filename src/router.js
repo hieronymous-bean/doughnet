@@ -3,6 +3,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 // app
 import Container from './app/layouts/Container.vue'
 import Dashboard from './app/views/Dashboard.vue'
+import Profile from './app/views/Profile.vue'
+import Settings from './app/views/Settings.vue'
 
 // auth
 import Authorization from './auth/layouts/Authorization.vue'
@@ -72,6 +74,16 @@ const routes = [
         name: 'Goals',
         component: Goals
       },
+      {
+        path: '/profile',
+        name: 'Profile',
+        component: Profile
+      },
+      {
+        path: '/settings',
+        name: 'Settings',
+        component: Settings
+      }
     ]
   },
   {
