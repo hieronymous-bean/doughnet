@@ -29,7 +29,7 @@
                 </div>
               </div>
             </div>
-            <div class="hidden md:block">
+            <div class="hidden md:block" v-click-outside="closeUserMenu">
               <div class="ml-4 flex items-center md:ml-6">
 
                 <button @click.prevent="openCreateAccountModal" type="button" class="py-2 px-8 mx-4 flex justify-center items-center bg-gray-50 hover:bg-gray-100 focus:ring-primary-base text-gray-700 w-full transition ease-in duration-200 text-center text-sm font-regular focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg ">
@@ -94,6 +94,9 @@ export default {
     methods: {
       toggleUserMenu: function() {
         this.userMenuOpen = !this.userMenuOpen
+      },
+      closeUserMenu: function() {
+        this.userMenuOpen = false
       },
       userSignOut: function(e) {
         e.preventDefault;
