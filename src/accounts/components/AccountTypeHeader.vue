@@ -8,7 +8,7 @@
         </button>
         <span class="mx-4 capitalize">{{ typeOfAccount }}</span>
       </div>
-      <div class="relative">
+      <div class="">
         <span class="float-right">Type Total</span>
       </div>
       <div v-show="isTypeExpanded" class="grid grid-cols-1 w-1/2">
@@ -16,7 +16,7 @@
           <div v-show="account.type == typeOfAccount" class="p-2 text-primary-dark underline">
             <router-link
               class="flex items-center"
-              to="/transactions"
+              :to="{ path: 'accounts', query: { account: account.id }}"
             >
             {{ account.name }}
             </router-link>
@@ -27,15 +27,14 @@
 </template>
 
 <script>
-import { accountDemoData } from "../../global/data/account-data";
 export default {
     data: function() {
         return {
-          isTypeExpanded: false,
-          accountData: accountDemoData
+          isTypeExpanded: false
         } 
     },
     props: [
+      'accountData',
       'typeOfAccount',
       'isThisTypeExpanded'
     ],

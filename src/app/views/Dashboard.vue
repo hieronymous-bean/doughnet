@@ -2,7 +2,7 @@
 
   <div class="grid grid-cols-3 gap-8">
 
-    <AccountSummaryList :accounts="accountData" :accountTypes="getAccountTypes"/>
+    <AccountSummaryList :accounts="accountDataArray" :accountTypes="getAccountTypes"/>
 
     <div class="bg-white rounded-sm">
       <div class="px-6 py-5 flex">
@@ -16,7 +16,7 @@
 
       </div>
     </div>
-
+    {{accountData}}
     <div class="bg-white rounded-sm">
       <div class="px-6 py-5 flex">
         <h2 class="flex-1">
@@ -59,7 +59,6 @@
 
       </div>
     </div>
-
     <div class="bg-white rounded-sm">
       <div class="px-6 py-5 flex">
         <h2 class="flex-1">
@@ -80,24 +79,21 @@
 
 <script>
 
-import { accountDemoData } from "../../global/data/account-data";
 import AccountSummaryList from "../../accounts/components/AccountSummaryList.vue"
 
 export default {
   name: 'Dashboard',
     data: () => ({
-      accountData: accountDemoData,
-      title: "Dashboard"
+      title: "Dashboard",
+      accountDataArray: []
     }),
+    props: [
+    'accountData'
+    ],
     components: {
       AccountSummaryList
     },
     methods: {
     },
-    computed: {
-      getAccountTypes: function () {
-        return [...new Set(this.accountData.map(({ type }) => type))]
-      }
-    }
 }
 </script>

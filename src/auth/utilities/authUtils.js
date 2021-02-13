@@ -5,7 +5,7 @@ const signIn = async(email, password) => {
     const user = await firebase.auth().signInWithEmailAndPassword(email, password);
     return user;
   } catch (e) {
-    throw new Error('Error signing in')
+    throw new Error(e)
   }
 }
 
@@ -13,7 +13,7 @@ const signOut = async() => {
   try {
     await firebase.auth().signOut();
   } catch (e) {
-    throw new Error('Error while signing out');
+    throw new Error(e);
   }
 }
 
@@ -33,14 +33,8 @@ const registerNewUser = async(email, password) => {
     const newUser = await firebase.auth().createUserWithEmailAndPassword(email, password);
     return newUser;
   } catch (e) {
-    throw new Error('Error registering new user');
+    throw new Error(e);
   }
-}
-
-const getAuthenticatedUser = () => {
-  let localVuexData = JSON.parse(localStorage.getItem('vuex'))
-  if (!localVuexData.userId) return null;
-  return localVuexData;
 }
 
 const getCurrentUser = () => {
@@ -55,7 +49,6 @@ export {
   signIn,
   signOut,
   registerNewUser,
-  getAuthenticatedUser,
   addAuthListener,
   getCurrentUser
 }

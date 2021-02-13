@@ -8,7 +8,7 @@
           <div class="">
             <div class="mx-auto py-3">
               <div class="h-full w-full rounded">
-                <router-view></router-view>
+                <router-view :accountData="accountDataResponse"></router-view>
               </div>
             </div>
           </div>
@@ -23,6 +23,8 @@
 import Topbar from './Topbar.vue'
 import Sidebar from './Sidebar.vue'
 
+import { getAccounts } from '../../accounts/utilities/getAccounts.js'
+
 export default {
     data: () => ({
         title: 'Dashboard'
@@ -30,6 +32,16 @@ export default {
     components: {
       Topbar,
       Sidebar
+    },
+    computed: {
+      getAccountTypes: function () {
+        return [...new Set(this.accountDataResponse.map(({ type }) => type))]
+      }
+    },
+    beforeCreate: function() {
+      getAccounts(this.$store.getters.getCurrentUserId).then(response => {
+        this.accountDataResponse = response;
+      });
     }
 }
-</script>
+</script> 

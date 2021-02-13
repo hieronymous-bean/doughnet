@@ -51,7 +51,7 @@
                     </svg>
                   </button>
 
-                  <div v-show="isOpen" class="fixed origin-top-right right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical">
+                  <div v-show="userMenuOpen" class="fixed origin-top-right right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical">
                     <router-link
                       class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                       to="/profile"
@@ -79,7 +79,7 @@ export default {
           userEmail: this.$store.state.userEmail,
           test: 'testing',
           title: 'title',
-          isOpen: false
+          userMenuOpen: false
         }
     },
     components: {
@@ -88,7 +88,7 @@ export default {
     ],
     methods: {
       toggleUserMenu: function() {
-        this.isOpen = !this.isOpen
+        this.userMenuOpen = !this.userMenuOpen
       },
       userSignOut: function(e) {
         e.preventDefault;

@@ -41,7 +41,8 @@ const routes = [
     children: [
       {
         path: '/dashboard',
-        name: 'Dashboard',  
+        name: 'Dashboard',
+        props: { accountDataResponse: 'accountDataResponse'},
         component: Dashboard
       },
       {

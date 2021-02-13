@@ -11,7 +11,7 @@
           </div>
           <div>
             <ul class="flex flex-col">
-              <li v-for="(account, id) in accountData" :key="id"  class="mb-2">
+              <li v-for="(account, id) in loadAccountData" :key="id"  class="mb-2">
                 <div @click="openAccountProfileCard(account)" class="transition duration-500 ease-in-out transform select-none cursor-pointer bg-white dark:bg-gray-800 rounded-sm flex flex-row items-center">
                   <div class="p-4 sm:px-6">
                     <h3 class="text-lg leading-6 font-bold text-gray-900">
@@ -56,12 +56,9 @@
 </template>
 
 <script>
-import { accountDemoData } from "../../global/data/account-data";
-
 export default {
   name: 'Accounts',
     data: () => ({
-        accountData: accountDemoData,
         title: "Accounts",
         accountCardOpen: false
     }),
@@ -69,6 +66,8 @@ export default {
         openAccountProfileCard(account) {
             account.accountCardOpen = !account.accountCardOpen
         }
+    },
+    computed: {
     }
 }
 </script>

@@ -1,34 +1,89 @@
 <template>
-  <section class="bg-primary-base h-screen">
-        <div class="mx-auto flex justify-center lg:items-center h-full">
-            <form id="login" class="w-full sm:w-4/6 md:w-3/6 lg:w-4/12 xl:w-3/12 text-white py-12 px-2 sm:px-0" v-on:submit.prevent="userLogin">
-                <div class="pt-16 px-2 flex flex-col items-center justify-center">
-                    <h3 class="text-2xl sm:text-3xl xl:text-2xl font-bold leading-tight">Login To Your Doughnet Account</h3>
-                </div>
-                <div class="mt-12 w-full px-2 sm:px-6">
-                    <div class="flex flex-col mt-5">
-                        <label for="email" class="text-lg font-semibold leading-tight">Email</label>
-                        <input required id="email" name="email" v-model="userEmail" class="h-10 px-2 w-full text-white bg-primary-dark rounded mt-2 focus:outline-none shadow" type="email" />
-                    </div>
-                    <div class="flex flex-col mt-5">
-                        <label for="password" class="text-lg font-semibold fleading-tight">Password</label>
-                        <input required id="password" name="password" v-model="userPassword" class="h-10 px-2 w-full text-white bg-primary-dark rounded mt-2 focus:outline-none shadow" type="password" />
-                    </div>
-                </div>
-                <div class="pt-6 w-full flex justify-between px-2 sm:px-6">
-                    <div class="flex items-center">
-                        <input id="rememberme" class="w-3 h-3 mr-2" type="checkbox" />
-                        <label for="rememberme" class="text-xs">Remember Me</label>
-                    </div>
-                    <a class="text-xs" href="javascript: void(0)">Forgot Password?</a>
-                </div>
-                <div class="px-2 sm:px-6">
-                    <button class="focus:outline-none w-full bg-white transition duration-150 ease-in-out hover:bg-gray-100 rounded text-primary-dark px-8 py-3 text-sm mt-6">Login</button>
-                    <p class="mt-16 text-xs text-center">Don’t Have An Account? <a class="underline" href="javascript: void(0)">Sign Up</a></p>
-                </div>
-            </form>
+  <div class="absolute w-screen h-screen flex">
+    <div class="hidden lg:block w-5/12 h-full">
+      <img
+        src="https://images.unsplash.com/photo-1572978373428-ec8ed86dcba6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=975&q=80"
+        class="w-full h-full object-cover"
+      />
+    </div>
+    <div class="w-full lg:w-7/12 overflow-scroll py-24 relative">
+      <form class="w-5/6 sm:w-1/2 mx-auto text-center" v-on:submit.prevent="userLogin">
+        <img
+          src=""
+          class="h-12 block mx-auto"
+        />
+        <div class="mt-10">
+          <h2 class="text-3xl font-bold text-primary-dark">Welcome back to Doughnet</h2>
+          <p class="mt-3 text-gray-800">
+            New to Doughnet? 
+            <router-link
+            class="text-primary-base"
+            to="/auth/register"
+            >Create an account</router-link>
+          </p>
         </div>
-    </section>
+        <div class="mt-12">
+          <div class="my-6">
+            <div class="">
+              <div class="">
+                <input
+                  type="email"
+                  name="email"
+                  v-model="userEmail"
+                  class="w-full border border-gray-300 rounded-sm px-4 py-3 outline-none transition-colors duration-150 ease-in-out focus:border-primary-base"
+                  placeholder="Your email address"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="my-6">
+            <div class="">
+              <div class="">
+                <input
+                  type="password"
+                  name="password"
+                  v-model="userPassword"
+                  class="w-full border border-gray-300 rounded-sm px-4 py-3 outline-none transition-colors duration-150 ease-in-out focus:border-primary-base"
+                  placeholder="Your password"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="my-6">
+            <button
+              class="inline-block rounded-sm font-medium border border-solid cursor-pointer text-center text-base py-3 px-6 text-white bg-primary-base border-primary-base hover:bg-primary-base hover:border-primary-base w-full"
+              type="submit"
+            >
+              Log In
+            </button>
+          </div>
+          <div class="text-right">
+            <a href="#" class="text-primary-base">Forgot your password?</a>
+          </div>
+          
+          <div class="mt-6 border-t border-b border-gray-300">
+            <div class="my-6">
+              <div class="w-full flex items-center">
+                <input
+                  type="checkbox"
+                  name="rememberMe"
+                  class="w-6 h-6 border border-gray-300 rounded-sm outline-none cursor-pointer checked:bg-blue-400"
+                  checked=""
+                /><label class="ml-2 text-sm" for="rememberMe"
+                  >Remember this device</label
+                >
+              </div>
+            </div>
+          </div>
+          <p class="text-sm mt-6 text-left">
+            By continuing you accept our
+            <a href="#" class="text-primary-base">Terms of Use</a> and
+            <a href="#" class="text-primary-base">Privacy Policy</a>.
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
 </template>
 
 
@@ -38,8 +93,7 @@
 export default {
   data: function() {
         return {
-      title: 'Login',
-      stateUserEmail: this.$store.state.userEmail
+      title: 'Login'
     }
   },
   components: {

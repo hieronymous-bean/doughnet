@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen flex items-center justify-center font-poppins">
+  <div class="flex items-center justify-center font-poppins">
     <div class="max-w-screen w-full">
       <router-view></router-view>
     </div>

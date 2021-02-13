@@ -2,7 +2,7 @@
   <div class="h-auto flex rounded border-r border-gray-lightest">
     <div class="fixed z-20 inset-0 bg-black opacity-50 transition-opacity lg:hidden"> 
     </div>
-    <div :class="isOpen ? 'translate-x-0 ease-out' : '-translate-x-full ease-in'" class="fixed z-30 inset-y-0 left-0 w-64 transition duration-300 transform bg-primary-lightest overflow-y-auto lg:translate-x-0 lg:static lg:inset-0">
+    <div :class="isOpen ? 'translate-x-0 ease-out' : '-translate-x-full ease-in'" class="fixed z-30 inset-y-0 left-0 w-64 transition duration-300 transform bg-primary-lightest overflow-y-auto lg:translate-x-0 lg:static lg:inset-0 min-h-screen">
       <nav class="mt-3 font-light text-sm text-primary-dark">
         
         <router-link
@@ -67,7 +67,13 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13.931 10.245l2.021-2.042-2.778-.403-1.223-2.653-1.222 2.653-2.778.402 2.021 2.042-.492 2.903 2.471-1.391 2.472 1.391-.492-2.902zm-9.481 4.518c-.866-1.382-1.374-3.012-1.374-4.763 0-4.971 4.029-9 9-9s9 4.029 9 9c0 1.792-.53 3.458-1.433 4.861-.607-.31-1.228-.585-1.862-.819.812-1.143 1.295-2.536 1.295-4.042 0-3.86-3.141-7-7-7s-7 3.14-7 7c0 1.476.462 2.844 1.244 3.974-.636.225-1.26.488-1.87.789zm15.307 2.45l-2.334 3.322c-1.603-.924-3.448-1.464-5.423-1.473-1.975.009-3.82.549-5.423 1.473l-2.334-3.322c2.266-1.386 4.912-2.202 7.757-2.211 2.845.009 5.491.825 7.757 2.211zm4.243 2.787h-2.359l-.566 3c-.613-1.012-1.388-1.912-2.277-2.68l2.343-3.335c1.088.879 2.052 1.848 2.859 3.015zm-21.14-3.015l2.343 3.335c-.89.769-1.664 1.668-2.277 2.68l-.566-3h-2.36c.807-1.167 1.771-2.136 2.86-3.015z"/></svg>
           <span class="mx-4">Goals</span>
         </router-link>
+        <div class="absolute bottom-0 border-t border-gray-lightest bg-primary-lightest w-full font-light text-xs text-primary-dark">
+          <a href="" class="flex items-center px-6 rounded-md" role="menuitem">User Profile</a>
+          <a href="" class="flex items-center px-6 rounded-md" role="menuitem">Account Settings</a>
+        </div>
       </nav>
+        
+
     </div>
   </div>
 </template>

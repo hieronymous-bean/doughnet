@@ -1,4 +1,4 @@
-import { signIn, signOut, registerNewUser, getAuthenticatedUser } from '../utilities/authUtils'
+import { signIn, signOut, registerNewUser } from '../utilities/authUtils'
 import router from '../../router.js'
 import Vuex from 'vuex'
 import createPersistedState from "vuex-persistedstate";
@@ -30,15 +30,15 @@ const store = new Vuex.Store({
     loggedIn(state) {
       return !!state.user
     },
-    authStatus(state) {
-      return state.status
+    getCurrentUserId(state) {
+      return state.userId
     }
   },
   actions: {
     init({ state, dispatch }) {
       dispatch('validate', state)
     },
-
+    
     // Logs in the current user.
     logIn({ commit, dispatch, getters }, { email, password } = {}) {
       if (getters.loggedIn) return dispatch('validate')
@@ -48,9 +48,6 @@ const store = new Vuex.Store({
           userId: res.user.uid,
           userEmail: res.user.email
         })
-        setTimeout(function () {
-          router.push('/dashboard')
-        }, 1000)
       })
       .catch(error => console.log(error.message))
     },
@@ -75,19 +72,19 @@ const store = new Vuex.Store({
         console.log(res)
         commit('authUser', {
           user: res.user,
-          userId: res.user.uid
+          userId: res.user.uid,
+          userEmail: res.user.email
         })
-        dispatch('storeUser', { email, password })
         setTimeout(function () {
           router.push('/dashboard')
-        }, 3000)
+        }, 1000)
       })
       .catch(error => console.log(error))
     },
 
     validate({ commit, state }) {
       if (!state.user) return Promise.resolve(null)
-      const user = getAuthenticatedUser();
+      const user = state.user;
       commit('authUser', user)
       setTimeout(function () {
         router.push('/dashboard')
