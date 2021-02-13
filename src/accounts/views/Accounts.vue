@@ -4,20 +4,17 @@
       <div class="align-middle inline-block min-w-full sm:px-6 lg:px-8">
         <div class="overflow-hidden sm:rounded-sm grid grid-cols-3 gap-8">
           <div>
-            <h3 class="text-lg leading-6 font-bold text-gray-900">
-              Your Accounts
-            </h3>
 
           </div>
           <div>
             <ul class="flex flex-col">
-              <li v-for="(account, id) in loadAccountData" :key="id"  class="mb-2">
+              <li v-for="(account, id) in accountData" :key="id"  class="mb-2">
                 <div @click="openAccountProfileCard(account)" class="transition duration-500 ease-in-out transform select-none cursor-pointer bg-white dark:bg-gray-800 rounded-sm flex flex-row items-center">
                   <div class="p-4 sm:px-6">
-                    <h3 class="text-lg leading-6 font-bold text-gray-900">
+                    <h3 class="text-lg leading-6 font-semibold text-gray-900">
                       {{ account.name }}
                     </h3>
-                    <p class="mt-1 max-w-2xl text-sm text-gray-500">
+                    <p class="mt-1 max-w-2xl font-light text-sm text-gray-600">
                       {{ account.description }}
                     </p>
                   </div>
@@ -29,18 +26,23 @@
                 </div>
                 <div :class="[{ hidden: !account.accountCardOpen }]" class="bg-white overflow-hidden rounded-sm flex flex-col">
                   <div class="">
+
                     <dl>
-                      <div class="bg-gray-50 px-4 py-5 grid grid-cols-4 sm:gap-4 sm:px-6">
-                        <dt class="py-2 block text-md font-medium text-gray-900">
+                      
+                      <div class="bg-gray-50 px-6 py-1 text-gray-500 font-light text-xs text-right">
+                        <a href="#" class="underline outline-none focus:outline-none">Remove Account</a>
+                      </div>
+                      <div class="bg-gray-50 px-6 py-1 grid grid-cols-4">
+                        <dt class="py-2 block text-sm font-light text-gray-900">
                           Account Name
                         </dt>
-                        <input v-model="account.name" class="p-2 col-span-3 outline-none focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded text-md border border-gray-200">
+                        <input v-model="account.name" class="p-1 col-span-3 font-light outline-none focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded text-sm border border-gray-200">
                       </div>
-                      <div class="bg-gray-50 px-4 py-5 grid grid-cols-4 sm:gap-4 sm:px-6">
-                        <dt class="py-2 block text-md font-medium text-gray-900">
+                      <div class="bg-gray-50 px-6 py-1 grid grid-cols-4">
+                        <dt class="py-2 block text-sm font-light text-gray-900">
                           Account Type
                         </dt>
-                        <input v-model="account.type" class="p-2 col-span-3 outline-none focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded text-md border border-gray-200">
+                        <input v-model="account.type" class="p-1 col-span-3 font-light outline-none focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded text-sm border border-gray-200">
                       </div>
                         
                     </dl>
@@ -62,6 +64,9 @@ export default {
         title: "Accounts",
         accountCardOpen: false
     }),
+    props: [
+      'accountData'
+    ],
     methods: {
         openAccountProfileCard(account) {
             account.accountCardOpen = !account.accountCardOpen

@@ -7,8 +7,8 @@
         <div class="mx-auto sm:px-2 lg:px-2">
           <div class="">
             <div class="mx-auto py-3">
-              <div class="h-full w-full rounded">
-                <router-view :accountData="accountDataResponse"></router-view>
+              <div class="rounded">
+                <router-view :accountData="accountDataResponse" :accountTypes="getAccountTypes"></router-view>
               </div>
             </div>
           </div>
@@ -27,7 +27,8 @@ import { getAccounts } from '../../accounts/utilities/getAccounts.js'
 
 export default {
     data: () => ({
-        title: 'Dashboard'
+        title: 'Dashboard',
+        accountDataResponse: []
     }),
     components: {
       Topbar,

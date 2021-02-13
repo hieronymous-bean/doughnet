@@ -42,12 +42,13 @@ const routes = [
       {
         path: '/dashboard',
         name: 'Dashboard',
-        props: { accountDataResponse: 'accountDataResponse'},
+        props: { accountData: 'accountData'},
         component: Dashboard
       },
       {
         path: '/accounts',
         name: 'Accounts',
+        props: { accountData: 'accountData'},
         component: Accounts
       },
       {

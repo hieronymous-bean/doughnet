@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-1 flex flex-col overflow-hidden border-b border-gray-lightest">
+  <div class="flex-1 flex flex-col overflow-hidden border-b border-gray-lightest font-poppins">
     <nav class="bg-white">
       <div class="mx-auto px-3 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
@@ -32,7 +32,7 @@
             <div class="hidden md:block">
               <div class="ml-4 flex items-center md:ml-6">
 
-                <button type="button" class="py-2 px-8 mx-4 flex justify-center items-center bg-gray-50 hover:bg-gray-100 focus:ring-primary-base text-gray-700 w-full transition ease-in duration-200 text-center text-md font-regular focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg ">
+                <button @click.prevent="openCreateAccountModal" type="button" class="py-2 px-8 mx-4 flex justify-center items-center bg-gray-50 hover:bg-gray-100 focus:ring-primary-base text-gray-700 w-full transition ease-in duration-200 text-center text-sm font-regular focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg ">
                    + Add New Account
                 </button>
 
@@ -68,21 +68,26 @@
           </div>
         </div>
       </nav>
+
+      <CreateAccountModal v-show="createAccountModalOpen" v-on:closeModal="openCreateAccountModal"/>
+
     </div>
 </template>
 
 <script>
-
+import CreateAccountModal from '../../accounts/components/CreateAccountModal.vue'
 export default {
     data: function() {
         return {
           userEmail: this.$store.state.userEmail,
           test: 'testing',
           title: 'title',
-          userMenuOpen: false
+          userMenuOpen: false,
+          createAccountModalOpen: false
         }
     },
     components: {
+      CreateAccountModal
     },
     props: [
     ],
@@ -93,7 +98,10 @@ export default {
       userSignOut: function(e) {
         e.preventDefault;
         this.$store.dispatch('logOut','')
+      },
+      openCreateAccountModal: function() {
+        this.createAccountModalOpen = !this.createAccountModalOpen
       }
-    }
+    },
 } 
 </script>

@@ -13,8 +13,12 @@
         </button>
       </div>
       <div v-show="cardMenuOpen" class="absolute right-0 mt-8 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical">
-        <a href="" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Add New Account</a>
-        <a href="" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Edit Accounts</a>
+        <a href="" @click.prevent="openCreateAccountModal" class="outline-none focus:outline-none block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">+ Add New Account</a>
+        <router-link
+          class="outline-none focus:outline-none block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+          to="/accounts"
+        >
+        Edit Accounts</router-link>
       </div>
     </div>
     <div class="flex-1">
@@ -26,6 +30,9 @@
         </ul>
       </div>
     </div>
+
+    <CreateAccountModal v-show="createAccountModalOpen" v-on:closeModal="openCreateAccountModal"/>
+
   </div>
 </template>
 
@@ -34,17 +41,20 @@
 <script>
 
 import AccountTypeHeader from './AccountTypeHeader.vue'
+import CreateAccountModal from './CreateAccountModal.vue'
 
 export default {
   data: function() {
     return {
       name: 'AccountSummaryList',
       title: 'AccountSummaryList',
-      cardMenuOpen: false
+      cardMenuOpen: false,
+      createAccountModalOpen: false
     }
   },
   components: {
-    AccountTypeHeader
+    AccountTypeHeader,
+    CreateAccountModal
   },
     props: [
       'accounts',
@@ -54,6 +64,9 @@ export default {
     methods: {
       toggleAccountCardMenu: function() {
         this.cardMenuOpen = !this.cardMenuOpen
+      },
+      openCreateAccountModal: function() {
+        this.createAccountModalOpen = !this.createAccountModalOpen
       }
     },
     computed: {

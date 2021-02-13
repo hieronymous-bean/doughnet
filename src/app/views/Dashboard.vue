@@ -2,7 +2,7 @@
 
   <div class="grid grid-cols-3 gap-8">
 
-    <AccountSummaryList :accounts="accountDataArray" :accountTypes="getAccountTypes"/>
+    <AccountSummaryList :accounts="accountData" :accountTypes="accountTypes"/>
 
     <div class="bg-white rounded-sm">
       <div class="px-6 py-5 flex">
@@ -16,7 +16,6 @@
 
       </div>
     </div>
-    {{accountData}}
     <div class="bg-white rounded-sm">
       <div class="px-6 py-5 flex">
         <h2 class="flex-1">
@@ -73,7 +72,7 @@
         </button>
       </div>
     </div>
-    
+
   </div>
 </template>
 
@@ -88,12 +87,16 @@ export default {
       accountDataArray: []
     }),
     props: [
-    'accountData'
+    'accountData',
+    'accountTypes'
     ],
     components: {
       AccountSummaryList
     },
     methods: {
+      openCreateAccountModal: function() {
+        this.createAccountModal = !this.createAccountModal
+      },
     },
 }
 </script>

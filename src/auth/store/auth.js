@@ -48,6 +48,9 @@ const store = new Vuex.Store({
           userId: res.user.uid,
           userEmail: res.user.email
         })
+        setTimeout(function () {
+          router.push('/dashboard')
+        }, 1000)
       })
       .catch(error => console.log(error.message))
     },
