@@ -1,10 +1,10 @@
 <template>
 
-  <div class="grid grid-cols-3 gap-8">
+  <div class="flex">
 
     <AccountSummaryList :accounts="accountData" :accountTypes="accountTypes"/>
 
-    <div class="bg-white rounded-sm">
+    <div class="bg-white rounded-sm shadow-sm">
       <div class="px-6 py-5 flex">
         <h2 class="flex-1">
             <span class="block font-sans text-4xl font-bold text-primary-dark">Trends</span>
@@ -16,7 +16,7 @@
 
       </div>
     </div>
-    <div class="bg-white rounded-sm">
+    <div class="bg-white rounded-sm shadow-sm max-h-20 overflow-hidden">
       <div class="px-6 py-5 flex">
         <h2 class="flex-1">
             <span class="block font-sans text-4xl font-bold text-primary-dark">Budgets</span>
@@ -31,7 +31,7 @@
       </div>
     </div>
 
-    <div class="bg-white rounded-sm">
+    <div class="bg-white rounded-sm shadow-sm">
       <div class="px-6 py-5 flex">
         <h2 class="flex-1">
             <span class="block font-sans text-4xl font-bold text-primary-dark">Bills</span>
@@ -46,7 +46,7 @@
       </div>
     </div>
 
-    <div class="bg-white rounded-sm h-60">
+    <div class="bg-white rounded-sm h-60 shadow-sm">
       <div class="px-6 py-5 flex">
         <h2 class="flex-1">
             <span class="block font-sans text-4xl font-bold text-primary-dark">Spending</span>
@@ -58,7 +58,7 @@
 
       </div>
     </div>
-    <div class="bg-white rounded-sm">
+    <div class="bg-white rounded-sm shadow-sm">
       <div class="px-6 py-5 flex">
         <h2 class="flex-1">
             <span class="block font-sans text-4xl font-bold text-primary-dark">Goals</span>

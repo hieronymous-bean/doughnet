@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white rounded-sm">
+  <div class="bg-white rounded-sm shadow-sm">
     <div class="px-6 py-5 flex relative">
       <h2 class="flex-1 font-poppins">
         <span class="block text-4xl font-semibold text-primary-dark pb-1">Accounts</span>
@@ -23,10 +23,10 @@
         </div>
       </div>
     </div>
-    <div class="flex-1">
+    <div class="flex-1 mb-4">
       <div class="flex-1">
         <ul class="account-item w-full accordion-arrow px-3">
-          <li v-for="(accountType, index) in accountTypes" :key="index" class="items-center my-3 font-light px-3">
+          <li v-for="(accountType, index) in accountTypes" :key="index" class="items-center my-1 font-light px-3">
             <AccountTypeHeader :typeOfAccount="accountType" :accountData="accounts"/>
           </li>
         </ul>

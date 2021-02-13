@@ -2,20 +2,20 @@
     <div class="grid grid-cols-2 rounded border border-gray-100 bg-gray-50 p-2 cursor-pointer font-light text-sm" @click="expandAccountType" :isThisTypeExpanded="isTypeExpanded">
       <div class="relative">
         <button class="focus:outline-none">
-          <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" class="absolute top-1.5" viewBox="0 0 24 24">
+          <svg xmlns="http://www.w3.org/2000/svg" :class="[{ transform: this.isTypeExpanded },{ 'rotate-90': this.isTypeExpanded}]" width="8" height="8" class="absolute top-1.5" viewBox="0 0 24 24">
             <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/>
           </svg>
         </button>
         <span class="mx-4 capitalize">{{ typeOfAccount }}</span>
       </div>
       <div class="">
-        <span class="float-right">Type Total</span>
+        <span class="float-right">${{ accountTypeTotal }}</span>
       </div>
       <div v-show="isTypeExpanded" class="grid grid-cols-1 w-1/2">
-        <div v-for="account in accountData" :key="account.id">
+        <div v-for="account in accountData" :key="account.id" class="hover:bg-gray-100 rounded">
           <div v-show="account.type == typeOfAccount" class="p-2 text-primary-dark underline">
             <router-link
-              class="flex items-center"
+              class="flex items-center outline-none focus:outline-none"
               :to="{ path: 'accounts', query: { account: account.id }}"
             >
             {{ account.name }}
@@ -44,6 +44,18 @@ export default {
       }
     },
     computed: {
+      accountTypeTotal: function() {
+        let accountTypeTotal = [];
+
+        Object.entries(this.accountData).forEach(([key, val]) => {
+            console.log(key);
+            if (val.type == this.typeOfAccount) {
+              accountTypeTotal.push(parseInt(val.currentBalance)) // the value of the current key.
+            }
+        });
+        console.log(accountTypeTotal)
+        return accountTypeTotal.reduce((a, b) => a + b, 0)
+      }
     }
 }
 </script>
