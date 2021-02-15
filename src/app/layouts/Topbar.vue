@@ -38,7 +38,7 @@
 
                 <NotificationsDropdown/>
                 
-                <div class="ml-3 relative" v-click-outside="closeUserMenu">
+                <div class="ml-3" v-click-outside="closeUserMenu">
                   <button @click="toggleUserMenu" type="button" class="flex items-center justify-center w-full rounded-md px-4 py-2 text-sm font-medium text-gray-500 dark:text-gray-50 bg-gray-50 hover:bg-gray-100 dark:hover:bg-gray-100 focus:ring-primary-base focus:outline-none focus:ring-2 focus:ring-offset-2" id="options-menu">
                     <svg width="20" fill="currentColor" height="20" class="text-gray-500" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
                       <path d="M1523 1339q-22-155-87.5-257.5t-184.5-118.5q-67 74-159.5 115.5t-195.5 41.5-195.5-41.5-159.5-115.5q-119 16-184.5 118.5t-87.5 257.5q106 150 271 237.5t356 87.5 356-87.5 271-237.5zm-243-699q0-159-112.5-271.5t-271.5-112.5-271.5 112.5-112.5 271.5 112.5 271.5 271.5 112.5 271.5-112.5 112.5-271.5zm512 256q0 182-71 347.5t-190.5 286-285.5 191.5-349 71q-182 0-348-71t-286-191-191-286-71-348 71-348 191-286 286-191 348-71 348 71 286 191 191 286 71 348z">
@@ -46,7 +46,7 @@
                     </svg>
                   </button>
 
-                  <div v-show="userMenuOpen" class="fixed origin-top-right right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical">
+                  <div v-show="userMenuOpen" class="absolute z-50 origin-top-right right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical">
                     <router-link
                       class="block outline-none focus:outline-none px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                       to="/profile"

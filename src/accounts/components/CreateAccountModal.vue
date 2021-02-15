@@ -43,10 +43,10 @@
           </dl>
         </div>
         <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-          <button @click.prevent="$emit('createAccount')" type="button" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-primary-base text-base font-medium text-white hover:bg-primary-base focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:ml-3 sm:w-auto sm:text-sm">
+          <button @click.prevent="createAccountButtonClick" type="button" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-primary-base text-base font-medium text-white hover:bg-primary-base focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:ml-3 sm:w-auto sm:text-sm">
             Create
           </button>
-          <button @click.prevent="$emit('closeModal')" type="button" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+          <button @click.prevent="closeModalButtonClick" type="button" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
             Cancel
           </button>
         </div>
@@ -58,19 +58,33 @@
 <script>
 export default {
     data: function() {
-        return {
-          newAccountName: '',
-          newAccountDescription: '',
-          newAccountType: '',
-          newAccountBalance: '',
-          newAccountPayment: ''
-        }
+      return {
+        newAccountName: '',
+        newAccountDescription: '',
+        newAccountType: '',
+        newAccountBalance: '',
+        newAccountPayment: ''
+      }
     },
     components: {
     },
     props: [
     ],
     methods: {
+      createAccountButtonClick: function() {
+        const accountPayload = {
+          user: this.$store.getters.getCurrentUserId,
+          name: this.newAccountName,
+          description: this.newAccountDescription,
+          type: this.newAccountType,
+          currentBalance: this.newAccountBalance,
+          minimumPayment: this.newAccountPayment
+        }
+        this.$emit('createNewAccount',accountPayload)
+      },
+      closeModalButtonClick: function() {
+        this.$emit('closeModal');
+      }
     },
 }
 </script>

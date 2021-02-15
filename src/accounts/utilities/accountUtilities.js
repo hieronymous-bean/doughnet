@@ -21,3 +21,15 @@ export const getAccounts = async id => {
 	return populatedAccounts;
 
 }
+
+
+export const createAccount = async accountData => {
+	const res = await firebase.firestore().collection('accounts').add(accountData);
+	return res;
+}
+
+
+export const deleteAccount = async accountData => {
+	const res = await firebase.firestore().collection('accounts').doc(accountData.id).delete();
+	return res;
+}
