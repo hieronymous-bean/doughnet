@@ -1,14 +1,14 @@
 <template>
   <div class="flex flex-col">
-    <div class="my-1 sm:-mx-6 lg:-mx-8">
-      <div class="inline-block min-w-full sm:px-6 lg:px-8">
-        <div class="mt-1 pb-4 align-middle">
-          <h1 class="inline-block text-3xl font-semibold">Tools</h1>
+    <div class="my-1">
+      <div class="inline-block min-w-full">
+        <div class="mt-1 pb-4 px-6">
+          <h1 class="inline-block text-4xl font-normal">Tools</h1>
         </div>
         <div>
           <div class="w-1/6 align-top pr-5 h-full inline-block">
-            <div class="inline-block min-w-full shadow-sm">
-              <div class="p-2 bg-white">
+            <div class="inline-block min-w-full border">
+              <div class="bg-white">
                 <div class="rounded my-1 p-2 font-light text-sm">
                   <div class="px-2 py-1 w-full">
                     <dt class="py-2 block text-md font-normal text-gray-600">
@@ -46,7 +46,7 @@
           </div>
           <div class="w-5/6 align-top h-full inline-block">
             <div class="inline-block min-w-full">
-              <div class="shadow-sm overflow-hidden border-b border-gray-200">
+              <div class="border overflow-hidden">
                 <table class="min-w-full divide-y divide-gray-200">
                   <thead class="bg-primary-base text-white">
                     <tr>

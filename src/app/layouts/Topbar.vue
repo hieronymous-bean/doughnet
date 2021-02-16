@@ -1,13 +1,12 @@
 <template>
-  <div class="flex-1 flex flex-col overflow-hidden border-b border-gray-lightest font-poppins">
+  <div class="w-full block overflow-hidden border-none font-poppins rounded-3xl">
     <nav class="bg-white">
       <div class="mx-auto px-3 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           <div class="flex items-center py-3">
-            <img src="../../global/assets/img/doughnet-logo.png" class="w-36 ">
               <div class="hidden md:block">
 
-                <div class="ml-20 flex items-baseline space-x-4">
+                <div class="flex items-baseline space-x-4">
                   <div class="relative mx-4 lg:mx-0 text-gray-400">
                     <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
                       <svg class="h-5 w-5 text-primary-base" viewBox="0 0 24 24" fill="none">
@@ -21,7 +20,7 @@
                       </svg>
                     </span>
                     <input
-                      class="text-sm font-light bg-gray-100 form-input w-32 sm:w-64 rounded-md pl-10 pr-4 py-3 border-none outline-none focus:outline-none"
+                      class="text-sm font-light bg-gray-100 form-input w-32 sm:w-64 rounded-md pl-10 pr-4 py-3 border-none outline-none focus:outline-none focus:ring-0"
                       type="text"
                       placeholder="Search"
                     />
@@ -102,6 +101,7 @@ export default {
         this.$store.dispatch('logOut','')
       },
       openCreateAccountModal: function() {
+        this.userMenuOpen = false
         this.createAccountModalOpen = !this.createAccountModalOpen
       }
     },

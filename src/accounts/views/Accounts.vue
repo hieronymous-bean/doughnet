@@ -1,18 +1,18 @@
 <template>
   <div class="">
-    <div class="my-1 overflow-hidden sm:-mx-6 lg:-mx-8">
-      <div class="min-w-full sm:px-6 lg:px-8">
-        <div class="mt-1 pb-4">
-          <h1 class="inline-block text-3xl font-semibold">All Tracked Accounts</h1>
+    <div class="my-1 overflow-hidden">
+      <div class="min-w-full">
+        <div class="mt-1 pb-4 px-6">
+          <h1 class="inline-block text-4xl font-normal">All Tracked Accounts</h1>
           <button @click.prevent="openCreateAccountModal" type="button" class="w-full float-right inline-block rounded-md border border-transparent shadow-sm px-4 py-1 bg-primary-dark font-regular text-white hover:bg-primary-base focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-base sm:w-auto sm:text-sm">
           + Add Account
           </button>
         </div>
         <div class="overflow-hidden flex">
           <div class="w-1/6 inline-block">
-            <div class="transition duration-500 shadow-sm ease-in-out transform select-none bg-white dark:bg-gray-800 rounded-sm">
+            <div class="transition duration-500 ease-in-out transform select-none bg-white dark:bg-gray-800 rounded border">
               <div class="py-4 sm:px-6">
-                <h4 class="text-xl mb-2 leading-6 font-semibold text-primary-dark">
+                <h4 class="text-xl mb-2 leading-6 font-semibold text-primary-darkest">
                   Accounts
                 </h4>
                 <div>
@@ -26,11 +26,11 @@
           </div>
           <div class="w-4/6 inline-block mx-4">
             <ul class="">
-              <li v-for="(account, id) in accountData" :key="id"  class="shadow-sm">
-                <div v-show="account.type == this.activeAccountFilter || this.activeAccountFilter == ''">
+              <li v-for="(account, id) in accountData" :key="id"  class="">
+                <div v-show="account.type == this.activeAccountFilter || this.activeAccountFilter == ''" class="border mb-3 rounded">
                   <div @click="openAccountProfileCard(account)" class="transition duration-500 ease-in-out transform select-none cursor-pointer bg-white dark:bg-gray-800 rounded-sm">
                     <div class="pt-5 sm:px-6">
-                      <h3 class="text-lg leading-6 font-semibold text-primary-dark">
+                      <h3 class="text-lg leading-6 font-semibold text-primary-darkest">
                         {{ account.name }}
                       </h3>
                       <p class="mt-1 max-w-2xl font-light text-sm text-gray-800">
@@ -95,9 +95,9 @@
             </ul>
           </div>
           <div class="w-1/6 inline-block ">
-            <div class="transition duration-500 shadow-sm ease-in-out transform select-none bg-white dark:bg-gray-800 rounded-sm">
+            <div class="transition duration-500 border ease-in-out transform select-none bg-white dark:bg-gray-800 rounded-sm">
               <div class="p-4 sm:px-6">
-                <h4 class="text-xl leading-6 font-semibold text-primary-dark">
+                <h4 class="text-xl leading-6 font-semibold text-primary-darkest">
                   Summary of Accounts
                 </h4>
                 <div>

@@ -1,12 +1,12 @@
 <template>
-  <div>
-    <Topbar/>
-    <div class="flex h-screen bg-primary-lightest font-poppins">
-      <Sidebar/>
+  <div class="md:grid md:grid-cols-9 bg-primary-base">
+    <Sidebar/>
+    <div class="w-full h-screen bg-white font-poppins md:col-span-8">
+      <Topbar/>
       <main class="w-full">
-        <div class="mx-auto sm:px-2 lg:px-2">
+        <div class="mx-auto">
           <div class="">
-            <div class="mx-auto py-3">
+            <div class="mx-auto p-3">
               <div class="rounded">
                 <router-view :accountData="accountDataResponse" :accountTypes="getAccountTypes" v-on:refreshAccountData="refreshAccountData"></router-view>
               </div>
