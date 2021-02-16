@@ -2,7 +2,7 @@
   <div class="md:grid md:grid-cols-9 bg-primary-base">
     <Sidebar/>
     <div class="w-full h-screen bg-white font-poppins md:col-span-8">
-      <Topbar/>
+      <Topbar v-on:refreshAccountData="refreshAccountData"/>
       <main class="w-full">
         <div class="mx-auto">
           <div class="">

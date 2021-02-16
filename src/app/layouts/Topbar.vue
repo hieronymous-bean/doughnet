@@ -64,12 +64,13 @@
         </div>
       </nav>
 
-      <CreateAccountModal v-show="createAccountModalOpen" v-on:closeModal="openCreateAccountModal"/>
+      <CreateAccountModal v-show="createAccountModalOpen" v-on:createNewAccount="createNewAccount" v-on:closeModal="openCreateAccountModal"/>
 
     </div>
 </template>
 
 <script>
+import { createAccount, deleteAccount } from '../../accounts/utilities/accountUtilities.js'
 import CreateAccountModal from '../../accounts/components/CreateAccountModal.vue'
 import NotificationsDropdown from '../components/NotificationsDropdown.vue'
 export default {
@@ -103,7 +104,21 @@ export default {
       openCreateAccountModal: function() {
         this.userMenuOpen = false
         this.createAccountModalOpen = !this.createAccountModalOpen
-      }
+      },
+      createNewAccount: function(accountData) {
+          createAccount(accountData).then(response => {
+            this.createAccountModalOpen = false;
+            this.$emit('refreshAccountData');
+            return response;
+          });
+        },
+        deleteAccount: function(accountId) {
+          deleteAccount(accountId).then(response => {
+            this.deleteAccountModalOpen = false;
+            this.$emit('refreshAccountData');
+            return response;
+          });
+        },
     },
 } 
 </script>

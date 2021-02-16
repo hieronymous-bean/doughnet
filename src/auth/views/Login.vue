@@ -67,7 +67,7 @@
                 <input
                   type="checkbox"
                   name="rememberMe"
-                  class="w-6 h-6 border border-gray-300 rounded-sm outline-none cursor-pointer checked:bg-blue-400"
+                  class="w-6 h-6 border border-gray-300 rounded-sm outline-none cursor-pointer checked:bg-primary-base"
                   checked=""
                 /><label class="ml-2 text-sm" for="rememberMe"
                   >Remember this device</label

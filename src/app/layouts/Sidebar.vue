@@ -3,8 +3,10 @@
     <div class="z-20 inset-0 bg-black opacity-50 transition-opacity lg:hidden"> 
     </div>
     <div :class="isOpen ? 'translate-x-0 ease-out' : '-translate-x-full ease-in'" class="fixed z-30 inset-y-0 left-0 transition duration-300 transform bg-primary-base overflow-y-auto lg:translate-x-0 lg:static lg:inset-0 min-h-screen">
-      <nav class="mt-3 font-semibold text-md text-primary-dark focus:outline-none">
-        
+      <div class="w-1/2 pr-4 mx-auto mt-6 align-middle items-center">
+        <img src="../../global/assets/img/doughnet-logo.png">
+      </div>
+      <nav class="mt-3 text-md text-primary-dark focus:outline-none">
         <router-link
           class="flex items-center mt-4 p-2 px-6 m-4 rounded-md focus:outline-none"
           :class="[$route.name === 'Dashboard' ? activeClass : inactiveClass]"
@@ -78,7 +80,7 @@ export default {
     data: function() {
       return {
         activeClass: 'text-primary-base bg-primary-light font-bold fill-current focus:outline-none',
-        inactiveClass: 'font-normal fill-current text-white',
+        inactiveClass: 'font-semibold fill-current text-white',
         isOpen: false
       }
     },

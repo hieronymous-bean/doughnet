@@ -4,7 +4,7 @@
       <div class="min-w-full">
         <div class="mt-1 pb-4 px-6">
           <h1 class="inline-block text-4xl font-normal">All Tracked Accounts</h1>
-          <button @click.prevent="openCreateAccountModal" type="button" class="w-full float-right inline-block rounded-md border border-transparent shadow-sm px-4 py-1 bg-primary-dark font-regular text-white hover:bg-primary-base focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-base sm:w-auto sm:text-sm">
+          <button @click.prevent="openCreateAccountModal" type="button" class="w-full float-right inline-block rounded-md border border-transparent px-4 py-1 bg-secondary-two font-regular text-black hover:bg-secondary-two focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-base sm:w-auto sm:text-sm">
           + Add Account
           </button>
         </div>
@@ -57,35 +57,35 @@
                           <dt class="py-2 block text-sm font-light text-gray-500">
                             Account Name
                           </dt>
-                          <input v-model="account.name" class="py-1 px-3 col-span-3 font-light outline-none focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded text-sm border border-gray-200">
+                          <input ref="accountName" class="py-1 px-3 col-span-3 font-light outline-none focus:ring-primary-base focus:border-primary-base flex-1 block w-full rounded text-sm border border-gray-200">
                         </div>
 
                         <div class="bg-gray-50 px-6 py-1 grid grid-cols-4">
                           <dt class="py-2 block text-sm font-light text-gray-500">
                             Account Description
                           </dt>
-                          <input v-model="account.description" class="py-1 px-3 col-span-3 font-light outline-none focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded text-sm border border-gray-200">
+                          <input ref="accountDescription" class="py-1 px-3 col-span-3 font-light outline-none focus:ring-primary-base focus:border-primary-base flex-1 block w-full rounded text-sm border border-gray-200">
                         </div>
 
                         <div class="bg-gray-50 px-6 py-1 grid grid-cols-4">
                           <dt class="py-2 block text-sm font-light text-gray-500">
                             Account Type
                           </dt>
-                          <input v-model="account.type" class="py-1 px-3 col-span-3 font-light outline-none focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded text-sm border border-gray-200">
+                          <input ref="accountType" class="py-1 px-3 col-span-3 font-light outline-none focus:ring-primary-base focus:border-primary-base flex-1 block w-full rounded text-sm border border-gray-200">
                         </div>
 
                         <div class="bg-gray-50 px-6 py-1 grid grid-cols-4">
                           <dt class="py-2 block text-sm font-light text-gray-500">
                             Current Balance
                           </dt>
-                          <input v-model="account.currentBalance" class="py-1 px-3 col-span-3 font-light outline-none focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded text-sm border border-gray-200">
+                          <input ref="currentBalance" class="py-1 px-3 col-span-3 font-light outline-none focus:ring-primary-base focus:border-primary-base flex-1 block w-full rounded text-sm border border-gray-200">
                         </div>
 
                         <div class="bg-gray-50 px-6 py-1 grid grid-cols-4">
                           <dt class="py-2 block text-sm font-light text-gray-500">
                             Monthly Payment
                           </dt>
-                          <input v-model="account.minimumPayment" class="py-1 px-3 col-span-3 font-light outline-none focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded text-sm border border-gray-200">
+                          <input ref="minimumPayment" class="py-1 px-3 col-span-3 font-light outline-none focus:ring-primary-base focus:border-primary-base flex-1 block w-full rounded text-sm border border-gray-200">
                         </div>
                       </dl>
                     </div>

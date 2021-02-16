@@ -4,7 +4,7 @@
       <div class="inline-block min-w-full">
         <div class="mt-1 pb-4 pl-5">
           <h1 class="inline-block text-4xl font-normal">Recorded Transactions</h1>
-          <button @click.prevent="openCreateAccountModal" type="button" class="w-full float-right inline-block rounded-md border border-transparent shadow-sm px-4 py-1 bg-primary-dark font-regular text-white hover:bg-primary-base focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-base sm:w-auto sm:text-sm">
+          <button @click.prevent="openCreateAccountModal" type="button" class="w-full float-right inline-block rounded-md border border-transparent shadow-sm px-4 py-1 bg-secondary-three font-regular text-black hover:bg-primary-base focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-base sm:w-auto sm:text-sm">
           + Import Transactions
           </button>
         </div>

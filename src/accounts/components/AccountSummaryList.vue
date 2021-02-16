@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white rounded-3xl border">
+  <div class="bg-white rounded-xl border">
     <div class="px-6 py-5 flex relative">
       <h2 class="flex-1 font-poppins">
         <span class="block text-4xl font-normal text-black pb-1">Accounts</span>
@@ -31,7 +31,7 @@
       </div>
     </div>
 
-    <CreateAccountModal v-show="createAccountModalOpen" v-on:closeModal="openCreateAccountModal"/>
+    <CreateAccountModal v-show="createAccountModalOpen" v-on:createNewAccount="createNewAccount" v-on:closeModal="openCreateAccountModal"/>
 
   </div>
 </template>
@@ -39,7 +39,7 @@
 
 
 <script>
-
+import { createAccount, deleteAccount } from '../utilities/accountUtilities.js'
 import AccountTypeHeader from './AccountTypeHeader.vue'
 import CreateAccountModal from './CreateAccountModal.vue'
 
@@ -71,7 +71,21 @@ export default {
       openCreateAccountModal: function() {
         this.cardMenuOpen = false
         this.createAccountModalOpen = !this.createAccountModalOpen
-      }
+      },
+      createNewAccount: function(accountData) {
+        createAccount(accountData).then(response => {
+          this.createAccountModalOpen = false;
+          this.$emit('refreshAccountData');
+          return response;
+        });
+      },
+      deleteAccount: function(accountId) {
+        deleteAccount(accountId).then(response => {
+          this.deleteAccountModalOpen = false;
+          this.$emit('refreshAccountData');
+          return response;
+        });
+      },
     },
     computed: {
 
