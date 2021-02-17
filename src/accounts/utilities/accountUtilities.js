@@ -28,8 +28,13 @@ export const createAccount = async accountData => {
 	return res;
 }
 
+export const updateAccount = async accountData => {
+	const res = await firebase.firestore().collection('accounts').doc(accountData.id).set(accountData);
+	return res;
+}
+
 
 export const deleteAccount = async accountData => {
 	const res = await firebase.firestore().collection('accounts').doc(accountData.id).delete();
 	return res;
-}
+}	

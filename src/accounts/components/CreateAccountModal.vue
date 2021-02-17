@@ -24,10 +24,18 @@
           </div>
         </div>
         <div class="">
-          <dl>
+
+          <Form v-slot="{ errors }" @submit.prevent="createAccountButtonClick">
             <div class="bg-gray-50 px-6 py-1">
-              <input v-model="newAccountName" placeholder="Account Name" class="p-1 col-span-3 font-light outline-none focus:ring-primary-light focus:border-primary-light flex-1 block w-full rounded text-sm border border-gray-200">
+              <Field name="field" :rules="isRequired" v-model="newAccountName" placeholder="Account Name" class="p-1 col-span-3 font-light outline-none focus:ring-primary-light focus:border-primary-light flex-1 block w-full rounded text-sm border border-gray-200"/>
+              <span>{{ errors.field }}</span>
             </div>
+            <button type="button" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-primary-base text-base font-medium text-white hover:bg-primary-base focus:outline-none focus:ring-0 sm:ml-3 sm:w-auto sm:text-sm">
+              Create
+            </button>
+          </Form>
+
+          <dl>
             <div class="bg-gray-50 px-6 py-1">
               <input v-model="newAccountDescription" placeholder="Account Description" class="p-1 col-span-3 font-light outline-none focus:ring-primary-light focus:border-primary-light flex-1 block w-full rounded text-sm border border-gray-200">
             </div>
@@ -43,10 +51,8 @@
           </dl>
         </div>
         <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-          <button @click.prevent="createAccountButtonClick" type="button" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-primary-base text-base font-medium text-white hover:bg-primary-base focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-base sm:ml-3 sm:w-auto sm:text-sm">
-            Create
-          </button>
-          <button @click.prevent="closeModalButtonClick" type="button" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-base sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+          
+          <button @click.prevent="closeModalButtonClick" type="button" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-0 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
             Cancel
           </button>
         </div>
@@ -56,6 +62,8 @@
 </template>
 
 <script>
+import { Field, Form } from 'vee-validate';
+
 export default {
     data: function() {
       return {
@@ -67,6 +75,8 @@ export default {
       }
     },
     components: {
+      Field,
+      Form,
     },
     props: [
     ],
@@ -81,10 +91,18 @@ export default {
           minimumPayment: this.newAccountPayment
         }
         this.$emit('createNewAccount',accountPayload)
+        this.newAccountName = '';
+        this.newAccountDescription = '';
+        this.newAccountType = '';
+        this.newAccountBalance = '';
+        this.newAccountPayment = '';
       },
       closeModalButtonClick: function() {
         this.$emit('closeModal');
-      }
+      },
+      isRequired(value) {
+        return value ? true : 'This field is required';
+      },
     },
 }
 </script>

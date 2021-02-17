@@ -16,13 +16,14 @@ module.exports = {
           one: '#FDF9E5',
           two: '#ECDCD4',
           three: '#DAE3F7',
-          four: '#F0EDEA'
+          four: '#F0EDEA',
+          five: '#D6E0DF'
         },
         black: '#020D0D',
         white: '#ffffff',
         gray: {
           lightest: '#ededed',
-          base: '#B6BECD',
+          base: '#EFF1F5',
           dark: '#333333'
         }
       },

@@ -2,7 +2,7 @@
   <div class="absolute w-screen h-screen flex">
     <div class="hidden lg:block w-5/12 h-full">
       <img
-        src="https://images.unsplash.com/photo-1572978373428-ec8ed86dcba6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=975&q=80"
+        src="https://images.unsplash.com/photo-1607743882420-4412ee605bac?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=975&q=80"
         class="w-full h-full object-cover"
       />
     </div>
@@ -13,7 +13,7 @@
           class="h-12 block mx-auto"
         />
         <div class="mt-10">
-          <h2 class="text-3xl font-bold text-primary-dark">Welcome back to Doughnet</h2>
+          <h2 class="text-3xl font-bold text-primary-base">Welcome back to Doughnet</h2>
           <p class="mt-3 text-gray-800">
             New to Doughnet? 
             <router-link
@@ -30,7 +30,7 @@
                   type="email"
                   name="email"
                   v-model="userEmail"
-                  class="w-full border border-gray-300 rounded-sm px-4 py-3 outline-none transition-colors duration-150 ease-in-out focus:border-primary-base"
+                  class="w-full border border-gray-200 rounded-sm px-4 py-3 outline-none transition-colors duration-150 ease-in-out focus:border-primary-base focus:ring-primary-base"
                   placeholder="Your email address"
                 />
               </div>
@@ -43,7 +43,7 @@
                   type="password"
                   name="password"
                   v-model="userPassword"
-                  class="w-full border border-gray-300 rounded-sm px-4 py-3 outline-none transition-colors duration-150 ease-in-out focus:border-primary-base"
+                  class="w-full border border-gray-200 rounded-sm px-4 py-3 outline-none transition-colors duration-150 ease-in-out focus:border-primary-base focus:ring-primary-base"
                   placeholder="Your password"
                 />
               </div>
@@ -67,7 +67,7 @@
                 <input
                   type="checkbox"
                   name="rememberMe"
-                  class="w-6 h-6 border border-gray-300 rounded-sm outline-none cursor-pointer checked:bg-primary-base"
+                  class="w-6 h-6 text-primary-base focus:ring-primary-base border border-gray-300 rounded-sm outline-none cursor-pointer checked:bg-primary-base"
                   checked=""
                 /><label class="ml-2 text-sm" for="rememberMe"
                   >Remember this device</label

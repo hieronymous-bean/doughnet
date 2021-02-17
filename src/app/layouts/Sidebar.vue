@@ -3,17 +3,17 @@
     <div class="z-20 inset-0 bg-black opacity-50 transition-opacity lg:hidden"> 
     </div>
     <div :class="isOpen ? 'translate-x-0 ease-out' : '-translate-x-full ease-in'" class="fixed z-30 inset-y-0 left-0 transition duration-300 transform bg-primary-base overflow-y-auto lg:translate-x-0 lg:static lg:inset-0 min-h-screen">
-      <div class="w-1/2 pr-4 mx-auto mt-6 align-middle items-center">
+      <div class="w-2/5 pr-4 mx-auto my-1 align-middle items-center">
         <img src="../../global/assets/img/doughnet-logo.png">
       </div>
       <nav class="mt-3 text-md text-primary-dark focus:outline-none">
         <router-link
-          class="flex items-center mt-4 p-2 px-6 m-4 rounded-md focus:outline-none"
+          class="flex items-center mt-2 p-2 px-6 m-3 rounded-md outline-none focus:outline-none"
           :class="[$route.name === 'Dashboard' ? activeClass : inactiveClass]"
           to="/dashboard"
         >
           <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11.5 22.6l3.404-1.816c.238.26.469.519.685.768l-4.589 2.448-11-5.869v-12.131l11-6 11.001 6.066v9.612c-.329-.319-.666-.662-1-1.019v-7.516l-2.637 1.357-.018 4.588.009-.008c1.068 1.392 2.596 3.059 3.928 4.2-1.08 1.252-1.433 2.67-.67 3.24.592.443 1.518.641 2.01 1.158.252.268.377.61.377.95 0 .863-.724 1.372-1.371 1.372-.363 0-.725-.143-.994-.426-.475-.501-.633-1.39-1.012-2.004-.523-.854-2.037-.625-3.366.411-1.549-1.873-4.505-4.809-5.757-5.579v6.198zm11.443.361c-.181.172-.472.166-.644-.019-.177-.183-.166-.473.015-.645.184-.175.471-.168.645.016.175.182.168.472-.016.648zm-12.443-10.931l-9.5-4.946v10.447l9.5 5.069v-10.57zm4.463 5.862l3.315-3.158c.467.578.933 1.06 1.553 1.715.251.263.259.507.138.623-.444.422-1.478-1.072-1.951-.621-.469.447 1.212 1.67.7 2.157-.395.377-1.135-.648-1.536-.266-.187.178-.006.541.101.845.183.525-.212.878-.789.27-.573-.606-.883-.936-1.531-1.565zm.518-9.033l-9.534-4.964-4.349 2.373 9.404 4.896 4.479-2.305zm-8.476-5.541l9.565 4.98 3.832-1.972-9.405-5.185-3.992 2.177z"/></svg>
-          <span class="mx-4">Overview</span>
+          <span class="mx-2">Dashboard</span>
         </router-link>
 
         <router-link
@@ -31,7 +31,7 @@
           to="/transactions"
         >
           <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M22 3c.53 0 1.039.211 1.414.586s.586.884.586 1.414v14c0 .53-.211 1.039-.586 1.414s-.884.586-1.414.586h-20c-.53 0-1.039-.211-1.414-.586s-.586-.884-.586-1.414v-14c0-.53.211-1.039.586-1.414s.884-.586 1.414-.586h20zm1 8h-22v8c0 .552.448 1 1 1h20c.552 0 1-.448 1-1v-8zm-15 5v1h-5v-1h5zm13-2v1h-3v-1h3zm-10 0v1h-8v-1h8zm-10-6v2h22v-2h-22zm22-1v-2c0-.552-.448-1-1-1h-20c-.552 0-1 .448-1 1v2h22z"/></svg>
-          <span class="mx-4">Transactions</span>
+          <span class="mx-2">Transactions</span>
         </router-link>
 
         <router-link
@@ -79,8 +79,8 @@
 export default {
     data: function() {
       return {
-        activeClass: 'text-primary-base bg-primary-light font-bold fill-current focus:outline-none',
-        inactiveClass: 'font-semibold fill-current text-white',
+        activeClass: 'text-secondary-one bg-primary-light font-semibold fill-current focus:outline-none',
+        inactiveClass: 'font-semibold fill-current text-white focus:outline-none',
         isOpen: false
       }
     },

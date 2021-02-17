@@ -1,6 +1,13 @@
 <template>
+  <div>
+    <div class="grid grid-cols-4 gap-8 mb-8">
+      <NetWorthWidget/>
+      <CashFlowWidget/>
+      <DebtPaydownWidget/>
+      <EmergencyFundWidget/>
+    </div>
 
-  <div class="grid grid-cols-2 gap-8">
+    <div class="grid grid-cols-2 gap-8">
 
     <AccountSummaryList :accounts="accountData" :accountTypes="accountTypes" v-on:refreshAccountData="refreshAccountData"/>
 
@@ -73,11 +80,16 @@
       </div>
     </div>
 
-  </div>
+  </div></div>
+  
 </template>
 
 <script>
 
+import NetWorthWidget from '../components/NetWorthWidget.vue'
+import CashFlowWidget from '../components/CashFlowWidget.vue'
+import DebtPaydownWidget from '../components/DebtPaydownWidget.vue'
+import EmergencyFundWidget from '../components/EmergencyFundWidget.vue'
 import AccountSummaryList from "../../accounts/components/AccountSummaryList.vue"
 
 export default {
@@ -91,6 +103,10 @@ export default {
     'accountTypes'
     ],
     components: {
+      NetWorthWidget,
+      CashFlowWidget,
+      DebtPaydownWidget,
+      EmergencyFundWidget,
       AccountSummaryList
     },
     methods: {

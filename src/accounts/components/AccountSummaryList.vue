@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-white rounded-xl border">
-    <div class="px-6 py-5 flex relative">
+  <div class="bg-white rounded-sm border">
+    <div class="px-6 py-3 flex relative">
       <h2 class="flex-1 font-poppins">
-        <span class="block text-4xl font-normal text-black pb-1">Accounts</span>
+        <span class="block text-4xl font-bold text-black">Tracked Accounts</span>
         <span class="block text-lg font-light text-black">All of your currently active accounts that you're tracking.</span>
       </h2>
       <div v-click-outside="closeAccountCardMenu">
