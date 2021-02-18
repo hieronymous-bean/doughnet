@@ -13,96 +13,102 @@
             </div>
             <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
               <h3 class="text-2xl leading-6 font-regular text-gray-900" id="modal-headline">
-                Create New Account
+                Manually Add Account
               </h3>
               <div class="mt-2">
                 <p class="text-sm text-gray-500">
-                  Enter the information below to create a new account.
+                  Enter the information below to add a new account.
                 </p>
               </div>
             </div>
           </div>
         </div>
         <div class="">
-
-          <Form v-slot="{ errors }" @submit.prevent="createAccountButtonClick">
-            <div class="bg-gray-50 px-6 py-1">
-              <Field name="field" :rules="isRequired" v-model="newAccountName" placeholder="Account Name" class="p-1 col-span-3 font-light outline-none focus:ring-primary-light focus:border-primary-light flex-1 block w-full rounded text-sm border border-gray-200"/>
-              <span>{{ errors.field }}</span>
+          <Form @submit="createAccountButtonClick">
+            <div class="bg-gray-50 relative px-6 py-1">
+              <Field name="newAccountName" :rules="accountNameRules" v-model="newAccountName" placeholder="Account Name" class="p-1 col-span-3 font-light outline-none focus:ring-primary-light focus:border-primary-light flex-1 block w-full rounded text-sm border border-gray-200"/>
+              <ErrorMessage name="newAccountName" class="absolute top-3 right-8 font-light text-xs text-red-900" />
             </div>
-            <button type="button" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-primary-base text-base font-medium text-white hover:bg-primary-base focus:outline-none focus:ring-0 sm:ml-3 sm:w-auto sm:text-sm">
+            <div class="bg-gray-50 relative px-6 py-1">
+              <Field name="newAccountDescription" :rules="accountNameRules" v-model="newAccountDescription" placeholder="Account Description" class="p-1 col-span-3 font-light outline-none focus:ring-primary-light focus:border-primary-light flex-1 block w-full rounded text-sm border border-gray-200"/>
+              <ErrorMessage name="newAccountDescription" class="absolute top-3 right-8 font-light text-xs text-red-900" />
+            </div>
+            <div class="bg-gray-50 relative px-6 py-1">
+              <select name="newAccountType" v-model="newAccountType" placeholder="Account Type" class="p-1 col-span-3 font-light outline-none focus:ring-primary-light focus:border-primary-light flex-1 block w-full rounded text-sm border border-gray-200">
+                <option disabled selected value="">Please select one</option>
+                <option>Checking Account</option>
+                <option>Savings Account</option>
+                <option>Mortgage</option>
+              </select>
+              <ErrorMessage name="newAccountType" class="absolute top-3 right-8 font-light text-xs text-red-900" />
+            </div>
+            <div class="bg-gray-50 relative px-6 py-1">
+              <Field name="newAccountBalance" :rules="accountDollarRules" v-model="newAccountBalance" placeholder="Current Balance" class="p-1 col-span-3 font-light outline-none focus:ring-primary-light focus:border-primary-light flex-1 block w-full rounded text-sm border border-gray-200"/>
+              <ErrorMessage name="newAccountBalance" class="absolute top-3 right-8 font-light text-xs text-red-900" />
+            </div>
+            <div class="bg-gray-50 relative px-6 py-1">
+              <Field name="newAccountPayment" :rules="accountDollarRules" v-model="newAccountPayment" placeholder="Monthly Payment" class="p-1 col-span-3 font-light outline-none focus:ring-primary-light focus:border-primary-light flex-1 block w-full rounded text-sm border border-gray-200"/>
+              <ErrorMessage name="newAccountPayment" class="absolute top-3 right-8 font-light text-xs text-red-900" />
+            </div>
+            
+            <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+              <button type="submit" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-primary-base text-base font-medium text-white hover:bg-primary-base focus:outline-none focus:ring-0 sm:ml-3 sm:w-auto sm:text-sm">
               Create
-            </button>
+              </button>
+              <button @click.prevent="closeModalButtonClick" type="button" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-0 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                Cancel
+              </button>
+            </div>
           </Form>
-
-          <dl>
-            <div class="bg-gray-50 px-6 py-1">
-              <input v-model="newAccountDescription" placeholder="Account Description" class="p-1 col-span-3 font-light outline-none focus:ring-primary-light focus:border-primary-light flex-1 block w-full rounded text-sm border border-gray-200">
-            </div>
-            <div class="bg-gray-50 px-6 py-1">
-              <input v-model="newAccountType" placeholder="Account Type" class="p-1 col-span-3 font-light outline-none focus:ring-primary-light focus:border-primary-light flex-1 block w-full rounded text-sm border border-gray-200">
-            </div>
-            <div class="bg-gray-50 px-6 py-1">
-              <input v-model="newAccountBalance" placeholder="Current Balance" class="p-1 col-span-3 font-light outline-none focus:ring-primary-light focus:border-primary-light flex-1 block w-full rounded text-sm border border-gray-200">
-            </div>
-            <div class="bg-gray-50 px-6 py-1">
-              <input v-model="newAccountPayment" placeholder="Monthly Payment" class="p-1 col-span-3 font-light outline-none focus:ring-primary-light focus:border-primary-light flex-1 block w-full rounded text-sm border border-gray-200">
-            </div>
-          </dl>
         </div>
-        <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-          
-          <button @click.prevent="closeModalButtonClick" type="button" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-0 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
-            Cancel
-          </button>
-        </div>
+        
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { Field, Form } from 'vee-validate';
+import { Field, Form, ErrorMessage } from 'vee-validate';
+import * as yup from 'yup';
 
 export default {
-    data: function() {
-      return {
-        newAccountName: '',
-        newAccountDescription: '',
-        newAccountType: '',
-        newAccountBalance: '',
-        newAccountPayment: ''
+  data: function() {
+    return {
+      newAccountName: '',
+      newAccountDescription: '',
+      newAccountType: '',
+      newAccountBalance: '',
+      newAccountPayment: '',
+      newCreatedDate: '',
+      newLastModifiedDate: '',
+      accountNameRules: yup.string().required('This field is required.'),
+      accountDollarRules: yup.number().required('This field is required.').typeError("Value needs to be a number.")
+    }
+  },
+  components: {
+    Field,
+    Form,
+    ErrorMessage
+  },
+  props: [
+  ],
+  methods: {
+    createAccountButtonClick: function() {
+      const accountPayload = {
+        user: this.$store.getters.getCurrentUserId,
+        name: this.newAccountName,
+        description: this.newAccountDescription,
+        type: this.newAccountType,
+        currentBalance: this.newAccountBalance,
+        minimumPayment: this.newAccountPayment,
+        createdDate: Date.now(),
+        lastModifiedDate: Date.now(),
       }
+      this.$emit('createNewAccount',accountPayload)
     },
-    components: {
-      Field,
-      Form,
-    },
-    props: [
-    ],
-    methods: {
-      createAccountButtonClick: function() {
-        const accountPayload = {
-          user: this.$store.getters.getCurrentUserId,
-          name: this.newAccountName,
-          description: this.newAccountDescription,
-          type: this.newAccountType,
-          currentBalance: this.newAccountBalance,
-          minimumPayment: this.newAccountPayment
-        }
-        this.$emit('createNewAccount',accountPayload)
-        this.newAccountName = '';
-        this.newAccountDescription = '';
-        this.newAccountType = '';
-        this.newAccountBalance = '';
-        this.newAccountPayment = '';
-      },
-      closeModalButtonClick: function() {
-        this.$emit('closeModal');
-      },
-      isRequired(value) {
-        return value ? true : 'This field is required';
-      },
-    },
+    closeModalButtonClick: function() {
+      this.$emit('closeModal');
+    }
+  },
 }
 </script>

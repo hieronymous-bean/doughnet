@@ -21,7 +21,8 @@
     "vue": "^3.0.5",
     "vue-router": "^4.0.3",
     "vuex": "^4.0.0",
-    "vuex-persistedstate": "^4.0.0-beta.3"
+    "vuex-persistedstate": "^4.0.0-beta.3",
+    "yup": "^0.32.9"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

@@ -3,12 +3,22 @@
     <div class="z-20 inset-0 bg-black opacity-50 transition-opacity lg:hidden"> 
     </div>
     <div :class="isOpen ? 'translate-x-0 ease-out' : '-translate-x-full ease-in'" class="fixed z-30 inset-y-0 left-0 transition duration-300 transform bg-primary-base overflow-y-auto lg:translate-x-0 lg:static lg:inset-0 min-h-screen">
-      <div class="w-2/5 pr-4 mx-auto my-1 align-middle items-center">
-        <img src="../../global/assets/img/doughnet-logo.png">
+      <div class="w-full px-4 mx-auto my-1 grid grid-cols-3">
+        <div class="col-span-2 text-secondary-one">
+          <div class="font-normal">Name's Doughnet</div>
+          <div class="font-light text-sm">{{ userEmail }}</div>
+        </div>
+        <div class="text-right relative">
+          <svg class="absolute right-0 top-2 fill-current text-secondary-one" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z"/></svg>
+        </div>
+        
       </div>
-      <nav class="mt-3 text-md text-primary-dark focus:outline-none">
+      <div class="w-2/5 pr-4 mx-auto mt-3 align-middle items-center">
+        <!-- Logo -->
+      </div>
+      <nav class="mt-6 text-md text-primary-dark focus:outline-none">
         <router-link
-          class="flex items-center mt-2 p-2 px-6 m-3 rounded-md outline-none focus:outline-none"
+          class="flex items-center mt-2 p-2 px-6 m-3 rounded-sm outline-none focus:outline-none"
           :class="[$route.name === 'Dashboard' ? activeClass : inactiveClass]"
           to="/dashboard"
         >
@@ -17,7 +27,7 @@
         </router-link>
 
         <router-link
-          class="flex items-center mt-2 p-2 px-6 m-3 rounded-md focus:outline-none"
+          class="flex items-center mt-2 p-2 px-6 m-3 rounded-sm focus:outline-none"
           :class="[$route.name === 'Accounts' ? activeClass : inactiveClass]"
           to="/accounts"
         >
@@ -26,7 +36,7 @@
         </router-link>
 
         <router-link
-          class="flex items-center mt-2 p-2 px-6 m-3 rounded-md focus:outline-none"
+          class="flex items-center mt-2 p-2 px-6 m-3 rounded-sm focus:outline-none"
           :class="[$route.name === 'Transactions' ? activeClass : inactiveClass]"
           to="/transactions"
         >
@@ -35,7 +45,7 @@
         </router-link>
 
         <router-link
-          class="flex items-center mt-2 p-2 px-6 m-3 rounded-md focus:outline-none"
+          class="flex items-center mt-2 p-2 px-6 m-3 rounded-sm focus:outline-none"
           :class="[$route.name === 'Tools' ? activeClass : inactiveClass]"
           to="/tools"
         >
@@ -44,7 +54,7 @@
         </router-link>
 
         <router-link
-          class="flex items-center mt-2 p-2 px-6 m-3 rounded-md focus:outline-none"
+          class="flex items-center mt-2 p-2 px-6 m-3 rounded-sm focus:outline-none"
           :class="[$route.name === 'Bills' ? activeClass : inactiveClass]"
           to="/bills"
         >
@@ -53,7 +63,7 @@
         </router-link>
 
         <router-link
-          class="flex items-center mt-2 p-2 px-6 m-3 rounded-md focus:outline-none"
+          class="flex items-center mt-2 p-2 px-6 m-3 rounded-sm focus:outline-none"
           :class="[$route.name === 'Budgets' ? activeClass : inactiveClass]"
           to="/budgets"
         >
@@ -62,7 +72,7 @@
         </router-link>
 
         <router-link
-          class="flex items-center mt-2 p-2 px-6 m-3 rounded-md focus:outline-none"
+          class="flex items-center mt-2 p-2 px-6 m-3 rounded-sm focus:outline-none"
           :class="[$route.name === 'Goals' ? activeClass : inactiveClass]"
           to="/goals"
         >
@@ -89,7 +99,11 @@ export default {
     props: [
     ],
     methods: {
-
+    },
+    computed: {
+      userEmail: function() {
+        return this.$store.state.user.email
+      }
     }
 }
 </script>

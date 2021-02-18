@@ -1,0 +1,16 @@
+{
+  "assets": [
+  	"checking account",
+  	"savings account",
+  	"retirement account",
+  	"general asset"
+  ],
+  "debts": [
+  	"mortage",
+  	"student loan",
+  	"auto loan",
+  	"personal loan",
+  	"retail financing",
+  	"general debt"
+  ]
+}
