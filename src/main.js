@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
-import './global/assets/css/tailwind.css'
 import App from './App.vue'
+
 import router from './router.js'
 
 import firebase from 'firebase/app';
@@ -11,6 +11,7 @@ import { firebaseConfig } from './global/config/firebase.js'
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
+import './global/assets/css/tailwind.css'
 import store from './auth/store/auth.js'
 
 const app = createApp(App);

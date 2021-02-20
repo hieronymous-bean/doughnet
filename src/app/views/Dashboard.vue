@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div class="grid grid-cols-4 gap-8 mb-8">
-      <NetWorthWidget/>
+    <div class="grid xl:grid-cols-4 lg:grid-cols-2 sm:grid-cols-1 gap-8 mb-8">
+      <NetWorthWidget :accounts="accountData"/>
       <CashFlowWidget/>
       <DebtPaydownWidget/>
       <EmergencyFundWidget/>
     </div>
 
-    <div class="grid grid-cols-2 gap-8">
+    <div class="grid xl:grid-cols-2 md:grid-cols-1 gap-8">
 
       <AccountSummaryList :accounts="accountData" :accountTypes="accountTypes" v-on:refreshAccountData="refreshAccountData"/>
 

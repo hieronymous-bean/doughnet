@@ -9,6 +9,7 @@ module.exports = {
           lighter: '#A7BAB8',
           light: '#75998F',
           base: '#003937',
+          baseHover: '#00423f',
           dark: '#828B77',
           darkest: '#485659'
         },

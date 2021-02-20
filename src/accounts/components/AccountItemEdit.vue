@@ -26,8 +26,8 @@
         </p>
       </div>
       <div class="cursor-pointer py-2 sm:px-6 text-right">
-        <p class="mt-1 font-light text-sm text-gray-400">
-          Added: {{ account.createdDate }}
+        <p class="mt-1 font-light text-sm text-gray-500">
+          Added: <span class="font-semibold">{{formatCreatedDate}}</span>
         </p>
       </div>
     </div>
@@ -111,6 +111,13 @@ export default {
     props: [
       'account'
     ],
+    computed: {
+      formatCreatedDate: function() {
+        let date = new Date(this.account.createdDate)
+        let newDate = date.toLocaleString()
+        return newDate
+      }
+    },
     created: function() {
       this.accountName = this.account.name;
       this.accountDescription = this.account.description;
@@ -158,8 +165,6 @@ export default {
           return response;
         })
       }
-    },
-    computed: {
     }
 }
 </script>

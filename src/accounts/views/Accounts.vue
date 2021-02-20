@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="select-none">
     <div class="my-1 overflow-hidden">
       <div class="min-w-full">
         <div class="mt-1 pb-4 px-6">
@@ -48,12 +48,11 @@
         </div>
       </div>
     </div>
-    <CreateAccountModal v-show="createAccountModalOpen" v-on:createNewAccount="createNewAccount" v-on:closeModal="openCreateAccountModal"/>
+    <CreateAccountModal v-show="createAccountModalOpen" v-on:accountCreated="refreshAccountData" v-on:closeModal="openCreateAccountModal"/>
   </div>
 </template>
 
 <script>
-import { createAccount } from '../utilities/accountUtilities.js'
 import AccountItemEdit from '../components/AccountItemEdit.vue'
 import CreateAccountModal from '../components/CreateAccountModal.vue'
 
@@ -64,9 +63,8 @@ export default {
       createAccountModalOpen: false,
       deleteAccountModalOpen: false,
       activeAccountFilter: '',
-      activeFilterClass: 'text-white bg-primary-base font-medium fill-current focus:outline-none px-3 py-2',
-      inactiveFilterClass: 'px-3 py-2 hover:bg-gray-100',
-      selectedAccountId: ''
+      activeFilterClass: 'text-white bg-primary-base font-medium fill-current focus:outline-none px-3 py-2 transition duration-200 ease-in-out',
+      inactiveFilterClass: 'px-3 py-2 hover:bg-gray-100 transition duration-200 ease-in-out'
     }),
     components: {
       AccountItemEdit,
@@ -80,6 +78,9 @@ export default {
       openCreateAccountModal: function() {
         this.createAccountModalOpen = !this.createAccountModalOpen
       },
+      refreshAccountData: function() {
+        this.$emit('refreshAccountData');
+      },
       filterAccountList: function(type) {
         if (type == 'all') {
           this.activeAccountFilter = ''
@@ -87,13 +88,6 @@ export default {
           this.activeAccountFilter = type;
         }
         return this.activeAccountFilter;
-      },
-      createNewAccount: function(accountData) {
-        createAccount(accountData).then(response => {
-          this.createAccountModalOpen = false;
-          this.$emit('refreshAccountData');
-          return response;
-        });
       }
     },
     computed: {

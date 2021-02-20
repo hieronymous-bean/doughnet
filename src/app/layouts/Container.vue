@@ -1,19 +1,21 @@
 <template>
-  <div class="md:grid md:grid-cols-9 bg-primary-base">
-    <Sidebar/>
-    <div class="w-full h-screen bg-white font-poppins md:col-span-8">
-      <Topbar v-on:refreshAccountData="refreshAccountData"/>
-      <main class="w-full">
-        <div class="mx-auto">
-          <div class="">
-            <div class="mx-auto p-3">
-              <div class="rounded">
-                <router-view :accountData="accountDataResponse" :accountTypes="getAccountTypes" v-on:refreshAccountData="refreshAccountData"></router-view>
+  <div class="select-none">
+    <div class="flex">
+      <Sidebar/>
+      <div class="w-full h-screen bg-white font-poppins">
+        <Topbar v-on:refreshAccountData="refreshAccountData"/>
+        <main class="w-full">
+          <div class="mx-auto">
+            <div>
+              <div class="mx-auto p-3">
+                <div class="rounded">
+                  <router-view :accountData="accountDataResponse" :accountTypes="getAccountTypes" v-on:refreshAccountData="refreshAccountData"></router-view>
+                </div>
               </div>
-            </div>
+            </div>  
           </div>
-        </div>
-      </main>
+        </main>
+      </div>
     </div>
   </div>
 </template>
@@ -28,7 +30,7 @@ import { getAccounts } from '../../accounts/utilities/accountUtilities.js'
 export default {
   data: () => ({
       title: 'Dashboard',
-      accountDataResponse: []
+      accountDataResponse: [],
   }),
   components: {
     Topbar,
@@ -52,4 +54,4 @@ export default {
     });
   }
 }
-</script> 
+</script>

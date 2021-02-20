@@ -1,13 +1,13 @@
 <template>
   <div class="absolute w-screen h-screen flex">
-    <div class="hidden lg:block w-4/12 h-full">
+    <div class="hidden xl:block xl:w-4/12 h-full">
       <img
         src="https://images.unsplash.com/photo-1542332948209-b580010fd27e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=976&q=80"
         class="w-full h-full object-cover"
       />
     </div>
-    <div class="w-full lg:w-8/12 overflow-scroll py-24 relative">
-      <form class="w-5/6 sm:w-1/2 mx-auto text-center" v-on:submit.prevent="userLogin">
+    <div class="w-full xl:w-8/12 overflow-scroll py-24 relative">
+      <form class="w-5/6 sm:w-2/3 mx-auto text-center" v-on:submit.prevent="userLogin">
         <img
           src=""
           class="h-12 block mx-auto"
