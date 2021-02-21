@@ -3,13 +3,16 @@
   	"checking account",
   	"savings account",
   	"retirement account",
+    "property",
+    "automobile",
   	"general asset"
   ],
   "debts": [
-  	"mortage",
+  	"mortgage",
   	"student loan",
   	"auto loan",
   	"personal loan",
+    "medical bill",
   	"retail financing",
   	"general debt"
   ]

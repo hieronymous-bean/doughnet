@@ -9,7 +9,7 @@
         <span class="mx-4 text-md capitalize">{{ typeOfAccount }}</span>
       </div>
       <div class="">
-        <span :class="{ test : assetOrDebt == 'asset' }" class="float-right">${{ accountTypeTotal }}</span>
+        <span :class="accountTypeCategory == 'asset' ? assetValueClass : debtValueClass" class="float-right">${{ accountTypeTotal }}</span>
       </div>
         <div v-show="isTypeExpanded" class="my-2">
           <div v-for="account in accountData" :key="account.id" class="hover:bg-gray-50 rounded transition duration-200 ease-in-out">
@@ -27,13 +27,14 @@
 </template>
 
 <script>
+import accountTypes from '../../global/data/accountTypes.json'
 export default {
   data: function() {
     return {
       isTypeExpanded: false,
       assetOrDebt: 'asset',
-      debtValueClass: 'text-red-700',
-      assetValueClass: 'text-green-700'
+      debtValueClass: 'text-red-800',
+      assetValueClass: 'text-green-800'
     } 
   },
   props: [
@@ -56,6 +57,17 @@ export default {
         }
       });
       return accountTypeTotal.reduce((a, b) => a + b, 0)
+    },
+    accountTypeCategory: function() {
+      var category
+      if (accountTypes.assets.indexOf(this.typeOfAccount.toLowerCase()) !== -1) {
+        category = 'asset'
+      }
+
+      if (accountTypes.debts.indexOf(this.typeOfAccount.toLowerCase()) !== -1) {
+        category = 'debt'
+      }
+      return category
     }
   }
 }

@@ -62,7 +62,7 @@
                     </tr>
                   </thead>
                   <tbody class="bg-white divide-y divide-gray-200">
-                    <tr>
+                    <tr v-for="(transaction, index) in transactionData" :key="index">
                       <td class="px-6 py-4 whitespace-nowrap">
                         <div class="flex items-center">
                           <label class="block items-center py-1">
@@ -71,19 +71,19 @@
                         </div>
                       </td>
                       <td class="font-light px-6 py-4 whitespace-nowrap">
-                        <div class="text-sm text-gray-900">MM/DD/YYYY</div>
+                        <div class="text-sm text-gray-900">{{transaction.Date}}</div>
                       </td>
                       <td class="font-light px-6 py-4 whitespace-nowrap">
-                        Description of Transaction here
+                       {{transaction.Description}}
                       </td>
                       <td class="font-light px-6 py-4 whitespace-nowrap text-sm">
-                        Transaction Category
+                        {{transaction.Category}}
                       </td>
                       <td class="font-light px-6 py-4 whitespace-nowrap text-sm">
                         Account
                       </td>
                       <td class="font-light px-6 py-4 whitespace-nowrap text-sm">
-                        $12
+                        {{transaction.Amount}}
                       </td>
                     </tr>
 
@@ -101,11 +101,12 @@
 </template>
 
 <script>
-
+import demoTransactions from '../../global/data/demoTransactions.json'
 export default {
   name: 'Transactions',
     data: () => ({
-        title: "Transactions"
+        title: "Transactions",
+        transactionData: demoTransactions
     }),
     components: {
     },

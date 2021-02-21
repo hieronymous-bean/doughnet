@@ -53,7 +53,7 @@
               <dt class="py-1 block text-sm font-light text-gray-500">
                 Account Type
               </dt>
-              <input v-model="accountType" class="py-2 px-3 col-span-3 font-light outline-none focus:ring-primary-base focus:border-primary-base flex-1 block w-full rounded text-sm border border-gray-200">
+              <input v-model="accountType" disabled class="py-2 px-3 col-span-3 font-light outline-none focus:ring-primary-base focus:border-primary-base flex-1 block w-full rounded text-sm border border-gray-200">
             </div>
           </div>
 

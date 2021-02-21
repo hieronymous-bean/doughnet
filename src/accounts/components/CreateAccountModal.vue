@@ -36,9 +36,7 @@
             <div class="bg-gray-50 relative px-6 py-1">
               <select name="newAccountType" v-model="newAccountType" placeholder="Account Type" class="p-1 col-span-3 font-light outline-none focus:ring-primary-light focus:border-primary-light flex-1 block w-full rounded text-sm border border-gray-200">
                 <option disabled selected value="">Please select one</option>
-                <option>Checking Account</option>
-                <option>Savings Account</option>
-                <option>Mortgage</option>
+                <option v-for="(type, index) in AllAccountTypes" :key="index">{{ type }}</option>
               </select>
               <ErrorMessage name="newAccountType" class="absolute top-3 right-8 font-light text-xs text-red-900" />
             </div>
@@ -68,6 +66,7 @@
 </template>
 
 <script>
+import accountTypes from '../../global/data/accountTypes.json'
 import { createAccount } from '../utilities/accountUtilities.js'
 import { Field, Form, ErrorMessage } from 'vee-validate';
 import * as yup from 'yup';
@@ -82,6 +81,7 @@ export default {
       newAccountPayment: '',
       newCreatedDate: '',
       newLastModifiedDate: '',
+      AllAccountTypes: (accountTypes.assets).concat(accountTypes.debts),
       accountNameRules: yup.string().required('This field is required.'),
       accountDollarRules: yup.number().required('This field is required.').typeError("Value needs to be a number.")
     }

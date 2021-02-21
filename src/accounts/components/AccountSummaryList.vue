@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white rounded-sm border">
-    <div class="px-6 py-3 flex relative">
+    <div class="px-5 py-3 flex relative">
       <h2 class="flex-1 font-poppins">
         <span class="block text-4xl font-bold text-black">Tracked Accounts</span>
         <span class="block text-lg font-light text-black">All of your currently active accounts that you're tracking.</span>
@@ -23,7 +23,7 @@
     </div>
     <div class="flex-1 mb-4">
       <div class="flex-1">
-        <ul class="account-item w-full accordion-arrow px-3">
+        <ul class="account-item w-full accordion-arrow px-2">
           <li v-for="(accountType, index) in accountTypes" :key="index" class="items-center mb-3 font-light px-3">
             <AccountTypeHeader :typeOfAccount="accountType" :accountData="accounts"/>
           </li>

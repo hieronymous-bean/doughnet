@@ -4,14 +4,14 @@
       <div class="flex">
         <h2 class="flex-1">
             <span class="block font-sans text-2xl font-bold text-black">Net Worth</span>
-            <span class="block text-md font-light text-gray-800">Your Assets Minus Debts</span>
+            <span class="block text-md font-light text-gray-800">Assets Minus Debts</span>
         </h2>
         
       </div>
 
-      <div class="mt-3">
+      <div class="mt-3 p-2 bg-white shadow-sm">
         <div class="rounded-sm overflow-hidden">
-          <div class="text-lg font-bold">
+          <div :class="calculateNetWorth < 0 ? negativeClass : positiveClass" class="text-lg font-bold">
             ${{ calculateNetWorth }}
         </div>
       </div>
@@ -25,6 +25,8 @@ import accountTypes from '../../global/data/accountTypes.json'
 export default {
   data: function() {
     return {
+      positiveClass: 'text-green-800',
+      negativeClass: 'text-red-800'
     }
   },
   components: {
@@ -37,15 +39,15 @@ export default {
   computed: {
     calculateNetWorth: function() {
       let totalValue = 0;
-      console.log(accountTypes.assets)
-      for (var i = this.accounts.length - 1; i >= 0; i--) {
-        if ((accountTypes.assets).indexOf(this.accounts[i].type) !== -1) {
-          totalValue = totalValue + parseInt(this.accounts[i].currentBalance)
+      this.accounts.forEach(account => {
+        if (accountTypes.assets.indexOf(account.type.toLowerCase()) !== -1) {
+          totalValue = totalValue + parseInt(account.currentBalance)
         }
-        else if ((accountTypes.debts).indexOf(this.accounts[i].type) !== -1) {
-          totalValue = totalValue - parseInt(this.accounts[i].currentBalance)
+
+        if (accountTypes.debts.indexOf(account.type.toLowerCase()) !== -1) {
+          totalValue = totalValue - parseInt(account.currentBalance)
         }
-      }
+      }); 
       return totalValue;
     }
   }

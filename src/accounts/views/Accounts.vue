@@ -2,18 +2,26 @@
   <div class="select-none">
     <div class="my-1 overflow-hidden">
       <div class="min-w-full">
-        <div class="mt-1 pb-4 px-6">
+        <div class="mt-1 pb-2 px-6">
           <h1 class="inline-block text-4xl font-bold text-black">All Tracked Accounts</h1>
           <button @click.prevent="openCreateAccountModal" type="button" class="w-full float-right inline-block rounded-md border border-transparent px-5 py-1 bg-secondary-two font-medium text-black hover:bg-secondary-two focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-base sm:w-auto sm:text-md">
           + Add Account
           </button>
         </div>
+        <div class="pb-4 px-6 text-sm font-normal">
+          <h1 class="inline-block text-black">Sort By: </h1>
+          <a href="" class="pl-3">Type</a>
+          <a href="" class="pl-3">Value</a>
+          <a href="" class="pl-3">Created</a>
+          <a href="" class="pl-3">Modified</a>
+        </div>
+
         <div class="overflow-hidden flex">
-          <div class="w-1/6 inline-block">
+          <div class="w-2/6 inline-block">
             <div class="transition duration-500 ease-in-out transform select-none bg-gray-50 dark:bg-gray-800 rounded-sm">
               <div class="py-4 sm:px-6">
-                <h4 class="text-xl mb-2 leading-6 font-semibold text-primary-darkest">
-                  Accounts
+                <h4 class="text-xl mb-2 leading-6 font-semibold text-black">
+                  Account Types
                 </h4>
                 <div>
                   <ul class="text-gray-600 text-md cursor-pointer capitalize">
@@ -23,7 +31,21 @@
                 </div>
               </div>
             </div>
+            <div class="select-none bg-gray-50 mt-5">
+              <div class="p-4 sm:px-6">
+                <h4 class="text-xl leading-6 font-semibold text-black">
+                  Account Summary
+                </h4>
+                <div>
+                  <p class="mt-5 max-w-2xl font-light text-md text-gray-800">
+                    Total Accounts: {{numberOfAccounts}}
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
+            
+          
           <div class="w-4/6 inline-block mx-4">
             <ul class="">
               <li v-for="(account, id) in accountData" :key="id"  class="">
@@ -31,20 +53,7 @@
               </li>
             </ul>
           </div>
-          <div class="w-1/6 inline-block ">
-            <div class="select-none bg-gray-50">
-              <div class="p-4 sm:px-6">
-                <h4 class="text-xl leading-6 font-semibold text-black">
-                  Summary of Accounts
-                </h4>
-                <div>
-                  <p class="mt-5 max-w-2xl font-light text-md text-gray-800">
-                    Total Accounts: 
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -88,9 +97,12 @@ export default {
           this.activeAccountFilter = type;
         }
         return this.activeAccountFilter;
-      }
+      },
     },
     computed: {
+      numberOfAccounts: function() {
+        return this.accountData.length
+      }
     }
 }
 </script>
