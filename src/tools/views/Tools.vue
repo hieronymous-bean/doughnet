@@ -3,7 +3,12 @@
     <div class="my-1">
       <div class="inline-block min-w-full">
         <div class="mt-1 pb-4 px-6">
-          <h1 class="inline-block text-4xl font-normal">Tools</h1>
+          <h1 class="inline-block text-4xl font-bold text-black">Financial Tools</h1>
+        </div>
+        <div>
+          <div>Retirement Planner</div>
+          <div>Savings Planner</div>
+          <div>Debt Paydown: Debt Snowball, Debt Avalanche</div>
         </div>
         <div>
           <div class="w-1/6 align-top pr-5 h-full inline-block">

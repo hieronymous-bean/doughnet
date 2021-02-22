@@ -34,7 +34,7 @@
               <ErrorMessage name="newAccountDescription" class="absolute top-3 right-8 font-light text-xs text-red-900" />
             </div>
             <div class="bg-gray-50 relative px-6 py-1">
-              <select name="newAccountType" v-model="newAccountType" placeholder="Account Type" class="p-1 col-span-3 font-light outline-none focus:ring-primary-light focus:border-primary-light flex-1 block w-full rounded text-sm border border-gray-200">
+              <select name="newAccountType" v-model="newAccountType" placeholder="Account Type" class="p-1 col-span-3 font-light outline-none focus:ring-primary-light focus:border-primary-light flex-1 block w-full rounded text-sm border border-gray-200 capitalize">
                 <option disabled selected value="">Please select one</option>
                 <option v-for="(type, index) in AllAccountTypes" :key="index">{{ type }}</option>
               </select>

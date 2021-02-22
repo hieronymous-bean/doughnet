@@ -1,10 +1,10 @@
 <template>
-  <div class="select-none">
+  <div class="bg-gray-light select-none overflow-hidden">
     <div class="flex">
       <Sidebar/>
-      <div class="w-full h-screen bg-white font-poppins">
+      <div class="w-full h-screen font-poppins">
         <Topbar v-on:refreshAccountData="refreshAccountData"/>
-        <main class="w-full">
+        <main class="w-full overflow-y-auto max-h-screen">
           <div class="mx-auto">
             <div>
               <div class="mx-auto p-3">

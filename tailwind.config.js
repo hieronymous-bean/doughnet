@@ -5,27 +5,27 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          lightest: '#B3D8D7',
-          lighter: '#A7BAB8',
-          light: '#75998F',
-          base: '#003937',
-          baseHover: '#00423f',
-          dark: '#828B77',
-          darkest: '#485659'
+          base: '#2B606A',
+          one: '#AABFC4',
+          two: '#DEEBE6',
+          three: '#050505'
         },
         secondary: {
-          one: '#FDF9E5',
-          two: '#ECDCD4',
-          three: '#DAE3F7',
-          four: '#F0EDEA',
-          five: '#D6E0DF'
+          base: '#DFBEA9',
+          one: '#FFF4E7'
+        },
+        tertiary: {
+          orange: '#FA6300',
+          orangeLight: '#FEEADC',
+          red: '#c46d6d',
+          redLight: '#F5DBDB'
         },
         black: '#020D0D',
         white: '#ffffff',
         gray: {
-          lightest: '#ededed',
-          base: '#EFF1F5',
-          dark: '#333333'
+          light: '#FBFCFF',
+          base: '#F3F3F3',
+          dark: '#232323'
         }
       },
       fontFamily: {

@@ -10,10 +10,7 @@
         </div>
         <div class="pb-4 px-6 text-sm font-normal">
           <h1 class="inline-block text-black">Sort By: </h1>
-          <a href="" class="pl-3">Type</a>
-          <a href="" class="pl-3">Value</a>
-          <a href="" class="pl-3">Created</a>
-          <a href="" class="pl-3">Modified</a>
+          <AccountItemSort v-for="(option, index) in this.sortMenuOptions" :key="index" :sortParam="option" :class="menuOptionSelected == option ? menuSelectedClass : ''" @click.prevent="menuOptionSelected = option" class="cursor-pointer"/>
         </div>
 
         <div class="overflow-hidden flex">
@@ -63,6 +60,7 @@
 
 <script>
 import AccountItemEdit from '../components/AccountItemEdit.vue'
+import AccountItemSort from '../components/AccountItemSort.vue'
 import CreateAccountModal from '../components/CreateAccountModal.vue'
 
 export default {
@@ -73,10 +71,14 @@ export default {
       deleteAccountModalOpen: false,
       activeAccountFilter: '',
       activeFilterClass: 'text-white bg-primary-base font-medium fill-current focus:outline-none px-3 py-2 transition duration-200 ease-in-out',
-      inactiveFilterClass: 'px-3 py-2 hover:bg-gray-100 transition duration-200 ease-in-out'
+      inactiveFilterClass: 'px-3 py-2 hover:bg-gray-100 transition duration-200 ease-in-out',
+      sortMenuOptions: ['Type','Created','Modified','Balance'],
+      menuOptionSelected: 'Type',
+      menuSelectedClass: 'font-semibold underline',
     }),
     components: {
       AccountItemEdit,
+      AccountItemSort,
       CreateAccountModal
     },
     props: [
@@ -98,6 +100,9 @@ export default {
         }
         return this.activeAccountFilter;
       },
+      // sortAccountList: function(param) {
+
+      // }
     },
     computed: {
       numberOfAccounts: function() {

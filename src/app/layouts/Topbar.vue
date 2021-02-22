@@ -17,7 +17,7 @@
               </svg>
             </span>
             <input
-              class="text-sm font-light bg-gray-100 focus:bg-gray-200 form-input sm:w-64 rounded-sm pl-10 pr-4 py-3 border-none outline-none focus:outline-none focus:ring-0 transition duration-300 ease-in-out"
+              class="text-sm font-light bg-white focus:bg-gray-200 form-input sm:w-64 rounded-xl pl-10 pr-4 py-3 shadow-sm border-none outline-none focus:outline-none focus:ring-0 transition duration-300 ease-in-out"
               type="text"
               placeholder="Search"
             />
@@ -37,21 +37,21 @@
           <div class="hidden md:block z-50">
               <div class="ml-1 flex items-center">
 
-                <button @click.prevent="openCreateAccountModal" type="button" class="py-2 px-8 flex justify-center items-center bg-gray-100 hover:bg-gray-200 focus:ring-0 text-gray-700 w-full text-center text-sm font-regular focus:outline-none rounded-sm transition duration-300 ease-in-out">
+                <button @click.prevent="openCreateAccountModal" type="button" class="py-2 px-8 flex justify-center items-center bg-secondary-one hover:bg-gray-200 focus:ring-0 text-gray-dark w-full text-center text-sm font-medium focus:outline-none rounded-lg transition duration-300 ease-in-out">
                    + Add New Account
                 </button>
 
                 <NotificationsDropdown/>
                 
                 <div class="ml-1" v-click-outside="closeUserMenu">
-                  <button @click="toggleUserMenu" type="button" class="flex items-center justify-center w-full rounded-sm px-4 py-2 text-sm font-medium text-gray-500 dark:text-gray-50 bg-gray-100 hover:bg-gray-200 dark:hover:bg-gray-100 focus:ring-0 focus:outline-none transition duration-300 ease-in-out">
-                    <svg width="20" fill="currentColor" height="20" class="text-gray-500" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                  <button @click="toggleUserMenu" type="button" class="flex items-center justify-center w-full rounded-sm px-4 py-2 text-sm font-medium text-primary-base dark:text-gray-50 bg-white hover:bg-gray-200 dark:hover:bg-gray-100 focus:ring-0 focus:outline-none transition duration-300 ease-in-out">
+                    <svg width="20" fill="currentColor" height="20" class="text-primary-base" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
                       <path d="M1523 1339q-22-155-87.5-257.5t-184.5-118.5q-67 74-159.5 115.5t-195.5 41.5-195.5-41.5-159.5-115.5q-119 16-184.5 118.5t-87.5 257.5q106 150 271 237.5t356 87.5 356-87.5 271-237.5zm-243-699q0-159-112.5-271.5t-271.5-112.5-271.5 112.5-112.5 271.5 112.5 271.5 271.5 112.5 271.5-112.5 112.5-271.5zm512 256q0 182-71 347.5t-190.5 286-285.5 191.5-349 71q-182 0-348-71t-286-191-191-286-71-348 71-348 191-286 286-191 348-71 348 71 286 191 191 286 71 348z">
                       </path>
                     </svg>
                   </button>
 
-                  <div v-show="userMenuOpen" class="absolute z-50 origin-top-right right-0 mt-2 w-48 rounded-sm shadow-xl py-1 bg-white ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical">
+                  <div v-show="userMenuOpen" class="absolute z-50 origin-top-right right-0 mt-2 w-48 rounded-lg shadow-xl py-1 bg-white" role="menu" aria-orientation="vertical">
                     <router-link
                       class="block outline-none focus:outline-none px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                       to="/profile"
