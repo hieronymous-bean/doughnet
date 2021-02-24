@@ -1,10 +1,10 @@
 <template>
   <div class="select-none">
     <div class="my-1 overflow-hidden">
-      <div class="min-w-full">
-        <div class="mt-1 pb-2 px-6">
-          <h1 class="inline-block text-4xl font-bold text-black">All Tracked Accounts</h1>
-          <button @click.prevent="openCreateAccountModal" type="button" class="w-full float-right inline-block rounded-md border border-transparent px-5 py-1 bg-secondary-two font-medium text-black hover:bg-secondary-two focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-base sm:w-auto sm:text-md">
+      <div class="min-w-full bg-theme-primary-lightest rounded-2xl">
+        <div class="mt-1 py-4 px-6">
+          <h1 class="block text-4xl font-extralight text-black-base">All Tracked Accounts</h1>
+          <button @click.prevent="openCreateAccountModal" type="button" class="w-full float-right inline-block rounded-xl border-2 border-theme-primary-light px-5 py-1 bg-white-base font-medium text-theme-primary-light hover:bg-secondary-two focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-base sm:w-auto sm:text-md">
           + Add Account
           </button>
         </div>
@@ -14,27 +14,27 @@
         </div>
 
         <div class="overflow-hidden flex">
-          <div class="w-2/6 inline-block">
-            <div class="transition duration-500 ease-in-out transform select-none bg-gray-50 dark:bg-gray-800 rounded-sm">
-              <div class="py-4 sm:px-6">
-                <h4 class="text-xl mb-2 leading-6 font-semibold text-black">
+          <div class="w-2/6 inline-block px-6">
+            <div class="transition duration-500 ease-in-out transform select-none bg-white-base dark:bg-gray-800 rounded-2xl border border-gray-base shadow-md">
+              <div class="py-4 px-6">
+                <h4 class="text-xl mb-2 leading-6 font-light text-black">
                   Account Types
                 </h4>
                 <div>
-                  <ul class="text-gray-600 text-md cursor-pointer capitalize">
+                  <ul class="text-gray-600 text-md font-extralight cursor-pointer capitalize">
                     <li @click="filterAccountList('all')" :class="[activeAccountFilter === '' ? activeFilterClass : inactiveFilterClass]">All Accounts</li>
                     <li :class="[activeAccountFilter === type ? activeFilterClass : inactiveFilterClass]" @click="filterAccountList(type)" v-for="(type, id) in accountTypes" :key="id">{{ type }}</li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div class="select-none bg-gray-50 mt-5">
+            <div class="select-none bg-white-base mt-5 rounded-2xl border border-gray-base shadow-md">
               <div class="p-4 sm:px-6">
-                <h4 class="text-xl leading-6 font-semibold text-black">
+                <h4 class="text-xl leading-6 font-light text-black">
                   Account Summary
                 </h4>
                 <div>
-                  <p class="mt-5 max-w-2xl font-light text-md text-gray-800">
+                  <p class="mt-5 max-w-2xl font-extralight text-md text-gray-800">
                     Total Accounts: {{numberOfAccounts}}
                   </p>
                 </div>
@@ -70,7 +70,7 @@ export default {
       createAccountModalOpen: false,
       deleteAccountModalOpen: false,
       activeAccountFilter: '',
-      activeFilterClass: 'text-white bg-primary-base font-medium fill-current focus:outline-none px-3 py-2 transition duration-200 ease-in-out',
+      activeFilterClass: 'text-theme-primary-base bg-primary-base font-light fill-current focus:outline-none px-3 py-2 transition duration-200 ease-in-out',
       inactiveFilterClass: 'px-3 py-2 hover:bg-gray-100 transition duration-200 ease-in-out',
       sortMenuOptions: ['Type','Created','Modified','Balance'],
       menuOptionSelected: 'Type',

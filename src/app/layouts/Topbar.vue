@@ -1,28 +1,15 @@
   <template>
 
-  <div class="">
+  <div class="bg-white-base">
     <div class="">
       <div class="px-4">
-        <div class="flex justify-between items-center py-3">
+        <div class="flex justify-between items-center py-2">
           <div class="relative text-gray-400">
-            <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
-              <svg class="h-5 w-5 text-primary-base" viewBox="0 0 24 24" fill="none">
-                <path
-                  d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </span>
-            <input
-              class="text-sm font-light bg-white focus:bg-gray-200 form-input sm:w-64 rounded-xl pl-10 pr-4 py-3 shadow-sm border-none outline-none focus:outline-none focus:ring-0 transition duration-300 ease-in-out"
-              type="text"
-              placeholder="Search"
-            />
+            <img src="../../global/assets/img/logo.png" class="w-48">
           </div>
-          <div class="flex lg:w-0 lg:flex-1">
+
+          <div class="relative text-gray-400">
+
           </div>
           
           <div class="md:hidden">
@@ -37,30 +24,30 @@
           <div class="hidden md:block z-50">
               <div class="ml-1 flex items-center">
 
-                <button @click.prevent="openCreateAccountModal" type="button" class="py-2 px-8 flex justify-center items-center bg-secondary-one hover:bg-gray-200 focus:ring-0 text-gray-dark w-full text-center text-sm font-medium focus:outline-none rounded-lg transition duration-300 ease-in-out">
+                <button @click.prevent="openCreateAccountModal" type="button" class="py-2 px-8 flex justify-center items-center border-0 bg-theme-primary-base hover:bg-theme-primary-light focus:ring-0 text-white-base w-full text-center text-md font-semibold focus:outline-none rounded-md transition duration-300 ease-in-out">
                    + Add New Account
                 </button>
 
                 <NotificationsDropdown/>
                 
                 <div class="ml-1" v-click-outside="closeUserMenu">
-                  <button @click="toggleUserMenu" type="button" class="flex items-center justify-center w-full rounded-sm px-4 py-2 text-sm font-medium text-primary-base dark:text-gray-50 bg-white hover:bg-gray-200 dark:hover:bg-gray-100 focus:ring-0 focus:outline-none transition duration-300 ease-in-out">
-                    <svg width="20" fill="currentColor" height="20" class="text-primary-base" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                  <button @click="toggleUserMenu" type="button" class="flex items-center justify-center w-full rounded-full shadow-md px-4 py-2 text-sm font-medium text-primary-base dark:text-gray-50 bg-white-base hover:bg-theme-alice-base dark:hover:bg-theme-alice-base focus:ring-0 focus:outline-none transition duration-300 ease-in-out">
+                    <svg width="20" fill="currentColor" height="20" class="text-theme-primary-base" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
                       <path d="M1523 1339q-22-155-87.5-257.5t-184.5-118.5q-67 74-159.5 115.5t-195.5 41.5-195.5-41.5-159.5-115.5q-119 16-184.5 118.5t-87.5 257.5q106 150 271 237.5t356 87.5 356-87.5 271-237.5zm-243-699q0-159-112.5-271.5t-271.5-112.5-271.5 112.5-112.5 271.5 112.5 271.5 271.5 112.5 271.5-112.5 112.5-271.5zm512 256q0 182-71 347.5t-190.5 286-285.5 191.5-349 71q-182 0-348-71t-286-191-191-286-71-348 71-348 191-286 286-191 348-71 348 71 286 191 191 286 71 348z">
                       </path>
                     </svg>
                   </button>
 
-                  <div v-show="userMenuOpen" class="absolute z-50 origin-top-right right-0 mt-2 w-48 rounded-lg shadow-xl py-1 bg-white" role="menu" aria-orientation="vertical">
+                  <div v-show="userMenuOpen" class="absolute z-50 origin-top-right right-0 mt-2 w-48 rounded-lg shadow-xl bg-white-base" role="menu" aria-orientation="vertical">
                     <router-link
-                      class="block outline-none focus:outline-none px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      class="block outline-none focus:outline-none px-4 py-1 text-sm text-gray-700 hover:bg-gray-100"
                       to="/profile"
                     >Profile</router-link>
                     <router-link
-                      class="block outline-none focus:outline-none px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      class="block outline-none focus:outline-none px-4 py-1 text-sm text-gray-700 hover:bg-gray-100"
                       to="/settings"
                     >Account Settings</router-link>
-                    <a href="" @click="userSignOut" class="block outline-none focus:outline-none px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Sign out</a>
+                    <a href="" @click="userSignOut" class="block outline-none focus:outline-none px-4 py-1 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Sign out</a>
                   </div>
                 </div>
               </div>
@@ -69,7 +56,7 @@
       </div>
 
       <div :class="mobileMenuOpen ? 'hidden' : ''" class="absolute z-50 top-0 inset-x-0 transition transform origin-top-right md:hidden">
-        <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+        <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-theme-shadow divide-y-2 divide-gray-50">
           <div class="pt-5 pb-6 px-5">
             <div class="flex items-center justify-between">
               <div>

@@ -4,32 +4,39 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          base: '#2B606A',
-          one: '#AABFC4',
-          two: '#DEEBE6',
-          three: '#050505'
+        theme: {
+          primary: {
+            base: '#0052CC',
+            light: '#0086FF',
+            lighter: '#DFF0FF',
+            lightest: '#F0F4FB',
+            dark: '#021A9D'
+          },
         },
-        secondary: {
-          base: '#DFBEA9',
-          one: '#FFF4E7'
+        supporting: {
+          red: '#C94055',
+          redLight: '#EDBFC6',
+          green: '#22C58B',
+          greenLight: '#B2EBD7'
         },
-        tertiary: {
-          orange: '#FA6300',
-          orangeLight: '#FEEADC',
-          red: '#c46d6d',
-          redLight: '#F5DBDB'
+        white: {
+          base: '#ffffff',
+          tint: '#fafafa',
         },
-        black: '#020D0D',
-        white: '#ffffff',
         gray: {
-          light: '#FBFCFF',
-          base: '#F3F3F3',
-          dark: '#232323'
+          light: '#EDEFF3',
+          base: '#9E9FAD',
+          dark: ''
+        },
+        black: {
+          base: '#000000'
         }
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
+      },
+      borderWidth: {
+        '1': '1.5px',
       }
     }
   },

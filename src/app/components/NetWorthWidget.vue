@@ -1,10 +1,10 @@
 <template>
   <div class="">
-    <div class="bg-white rounded-3xl shadow-sm px-6 py-5">
+    <div class="bg-white-base rounded-3xl px-6 py-5 border border-gray-base shadow-md">
       <div class="flex">
         <h2 class="flex-1">
-            <span class="block font-sans text-3xl font-bold text-primary-base">Net Worth</span>
-            <span class="block text-md font-light text-gray-800">Assets Minus Debts</span>
+            <span class="block font-sans text-4xl font-extralight text-black-base">Net Worth</span>
+            <span class="block text-md font-extralight text-gray-800">Assets Minus Debts</span>
         </h2>
         
       </div>
@@ -17,35 +17,35 @@
           <div class="relative py-2">
             <div class="flex mb-2 items-center justify-between">
               <div>
-                <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-primary-base bg-primary-two">
+                <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-supporting-green bg-supporting-greenLight">
                   Assets
                 </span>
               </div>
               <div class="text-right">
-                <span class="text-xs font-semibold inline-block text-primary-one">
+                <span class="text-xs font-semibold inline-block text-supporting-green">
                   {{ calculateNetWorth.assetRatio }}%
                 </span>
               </div>
             </div>
-            <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-primary-two">
-              <div style="width:1.2%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-primary-one"></div>
+            <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-supporting-greenLight">
+              <div style="width:1.2%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-supporting-green"></div>
             </div>
           </div>
           <div class="relative py-2">
             <div class="flex mb-2 items-center justify-between">
               <div>
-                <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-tertiary-red bg-tertiary-redLight">
+                <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-supporting-red bg-supporting-redLight">
                   Liabilities
                 </span>
               </div>
               <div class="text-right">
-                <span class="text-xs font-semibold inline-block text-tertiary-red">
+                <span class="text-xs font-semibold inline-block text-supporting-red">
                 {{ calculateNetWorth.debtRatio }}%
                 </span>
               </div>
             </div>
-            <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-tertiary-redLight">
-              <div style="width:98%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-tertiary-red"></div>
+            <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-supporting-redLight">
+              <div style="width:98%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-supporting-red"></div>
             </div>
           </div>
         </div>
@@ -59,8 +59,8 @@ import accountTypes from '../../global/data/accountTypes.json'
 export default {
   data: function() {
     return {
-      positiveClass: 'text-primary-one',
-      negativeClass: 'text-tertiary-red'
+      positiveClass: 'text-supporting-green',
+      negativeClass: 'text-supporting-red'
     }
   },
   components: {

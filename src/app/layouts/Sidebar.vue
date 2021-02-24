@@ -1,15 +1,15 @@
 <template>
-  <div :class="isSidebarOpen ? sidebarOpen : sidebarClosed" class="shadow-xl">
-    <div class="transform bg-white overflow-y-auto min-h-screen" v-on:mouseover="mouseover" v-on:mouseleave="mouseleave">
-      <div class="px-4 pt-2 pb-3 grid grid-cols-3">
-        <div  class="col-span-2 text-gray-dark">
-          <div v-if="isSidebarOpen" class="font-bold">Doughnet User</div>
+  <div :class="isSidebarOpen ? sidebarOpen : sidebarClosed" class="">
+    <div class="transform bg-theme-primary-lightest overflow-y-auto min-h-screen border-r" v-on:mouseover="mouseover" v-on:mouseleave="mouseleave">
+      <div class="px-4 py-2 grid grid-cols-3">
+        <div  class="col-span-2 text-theme-ghost-base">
+          <div v-if="isSidebarOpen" class="font-semibold">Doughnet User</div>
           <div v-if="isSidebarOpen" class="font-semibold text-sm">{{ userEmail }}</div>
         </div>
         <div @click.prevent="toggleSidebarOpen" :class="isSidebarOpen ? sidebarToggleActive : sidebarToggleInctive" class="cursor-pointer">
           <transition name="fade">
             <div v-if="showCollapseIcon" class="flex justify-center">
-              <svg class="block relative mx-auto fill-current text-primary-base" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24">
+              <svg class="block relative mx-auto fill-current text-theme-primary-base" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24">
               <path d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z"/>
             </svg>
             </div>
@@ -20,25 +20,27 @@
       <nav class="mt-6 text-md text-primary-dark focus:outline-none">
         
         <router-link
-          class="flex items-center text-center py-3 px-2 m-3 rounded-lg outline-none focus:outline-none"
+          class="flex items-center text-center py-2 px-2 mx-3 my-2 rounded-lg outline-none focus:outline-none"
           :class="[$route.name === 'Dashboard' ? activeClass : inactiveClass, !isSidebarOpen ? 'justify-center' : '']"
           to="/dashboard"
         >
-          <svg class="text-center" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11.5 22.6l3.404-1.816c.238.26.469.519.685.768l-4.589 2.448-11-5.869v-12.131l11-6 11.001 6.066v9.612c-.329-.319-.666-.662-1-1.019v-7.516l-2.637 1.357-.018 4.588.009-.008c1.068 1.392 2.596 3.059 3.928 4.2-1.08 1.252-1.433 2.67-.67 3.24.592.443 1.518.641 2.01 1.158.252.268.377.61.377.95 0 .863-.724 1.372-1.371 1.372-.363 0-.725-.143-.994-.426-.475-.501-.633-1.39-1.012-2.004-.523-.854-2.037-.625-3.366.411-1.549-1.873-4.505-4.809-5.757-5.579v6.198zm11.443.361c-.181.172-.472.166-.644-.019-.177-.183-.166-.473.015-.645.184-.175.471-.168.645.016.175.182.168.472-.016.648zm-12.443-10.931l-9.5-4.946v10.447l9.5 5.069v-10.57zm4.463 5.862l3.315-3.158c.467.578.933 1.06 1.553 1.715.251.263.259.507.138.623-.444.422-1.478-1.072-1.951-.621-.469.447 1.212 1.67.7 2.157-.395.377-1.135-.648-1.536-.266-.187.178-.006.541.101.845.183.525-.212.878-.789.27-.573-.606-.883-.936-1.531-1.565zm.518-9.033l-9.534-4.964-4.349 2.373 9.404 4.896 4.479-2.305zm-8.476-5.541l9.565 4.98 3.832-1.972-9.405-5.185-3.992 2.177z"/></svg>
-          <span v-if="isSidebarOpen" class="mx-2">Dashboard</span>
+          <svg id="Capa_1" enable-background="new 0 0 512 512" height="25" viewBox="0 0 512 512" width="30" xmlns="http://www.w3.org/2000/svg"><g><path d="m467 17h-422c-24.813 0-45 20.187-45 45v292c0 24.813 20.187 45 45 45h145.293l-11 66h-19.293c-8.284 0-15 6.716-15 15s6.716 15 15 15h192c8.284 0 15-6.716 15-15s-6.716-15-15-15h-19.293l-11-66h145.293c24.813 0 45-20.187 45-45v-292c0-24.813-20.187-45-45-45zm-164.707 448h-92.586l11-66h70.586zm179.707-111c0 8.271-6.729 15-15 15-10.702 0-409.447 0-422 0-8.271 0-15-6.729-15-15v-292c0-8.271 6.729-15 15-15h196v17c0 8.284 6.716 15 15 15s15-6.716 15-15v-17h196c8.271 0 15 6.729 15 15z"/><path d="m208 209c-8.284 0-15 6.716-15 15v49h-34v-97c0-8.284-6.716-15-15-15s-15 6.716-15 15v97h-34v-145c0-8.284-6.716-15-15-15s-15 6.716-15 15v160c0 8.284 6.716 15 15 15h128c8.284 0 15-6.716 15-15v-64c0-8.284-6.716-15-15-15z"/><path d="m360 121c-47.972 0-87 39.028-87 87 0 23.627 9.472 45.081 24.813 60.775.689.787.656.749 1.411 1.411 15.694 15.341 37.148 24.814 60.776 24.814 47.972 0 87-39.028 87-87s-39.028-87-87-87zm54.983 72h-39.983v-39.983c19.391 5.296 34.687 20.592 39.983 39.983zm-69.983-39.983v48.77l-34.471 34.471c-18.545-32.339-1.316-73.466 34.471-83.241zm-13.258 104.454 34.471-34.471h48.77c-9.79 35.839-50.946 52.99-83.241 34.471z"/></g></svg>
+          <span v-if="isSidebarOpen" class="text-md mx-2 pl-2">Dashboard</span>
         </router-link>
         
         <router-link
-          class="flex items-center py-3 px-2 m-3 rounded-lg  outline-none focus:outline-none"
+          class="flex items-center text-center py-2 px-2 mx-3 my-2 rounded-lg outline-none focus:outline-none"
           :class="[$route.name === 'Accounts' ? activeClass : inactiveClass, !isSidebarOpen ? 'justify-center' : '']"
           to="/accounts"
         >
-          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M9.484 15.696l-.711-.696-2.552 2.607-1.539-1.452-.698.709 2.25 2.136 3.25-3.304zm0-5l-.711-.696-2.552 2.607-1.539-1.452-.698.709 2.25 2.136 3.25-3.304zm0-5l-.711-.696-2.552 2.607-1.539-1.452-.698.709 2.25 2.136 3.25-3.304zm10.516 11.304h-8v1h8v-1zm0-5h-8v1h8v-1zm0-5h-8v1h8v-1zm4-5h-24v20h24v-20zm-1 19h-22v-18h22v18z"/></svg>
+          <svg height="25" viewBox="0 0 512 512" width="30" xmlns="http://www.w3.org/2000/svg"><path d="m202 452c-2.628906 0-5.210938 1.070312-7.070312 2.929688-1.859376 1.859374-2.929688 4.441406-2.929688 7.070312s1.070312 5.210938 2.929688 7.070312c1.859374 1.859376 4.441406 2.929688 7.070312 2.929688s5.210938-1.070312 7.070312-2.929688c1.859376-1.859374 2.929688-4.441406 2.929688-7.070312s-1.070312-5.210938-2.929688-7.070312c-1.859374-1.859376-4.441406-2.929688-7.070312-2.929688zm0 0"/><path d="m501.324219 136.320312c-14.210938-14.210937-37.332031-14.210937-51.542969 0l-45.78125 45.78125v-148.101562c0-18.746094-15.253906-34-34-34h-336c-18.746094 0-34 15.253906-34 34v444c0 18.746094 15.253906 34 34 34h336c18.746094 0 34-15.253906 34-34v-192.808594l97.324219-97.328125c14.210937-14.210937 14.210937-37.332031 0-51.542969zm-117.324219-102.320312v168.101562l-20 20v-172.101562c0-5.523438-4.476562-10-10-10h-66.832031v-20h82.832031c7.71875 0 14 6.28125 14 14zm-54.601562 274.246094 13.5-30.328125 16.828124 16.828125zm-62.230469-288.246094v40.75c0 6.203125-5.046875 11.25-11.25 11.25h-107.835938c-6.203125 0-11.25-5.046875-11.25-11.25v-40.75zm102.832031 472h-336c-7.71875 0-14-6.28125-14-14v-444c0-7.71875 6.28125-14 14-14h82.832031v20h-66.832031c-5.523438 0-10 4.476562-10 10v412c0 5.523438 4.476562 10 10 10h112c5.523438 0 10-4.476562 10-10s-4.476562-10-10-10h-102v-392h56.832031v.75c0 17.230469 14.019531 31.25 31.25 31.25h107.835938c17.230469 0 31.25-14.019531 31.25-31.25v-.75h56.832031v182.101562l-11.390625 11.386719c-.863281.867188-1.5625 1.886719-2.0625 3.003907l-30.015625 67.417968c-1.683594 3.785156-.863281 8.210938 2.0625 11.140625 1.917969 1.914063 4.476562 2.929688 7.074219 2.929688 1.375 0 2.757812-.28125 4.066406-.863281l30.265625-13.476563v128.359375h-102c-5.523438 0-10 4.476562-10 10s4.476562 10 10 10h112c5.519531 0 10-4.476562 10-10v-147.265625l17.152344-7.636719c1.054687-.46875 2.011718-1.121094 2.847656-1.921875v172.824219c0 7.71875-6.28125 14-14 14zm79.910156-281.007812-72.824218 72.828124-23.261719-23.261718 90.167969-90.167969 23.261718 23.261719zm37.273438-37.269532-5.789063 5.785156-23.257812-23.257812 5.785156-5.785156c6.414063-6.414063 16.847656-6.414063 23.261719 0 6.410156 6.410156 6.410156 16.84375 0 23.257812zm0 0"/><path d="m162 120h-64c-5.523438 0-10 4.476562-10 10v64c0 5.523438 4.476562 10 10 10h64c5.523438 0 10-4.476562 10-10v-64c0-5.523438-4.476562-10-10-10zm-10 64h-44v-44h44zm0 0"/><path d="m162 230h-64c-5.523438 0-10 4.476562-10 10v64c0 5.523438 4.476562 10 10 10h64c5.523438 0 10-4.476562 10-10v-64c0-5.523438-4.476562-10-10-10zm-10 64h-44v-44h44zm0 0"/><path d="m162 340h-64c-5.523438 0-10 4.476562-10 10v64c0 5.523438 4.476562 10 10 10h64c5.523438 0 10-4.476562 10-10v-64c0-5.523438-4.476562-10-10-10zm-10 64h-44v-44h44zm0 0"/><path d="m233.578125 191.644531c1.953125 1.953125 4.511719 2.929688 7.070313 2.929688 2.558593 0 5.117187-.976563 7.070312-2.929688l45.148438-45.148437c3.902343-3.902344 3.902343-10.234375 0-14.140625-3.90625-3.90625-10.238282-3.90625-14.144532 0l-38.074218 38.074219-15.175782-15.175782c-3.90625-3.90625-10.234375-3.90625-14.144531 0-3.902344 3.90625-3.902344 10.238282 0 14.140625zm0 0"/><path d="m233.578125 301.644531c1.875 1.875 4.417969 2.929688 7.070313 2.929688 2.652343 0 5.195312-1.054688 7.070312-2.929688l45.148438-45.144531c3.902343-3.90625 3.902343-10.238281 0-14.144531-3.90625-3.902344-10.238282-3.902344-14.144532 0l-38.074218 38.078125-15.175782-15.175782c-3.90625-3.90625-10.234375-3.90625-14.144531 0-3.902344 3.902344-3.902344 10.234376 0 14.140626zm0 0"/><path d="m252.097656 396.144531 15.503906 15.5c1.953126 1.953125 4.511719 2.929688 7.070313 2.929688s5.117187-.976563 7.070313-2.929688c3.90625-3.90625 3.90625-10.238281 0-14.140625l-15.5-15.503906 15.5-15.503906c3.90625-3.902344 3.90625-10.234375 0-14.140625s-10.234376-3.90625-14.140626 0l-15.503906 15.5-15.5-15.5c-3.90625-3.902344-10.234375-3.90625-14.144531 0-3.902344 3.90625-3.902344 10.238281 0 14.140625l15.503906 15.503906-15.503906 15.503906c-3.902344 3.902344-3.902344 10.234375 0 14.140625 1.953125 1.953125 4.515625 2.929688 7.074219 2.929688s5.117187-.976563 7.070312-2.929688zm0 0"/></svg>
+
+
           <span v-if="isSidebarOpen" class="mx-4">Accounts</span>
         </router-link>
 
         <router-link
-          class="flex items-center py-3 px-2 m-3 rounded-lg outline-none focus:outline-none"
+          class="flex items-center py-3 px-2 mx-3 my-2 rounded-lg outline-none focus:outline-none"
           :class="[$route.name === 'Transactions' ? activeClass : inactiveClass, !isSidebarOpen ? 'justify-center' : '']"
           to="/transactions"
         >
@@ -47,7 +49,7 @@
         </router-link>
 
         <router-link
-          class="flex items-center py-3 px-2 m-3 rounded-lg outline-none focus:outline-none"
+          class="flex items-center py-3 px-2 mx-3 my-2 rounded-lg outline-none focus:outline-none"
           :class="[$route.name === 'Tools' ? activeClass : inactiveClass, !isSidebarOpen ? 'justify-center' : '']"
           to="/tools"
         >
@@ -56,7 +58,7 @@
         </router-link>
 
         <router-link
-          class="flex items-center py-3 px-2 m-3 rounded-lg outline-none focus:outline-none"
+          class="flex items-center py-3 px-2 mx-3 my-2 rounded-lg outline-none focus:outline-none"
           :class="[$route.name === 'Bills' ? activeClass : inactiveClass, !isSidebarOpen ? 'justify-center' : '']"
           to="/bills"
         >
@@ -65,7 +67,7 @@
         </router-link>
 
         <router-link
-          class="flex items-center py-3 px-2 m-3 rounded-lg outline-none focus:outline-none"
+          class="flex items-center py-3 px-2 mx-3 my-2 rounded-lg outline-none focus:outline-none"
           :class="[$route.name === 'Budgets' ? activeClass : inactiveClass, !isSidebarOpen ? 'justify-center' : '']"
           to="/budgets"
         >
@@ -74,7 +76,7 @@
         </router-link>
 
         <router-link
-          class="flex items-center p-2 m-3 rounded-sm outline-none focus:outline-none"
+          class="flex items-center p-2 mx-3 my-2 rounded-sm outline-none focus:outline-none"
           :class="[$route.name === 'Goals' ? activeClass : inactiveClass, !isSidebarOpen ? 'justify-center' : '']"
           to="/goals"
         >
@@ -102,8 +104,8 @@
 export default {
     data: function() {
       return {
-        activeClass: 'text-white bg-primary-base font-light fill-current focus:outline-none transition duration-300 ease-in-out',
-        inactiveClass: 'font-light fill-current text-primary-base focus:outline-none transition duration-200 ease-in-out',
+        activeClass: 'text-white-base bg-theme-primary-base font-semibold fill-current focus:outline-none transition duration-300 ease-in-out',
+        inactiveClass: 'font-semibold fill-current text-gray-base focus:outline-none transition duration-200 ease-in-out',
         isSidebarOpen: true,
         sidebarOpen: 'w-72 transform translate-x-0 transition duration-500 ease-in-out',
         sidebarClosed: 'w-20 transition duration-500 ease-in-out',

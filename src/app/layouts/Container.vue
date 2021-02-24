@@ -1,14 +1,14 @@
 <template>
-  <div class="bg-gray-light select-none overflow-hidden">
+  <div class="bg-theme-primary-lightest select-none overflow-hidden">
+    <Topbar v-on:refreshAccountData="refreshAccountData"/>
     <div class="flex">
       <Sidebar/>
       <div class="w-full h-screen font-poppins">
-        <Topbar v-on:refreshAccountData="refreshAccountData"/>
         <main class="w-full overflow-y-auto max-h-screen">
           <div class="mx-auto">
             <div>
               <div class="mx-auto p-3">
-                <div class="rounded">
+                <div>
                   <router-view :accountData="accountDataResponse" :accountTypes="getAccountTypes" v-on:refreshAccountData="refreshAccountData"></router-view>
                 </div>
               </div>
