@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="grid xl:grid-cols-4 lg:grid-cols-2 sm:grid-cols-1 gap-5 mb-5">
+    <div class="grid xl:grid-cols-4 lg:grid-cols-2 sm:grid-cols-1 gap-6 mb-5">
       <NetWorthWidget :accounts="accountData"/>
       <CashFlowWidget/>
       <DebtPaydownWidget/>

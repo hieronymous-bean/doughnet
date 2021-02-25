@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-2 rounded-2xl border-1 border-gray-light shadow-md py-4 px-4 cursor-pointer font-normal" @click="expandAccountType" :isThisTypeExpanded="isTypeExpanded">
+    <div class="grid grid-cols-2 rounded-lg border-1 border-gray-light py-4 px-4 cursor-pointer font-normal" @click="expandAccountType" :isThisTypeExpanded="isTypeExpanded">
       <div class="relative">
         <button class="focus:outline-none">
           <svg xmlns="http://www.w3.org/2000/svg" :class="[{ transform: this.isTypeExpanded },{ 'rotate-90': this.isTypeExpanded}]" width="8" height="8" class="absolute top-1/3 fill-current text-black transition duration-100 ease-in-out" viewBox="0 0 24 24">

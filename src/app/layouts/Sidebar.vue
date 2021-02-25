@@ -1,15 +1,11 @@
 <template>
   <div :class="isSidebarOpen ? sidebarOpen : sidebarClosed" class="">
-    <div class="transform bg-theme-primary-lightest overflow-y-auto min-h-screen border-r" v-on:mouseover="mouseover" v-on:mouseleave="mouseleave">
+    <div class="transform bg-theme-primary-base overflow-y-auto min-h-screen border-r" v-on:mouseover="mouseover" v-on:mouseleave="mouseleave">
       <div class="px-4 py-2 grid grid-cols-3">
-        <div  class="col-span-2 text-theme-ghost-base">
-          <div v-if="isSidebarOpen" class="font-semibold">Doughnet User</div>
-          <div v-if="isSidebarOpen" class="font-semibold text-sm">{{ userEmail }}</div>
-        </div>
         <div @click.prevent="toggleSidebarOpen" :class="isSidebarOpen ? sidebarToggleActive : sidebarToggleInctive" class="cursor-pointer">
           <transition name="fade">
             <div v-if="showCollapseIcon" class="flex justify-center">
-              <svg class="block relative mx-auto fill-current text-theme-primary-base" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24">
+              <svg class="block relative mx-auto fill-current text-theme-primary-two" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24">
               <path d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z"/>
             </svg>
             </div>
@@ -105,7 +101,7 @@ export default {
     data: function() {
       return {
         activeClass: 'text-white-base bg-theme-primary-base font-semibold fill-current focus:outline-none transition duration-300 ease-in-out',
-        inactiveClass: 'font-semibold fill-current text-gray-base focus:outline-none transition duration-200 ease-in-out',
+        inactiveClass: 'font-semibold fill-current text-theme-primary-two focus:outline-none transition duration-200 ease-in-out',
         isSidebarOpen: true,
         sidebarOpen: 'w-72 transform translate-x-0 transition duration-500 ease-in-out',
         sidebarClosed: 'w-20 transition duration-500 ease-in-out',

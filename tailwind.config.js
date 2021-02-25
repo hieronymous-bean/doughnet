@@ -6,11 +6,12 @@ module.exports = {
       colors: {
         theme: {
           primary: {
-            base: '#0052CC',
-            light: '#0086FF',
-            lighter: '#DFF0FF',
-            lightest: '#F0F4FB',
-            dark: '#021A9D'
+            base: '#242d58',
+            two: '#9ca2ba',
+            three: '#5e6edd',
+            lighter: '#',
+            lightest: '#',
+            dark: ''
           },
         },
         supporting: {
@@ -21,7 +22,7 @@ module.exports = {
         },
         white: {
           base: '#ffffff',
-          tint: '#fafafa',
+          tint: '#f5f6fa',
         },
         gray: {
           light: '#EDEFF3',
@@ -35,10 +36,10 @@ module.exports = {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
-      borderWidth: {
-        '1': '1.5px',
+      boxShadow: {
+        md: '0px 0px 20px -5px rgba(0, 0, 0, 0.1)'
       }
-    }
+    } 
   },
   variants: {
     extend: {},

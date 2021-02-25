@@ -1,13 +1,13 @@
 <template>
-  <div class="bg-theme-primary-lightest select-none overflow-hidden">
-    <Topbar v-on:refreshAccountData="refreshAccountData"/>
-    <div class="flex">
-      <Sidebar/>
+  <div class="bg-white-tint select-none overflow-hidden flex">
+    <Sidebar/>
+    <div class="w-full">
+      <Topbar v-on:refreshAccountData="refreshAccountData"/>
       <div class="w-full h-screen font-poppins">
         <main class="w-full overflow-y-auto max-h-screen">
           <div class="mx-auto">
             <div>
-              <div class="mx-auto p-3">
+              <div class="mx-auto p-5">
                 <div>
                   <router-view :accountData="accountDataResponse" :accountTypes="getAccountTypes" v-on:refreshAccountData="refreshAccountData"></router-view>
                 </div>

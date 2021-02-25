@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <div class="bg-white-base rounded-3xl px-6 py-5 border border-gray-light shadow-sm">
+    <div class="bg-white-base rounded-3xl px-6 py-5 shadow-md">
       <div class="flex">
         <h2 class="flex-1">
             <span class="block font-sans text-4xl font-extralight text-black-base">Debt Paydown</span>
