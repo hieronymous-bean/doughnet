@@ -42,7 +42,6 @@ const routes = [
       {
         path: '/dashboard',
         name: 'Dashboard',
-        props: { accountData: 'accountData'},
         component: Dashboard
       },
       {

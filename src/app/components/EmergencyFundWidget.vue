@@ -1,10 +1,10 @@
 <template>
   <div class="">
-    <div class="bg-white-base rounded-3xl px-6 py-5 shadow-md">
+    <div class="bg-white-base rounded-sm px-6 py-5 shadow-md">
       <div class="flex">
         <h2 class="flex-1">
-            <span class="block font-sans text-4xl font-extralight text-black-base">Emergency Fund</span>
-            <span class="block text-md font-extralight text-gray-800">Cash On Hand</span>
+            <span class="block text-3xl font-semibold">Emergency Fund</span>
+            <span class="block text-md font-light text-gray-800">Cash On Hand</span>
         </h2>
         
       </div>

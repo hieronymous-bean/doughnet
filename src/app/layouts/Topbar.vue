@@ -1,15 +1,14 @@
-  <template>
-
-  <div class="bg-white-base shadow-sm">
-    <div class="">
+<template>
+  <div class="overflow-hidden">
+    <div class="py-3">
       <div class="px-4">
-        <div class="flex justify-between items-center py-2">
-          <div class="relative text-gray-400">
-            <img src="../../global/assets/img/logo.png" class="w-32">
+        <div class="flex justify-between items-center">
+          <div class="relative text-gray-300">
+            <svg class="fill-current text-theme-primary-base transform rotate-180" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path d="M0 3.795l2.995-2.98 11.132 11.185-11.132 11.186-2.995-2.981 8.167-8.205-8.167-8.205zm18.04 8.205l-8.167 8.205 2.995 2.98 11.132-11.185-11.132-11.186-2.995 2.98 8.167 8.206z"/></svg>
           </div>
 
-          <div class="relative text-gray-400">
-
+          <div class="">
+            
           </div>
           
           <div class="md:hidden">
@@ -30,25 +29,38 @@
 
                 <NotificationsDropdown/>
                 
-                <div class="ml-1" v-click-outside="closeUserMenu">
-                  <button @click="toggleUserMenu" type="button" class="flex items-center justify-center w-full rounded-full border p-2 text-sm font-medium text-primary-base dark:text-gray-50 bg-white-base hover:bg-theme-alice-base dark:hover:bg-theme-alice-base focus:ring-0 focus:outline-none transition duration-300 ease-in-out">
-                    <svg width="17" fill="currentColor" height="17" class="text-theme-primary-base" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1523 1339q-22-155-87.5-257.5t-184.5-118.5q-67 74-159.5 115.5t-195.5 41.5-195.5-41.5-159.5-115.5q-119 16-184.5 118.5t-87.5 257.5q106 150 271 237.5t356 87.5 356-87.5 271-237.5zm-243-699q0-159-112.5-271.5t-271.5-112.5-271.5 112.5-112.5 271.5 112.5 271.5 271.5 112.5 271.5-112.5 112.5-271.5zm512 256q0 182-71 347.5t-190.5 286-285.5 191.5-349 71q-182 0-348-71t-286-191-191-286-71-348 71-348 191-286 286-191 348-71 348 71 286 191 191 286 71 348z">
-                      </path>
-                    </svg>
-                  </button>
-
-                  <div v-show="userMenuOpen" class="absolute z-50 origin-top-right right-0 mt-2 w-48 rounded-lg shadow-xl bg-white-base" role="menu" aria-orientation="vertical">
-                    <router-link
-                      class="block outline-none focus:outline-none px-4 py-1 text-sm text-gray-700 hover:bg-gray-100"
-                      to="/profile"
-                    >Profile</router-link>
-                    <router-link
-                      class="block outline-none focus:outline-none px-4 py-1 text-sm text-gray-700 hover:bg-gray-100"
-                      to="/settings"
-                    >Account Settings</router-link>
-                    <a href="" @click="userSignOut" class="block outline-none focus:outline-none px-4 py-1 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Sign out</a>
+                <div @click.prevent="toggleUserMenu" v-click-outside="closeUserMenu" class="flex cursor-pointer justify-between items-center px-5 relative">
+                  <div>
+                    <div>
+                      <span class="px-1 font-light text-xs capitalize">{{ userEmail }}</span>
+                        
+                    </div>
                   </div>
+                  <div class="ml-1">
+                    <button class="flex items-center justify-center w-full rounded-full border p-2 text-sm font-medium text-primary-base dark:text-gray-50 bg-white-base hover:bg-theme-alice-base dark:hover:bg-theme-alice-base focus:ring-0 focus:outline-none transition duration-300 ease-in-out">
+                      <svg width="17" fill="currentColor" height="17" class="text-theme-primary-base" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1523 1339q-22-155-87.5-257.5t-184.5-118.5q-67 74-159.5 115.5t-195.5 41.5-195.5-41.5-159.5-115.5q-119 16-184.5 118.5t-87.5 257.5q106 150 271 237.5t356 87.5 356-87.5 271-237.5zm-243-699q0-159-112.5-271.5t-271.5-112.5-271.5 112.5-112.5 271.5 112.5 271.5 271.5 112.5 271.5-112.5 112.5-271.5zm512 256q0 182-71 347.5t-190.5 286-285.5 191.5-349 71q-182 0-348-71t-286-191-191-286-71-348 71-348 191-286 286-191 348-71 348 71 286 191 191 286 71 348z">
+                        </path>
+                      </svg>
+                    </button>
+
+                    <div v-show="userMenuOpen" class="absolute z-50 origin-top-right right-0 mt-2 w-48 rounded-sm shadow-md bg-white-base" role="menu" aria-orientation="vertical">
+                      <router-link
+                        class="block outline-none focus:outline-none px-4 py-1 text-sm text-gray-700 hover:bg-gray-100"
+                        to="/profile"
+                      >Profile</router-link>
+                      <router-link
+                        class="block outline-none focus:outline-none px-4 py-1 text-sm text-gray-700 hover:bg-gray-100"
+                        to="/settings"
+                      >Account Settings</router-link>
+                      <a href="" @click="userSignOut" class="block outline-none focus:outline-none px-4 py-1 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Sign out</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="relative">
+                  <svg xmlns="http://www.w3.org/2000/svg" :class="[{ transform: userMenuOpen },{ 'rotate-90': userMenuOpen}]" width="5" height="5" class="absolute right-2 fill-current text-black transition duration-100 ease-in-out" viewBox="0 0 24 24">
+                    <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -132,6 +144,7 @@ export default {
       },
       toggleUserMenu: function() {
         this.userMenuOpen = !this.userMenuOpen
+        console.log(this.userMenuOpen)
       },
       closeUserMenu: function() {
         this.userMenuOpen = false

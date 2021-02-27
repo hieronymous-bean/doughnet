@@ -9,8 +9,8 @@ module.exports = {
             base: '#242d58',
             two: '#9ca2ba',
             three: '#5e6edd',
-            lighter: '#',
-            lightest: '#',
+            four: '#2b3dab',
+            five: '#343d66',
             dark: ''
           },
         },
@@ -34,10 +34,10 @@ module.exports = {
         }
       },
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
+        nunito: ['Nunito', 'sans-serif']
       },
       boxShadow: {
-        md: '0px 0px 20px -5px rgba(0, 0, 0, 0.1)'
+        md: '0px 0px 10px -1px rgba(0, 0, 0, 0.1)'
       }
     } 
   },

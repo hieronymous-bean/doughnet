@@ -1,15 +1,14 @@
 <template>
-  <div class="bg-white-tint select-none overflow-hidden flex">
-    <Sidebar/>
+  <div class="bg-white-tint select-none flex font-nunito">
     <div class="w-full">
-      <Topbar v-on:refreshAccountData="refreshAccountData"/>
-      <div class="w-full h-screen font-poppins">
-        <main class="w-full overflow-y-auto max-h-screen">
+      <Navbar/>
+      <div class="w-full py-3">
+        <main class="w-full">
           <div class="mx-auto">
             <div>
-              <div class="mx-auto p-5">
+              <div class="mx-auto px-4 py-1">
                 <div>
-                  <router-view :accountData="accountDataResponse" :accountTypes="getAccountTypes" v-on:refreshAccountData="refreshAccountData"></router-view>
+                  <router-view :loadedAccountData="loadAccountData" :loadedAccountTypes="loadAccountTypes"></router-view>
                 </div>
               </div>
             </div>  
@@ -21,36 +20,24 @@
 </template>
 
 <script>
-
-import Topbar from './Topbar.vue'
-import Sidebar from './Sidebar.vue'
-
 import { getAccounts } from '../../accounts/utilities/accountUtilities.js'
+import Navbar from './Navbar.vue'
 
 export default {
   data: () => ({
-      title: 'Dashboard',
-      accountDataResponse: [],
+    loadAccountData: []
   }),
   components: {
-    Topbar,
-    Sidebar
-  },
-  methods: {
-    refreshAccountData: function() {
-      getAccounts(this.$store.getters.getCurrentUserId).then(response => {
-        this.accountDataResponse = response;
-      });
-    }
+    Navbar
   },
   computed: {
-    getAccountTypes: function () {
-      return [...new Set(this.accountDataResponse.map(({ type }) => type))]
+    loadAccountTypes: function () {
+      return [...new Set(this.loadAccountData.map(({ type }) => type))]
     }
   },
   beforeCreate: function() {
     getAccounts(this.$store.getters.getCurrentUserId).then(response => {
-      this.accountDataResponse = response;
+      this.loadAccountData = response;
     });
   }
 }
