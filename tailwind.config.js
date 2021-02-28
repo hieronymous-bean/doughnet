@@ -7,6 +7,7 @@ module.exports = {
         theme: {
           primary: {
             base: '#242d58',
+            baseTint: '#20294f',
             two: '#9ca2ba',
             three: '#5e6edd',
             four: '#2b3dab',

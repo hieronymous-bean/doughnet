@@ -1,5 +1,94 @@
 <template>
   <div class="flex flex-col">
+    <div class="w-full mr-4">
+      <div class="">
+        <div class="flex justify-between px-4 py-3 bg-theme-primary-three border border-indigo-200 rounded-t-lg">
+          <div class="flex items-center">
+            <img class="w-6 h-6 mr-2 rounded-md" src="https://avatars3.githubusercontent.com/in/2141?s=60&v=4" alt="">
+            <p class="text-sm font-semibold">Tranasctions</p>
+            <span class="ml-2 text-sm text-gray-600">Last Refresh: 3 days ago</span>
+          </div>
+        </div>
+        <div class="hidden bg-white-base text-center border-b border-l border-r rounded-b-lg md:block">
+          <div class="flex px-4 py-2 text-sm hover:bg-gray-200">
+            <div class="flex w-1/4">
+              <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"></path></svg>
+              <p class="ml-2 cursor-pointer hover:underline hover:text-blue-500">.github</p>
+            </div>
+              <p class="w-1/2 text-left cursor-pointer hover:underline hover:text-blue-500">Drop fs-extra version to..</p>
+              <p class="w-1/4 text-right">2 months ago</p>
+          </div>
+          <div class="flex px-4 py-2 text-sm hover:bg-gray-200">
+            <div class="flex w-1/4">
+              <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"></path></svg>
+              <p class="ml-2 cursor-pointer hover:underline hover:text-blue-500">dist</p>
+            </div>
+              <p class="w-1/2 text-left cursor-pointer hover:underline hover:text-blue-500">Add empty .npmignore so dist files are distributed with releases</p>
+              <p class="w-1/4 ml-2 text-right">3 years ago</p>
+          </div>
+          <div class="flex px-4 py-2 text-sm hover:bg-gray-200">
+            <div class="flex w-1/4">
+              <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"></path></svg>
+              <p class="ml-2 cursor-pointer hover:underline hover:text-blue-500">scripts</p>
+            </div>
+              <p class="w-1/2 text-left cursor-pointer hover:underline hover:text-blue-500">Don't generate color opacity code in color plugins if not necessary</p>
+              <p class="w-1/4 ml-2 text-right">3 months ago</p>
+          </div>
+          <div class="flex px-4 py-2 text-sm hover:bg-gray-200">
+            <div class="flex w-1/4">
+              <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"></path></svg>
+              <p class="ml-2 cursor-pointer hover:underline hover:text-blue-500">src</p>
+            </div>
+              <p class="w-1/2 text-left cursor-pointer hover:underline hover:text-blue-500">Throw if contains a class</p>
+              <p class="w-1/4 ml-2 text-right">last months</p>
+          </div>
+          <div class="flex px-4 py-2 text-sm hover:bg-gray-200">
+            <div class="flex w-1/4">
+              <svg class="w-6 h-6 text-blue-600" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+              </svg>
+              <p class="ml-2 cursor-pointer hover:underline hover:text-blue-500">LICENSE</p>
+            </div>
+              <p class="w-1/2 text-left cursor-pointer hover:underline hover:text-blue-500">Avoid updating license every year</p>
+              <p class="w-1/4 ml-2 text-right">3 years ago</p>
+          </div>
+          <div class="flex px-4 py-2 text-sm hover:bg-gray-200">
+            <div class="flex w-1/4">
+              <svg class="w-6 h-6 text-blue-600" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+              </svg>
+              <p class="ml-2 cursor-pointer hover:underline hover:text-blue-500">README.md</p>
+            </div>
+              <p class="w-1/2 text-left cursor-pointer hover:underline hover:text-blue-500">Replace logo in README</p>
+              <p class="w-1/4 ml-2 text-right">2 months ago</p>
+          </div>
+          <div class="flex px-4 py-2 text-sm hover:bg-gray-200">
+            <div class="flex w-1/4">
+              <svg class="w-6 h-6 text-blue-600" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+              </svg>
+              <p class="ml-2 cursor-pointer hover:underline hover:text-blue-500">package.json</p>
+            </div>
+              <p class="w-1/2 text-left cursor-pointer hover:underline hover:text-blue-500">1.4.6</p>
+              <p class="w-1/4 ml-2 text-right">last month</p>
+          </div>
+          <div class="flex px-4 py-2 text-sm hover:bg-gray-200">
+            <div class="flex w-1/4">
+              <svg class="w-6 h-6 text-blue-600" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+              </svg>
+              <p class="ml-2 cursor-pointer hover:underline hover:text-blue-500">tailwind.css</p>
+            </div>
+              <p class="w-1/2 text-left cursor-pointer hover:underline hover:text-blue-500">Undo accidental changes to CDN build process</p>
+              <p class="w-1/4 ml-2 text-right">6 months ago</p>
+          </div>
+        </div>
+        <div class="py-2 text-center border-b border-l border-r rounded-b-lg md:hidden">
+          <p class="text-blue-600 cursor-pointer hover:underline">View code</p>
+        </div>
+      </div>
+      
+    </div>
     <div class="my-1">
       <div class="inline-block min-w-full">
         <div class="mt-1 pb-4 pl-5">
