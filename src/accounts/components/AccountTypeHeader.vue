@@ -1,18 +1,18 @@
 <template>
 
-  <div class="grid grid-cols-2 my-3 rounded-sm border border-gray-light py-3 px-4 cursor-pointer font-normal" @click="expandAccountType" :isThisTypeExpanded="isTypeExpanded">
-    <div class="relative">
+  <div class="grid grid-cols-2 my-3 rounded-sm cursor-pointer font-normal" @click="expandAccountType" :isThisTypeExpanded="isTypeExpanded">
+    <div class="relative bg-gray-100 py-3 px-4 rounded-md">
       <button class="focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" :class="[{ transform: this.isTypeExpanded },{ 'rotate-90': this.isTypeExpanded}]" width="8" height="8" class="absolute top-1/3 fill-current text-black transition duration-100 ease-in-out" viewBox="0 0 24 24">
+        <svg xmlns="http://www.w3.org/2000/svg" :class="[{ transform: this.isTypeExpanded },{ 'rotate-90': this.isTypeExpanded}]" width="9" height="9" class="absolute top-5 fill-current text-gray-600 transition duration-100 ease-in-out" viewBox="0 0 24 24">
           <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/>
         </svg>
       </button>
       <span class="mx-4 font-light text-md capitalize">{{ typeOfAccount }}</span>
     </div>
-    <div class="">
-    <span :class="accountTypeCategory == 'asset' ? assetValueClass : debtValueClass" class="font-light float-right">${{ accountTypeTotal }}</span>
-  </div>
-    <div v-show="isTypeExpanded" class="my-2">
+    <div class="bg-gray-100 py-3 px-4 rounded-md">
+      <span :class="accountTypeCategory == 'asset' ? assetValueClass : debtValueClass" class="font-light float-right">${{ accountTypeTotal }}</span>
+    </div>
+    <div v-show="isTypeExpanded" class="my-2 bg-white-base">
       <div v-for="account in accountData" :key="account.id" class="hover:bg-gray-50 rounded transition duration-200 ease-in-out">
         <div v-show="account.type == typeOfAccount" class="p-2 font-semibold text-black">
           <router-link

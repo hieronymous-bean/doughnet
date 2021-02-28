@@ -6,12 +6,12 @@ module.exports = {
       colors: {
         theme: {
           primary: {
-            base: '#242d58',
+            base: '#3D3C3F',
             baseTint: '#20294f',
-            two: '#9ca2ba',
-            three: '#5e6edd',
-            four: '#2b3dab',
-            five: '#343d66',
+            two: '#545358',
+            three: '#AAABA6',
+            four: '#5A625A',
+            five: '#77677F',
             dark: ''
           },
         },
@@ -23,7 +23,7 @@ module.exports = {
         },
         white: {
           base: '#ffffff',
-          tint: '#f5f6fa',
+          tint: '#fbfbfb',
         },
         gray: {
           light: '#EDEFF3',

@@ -11,25 +11,25 @@
           </div>
           <div class="hidden md:block">
             <div class="flex items-center ml-10">
-              <input type="text" class="hidden px-4 py-2 text-sm text-white placeholder-white bg-theme-primary-two rounded-sm focus:outline-none lg:block" placeholder="Search...">
-              <router-link to="/dashboard" :class="[$route.name === 'Dashboard' ? activeNavLink : '']" class="px-3 py-2 ml-4 text-sm font-semibold text-gray-300 rounded-md hover:text-white hover:bg-theme-primary-baseTint focus:outline-none">Dashboard
+              <input type="text" class="hidden px-4 py-2 text-sm text-white placeholder-white bg-gray-300 border-0 rounded-md focus:outline-none focus:ring-0 lg:block" placeholder="Search...">
+              <router-link to="/dashboard" :class="[$route.name === 'Dashboard' ? activeNavLink : '']" class="px-3 py-2 ml-4 text-sm font-bold text-white-tint rounded-md hover:text-white hover:bg-theme-primary-baseTint focus:outline-none">Dashboard
               </router-link>
-              <router-link to="/accounts" :class="[$route.name === 'Accounts' ? activeNavLink : '']" class="px-3 py-2 ml-4 text-sm font-semibold text-gray-300 rounded-md hover:text-white hover:bg-theme-primary-baseTint focus:outline-none">Accounts</router-link>
-              <router-link to="/transactions" :class="[$route.name === 'Transactions' ? activeNavLink : '']" class="px-3 py-2 ml-4 text-sm font-semibold text-gray-300 rounded-md hover:text-white hover:bg-theme-primary-baseTint focus:outline-none">Transactions</router-link>
-              <router-link to="/tools" :class="[$route.name === 'Tools' ? activeNavLink : '']" class="px-3 py-2 ml-4 text-sm font-semibold text-gray-300 rounded-md hover:text-white hover:bg-theme-primary-baseTint focus:outline-none">Tools</router-link>
+              <router-link to="/accounts" :class="[$route.name === 'Accounts' ? activeNavLink : '']" class="px-3 py-2 ml-4 text-sm font-bold text-white-tint rounded-md hover:text-white hover:bg-theme-primary-baseTint focus:outline-none">Accounts</router-link>
+              <router-link to="/transactions" :class="[$route.name === 'Transactions' ? activeNavLink : '']" class="px-3 py-2 ml-4 text-sm font-bold text-white-tint rounded-md hover:text-white hover:bg-theme-primary-baseTint focus:outline-none">Transactions</router-link>
+              <router-link to="/tools" :class="[$route.name === 'Tools' ? activeNavLink : '']" class="px-3 py-2 ml-4 text-sm font-bold text-white-tint rounded-md hover:text-white hover:bg-theme-primary-baseTint focus:outline-none">Tools</router-link>
             </div>
           </div>
         </div>
         <div class="hidden md:block">
           <div class="flex items-center ml-4 md:ml-6">
             <div class="mr-3" v-click-outside="closeAssetMenu">
-              <a @click.prevent="toggleAssetMenu" class="flex cursor-pointer items-center hover:text-gray-400">
-                <svg class="fill-current text-gray-400 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              <a @click.prevent="toggleAssetMenu" class="flex cursor-pointer items-center">
+                <svg class="fill-current text-white-tint w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                 </svg>
-                <svg class="h-2 ml-1 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 386.257 386.257"
+                <svg class="h-2 ml-1 fill-current text-white-tint" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 386.257 386.257"
                     xml:space="preserve">
                     <polygon points="0,96.879 193.129,289.379 386.257,96.879 " />
                 </svg>
