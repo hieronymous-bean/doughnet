@@ -1,15 +1,15 @@
 <template>
 
-  <div class="grid grid-cols-2 my-3 rounded-sm cursor-pointer font-normal" @click="expandAccountType" :isThisTypeExpanded="isTypeExpanded">
-    <div class="relative bg-gray-100 py-3 px-4 rounded-md">
+  <div class="grid grid-cols-2 my-3 cursor-pointer font-normal" @click="expandAccountType" :isThisTypeExpanded="isTypeExpanded">
+    <div class="relative bg-gray-100 py-3 px-4 rounded-sm">
       <button class="focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" :class="[{ transform: this.isTypeExpanded },{ 'rotate-90': this.isTypeExpanded}]" width="9" height="9" class="absolute top-5 fill-current text-gray-600 transition duration-100 ease-in-out" viewBox="0 0 24 24">
+        <svg xmlns="http://www.w3.org/2000/svg" :class="[{ transform: this.isTypeExpanded },{ 'rotate-90': this.isTypeExpanded}]" width="9" height="9" class="absolute top-5 fill-current text-gray-600 transition duration-500 ease-in-out" viewBox="0 0 24 24">
           <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/>
         </svg>
       </button>
       <span class="mx-4 font-light text-md capitalize">{{ typeOfAccount }}</span>
     </div>
-    <div class="bg-gray-100 py-3 px-4 rounded-md">
+    <div class="bg-gray-100 py-3 px-4 rounded-sm">
       <span :class="accountTypeCategory == 'asset' ? assetValueClass : debtValueClass" class="font-light float-right">${{ accountTypeTotal }}</span>
     </div>
     <div v-show="isTypeExpanded" class="my-2 bg-white-base">

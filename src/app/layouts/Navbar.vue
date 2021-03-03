@@ -5,24 +5,24 @@
         <div class="flex items-center">
           <div class="flex-shrink-0">
             <div class="justify-center text-center">
-              <img class="block lg:hidden h-12 w-auto" src="../../global/assets/img/logo.png" alt="Workflow">
-              <img class="hidden lg:block h-9 w-auto" src="../../global/assets/img/logo.png" alt="Workflow">
+              <img class="block lg:hidden h-12 w-auto" src="../../global/assets/img/logo.png" alt="Doughnet">
+              <img class="hidden lg:block h-12 w-auto" src="../../global/assets/img/logo.png" alt="Doughnet">
             </div>
           </div>
           <div class="hidden md:block">
             <div class="flex items-center ml-10">
               <input type="text" class="hidden px-4 py-2 text-sm text-white placeholder-white bg-gray-300 border-0 rounded-md focus:outline-none focus:ring-0 lg:block" placeholder="Search...">
-              <router-link to="/dashboard" :class="[$route.name === 'Dashboard' ? activeNavLink : '']" class="px-3 py-2 ml-4 text-sm font-bold text-white-tint rounded-md hover:text-white hover:bg-theme-primary-baseTint focus:outline-none">Dashboard
+              <router-link to="/dashboard" :class="[$route.name === 'Dashboard' ? activeNavLink : '']" class="px-3 py-2 ml-4 text-sm font-bold text-white-tint rounded-md hover:text-white hover:bg-theme-primary-base focus:outline-none">Dashboard
               </router-link>
-              <router-link to="/accounts" :class="[$route.name === 'Accounts' ? activeNavLink : '']" class="px-3 py-2 ml-4 text-sm font-bold text-white-tint rounded-md hover:text-white hover:bg-theme-primary-baseTint focus:outline-none">Accounts</router-link>
-              <router-link to="/transactions" :class="[$route.name === 'Transactions' ? activeNavLink : '']" class="px-3 py-2 ml-4 text-sm font-bold text-white-tint rounded-md hover:text-white hover:bg-theme-primary-baseTint focus:outline-none">Transactions</router-link>
-              <router-link to="/tools" :class="[$route.name === 'Tools' ? activeNavLink : '']" class="px-3 py-2 ml-4 text-sm font-bold text-white-tint rounded-md hover:text-white hover:bg-theme-primary-baseTint focus:outline-none">Tools</router-link>
+              <router-link to="/accounts" :class="[$route.name === 'Accounts' ? activeNavLink : '']" class="px-3 py-2 ml-4 text-sm font-bold text-white-tint rounded-md hover:text-white hover:bg-theme-primary-base focus:outline-none">Accounts</router-link>
+              <router-link to="/transactions" :class="[$route.name === 'Transactions' ? activeNavLink : '']" class="px-3 py-2 ml-4 text-sm font-bold text-white-tint rounded-md hover:text-white hover:bg-theme-primary-base focus:outline-none">Transactions</router-link>
+              <router-link to="/tools" :class="[$route.name === 'Tools' ? activeNavLink : '']" class="px-3 py-2 ml-4 text-sm font-bold text-white-tint rounded-md hover:text-white hover:bg-theme-primary-base focus:outline-none">Tools</router-link>
             </div>
           </div>
         </div>
         <div class="hidden md:block">
           <div class="flex items-center ml-4 md:ml-6">
-            <div class="mr-3" v-click-outside="closeAssetMenu">
+            <div class="relative mr-3" v-click-outside="closeAssetMenu">
               <a @click.prevent="toggleAssetMenu" class="flex cursor-pointer items-center">
                 <svg class="fill-current text-white-tint w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
@@ -34,26 +34,29 @@
                     <polygon points="0,96.879 193.129,289.379 386.257,96.879 " />
                 </svg>
               </a>
-              <div v-show="assetMenuOpen" class="fixed origin-top-right right-0 mt-2 px-3 py-1 w-48 rounded-sm shadow-md py-1 bg-white-base" role="menu" aria-orientation="vertical">
-                <a @click.prevent="openCreateAccountModal" type="button" class="block cursor-pointer outline-none focus:outline-none px-4 py-1 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Add Account</a>
+              <div v-show="assetMenuOpen" class="absolute right-0 mt-2 px-3 py-4 w-48 rounded-sm shadow-md py-1 bg-white-base" role="menu" aria-orientation="vertical">
+                <a @click.prevent="openCreateAccountModal" type="button" class="block cursor-pointer outline-none focus:outline-none px-4 text-sm text-gray-700" role="menuitem">Add Account</a>
               </div>
             </div>
             <NotificationsMenuDropdown/>
             <div @click.prevent="toggleUserMenu" v-click-outside="closeUserMenu" class="relative ml-3">
               <div>
-                <button class="flex items-center max-w-xs text-sm text-white rounded-full focus:outline-none focus:shadow-solid" id="user-menu" aria-label="User menu" aria-haspopup="true">
-                  <img class="w-8 h-8 rounded-full" src="../../global/assets/img/robot-avatars/RobotAvatars_12.svg" alt="" />
-                </button>
-                <div v-show="userMenuOpen" class="absolute z-50 origin-top-right right-0 mt-2 w-48 rounded-sm shadow-md bg-white-base" role="menu" aria-orientation="vertical">
+                <div class="flex align-middle items-center text-xs text-white-base cursor-pointer"><span class="pl-5 pr-3  ">{{ this.$store.state.user.email }}</span>
+                  <button class="flex items-center max-w-xs text-sm text-white rounded-full focus:outline-none focus:shadow-solid" id="user-menu" aria-label="User menu" aria-haspopup="true">
+                    <img class="w-8 h-8 rounded-full" src="../../global/assets/img/robot-avatars/RobotAvatars_12.svg" alt="" />
+                  </button>
+                </div>
+                
+                <div v-show="userMenuOpen" class="absolute z-50 origin-top-right right-0 top-8 mt-2 w-48 rounded-sm shadow-md bg-white-base" role="menu" aria-orientation="vertical">
                   <router-link
-                    class="block outline-none focus:outline-none px-4 py-1 text-sm text-gray-700 hover:bg-gray-100"
+                    class="block outline-none focus:outline-none px-4 py-1 text-sm text-gray-700"
                     to="/profile"
                   >Profile</router-link>
                   <router-link
-                    class="block outline-none focus:outline-none px-4 py-1 text-sm text-gray-700 hover:bg-gray-100"
+                    class="block outline-none focus:outline-none px-4 py-1 text-sm text-gray-700"
                     to="/settings"
                   >Account Settings</router-link>
-                  <a href="" @click="userSignOut" class="block outline-none focus:outline-none px-4 py-1 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Sign out</a>
+                  <a href="" @click="userSignOut" class="block outline-none focus:outline-none px-4 py-1 text-sm text-gray-700" role="menuitem">Sign out</a>
                 </div>
               </div>
             </div>

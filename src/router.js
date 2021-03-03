@@ -47,7 +47,6 @@ const routes = [
       {
         path: '/accounts',
         name: 'Accounts',
-        props: { accountData: 'accountData', accountTypeData: 'accountTypeData'},
         component: Accounts
       },
       {

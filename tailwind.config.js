@@ -6,13 +6,13 @@ module.exports = {
       colors: {
         theme: {
           primary: {
-            base: '#3D3C3F',
-            baseTint: '#20294f',
-            two: '#545358',
-            three: '#AAABA6',
-            four: '#5A625A',
-            five: '#77677F',
-            dark: ''
+            base: '#3B3947',
+            two: '#35558A',
+            three: '#C4BBBA',
+            four: '#6F6F6B',
+            five: '#A7617D',
+            six: '#CEA8BE',
+            seven: ''
           },
         },
         supporting: {
@@ -23,7 +23,7 @@ module.exports = {
         },
         white: {
           base: '#ffffff',
-          tint: '#fbfbfb',
+          tint: '#fcfcfc',
         },
         gray: {
           light: '#EDEFF3',

@@ -8,7 +8,7 @@
       <div class="inline-block align-bottom bg-white rounded-sm text-left overflow-hidden transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
         <div class="bg-theme-primary-base px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
           <div class="sm:flex sm:items-start">
-            <div class="mx-auto flex-shrink-0 flex items-center justify-center rounded-full bg-theme-primary-three sm:mx-0 sm:h-10 sm:w-10 ">
+            <div class="mx-auto flex-shrink-0 flex items-center justify-center rounded-full bg-theme-primary-base sm:mx-0 sm:h-10 sm:w-10 ">
               <svg class="fill-current text-white-base" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path class="text-white" d="M9 19h-4v-2h4v2zm2.946-4.036l3.107 3.105-4.112.931 1.005-4.036zm12.054-5.839l-7.898 7.996-3.202-3.202 7.898-7.995 3.202 3.201zm-6 8.92v3.955h-16v-20h7.362c4.156 0 2.638 6 2.638 6s2.313-.635 4.067-.133l1.952-1.976c-2.214-2.807-5.762-5.891-7.83-5.891h-10.189v24h20v-7.98l-2 2.025z"/></svg>
             </div>
             <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
@@ -50,7 +50,7 @@
             </div>
             
             <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-              <button type="submit" class="w-full inline-flex justify-center rounded-md shadow-md px-4 py-2 bg-theme-primary-three text-white-base font-medium text-white hover:bg-primary-base focus:outline-none focus:ring-0 sm:ml-3 sm:w-auto sm:text-sm">
+              <button type="submit" class="w-full inline-flex justify-center rounded-md shadow-md px-4 py-2 bg-theme-primary-five text-white-base font-medium text-white hover:bg-primary-base focus:outline-none focus:ring-0 sm:ml-3 sm:w-auto sm:text-sm">
               Create
               </button>
               <button @click.prevent="closeModalButtonClick" type="button" class="mt-3 w-full inline-flex justify-center rounded-md shadow-md px-4 py-2 bg-white-base text-base font-medium text-gray-600 hover:bg-gray-50 focus:outline-none focus:ring-0 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">

@@ -7,16 +7,16 @@
           <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
             <h2 class="text-3xl font-extrabold tracking-tight text-theme-primary-base sm:text-4xl">
               <span class="block">Welcome to Doughnet!</span>
-              <span class="block text-theme-primary-three font-normal">Get started by adding some accounts.</span>
+              <span class="block text-theme-primary-seven font-normal">Get started by adding some accounts.</span>
             </h2>
             <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
               <div class="inline-flex rounded-md shadow">
-                <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white-base bg-theme-primary-five">
-                  Add Account
+                <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white-base bg-theme-primary-four">
+                  <svg class="fill-current text-white-base" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"><path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/></svg> <span class="pl-2">Add New Account</span>
                 </a>
               </div>
               <div class="ml-3 inline-flex rounded-md shadow">
-                <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-theme-primary-three bg-white hover:bg-indigo-50">
+                <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-theme-primary-base bg-white-base hover:bg-white-base">
                   Learn more
                 </a>
               </div>
